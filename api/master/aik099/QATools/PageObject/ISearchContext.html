@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="robots" content="index, follow, all" />
+        <title>aik099\QATools\PageObject\ISearchContext | </title>
+                    <link rel="stylesheet" type="text/css" href="../../../stylesheet.css">
+                            </head>
+        <body id="class">
+            <div class="header">
+        <ul>
+            <li><a href="../../../classes.html">Classes</a></li>
+                            <li><a href="../../../namespaces.html">Namespaces</a></li>
+                        <li><a href="../../../interfaces.html">Interfaces</a></li>
+            <li><a href="../../../traits.html">Traits</a></li>
+            <li><a href="../../../doc-index.html">Index</a></li>
+            
+        </ul>
+
+        <div id="title"></div>
+
+            <div class="type">Interface</div>
+    <h1><a href="../../../aik099/QATools/PageObject.html">aik099\QATools\PageObject</a>\ISearchContext</h1>
+    </div>
+        <div class="content">
+                <p>    interface
+    <strong>ISearchContext</strong></p>
+
+            <div class="description">
+            <p>All classes, that allow searching elements within them must implement this interface.</p>
+            <p>
+</p>
+        </div>
+    
+    
+    
+            <h2>Methods</h2>
+
+            <table>
+                    <tr>
+                <td class="type">
+                    <abbr title="Behat\Mink\Element\NodeElement">NodeElement</abbr>|null
+                </td>
+                <td class="last">
+                    <a href="#method_find">find</a>(string $selector, string|array $locator)
+                    <p>Finds first element with specified selector.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    <abbr title="Behat\Mink\Element\NodeElement">NodeElement</abbr>[]
+                </td>
+                <td class="last">
+                    <a href="#method_findAll">findAll</a>(string $selector, string|array $locator)
+                    <p>Finds all elements with specified selector.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    mixed
+                </td>
+                <td class="last">
+                    <a href="#method_waitFor">waitFor</a>(integer $timeout, callable $callback)
+                    <p>Waits for an element(-s) to appear and returns it.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    <abbr title="Mockery\Expectation">Expectation</abbr>
+                </td>
+                <td class="last">
+                    <a href="#method_shouldReceive">shouldReceive</a>(<abbr title="string ">string </abbr> $name)
+                    <p>
+</p>
+                </td>
+                <td></td>
+            </tr>
+            </table>
+
+
+        <h2>Details</h2>
+
+                        <h3 id="method_find">
+        <div class="location">at line 32</div>
+        <code>            public            <abbr title="Behat\Mink\Element\NodeElement">NodeElement</abbr>|null
+    <strong>find</strong>(string $selector, string|array $locator)</code>
+    </h3>
+    <div class="details">
+        <p>Finds first element with specified selector.</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$selector</td>
+                <td>Selector engine name.</td>
+            </tr>
+                    <tr>
+                <td>string|array</td>
+                <td>$locator</td>
+                <td>Selector locator.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td><abbr title="Behat\Mink\Element\NodeElement">NodeElement</abbr>|null</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_findAll">
+        <div class="location">at line 42</div>
+        <code>            public            <abbr title="Behat\Mink\Element\NodeElement">NodeElement</abbr>[]
+    <strong>findAll</strong>(string $selector, string|array $locator)</code>
+    </h3>
+    <div class="details">
+        <p>Finds all elements with specified selector.</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$selector</td>
+                <td>Selector engine name.</td>
+            </tr>
+                    <tr>
+                <td>string|array</td>
+                <td>$locator</td>
+                <td>Selector locator.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td><abbr title="Behat\Mink\Element\NodeElement">NodeElement</abbr>[]</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_waitFor">
+        <div class="location">at line 54</div>
+        <code>            public            mixed
+    <strong>waitFor</strong>(integer $timeout, callable $callback)</code>
+    </h3>
+    <div class="details">
+        <p>Waits for an element(-s) to appear and returns it.</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>integer</td>
+                <td>$timeout</td>
+                <td>Maximal allowed waiting time in milliseconds.</td>
+            </tr>
+                    <tr>
+                <td>callable</td>
+                <td>$callback</td>
+                <td>Callback, which result is both used as waiting condition and returned. Will receive reference to <code>this element</code> as first argument.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>mixed</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table>
+                    <tr>
+                <td><a href="http://php.net/InvalidArgumentException"><abbr title="InvalidArgumentException">InvalidArgumentException</abbr></a></td>
+                <td>When invalid callback given.</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+                <h3 id="method_shouldReceive">
+        <div class="location">at line 21</div>
+        <code>                        <abbr title="Mockery\Expectation">Expectation</abbr>
+    <strong>shouldReceive</strong>(<abbr title="string ">string </abbr> $name)</code>
+    </h3>
+    <div class="details">
+        <p>
+</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><abbr title="string ">string </abbr></td>
+                <td>$name</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td><abbr title="Mockery\Expectation">Expectation</abbr></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+    
+            </div>
+            <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/" target="_top">Sami, the API Documentation Generator</a>.
+    </div>
+    </body>
+</html>

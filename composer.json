@@ -1,0 +1,12 @@
+{
+    "name": "aik099/qa-tools-api",
+    "authors": [
+        {
+            "name": "Alexander Obuhovich",
+            "email": "aik.bold@gmail.com"
+        }
+    ],
+    "require-dev": {
+		"sami/sami": "~1.4@dev"
+    }
+}
