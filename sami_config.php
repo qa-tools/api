@@ -20,7 +20,7 @@ $iterator = Finder::create()
 return new Sami($iterator, array(
 	'theme'                => 'enhanced',
 	'title'                => 'QA-Tools',
-	'build_dir'            => __DIR__.'/api/%version%',
+	'build_dir'            => __DIR__.'/%version%',
 	'default_opened_level' => 3,
 	'versions' => $versions,
 ));
