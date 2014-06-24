@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="robots" content="index, follow, all" />
-        <title>aik099\QATools\PageObject\Url\UrlBuilderFactory | </title>
+        <title>aik099\QATools\PageObject\Url\IUrlFactory | </title>
                     <link rel="stylesheet" type="text/css" href="../../../../stylesheet.css">
                             </head>
         <body id="class">
@@ -19,16 +19,15 @@
 
         <div id="title"></div>
 
-            <div class="type">Class</div>
-    <h1><a href="../../../../aik099/QATools/PageObject/Url.html">aik099\QATools\PageObject\Url</a>\UrlBuilderFactory</h1>
+            <div class="type">Interface</div>
+    <h1><a href="../../../../aik099/QATools/PageObject/Url.html">aik099\QATools\PageObject\Url</a>\IUrlFactory</h1>
     </div>
         <div class="content">
-                <p>    class
-    <strong>UrlBuilderFactory</strong>        implements
-        <a href="../../../../aik099/QATools/PageObject/Url/IUrlBuilderFactory.html"><abbr title="aik099\QATools\PageObject\Url\IUrlBuilderFactory">IUrlBuilderFactory</abbr></a></p>
+                <p>    interface
+    <strong>IUrlFactory</strong></p>
 
             <div class="description">
-            <p>Responsible for building the URL of pages.</p>
+            <p>All url builder factories must implement this interface.</p>
             <p>
 </p>
         </div>
@@ -40,11 +39,11 @@
             <table>
                     <tr>
                 <td class="type">
-                    <a href="../../../../aik099/QATools/PageObject/Url/IUrlBuilder.html"><abbr title="aik099\QATools\PageObject\Url\IUrlBuilder">IUrlBuilder</abbr></a>
+                    <a href="../../../../aik099/QATools/PageObject/Url/IBuilder.html"><abbr title="aik099\QATools\PageObject\Url\IBuilder">IBuilder</abbr></a>
                 </td>
                 <td class="last">
-                    <a href="#method_getUrlBuilder">getUrlBuilder</a>(string $path, array $params = array(), string $base_url = &#039;&#039;)
-                    <p>Returns an instance of a class implementing IUrlBuilder interface based on given arguments.</p>
+                    <a href="#method_getBuilder">getBuilder</a>(array $components)
+                    <p>Returns an instance of a class implementing IBuilder interface based on given arguments.</p>
                 </td>
                 <td></td>
             </tr>
@@ -64,13 +63,13 @@
 
         <h2>Details</h2>
 
-                        <h3 id="method_getUrlBuilder">
-        <div class="location">at line 31</div>
-        <code>            public            <a href="../../../../aik099/QATools/PageObject/Url/IUrlBuilder.html"><abbr title="aik099\QATools\PageObject\Url\IUrlBuilder">IUrlBuilder</abbr></a>
-    <strong>getUrlBuilder</strong>(string $path, array $params = array(), string $base_url = &#039;&#039;)</code>
+                        <h3 id="method_getBuilder">
+        <div class="location">at line 29</div>
+        <code>            public            <a href="../../../../aik099/QATools/PageObject/Url/IBuilder.html"><abbr title="aik099\QATools\PageObject\Url\IBuilder">IBuilder</abbr></a>
+    <strong>getBuilder</strong>(array $components)</code>
     </h3>
     <div class="details">
-        <p>Returns an instance of a class implementing IUrlBuilder interface based on given arguments.</p>
+        <p>Returns an instance of a class implementing IBuilder interface based on given arguments.</p>
         <p>
 </p>
         <div class="tags">
@@ -78,19 +77,9 @@
 
                     <table>
                     <tr>
-                <td>string</td>
-                <td>$path</td>
-                <td>The url/path.</td>
-            </tr>
-                    <tr>
                 <td>array</td>
-                <td>$params</td>
-                <td>The additional GET params.</td>
-            </tr>
-                    <tr>
-                <td>string</td>
-                <td>$base_url</td>
-                <td>The base url of the url builder.</td>
+                <td>$components</td>
+                <td>The url components.</td>
             </tr>
             </table>
 
@@ -99,7 +88,7 @@
 
                     <table>
         <tr>
-            <td><a href="../../../../aik099/QATools/PageObject/Url/IUrlBuilder.html"><abbr title="aik099\QATools\PageObject\Url\IUrlBuilder">IUrlBuilder</abbr></a></td>
+            <td><a href="../../../../aik099/QATools/PageObject/Url/IBuilder.html"><abbr title="aik099\QATools\PageObject\Url\IBuilder">IBuilder</abbr></a></td>
             <td>
 </td>
         </tr>

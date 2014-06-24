@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="robots" content="index, follow, all" />
-        <title>aik099\QATools\PageObject\Url\IUrlBuilder | </title>
+        <title>aik099\QATools\PageObject\Url\UrlFactory | </title>
                     <link rel="stylesheet" type="text/css" href="../../../../stylesheet.css">
                             </head>
         <body id="class">
@@ -19,12 +19,13 @@
 
         <div id="title"></div>
 
-            <div class="type">Interface</div>
-    <h1><a href="../../../../aik099/QATools/PageObject/Url.html">aik099\QATools\PageObject\Url</a>\IUrlBuilder</h1>
+            <div class="type">Class</div>
+    <h1><a href="../../../../aik099/QATools/PageObject/Url.html">aik099\QATools\PageObject\Url</a>\UrlFactory</h1>
     </div>
         <div class="content">
-                <p>    interface
-    <strong>IUrlBuilder</strong></p>
+                <p>    class
+    <strong>UrlFactory</strong>        implements
+        <a href="../../../../aik099/QATools/PageObject/Url/IUrlFactory.html"><abbr title="aik099\QATools\PageObject\Url\IUrlFactory">IUrlFactory</abbr></a></p>
 
             <div class="description">
             <p>Responsible for building the URL of pages.</p>
@@ -39,11 +40,11 @@
             <table>
                     <tr>
                 <td class="type">
-                    string
+                    <a href="../../../../aik099/QATools/PageObject/Url/IBuilder.html"><abbr title="aik099\QATools\PageObject\Url\IBuilder">IBuilder</abbr></a>
                 </td>
                 <td class="last">
-                    <a href="#method_build">build</a>(array $params = array())
-                    <p>Builds url using given GET parameters.</p>
+                    <a href="#method_getBuilder">getBuilder</a>(array $components)
+                    <p>Returns an instance of a class implementing IBuilder interface based on given arguments.</p>
                 </td>
                 <td></td>
             </tr>
@@ -63,13 +64,13 @@
 
         <h2>Details</h2>
 
-                        <h3 id="method_build">
+                        <h3 id="method_getBuilder">
         <div class="location">at line 29</div>
-        <code>            public            string
-    <strong>build</strong>(array $params = array())</code>
+        <code>            public            <a href="../../../../aik099/QATools/PageObject/Url/IBuilder.html"><abbr title="aik099\QATools\PageObject\Url\IBuilder">IBuilder</abbr></a>
+    <strong>getBuilder</strong>(array $components)</code>
     </h3>
     <div class="details">
-        <p>Builds url using given GET parameters.</p>
+        <p>Returns an instance of a class implementing IBuilder interface based on given arguments.</p>
         <p>
 </p>
         <div class="tags">
@@ -78,8 +79,8 @@
                     <table>
                     <tr>
                 <td>array</td>
-                <td>$params</td>
-                <td>Additional GET params.</td>
+                <td>$components</td>
+                <td>The url components.</td>
             </tr>
             </table>
 
@@ -88,7 +89,7 @@
 
                     <table>
         <tr>
-            <td>string</td>
+            <td><a href="../../../../aik099/QATools/PageObject/Url/IBuilder.html"><abbr title="aik099\QATools\PageObject\Url\IBuilder">IBuilder</abbr></a></td>
             <td>
 </td>
         </tr>
