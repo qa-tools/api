@@ -1,5 +1,6 @@
 <?php
 
+use Sami\Parser\Filter\TrueFilter;
 use Sami\Sami;
 use Sami\Version\GitVersionCollection;
 use Symfony\Component\Finder\Finder;
@@ -17,10 +18,17 @@ $iterator = Finder::create()
     ->in($dir)
 ;
 
-return new Sami($iterator, array(
+$sami = new Sami($iterator, array(
 	'theme'                => 'enhanced',
 	'title'                => 'QA-Tools API',
 	'build_dir'            => __DIR__.'/%version%',
 	'default_opened_level' => 3,
 	'versions' => $versions,
 ));
+
+// document all methods and properties
+$sami['filter'] = $sami->share(function () {
+    return new TrueFilter();
+});
+
+return $sami;

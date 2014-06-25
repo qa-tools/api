@@ -34,6 +34,25 @@
         </div>
     
     
+            <h2>Properties</h2>
+
+            <table>
+                    <tr>
+                <td class="type" id="property_seleniumSelector">
+                                                            protected                                        array
+                </td>
+                <td>$seleniumSelector</td>
+                <td class="last">Selenium selector, used to locate an element at construction time.</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_container">
+                                                            protected                                        <a href="../../../../aik099/QATools/PageObject/ISearchContext.html"><abbr title="aik099\QATools\PageObject\ISearchContext">ISearchContext</abbr></a>
+                </td>
+                <td>$container</td>
+                <td class="last">Container, where element is located.</td>
+            </tr>
+            </table>
+
     
             <h2>Methods</h2>
 
@@ -55,6 +74,16 @@
                 <td class="last">
                     <a href="#method_fromNodeElement">fromNodeElement</a>(<abbr title="Behat\Mink\Element\NodeElement">NodeElement</abbr> $node_element, <a href="../../../../aik099/QATools/PageObject/IPageFactory.html"><abbr title="aik099\QATools\PageObject\IPageFactory">IPageFactory</abbr></a> $page_factory = null)
                     <p>Creates Element instance based on existing NodeElement instance.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    string
+                </td>
+                <td class="last">
+                    <a href="#method_seleniumSelectorToXpath">seleniumSelectorToXpath</a>(<abbr title="Behat\Mink\Session">Session</abbr> $session)
+                    <p>Returns 'xpath' selector, used to locate this WebElement.</p>
                 </td>
                 <td></td>
             </tr>
@@ -166,6 +195,42 @@
                     <table>
         <tr>
             <td><a href="../../../../aik099/QATools/PageObject/Element/WebElement.html"><abbr title="aik099\QATools\PageObject\Element\WebElement">WebElement</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_seleniumSelectorToXpath">
+        <div class="location">at line 77</div>
+        <code>                protected        string
+    <strong>seleniumSelectorToXpath</strong>(<abbr title="Behat\Mink\Session">Session</abbr> $session)</code>
+    </h3>
+    <div class="details">
+        <p>Returns 'xpath' selector, used to locate this WebElement.</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><abbr title="Behat\Mink\Session">Session</abbr></td>
+                <td>$session</td>
+                <td>Session.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>string</td>
             <td>
 </td>
         </tr>

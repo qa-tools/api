@@ -154,16 +154,16 @@
         },
         {
             "name": "sami/sami",
-            "version": "dev-master",
+            "version": "v1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/fabpot/Sami.git",
-                "reference": "23272c77da0978ec0811b963ab3efd9712bbbdc9"
+                "reference": "70f29c781f7bef30181c814b9471b2ceac694454"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fabpot/Sami/zipball/23272c77da0978ec0811b963ab3efd9712bbbdc9",
-                "reference": "23272c77da0978ec0811b963ab3efd9712bbbdc9",
+                "url": "https://api.github.com/repos/fabpot/Sami/zipball/70f29c781f7bef30181c814b9471b2ceac694454",
+                "reference": "70f29c781f7bef30181c814b9471b2ceac694454",
                 "shasum": ""
             },
             "require": {
@@ -209,7 +209,7 @@
             "keywords": [
                 "phpdoc"
             ],
-            "time": "2014-05-02 13:21:56"
+            "time": "2014-06-25 11:24:03"
         },
         {
             "name": "symfony/console",

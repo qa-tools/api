@@ -34,6 +34,32 @@ WebElement fields and 2) List<WebElement> fields that have @FindBy or</p>
         </div>
     
     
+            <h2>Properties</h2>
+
+            <table>
+                    <tr>
+                <td class="type" id="property_locatorFactory">
+                                                            protected                                        <a href="../../../../aik099/QATools/PageObject/ElementLocator/IElementLocatorFactory.html"><abbr title="aik099\QATools\PageObject\ElementLocator\IElementLocatorFactory">IElementLocatorFactory</abbr></a>
+                </td>
+                <td>$locatorFactory</td>
+                <td class="last">Locator factory.</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_pageFactory">
+                                                            protected                                        <a href="../../../../aik099/QATools/PageObject/IPageFactory.html"><abbr title="aik099\QATools\PageObject\IPageFactory">IPageFactory</abbr></a>
+                </td>
+                <td>$pageFactory</td>
+                <td class="last">Page factory.</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_elementToProxyMapping">
+                                                            protected                                        array
+                </td>
+                <td>$elementToProxyMapping</td>
+                <td class="last">Mapping between element classes, that factory supports and how to proxy them.</td>
+            </tr>
+            </table>
+
     
             <h2>Methods</h2>
 
@@ -55,6 +81,46 @@ WebElement fields and 2) List<WebElement> fields that have @FindBy or</p>
                 <td class="last">
                     <a href="#method_decorate">decorate</a>(<a href="../../../../aik099/QATools/PageObject/Property.html"><abbr title="aik099\QATools\PageObject\Property">Property</abbr></a> $property)
                     <p>This method is called by PageFactory on all properties to decide how to decorate the property.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    boolean
+                </td>
+                <td class="last">
+                    <a href="#method_canDecorate">canDecorate</a>(<a href="../../../../aik099/QATools/PageObject/Property.html"><abbr title="aik099\QATools\PageObject\Property">Property</abbr></a> $property)
+                    <p>Checks if a property can be decorated.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    <a href="../../../../aik099/QATools/PageObject/Proxy/IProxy.html"><abbr title="aik099\QATools\PageObject\Proxy\IProxy">IProxy</abbr></a>|null
+                </td>
+                <td class="last">
+                    <a href="#method_doDecorate">doDecorate</a>(<a href="../../../../aik099/QATools/PageObject/Property.html"><abbr title="aik099\QATools\PageObject\Property">Property</abbr></a> $property, <a href="../../../../aik099/QATools/PageObject/ElementLocator/IElementLocator.html"><abbr title="aik099\QATools\PageObject\ElementLocator\IElementLocator">IElementLocator</abbr></a> $locator)
+                    <p>Perform actual decoration.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    string
+                </td>
+                <td class="last">
+                    <a href="#method_getProxyClass">getProxyClass</a>(<a href="../../../../aik099/QATools/PageObject/Property.html"><abbr title="aik099\QATools\PageObject\Property">Property</abbr></a> $property)
+                    <p>Returns proxy class, that can be used alongside with element class of a property.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    boolean
+                </td>
+                <td class="last">
+                    <a href="#method_classMatches">classMatches</a>(string $class_name, string $descendant_of)
+                    <p>Ensures that 2 given classes has a relation.</p>
                 </td>
                 <td></td>
             </tr>
@@ -131,6 +197,169 @@ WebElement fields and 2) List<WebElement> fields that have @FindBy or</p>
                     <table>
         <tr>
             <td><a href="../../../../aik099/QATools/PageObject/Proxy/IProxy.html"><abbr title="aik099\QATools\PageObject\Proxy\IProxy">IProxy</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_canDecorate">
+        <div class="location">at line 93</div>
+        <code>                protected        boolean
+    <strong>canDecorate</strong>(<a href="../../../../aik099/QATools/PageObject/Property.html"><abbr title="aik099\QATools\PageObject\Property">Property</abbr></a> $property)</code>
+    </h3>
+    <div class="details">
+        <p>Checks if a property can be decorated.</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><a href="../../../../aik099/QATools/PageObject/Property.html"><abbr title="aik099\QATools\PageObject\Property">Property</abbr></a></td>
+                <td>$property</td>
+                <td>The property that may be decorated.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>boolean</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table>
+                    <tr>
+                <td><abbr title="PageFactoryException">PageFactoryException</abbr></td>
+                <td>When class of non-existing element discovered in property's @var annotation.</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+                <h3 id="method_doDecorate">
+        <div class="location">at line 120</div>
+        <code>                protected        <a href="../../../../aik099/QATools/PageObject/Proxy/IProxy.html"><abbr title="aik099\QATools\PageObject\Proxy\IProxy">IProxy</abbr></a>|null
+    <strong>doDecorate</strong>(<a href="../../../../aik099/QATools/PageObject/Property.html"><abbr title="aik099\QATools\PageObject\Property">Property</abbr></a> $property, <a href="../../../../aik099/QATools/PageObject/ElementLocator/IElementLocator.html"><abbr title="aik099\QATools\PageObject\ElementLocator\IElementLocator">IElementLocator</abbr></a> $locator)</code>
+    </h3>
+    <div class="details">
+        <p>Perform actual decoration.</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><a href="../../../../aik099/QATools/PageObject/Property.html"><abbr title="aik099\QATools\PageObject\Property">Property</abbr></a></td>
+                <td>$property</td>
+                <td>The property that may be decorated.</td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../aik099/QATools/PageObject/ElementLocator/IElementLocator.html"><abbr title="aik099\QATools\PageObject\ElementLocator\IElementLocator">IElementLocator</abbr></a></td>
+                <td>$locator</td>
+                <td>Locator.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td><a href="../../../../aik099/QATools/PageObject/Proxy/IProxy.html"><abbr title="aik099\QATools\PageObject\Proxy\IProxy">IProxy</abbr></a>|null</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getProxyClass">
+        <div class="location">at line 143</div>
+        <code>                protected        string
+    <strong>getProxyClass</strong>(<a href="../../../../aik099/QATools/PageObject/Property.html"><abbr title="aik099\QATools\PageObject\Property">Property</abbr></a> $property)</code>
+    </h3>
+    <div class="details">
+        <p>Returns proxy class, that can be used alongside with element class of a property.</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><a href="../../../../aik099/QATools/PageObject/Property.html"><abbr title="aik099\QATools\PageObject\Property">Property</abbr></a></td>
+                <td>$property</td>
+                <td>Property.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>string</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_classMatches">
+        <div class="location">at line 166</div>
+        <code>                protected        boolean
+    <strong>classMatches</strong>(string $class_name, string $descendant_of)</code>
+    </h3>
+    <div class="details">
+        <p>Ensures that 2 given classes has a relation.</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$class_name</td>
+                <td>Class name to test.</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$descendant_of</td>
+                <td>Required descendant class.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>boolean</td>
             <td>
 </td>
         </tr>

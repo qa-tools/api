@@ -33,6 +33,39 @@
         </div>
     
     
+            <h2>Properties</h2>
+
+            <table>
+                    <tr>
+                <td class="type" id="property_searchContext">
+                                                            protected                                        <a href="../../../../aik099/QATools/PageObject/ISearchContext.html"><abbr title="aik099\QATools\PageObject\ISearchContext">ISearchContext</abbr></a>
+                </td>
+                <td>$searchContext</td>
+                <td class="last">Search context.</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_annotationManager">
+                                                            protected                                        <abbr title="mindplay\annotations\AnnotationManager">AnnotationManager</abbr>
+                </td>
+                <td>$annotationManager</td>
+                <td class="last">Annotation manager.</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_property">
+                                                            protected                                        <a href="../../../../aik099/QATools/PageObject/Property.html"><abbr title="aik099\QATools\PageObject\Property">Property</abbr></a>
+                </td>
+                <td>$property</td>
+                <td class="last">Property.</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_timeout">
+                                                            protected                                        integer
+                </td>
+                <td>$timeout</td>
+                <td class="last">Time to wait for element to be ready (in milliseconds).</td>
+            </tr>
+            </table>
+
     
             <h2>Methods</h2>
 
@@ -76,6 +109,16 @@
                     <p>Find the element list.</p>
                 </td>
                 <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    array
+                </td>
+                <td class="last">
+                    <a href="#method_getSelector">getSelector</a>()
+                    <p>Returns final selector to be used for element locating.</p>
+                </td>
+                <td><small>from&nbsp;<a href="../../../../aik099/QATools/PageObject/ElementLocator/DefaultElementLocator.html#method_getSelector"><abbr title="aik099\QATools\PageObject\ElementLocator\DefaultElementLocator">DefaultElementLocator</abbr></a></small></td>
             </tr>
                     <tr>
                 <td class="type">
@@ -213,6 +256,41 @@
     </table>
 
             
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getSelector">
+        <div class="location">in <a href="../../../../aik099/QATools/PageObject/ElementLocator/DefaultElementLocator.html#method_getSelector"><abbr title="aik099\QATools\PageObject\ElementLocator\DefaultElementLocator">DefaultElementLocator</abbr></a> at line 102</div>
+        <code>                protected        array
+    <strong>getSelector</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Returns final selector to be used for element locating.</p>
+        <p>
+</p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>array</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table>
+                    <tr>
+                <td><abbr title="AnnotationException">AnnotationException</abbr></td>
+                <td>When required @find-by annotation is missing.</td>
+            </tr>
+            </table>
+
             
                     </div>
     </div>
