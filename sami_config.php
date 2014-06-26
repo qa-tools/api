@@ -27,8 +27,8 @@ $sami = new Sami($iterator, array(
 ));
 
 // document all methods and properties
-$sami['filter'] = $sami->share(function () {
+$sami['filter'] = function () {
     return new TrueFilter();
-});
+};
 
 return $sami;
