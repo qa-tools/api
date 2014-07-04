@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="robots" content="index, follow, all" />
+        <title>QATools\QATools\BEM\ElementLocator\BEMElementLocator | QA-Tools API</title>
+                    <link rel="stylesheet" type="text/css" href="../../../../stylesheet.css">
+                            </head>
+        <body id="class">
+            <div class="header">
+        <ul>
+            <li><a href="../../../../classes.html">Classes</a></li>
+                            <li><a href="../../../../namespaces.html">Namespaces</a></li>
+                        <li><a href="../../../../interfaces.html">Interfaces</a></li>
+            <li><a href="../../../../traits.html">Traits</a></li>
+            <li><a href="../../../../doc-index.html">Index</a></li>
+            
+        </ul>
+
+        <div id="title">QA-Tools API</div>
+
+            <div class="type">Class</div>
+    <h1><a href="../../../../QATools/QATools/BEM/ElementLocator.html">QATools\QATools\BEM\ElementLocator</a>\BEMElementLocator</h1>
+    </div>
+        <div class="content">
+                <p>    class
+    <strong>BEMElementLocator</strong>        extends <a href="../../../../QATools/QATools/PageObject/ElementLocator/DefaultElementLocator.html"><abbr title="QATools\QATools\PageObject\ElementLocator\DefaultElementLocator">DefaultElementLocator</abbr></a></p>
+
+            <div class="description">
+            <p>Locates BEM blocks/elements.</p>
+            <p>
+</p>
+        </div>
+    
+    
+            <h2>Properties</h2>
+
+            <table>
+                    <tr>
+                <td class="type" id="property_searchContext">
+                                        protected                                        <a href="../../../../QATools/QATools/PageObject/ISearchContext.html"><abbr title="QATools\QATools\PageObject\ISearchContext">ISearchContext</abbr></a>
+                </td>
+                <td>$searchContext</td>
+                <td class="last">Search context.</td>
+                <td><small>from&nbsp;<a href="../../../../QATools/QATools/PageObject/ElementLocator/DefaultElementLocator.html#property_searchContext"><abbr title="QATools\QATools\PageObject\ElementLocator\DefaultElementLocator">DefaultElementLocator</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_annotationManager">
+                                        protected                                        <abbr title="mindplay\annotations\AnnotationManager">AnnotationManager</abbr>
+                </td>
+                <td>$annotationManager</td>
+                <td class="last">Annotation manager.</td>
+                <td><small>from&nbsp;<a href="../../../../QATools/QATools/PageObject/ElementLocator/DefaultElementLocator.html#property_annotationManager"><abbr title="QATools\QATools\PageObject\ElementLocator\DefaultElementLocator">DefaultElementLocator</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_property">
+                                        protected                                        <a href="../../../../QATools/QATools/PageObject/Property.html"><abbr title="QATools\QATools\PageObject\Property">Property</abbr></a>
+                </td>
+                <td>$property</td>
+                <td class="last">Property.</td>
+                <td><small>from&nbsp;<a href="../../../../QATools/QATools/PageObject/ElementLocator/DefaultElementLocator.html#property_property"><abbr title="QATools\QATools\PageObject\ElementLocator\DefaultElementLocator">DefaultElementLocator</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property__helper">
+                                                            private                    <a href="../../../../QATools/QATools/BEM/ElementLocator/LocatorHelper.html"><abbr title="QATools\QATools\BEM\ElementLocator\LocatorHelper">LocatorHelper</abbr></a>
+                </td>
+                <td>$_helper</td>
+                <td class="last">Locator helper.</td>
+                <td></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <table>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method___construct">__construct</a>(<a href="../../../../QATools/QATools/PageObject/Property.html"><abbr title="QATools\QATools\PageObject\Property">Property</abbr></a> $property, <a href="../../../../QATools/QATools/PageObject/ISearchContext.html"><abbr title="QATools\QATools\PageObject\ISearchContext">ISearchContext</abbr></a> $search_context, <abbr title="mindplay\annotations\AnnotationManager">AnnotationManager</abbr> $annotation_manager, <a href="../../../../QATools/QATools/BEM/ElementLocator/LocatorHelper.html"><abbr title="QATools\QATools\BEM\ElementLocator\LocatorHelper">LocatorHelper</abbr></a> $locator_helper)
+                    <p>Creates a new element locator.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    <a href="../../../../QATools/QATools/PageObject/ISearchContext.html"><abbr title="QATools\QATools\PageObject\ISearchContext">ISearchContext</abbr></a>
+                </td>
+                <td class="last">
+                    <a href="#method_getSearchContext">getSearchContext</a>()
+                    <p>Returns search context in use.</p>
+                </td>
+                <td><small>from&nbsp;<a href="../../../../QATools/QATools/PageObject/ElementLocator/DefaultElementLocator.html#method_getSearchContext"><abbr title="QATools\QATools\PageObject\ElementLocator\DefaultElementLocator">DefaultElementLocator</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    <abbr title="Behat\Mink\Element\NodeElement">NodeElement</abbr>|null
+                </td>
+                <td class="last">
+                    <a href="#method_find">find</a>()
+                    <p>Find the element.</p>
+                </td>
+                <td><small>from&nbsp;<a href="../../../../QATools/QATools/PageObject/ElementLocator/DefaultElementLocator.html#method_find"><abbr title="QATools\QATools\PageObject\ElementLocator\DefaultElementLocator">DefaultElementLocator</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    <abbr title="Behat\Mink\Element\NodeElement">NodeElement</abbr>[]
+                </td>
+                <td class="last">
+                    <a href="#method_findAll">findAll</a>()
+                    <p>Find the element list.</p>
+                </td>
+                <td><small>from&nbsp;<a href="../../../../QATools/QATools/PageObject/ElementLocator/DefaultElementLocator.html#method_findAll"><abbr title="QATools\QATools\PageObject\ElementLocator\DefaultElementLocator">DefaultElementLocator</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    array
+                </td>
+                <td class="last">
+                    <a href="#method_getSelector">getSelector</a>()
+                    <p>Returns final selector to be used for element locating.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    string
+                </td>
+                <td class="last">
+                    <a href="#method___toString">__toString</a>()
+                    <p>Returns string representation of a locator.</p>
+                </td>
+                <td><small>from&nbsp;<a href="../../../../QATools/QATools/PageObject/ElementLocator/DefaultElementLocator.html#method___toString"><abbr title="QATools\QATools\PageObject\ElementLocator\DefaultElementLocator">DefaultElementLocator</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    <abbr title="Mockery\Expectation">Expectation</abbr>
+                </td>
+                <td class="last">
+                    <a href="#method_shouldReceive">shouldReceive</a>(<abbr title="string ">string </abbr> $name)
+                    <p>
+</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    array
+                </td>
+                <td class="last">
+                    <a href="#method_getBlockLocator">getBlockLocator</a>(string $block_name, string|null $modificator_name = null, string|null $modificator_value = null)
+                    <p>Returns block locator.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    array
+                </td>
+                <td class="last">
+                    <a href="#method_getElementLocator">getElementLocator</a>(string $element_name, string $block_name, string|null $modificator_name = null, string|null $modificator_value = null)
+                    <p>Returns element locator.</p>
+                </td>
+                <td></td>
+            </tr>
+            </table>
+
+
+        <h2>Details</h2>
+
+                        <h3 id="method___construct">
+        <div class="location">at line 45</div>
+        <code>                    
+    <strong>__construct</strong>(<a href="../../../../QATools/QATools/PageObject/Property.html"><abbr title="QATools\QATools\PageObject\Property">Property</abbr></a> $property, <a href="../../../../QATools/QATools/PageObject/ISearchContext.html"><abbr title="QATools\QATools\PageObject\ISearchContext">ISearchContext</abbr></a> $search_context, <abbr title="mindplay\annotations\AnnotationManager">AnnotationManager</abbr> $annotation_manager, <a href="../../../../QATools/QATools/BEM/ElementLocator/LocatorHelper.html"><abbr title="QATools\QATools\BEM\ElementLocator\LocatorHelper">LocatorHelper</abbr></a> $locator_helper)</code>
+    </h3>
+    <div class="details">
+        <p>Creates a new element locator.</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><a href="../../../../QATools/QATools/PageObject/Property.html"><abbr title="QATools\QATools\PageObject\Property">Property</abbr></a></td>
+                <td>$property</td>
+                <td>Property.</td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../QATools/QATools/PageObject/ISearchContext.html"><abbr title="QATools\QATools\PageObject\ISearchContext">ISearchContext</abbr></a></td>
+                <td>$search_context</td>
+                <td>The context to use when finding the element.</td>
+            </tr>
+                    <tr>
+                <td><abbr title="mindplay\annotations\AnnotationManager">AnnotationManager</abbr></td>
+                <td>$annotation_manager</td>
+                <td>Annotation manager.</td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../QATools/QATools/BEM/ElementLocator/LocatorHelper.html"><abbr title="QATools\QATools\BEM\ElementLocator\LocatorHelper">LocatorHelper</abbr></a></td>
+                <td>$locator_helper</td>
+                <td>Locator helper.</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getSearchContext">
+        <div class="location">in <a href="../../../../QATools/QATools/PageObject/ElementLocator/DefaultElementLocator.html#method_getSearchContext"><abbr title="QATools\QATools\PageObject\ElementLocator\DefaultElementLocator">DefaultElementLocator</abbr></a> at line 69</div>
+        <code>                    <a href="../../../../QATools/QATools/PageObject/ISearchContext.html"><abbr title="QATools\QATools\PageObject\ISearchContext">ISearchContext</abbr></a>
+    <strong>getSearchContext</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Returns search context in use.</p>
+        <p>
+</p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td><a href="../../../../QATools/QATools/PageObject/ISearchContext.html"><abbr title="QATools\QATools\PageObject\ISearchContext">ISearchContext</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_find">
+        <div class="location">in <a href="../../../../QATools/QATools/PageObject/ElementLocator/DefaultElementLocator.html#method_find"><abbr title="QATools\QATools\PageObject\ElementLocator\DefaultElementLocator">DefaultElementLocator</abbr></a> at line 79</div>
+        <code>                    <abbr title="Behat\Mink\Element\NodeElement">NodeElement</abbr>|null
+    <strong>find</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Find the element.</p>
+        <p>
+</p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td><abbr title="Behat\Mink\Element\NodeElement">NodeElement</abbr>|null</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_findAll">
+        <div class="location">in <a href="../../../../QATools/QATools/PageObject/ElementLocator/DefaultElementLocator.html#method_findAll"><abbr title="QATools\QATools\PageObject\ElementLocator\DefaultElementLocator">DefaultElementLocator</abbr></a> at line 91</div>
+        <code>                    <abbr title="Behat\Mink\Element\NodeElement">NodeElement</abbr>[]
+    <strong>findAll</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Find the element list.</p>
+        <p>
+</p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td><abbr title="Behat\Mink\Element\NodeElement">NodeElement</abbr>[]</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getSelector">
+        <div class="location">at line 92</div>
+        <code>            protected        array
+    <strong>getSelector</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Returns final selector to be used for element locating.</p>
+        <p>
+</p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>array</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table>
+                    <tr>
+                <td><abbr title="AnnotationException">AnnotationException</abbr></td>
+                <td>When required @bem annotation is missing.</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+                <h3 id="method___toString">
+        <div class="location">in <a href="../../../../QATools/QATools/PageObject/ElementLocator/DefaultElementLocator.html#method___toString"><abbr title="QATools\QATools\PageObject\ElementLocator\DefaultElementLocator">DefaultElementLocator</abbr></a> at line 129</div>
+        <code>                    string
+    <strong>__toString</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Returns string representation of a locator.</p>
+        <p>
+</p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>string</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_shouldReceive">
+        <div class="location">at line 27</div>
+        <code>                    <abbr title="Mockery\Expectation">Expectation</abbr>
+    <strong>shouldReceive</strong>(<abbr title="string ">string </abbr> $name)</code>
+    </h3>
+    <div class="details">
+        <p>
+</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><abbr title="string ">string </abbr></td>
+                <td>$name</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td><abbr title="Mockery\Expectation">Expectation</abbr></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getBlockLocator">
+        <div class="location">at line 66</div>
+        <code>                    array
+    <strong>getBlockLocator</strong>(string $block_name, string|null $modificator_name = null, string|null $modificator_value = null)</code>
+    </h3>
+    <div class="details">
+        <p>Returns block locator.</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$block_name</td>
+                <td>Block name.</td>
+            </tr>
+                    <tr>
+                <td>string|null</td>
+                <td>$modificator_name</td>
+                <td>Modificator name.</td>
+            </tr>
+                    <tr>
+                <td>string|null</td>
+                <td>$modificator_value</td>
+                <td>Modificator value.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>array</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getElementLocator">
+        <div class="location">at line 81</div>
+        <code>                    array
+    <strong>getElementLocator</strong>(string $element_name, string $block_name, string|null $modificator_name = null, string|null $modificator_value = null)</code>
+    </h3>
+    <div class="details">
+        <p>Returns element locator.</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$element_name</td>
+                <td>Element name.</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$block_name</td>
+                <td>Block name.</td>
+            </tr>
+                    <tr>
+                <td>string|null</td>
+                <td>$modificator_name</td>
+                <td>Modificator name.</td>
+            </tr>
+                    <tr>
+                <td>string|null</td>
+                <td>$modificator_value</td>
+                <td>Modificator value.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>array</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+    
+            </div>
+            <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/" target="_top">Sami, the API Documentation Generator</a>.
+    </div>
+    </body>
+</html>

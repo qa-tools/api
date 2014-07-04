@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="robots" content="index, follow, all" />
+        <title>QATools\QATools\HtmlElements\PropertyDecorator\TypifiedPropertyDecorator | QA-Tools API</title>
+                    <link rel="stylesheet" type="text/css" href="../../../../stylesheet.css">
+                            </head>
+        <body id="class">
+            <div class="header">
+        <ul>
+            <li><a href="../../../../classes.html">Classes</a></li>
+                            <li><a href="../../../../namespaces.html">Namespaces</a></li>
+                        <li><a href="../../../../interfaces.html">Interfaces</a></li>
+            <li><a href="../../../../traits.html">Traits</a></li>
+            <li><a href="../../../../doc-index.html">Index</a></li>
+            
+        </ul>
+
+        <div id="title">QA-Tools API</div>
+
+            <div class="type">Class</div>
+    <h1><a href="../../../../QATools/QATools/HtmlElements/PropertyDecorator.html">QATools\QATools\HtmlElements\PropertyDecorator</a>\TypifiedPropertyDecorator</h1>
+    </div>
+        <div class="content">
+                <p>    class
+    <strong>TypifiedPropertyDecorator</strong>        extends <a href="../../../../QATools/QATools/PageObject/PropertyDecorator/DefaultPropertyDecorator.html"><abbr title="QATools\QATools\PageObject\PropertyDecorator\DefaultPropertyDecorator">DefaultPropertyDecorator</abbr></a></p>
+
+            <div class="description">
+            <p>Default decorator for use with PageFactory.</p>
+            <p>Will decorate 1) all of the
+WebElement fields and 2) List<WebElement> fields that have @FindBy or</p>
+        </div>
+    
+    
+            <h2>Properties</h2>
+
+            <table>
+                    <tr>
+                <td class="type" id="property_locatorFactory">
+                                        protected                                        <a href="../../../../QATools/QATools/PageObject/ElementLocator/IElementLocatorFactory.html"><abbr title="QATools\QATools\PageObject\ElementLocator\IElementLocatorFactory">IElementLocatorFactory</abbr></a>
+                </td>
+                <td>$locatorFactory</td>
+                <td class="last">Locator factory.</td>
+                <td><small>from&nbsp;<a href="../../../../QATools/QATools/PageObject/PropertyDecorator/DefaultPropertyDecorator.html#property_locatorFactory"><abbr title="QATools\QATools\PageObject\PropertyDecorator\DefaultPropertyDecorator">DefaultPropertyDecorator</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_pageFactory">
+                                        protected                                        <a href="../../../../QATools/QATools/PageObject/IPageFactory.html"><abbr title="QATools\QATools\PageObject\IPageFactory">IPageFactory</abbr></a>
+                </td>
+                <td>$pageFactory</td>
+                <td class="last">Page factory.</td>
+                <td><small>from&nbsp;<a href="../../../../QATools/QATools/PageObject/PropertyDecorator/DefaultPropertyDecorator.html#property_pageFactory"><abbr title="QATools\QATools\PageObject\PropertyDecorator\DefaultPropertyDecorator">DefaultPropertyDecorator</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_elementToProxyMapping">
+                                        protected                                        array
+                </td>
+                <td>$elementToProxyMapping</td>
+                <td class="last">Mapping between element classes, that factory supports and how to proxy them.</td>
+                <td><small>from&nbsp;<a href="../../../../QATools/QATools/PageObject/PropertyDecorator/DefaultPropertyDecorator.html#property_elementToProxyMapping"><abbr title="QATools\QATools\PageObject\PropertyDecorator\DefaultPropertyDecorator">DefaultPropertyDecorator</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property__typifiedElementInterface">
+                                                            private                    string
+                </td>
+                <td>$_typifiedElementInterface</td>
+                <td class="last">Typified element interface.</td>
+                <td></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <table>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method___construct">__construct</a>(<a href="../../../../QATools/QATools/PageObject/ElementLocator/IElementLocatorFactory.html"><abbr title="QATools\QATools\PageObject\ElementLocator\IElementLocatorFactory">IElementLocatorFactory</abbr></a> $locator_factory, <a href="../../../../QATools/QATools/PageObject/IPageFactory.html"><abbr title="QATools\QATools\PageObject\IPageFactory">IPageFactory</abbr></a> $page_factory)
+                    <p>Creates decorator instance.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    <a href="../../../../QATools/QATools/PageObject/Proxy/IProxy.html"><abbr title="QATools\QATools\PageObject\Proxy\IProxy">IProxy</abbr></a>
+                </td>
+                <td class="last">
+                    <a href="#method_decorate">decorate</a>(<a href="../../../../QATools/QATools/PageObject/Property.html"><abbr title="QATools\QATools\PageObject\Property">Property</abbr></a> $property)
+                    <p>This method is called by PageFactory on all properties to decide how to decorate the property.</p>
+                </td>
+                <td><small>from&nbsp;<a href="../../../../QATools/QATools/PageObject/PropertyDecorator/DefaultPropertyDecorator.html#method_decorate"><abbr title="QATools\QATools\PageObject\PropertyDecorator\DefaultPropertyDecorator">DefaultPropertyDecorator</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    boolean
+                </td>
+                <td class="last">
+                    <a href="#method_canDecorate">canDecorate</a>(<a href="../../../../QATools/QATools/PageObject/Property.html"><abbr title="QATools\QATools\PageObject\Property">Property</abbr></a> $property)
+                    <p>Checks if a property can be decorated.</p>
+                </td>
+                <td><small>from&nbsp;<a href="../../../../QATools/QATools/PageObject/PropertyDecorator/DefaultPropertyDecorator.html#method_canDecorate"><abbr title="QATools\QATools\PageObject\PropertyDecorator\DefaultPropertyDecorator">DefaultPropertyDecorator</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    <a href="../../../../QATools/QATools/PageObject/Proxy/IProxy.html"><abbr title="QATools\QATools\PageObject\Proxy\IProxy">IProxy</abbr></a>|null
+                </td>
+                <td class="last">
+                    <a href="#method_doDecorate">doDecorate</a>(<a href="../../../../QATools/QATools/PageObject/Property.html"><abbr title="QATools\QATools\PageObject\Property">Property</abbr></a> $property, <a href="../../../../QATools/QATools/PageObject/ElementLocator/IElementLocator.html"><abbr title="QATools\QATools\PageObject\ElementLocator\IElementLocator">IElementLocator</abbr></a> $locator)
+                    <p>Perform actual decoration.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    string
+                </td>
+                <td class="last">
+                    <a href="#method_getProxyClass">getProxyClass</a>(<a href="../../../../QATools/QATools/PageObject/Property.html"><abbr title="QATools\QATools\PageObject\Property">Property</abbr></a> $property)
+                    <p>Returns proxy class, that can be used alongside with element class of a property.</p>
+                </td>
+                <td><small>from&nbsp;<a href="../../../../QATools/QATools/PageObject/PropertyDecorator/DefaultPropertyDecorator.html#method_getProxyClass"><abbr title="QATools\QATools\PageObject\PropertyDecorator\DefaultPropertyDecorator">DefaultPropertyDecorator</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    boolean
+                </td>
+                <td class="last">
+                    <a href="#method_classMatches">classMatches</a>(string $class_name, string $descendant_of)
+                    <p>Ensures that 2 given classes has a relation.</p>
+                </td>
+                <td><small>from&nbsp;<a href="../../../../QATools/QATools/PageObject/PropertyDecorator/DefaultPropertyDecorator.html#method_classMatches"><abbr title="QATools\QATools\PageObject\PropertyDecorator\DefaultPropertyDecorator">DefaultPropertyDecorator</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    <abbr title="Mockery\Expectation">Expectation</abbr>
+                </td>
+                <td class="last">
+                    <a href="#method_shouldReceive">shouldReceive</a>(<abbr title="string ">string </abbr> $name)
+                    <p>
+</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    string
+                </td>
+                <td class="last">
+                    <a href="#method_getElementName">getElementName</a>(<a href="../../../../QATools/QATools/PageObject/Property.html"><abbr title="QATools\QATools\PageObject\Property">Property</abbr></a> $property)
+                    <p>Returns name of the element.</p>
+                </td>
+                <td></td>
+            </tr>
+            </table>
+
+
+        <h2>Details</h2>
+
+                        <h3 id="method___construct">
+        <div class="location">at line 46</div>
+        <code>                    
+    <strong>__construct</strong>(<a href="../../../../QATools/QATools/PageObject/ElementLocator/IElementLocatorFactory.html"><abbr title="QATools\QATools\PageObject\ElementLocator\IElementLocatorFactory">IElementLocatorFactory</abbr></a> $locator_factory, <a href="../../../../QATools/QATools/PageObject/IPageFactory.html"><abbr title="QATools\QATools\PageObject\IPageFactory">IPageFactory</abbr></a> $page_factory)</code>
+    </h3>
+    <div class="details">
+        <p>Creates decorator instance.</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><a href="../../../../QATools/QATools/PageObject/ElementLocator/IElementLocatorFactory.html"><abbr title="QATools\QATools\PageObject\ElementLocator\IElementLocatorFactory">IElementLocatorFactory</abbr></a></td>
+                <td>$locator_factory</td>
+                <td>Locator factory.</td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../QATools/QATools/PageObject/IPageFactory.html"><abbr title="QATools\QATools\PageObject\IPageFactory">IPageFactory</abbr></a></td>
+                <td>$page_factory</td>
+                <td>Page factory.</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_decorate">
+        <div class="location">in <a href="../../../../QATools/QATools/PageObject/PropertyDecorator/DefaultPropertyDecorator.html#method_decorate"><abbr title="QATools\QATools\PageObject\PropertyDecorator\DefaultPropertyDecorator">DefaultPropertyDecorator</abbr></a> at line 74</div>
+        <code>                    <a href="../../../../QATools/QATools/PageObject/Proxy/IProxy.html"><abbr title="QATools\QATools\PageObject\Proxy\IProxy">IProxy</abbr></a>
+    <strong>decorate</strong>(<a href="../../../../QATools/QATools/PageObject/Property.html"><abbr title="QATools\QATools\PageObject\Property">Property</abbr></a> $property)</code>
+    </h3>
+    <div class="details">
+        <p>This method is called by PageFactory on all properties to decide how to decorate the property.</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><a href="../../../../QATools/QATools/PageObject/Property.html"><abbr title="QATools\QATools\PageObject\Property">Property</abbr></a></td>
+                <td>$property</td>
+                <td>The property that may be decorated.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td><a href="../../../../QATools/QATools/PageObject/Proxy/IProxy.html"><abbr title="QATools\QATools\PageObject\Proxy\IProxy">IProxy</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_canDecorate">
+        <div class="location">in <a href="../../../../QATools/QATools/PageObject/PropertyDecorator/DefaultPropertyDecorator.html#method_canDecorate"><abbr title="QATools\QATools\PageObject\PropertyDecorator\DefaultPropertyDecorator">DefaultPropertyDecorator</abbr></a> at line 93</div>
+        <code>            protected        boolean
+    <strong>canDecorate</strong>(<a href="../../../../QATools/QATools/PageObject/Property.html"><abbr title="QATools\QATools\PageObject\Property">Property</abbr></a> $property)</code>
+    </h3>
+    <div class="details">
+        <p>Checks if a property can be decorated.</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><a href="../../../../QATools/QATools/PageObject/Property.html"><abbr title="QATools\QATools\PageObject\Property">Property</abbr></a></td>
+                <td>$property</td>
+                <td>The property that may be decorated.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>boolean</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table>
+                    <tr>
+                <td><abbr title="PageFactoryException">PageFactoryException</abbr></td>
+                <td>When class of non-existing element discovered in property's @var annotation.</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+                <h3 id="method_doDecorate">
+        <div class="location">at line 61</div>
+        <code>            protected        <a href="../../../../QATools/QATools/PageObject/Proxy/IProxy.html"><abbr title="QATools\QATools\PageObject\Proxy\IProxy">IProxy</abbr></a>|null
+    <strong>doDecorate</strong>(<a href="../../../../QATools/QATools/PageObject/Property.html"><abbr title="QATools\QATools\PageObject\Property">Property</abbr></a> $property, <a href="../../../../QATools/QATools/PageObject/ElementLocator/IElementLocator.html"><abbr title="QATools\QATools\PageObject\ElementLocator\IElementLocator">IElementLocator</abbr></a> $locator)</code>
+    </h3>
+    <div class="details">
+        <p>Perform actual decoration.</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><a href="../../../../QATools/QATools/PageObject/Property.html"><abbr title="QATools\QATools\PageObject\Property">Property</abbr></a></td>
+                <td>$property</td>
+                <td>The property that may be decorated.</td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../QATools/QATools/PageObject/ElementLocator/IElementLocator.html"><abbr title="QATools\QATools\PageObject\ElementLocator\IElementLocator">IElementLocator</abbr></a></td>
+                <td>$locator</td>
+                <td>Locator.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td><a href="../../../../QATools/QATools/PageObject/Proxy/IProxy.html"><abbr title="QATools\QATools\PageObject\Proxy\IProxy">IProxy</abbr></a>|null</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getProxyClass">
+        <div class="location">in <a href="../../../../QATools/QATools/PageObject/PropertyDecorator/DefaultPropertyDecorator.html#method_getProxyClass"><abbr title="QATools\QATools\PageObject\PropertyDecorator\DefaultPropertyDecorator">DefaultPropertyDecorator</abbr></a> at line 143</div>
+        <code>            protected        string
+    <strong>getProxyClass</strong>(<a href="../../../../QATools/QATools/PageObject/Property.html"><abbr title="QATools\QATools\PageObject\Property">Property</abbr></a> $property)</code>
+    </h3>
+    <div class="details">
+        <p>Returns proxy class, that can be used alongside with element class of a property.</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><a href="../../../../QATools/QATools/PageObject/Property.html"><abbr title="QATools\QATools\PageObject\Property">Property</abbr></a></td>
+                <td>$property</td>
+                <td>Property.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>string</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_classMatches">
+        <div class="location">in <a href="../../../../QATools/QATools/PageObject/PropertyDecorator/DefaultPropertyDecorator.html#method_classMatches"><abbr title="QATools\QATools\PageObject\PropertyDecorator\DefaultPropertyDecorator">DefaultPropertyDecorator</abbr></a> at line 166</div>
+        <code>            protected        boolean
+    <strong>classMatches</strong>(string $class_name, string $descendant_of)</code>
+    </h3>
+    <div class="details">
+        <p>Ensures that 2 given classes has a relation.</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$class_name</td>
+                <td>Class name to test.</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$descendant_of</td>
+                <td>Required descendant class.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>boolean</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_shouldReceive">
+        <div class="location">at line 30</div>
+        <code>                    <abbr title="Mockery\Expectation">Expectation</abbr>
+    <strong>shouldReceive</strong>(<abbr title="string ">string </abbr> $name)</code>
+    </h3>
+    <div class="details">
+        <p>
+</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><abbr title="string ">string </abbr></td>
+                <td>$name</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td><abbr title="Mockery\Expectation">Expectation</abbr></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getElementName">
+        <div class="location">at line 84</div>
+        <code>            protected        string
+    <strong>getElementName</strong>(<a href="../../../../QATools/QATools/PageObject/Property.html"><abbr title="QATools\QATools\PageObject\Property">Property</abbr></a> $property)</code>
+    </h3>
+    <div class="details">
+        <p>Returns name of the element.</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><a href="../../../../QATools/QATools/PageObject/Property.html"><abbr title="QATools\QATools\PageObject\Property">Property</abbr></a></td>
+                <td>$property</td>
+                <td>Property, to inspect.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>string</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+    
+            </div>
+            <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/" target="_top">Sami, the API Documentation Generator</a>.
+    </div>
+    </body>
+</html>

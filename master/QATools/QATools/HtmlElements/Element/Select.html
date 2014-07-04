@@ -1,0 +1,1556 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="robots" content="index, follow, all" />
+        <title>QATools\QATools\HtmlElements\Element\Select | QA-Tools API</title>
+                    <link rel="stylesheet" type="text/css" href="../../../../stylesheet.css">
+                            </head>
+        <body id="class">
+            <div class="header">
+        <ul>
+            <li><a href="../../../../classes.html">Classes</a></li>
+                            <li><a href="../../../../namespaces.html">Namespaces</a></li>
+                        <li><a href="../../../../interfaces.html">Interfaces</a></li>
+            <li><a href="../../../../traits.html">Traits</a></li>
+            <li><a href="../../../../doc-index.html">Index</a></li>
+            
+        </ul>
+
+        <div id="title">QA-Tools API</div>
+
+            <div class="type">Class</div>
+    <h1><a href="../../../../QATools/QATools/HtmlElements/Element.html">QATools\QATools\HtmlElements\Element</a>\Select</h1>
+    </div>
+        <div class="content">
+                <p>    class
+    <strong>Select</strong>        extends <a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a>        implements
+        <a href="../../../../QATools/QATools/HtmlElements/Element/ISimpleSetter.html"><abbr title="QATools\QATools\HtmlElements\Element\ISimpleSetter">ISimpleSetter</abbr></a></p>
+
+            <div class="description">
+            <p>Represents web page select control.</p>
+            <p>
+</p>
+        </div>
+    
+    
+            <h2>Properties</h2>
+
+            <table>
+                    <tr>
+                <td class="type" id="property__name">
+                                                            private                    string
+                </td>
+                <td>$_name</td>
+                <td class="last">Name of the element.</td>
+                <td><small>from&nbsp;<a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html#property__name"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property__wrappedElement">
+                                                            private                    <a href="../../../../QATools/QATools/PageObject/Element/WebElement.html"><abbr title="QATools\QATools\PageObject\Element\WebElement">WebElement</abbr></a>
+                </td>
+                <td>$_wrappedElement</td>
+                <td class="last">Wrapped element.</td>
+                <td><small>from&nbsp;<a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html#property__wrappedElement"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a></small></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <table>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method___construct">__construct</a>(<a href="../../../../QATools/QATools/PageObject/Element/WebElement.html"><abbr title="QATools\QATools\PageObject\Element\WebElement">WebElement</abbr></a> $wrapped_element)
+                    <p>Specifies wrapped WebElement.</p>
+                </td>
+                <td><small>from&nbsp;<a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html#method___construct"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    static&nbsp;<a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a>
+                </td>
+                <td class="last">
+                    <a href="#method_fromNodeElement">fromNodeElement</a>(<abbr title="Behat\Mink\Element\NodeElement">NodeElement</abbr> $node_element, <a href="../../../../QATools/QATools/PageObject/IPageFactory.html"><abbr title="QATools\QATools\PageObject\IPageFactory">IPageFactory</abbr></a> $page_factory = null)
+                    <p>Creates Element instance based on existing NodeElement instance.</p>
+                </td>
+                <td><small>from&nbsp;<a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html#method_fromNodeElement"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    <a href="../../../../QATools/QATools/PageObject/Element/WebElement.html"><abbr title="QATools\QATools\PageObject\Element\WebElement">WebElement</abbr></a>
+                </td>
+                <td class="last">
+                    <a href="#method_getWrappedElement">getWrappedElement</a>()
+                    <p>Returns wrapped element.</p>
+                </td>
+                <td><small>from&nbsp;<a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html#method_getWrappedElement"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    <a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a>
+                </td>
+                <td class="last">
+                    <a href="#method_setName">setName</a>(string $name)
+                    <p>Sets a name of an element.</p>
+                </td>
+                <td><small>from&nbsp;<a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html#method_setName"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    string
+                </td>
+                <td class="last">
+                    <a href="#method_getName">getName</a>()
+                    <p>Returns name of the entity.</p>
+                </td>
+                <td><small>from&nbsp;<a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html#method_getName"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    <abbr title="Behat\Mink\Session">Session</abbr>
+                </td>
+                <td class="last">
+                    <a href="#method_getSession">getSession</a>()
+                    <p>Returns wrapped element session.</p>
+                </td>
+                <td><small>from&nbsp;<a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html#method_getSession"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    boolean
+                </td>
+                <td class="last">
+                    <a href="#method_isVisible">isVisible</a>()
+                    <p>Checks whether current node is visible on page.</p>
+                </td>
+                <td><small>from&nbsp;<a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html#method_isVisible"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    boolean
+                </td>
+                <td class="last">
+                    <a href="#method_isValid">isValid</a>()
+                    <p>Checks if an element is still valid.</p>
+                </td>
+                <td><small>from&nbsp;<a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html#method_isValid"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    boolean
+                </td>
+                <td class="last">
+                    <a href="#method_hasAttribute">hasAttribute</a>(string $name)
+                    <p>Checks whether element has attribute with specified name.</p>
+                </td>
+                <td><small>from&nbsp;<a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html#method_hasAttribute"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    mixed|null
+                </td>
+                <td class="last">
+                    <a href="#method_getAttribute">getAttribute</a>(string $name)
+                    <p>Returns specified attribute value.</p>
+                </td>
+                <td><small>from&nbsp;<a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html#method_getAttribute"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    string
+                </td>
+                <td class="last">
+                    <a href="#method_getXpath">getXpath</a>()
+                    <p>Returns XPath for handled element.</p>
+                </td>
+                <td><small>from&nbsp;<a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html#method_getXpath"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    string
+                </td>
+                <td class="last">
+                    <a href="#method_getTagName">getTagName</a>()
+                    <p>Returns current node tag name.</p>
+                </td>
+                <td><small>from&nbsp;<a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html#method_getTagName"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    <a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a>
+                </td>
+                <td class="last">
+                    <a href="#method_setContainer">setContainer</a>(<a href="../../../../QATools/QATools/PageObject/ISearchContext.html"><abbr title="QATools\QATools\PageObject\ISearchContext">ISearchContext</abbr></a> $container = null)
+                    <p>Sets container, where element is located.</p>
+                </td>
+                <td><small>from&nbsp;<a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html#method_setContainer"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    <a href="../../../../QATools/QATools/PageObject/ISearchContext.html"><abbr title="QATools\QATools\PageObject\ISearchContext">ISearchContext</abbr></a>
+                </td>
+                <td class="last">
+                    <a href="#method_getContainer">getContainer</a>()
+                    <p>Returns container, where element is located.</p>
+                </td>
+                <td><small>from&nbsp;<a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html#method_getContainer"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    <abbr title="Behat\Mink\Selector\SelectorsHandler">SelectorsHandler</abbr>
+                </td>
+                <td class="last">
+                    <a href="#method_getSelectorsHandler">getSelectorsHandler</a>()
+                    <p>Returns selectors handler.</p>
+                </td>
+                <td><small>from&nbsp;<a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html#method_getSelectorsHandler"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    boolean
+                </td>
+                <td class="last">
+                    <a href="#method_isSeleniumDriver">isSeleniumDriver</a>()
+                    <p>Checks, that Selenium driver is used.</p>
+                </td>
+                <td><small>from&nbsp;<a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html#method_isSeleniumDriver"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    string
+                </td>
+                <td class="last">
+                    <a href="#method___toString">__toString</a>()
+                    <p>Returns string representation of element.</p>
+                </td>
+                <td><small>from&nbsp;<a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html#method___toString"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    <abbr title="Mockery\Expectation">Expectation</abbr>
+                </td>
+                <td class="last">
+                    <a href="#method_shouldReceive">shouldReceive</a>(<abbr title="string ">string </abbr> $name)
+                    <p>
+</p>
+                </td>
+                <td><small>from&nbsp;<a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html#method_shouldReceive"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    boolean
+                </td>
+                <td class="last">
+                    <a href="#method_isMultiple">isMultiple</a>()
+                    <p>Indicates whether this select element support selecting multiple options at the same time.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    <a href="../../../../QATools/QATools/HtmlElements/Element/SelectOption.html"><abbr title="QATools\QATools\HtmlElements\Element\SelectOption">SelectOption</abbr></a>[]
+                </td>
+                <td class="last">
+                    <a href="#method_getOptions">getOptions</a>()
+                    <p>Returns all options belonging to this select tag.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    <a href="../../../../QATools/QATools/HtmlElements/Element/SelectOption.html"><abbr title="QATools\QATools\HtmlElements\Element\SelectOption">SelectOption</abbr></a>[]
+                </td>
+                <td class="last">
+                    <a href="#method_getOptionsByValue">getOptionsByValue</a>(mixed $value)
+                    <p>Returns all options having given value.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    <a href="../../../../QATools/QATools/HtmlElements/Element/SelectOption.html"><abbr title="QATools\QATools\HtmlElements\Element\SelectOption">SelectOption</abbr></a>[]
+                </td>
+                <td class="last">
+                    <a href="#method_getOptionsByText">getOptionsByText</a>(string $text, boolean $exact_match = true)
+                    <p>Returns all options that display text matching the argument.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    <a href="../../../../QATools/QATools/HtmlElements/Element/SelectOption.html"><abbr title="QATools\QATools\HtmlElements\Element\SelectOption">SelectOption</abbr></a>[]
+                </td>
+                <td class="last">
+                    <a href="#method_getSelectedOptions">getSelectedOptions</a>()
+                    <p>Returns all selected options belonging to this select tag.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    <a href="../../../../QATools/QATools/HtmlElements/Element/SelectOption.html"><abbr title="QATools\QATools\HtmlElements\Element\SelectOption">SelectOption</abbr></a>
+                </td>
+                <td class="last">
+                    <a href="#method_getFirstSelectedOption">getFirstSelectedOption</a>()
+                    <p>The first selected option in this select tag (or the currently selected option in a normal select).</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    <a href="../../../../QATools/QATools/HtmlElements/Element/Select.html"><abbr title="QATools\QATools\HtmlElements\Element\Select">Select</abbr></a>
+                </td>
+                <td class="last">
+                    <a href="#method_selectByText">selectByText</a>(string $text, boolean $exact_match = true)
+                    <p>Select all options that display text matching the argument.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    <a href="../../../../QATools/QATools/HtmlElements/Element/Select.html"><abbr title="QATools\QATools\HtmlElements\Element\Select">Select</abbr></a>
+                </td>
+                <td class="last">
+                    <a href="#method_deselectByText">deselectByText</a>(string $text, boolean $exact_match = true)
+                    <p>Deselect all options that display text matching the argument.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    <a href="../../../../QATools/QATools/HtmlElements/Element/Select.html"><abbr title="QATools\QATools\HtmlElements\Element\Select">Select</abbr></a>
+                </td>
+                <td class="last">
+                    <a href="#method_selectByValue">selectByValue</a>(mixed $value)
+                    <p>Select all options that have a value matching the argument.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    <a href="../../../../QATools/QATools/HtmlElements/Element/Select.html"><abbr title="QATools\QATools\HtmlElements\Element\Select">Select</abbr></a>
+                </td>
+                <td class="last">
+                    <a href="#method_deselectByValue">deselectByValue</a>(mixed $value)
+                    <p>Deselect all options that have a value matching the argument.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    <a href="../../../../QATools/QATools/HtmlElements/Element/Select.html"><abbr title="QATools\QATools\HtmlElements\Element\Select">Select</abbr></a>
+                </td>
+                <td class="last">
+                    <a href="#method_selectAll">selectAll</a>()
+                    <p>Selects all options.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    <a href="../../../../QATools/QATools/HtmlElements/Element/Select.html"><abbr title="QATools\QATools\HtmlElements\Element\Select">Select</abbr></a>
+                </td>
+                <td class="last">
+                    <a href="#method_setSelected">setSelected</a>(array $values)
+                    <p>Replaces current selection with given one.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    <a href="../../../../QATools/QATools/HtmlElements/Element/Select.html"><abbr title="QATools\QATools\HtmlElements\Element\Select">Select</abbr></a>
+                </td>
+                <td class="last">
+                    <a href="#method_deselectAll">deselectAll</a>()
+                    <p>Deselects all options.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    <a href="../../../../QATools/QATools/HtmlElements/Element/Select.html"><abbr title="QATools\QATools\HtmlElements\Element\Select">Select</abbr></a>
+                </td>
+                <td class="last">
+                    <a href="#method_setValue">setValue</a>(mixed $value)
+                    <p>Sets value to the element.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    <a href="../../../../QATools/QATools/HtmlElements/Element/Select.html"><abbr title="QATools\QATools\HtmlElements\Element\Select">Select</abbr></a>
+                </td>
+                <td class="last">
+                    <a href="#method_selectOptions">selectOptions</a>(array $options, boolean $first_only = false)
+                    <p>Select given options.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    <a href="../../../../QATools/QATools/HtmlElements/Element/SelectOption.html"><abbr title="QATools\QATools\HtmlElements\Element\SelectOption">SelectOption</abbr></a>[]
+                </td>
+                <td class="last">
+                    <a href="#method_wrapOptions">wrapOptions</a>(array $nodes)
+                    <p>Wraps each of NodeElement in array with a SelectOption class.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    void
+                </td>
+                <td class="last">
+                    <a href="#method_assertMultiSelect">assertMultiSelect</a>()
+                    <p>Throws an exception when it's not a multiselect.</p>
+                </td>
+                <td></td>
+            </tr>
+            </table>
+
+
+        <h2>Details</h2>
+
+                        <h3 id="method___construct">
+        <div class="location">in <a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html#method___construct"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a> at line 50</div>
+        <code>                    
+    <strong>__construct</strong>(<a href="../../../../QATools/QATools/PageObject/Element/WebElement.html"><abbr title="QATools\QATools\PageObject\Element\WebElement">WebElement</abbr></a> $wrapped_element)</code>
+    </h3>
+    <div class="details">
+        <p>Specifies wrapped WebElement.</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><a href="../../../../QATools/QATools/PageObject/Element/WebElement.html"><abbr title="QATools\QATools\PageObject\Element\WebElement">WebElement</abbr></a></td>
+                <td>$wrapped_element</td>
+                <td>Element to be wrapped.</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_fromNodeElement">
+        <div class="location">in <a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html#method_fromNodeElement"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a> at line 63</div>
+        <code>        static            <a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a>
+    <strong>fromNodeElement</strong>(<abbr title="Behat\Mink\Element\NodeElement">NodeElement</abbr> $node_element, <a href="../../../../QATools/QATools/PageObject/IPageFactory.html"><abbr title="QATools\QATools\PageObject\IPageFactory">IPageFactory</abbr></a> $page_factory = null)</code>
+    </h3>
+    <div class="details">
+        <p>Creates Element instance based on existing NodeElement instance.</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><abbr title="Behat\Mink\Element\NodeElement">NodeElement</abbr></td>
+                <td>$node_element</td>
+                <td>Node element.</td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../QATools/QATools/PageObject/IPageFactory.html"><abbr title="QATools\QATools\PageObject\IPageFactory">IPageFactory</abbr></a></td>
+                <td>$page_factory</td>
+                <td>Page factory.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td><a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getWrappedElement">
+        <div class="location">in <a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html#method_getWrappedElement"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a> at line 75</div>
+        <code>                    <a href="../../../../QATools/QATools/PageObject/Element/WebElement.html"><abbr title="QATools\QATools\PageObject\Element\WebElement">WebElement</abbr></a>
+    <strong>getWrappedElement</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Returns wrapped element.</p>
+        <p>
+</p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td><a href="../../../../QATools/QATools/PageObject/Element/WebElement.html"><abbr title="QATools\QATools\PageObject\Element\WebElement">WebElement</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_setName">
+        <div class="location">in <a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html#method_setName"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a> at line 89</div>
+        <code>                    <a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a>
+    <strong>setName</strong>(string $name)</code>
+    </h3>
+    <div class="details">
+        <p>Sets a name of an element.</p>
+        <p>This method is used by initialization mechanism and is not intended to be used directly.</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td>Name to set.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td><a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getName">
+        <div class="location">in <a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html#method_getName"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a> at line 101</div>
+        <code>                    string
+    <strong>getName</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Returns name of the entity.</p>
+        <p>
+</p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>string</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getSession">
+        <div class="location">in <a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html#method_getSession"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a> at line 111</div>
+        <code>                    <abbr title="Behat\Mink\Session">Session</abbr>
+    <strong>getSession</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Returns wrapped element session.</p>
+        <p>
+</p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td><abbr title="Behat\Mink\Session">Session</abbr></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_isVisible">
+        <div class="location">in <a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html#method_isVisible"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a> at line 121</div>
+        <code>                    boolean
+    <strong>isVisible</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Checks whether current node is visible on page.</p>
+        <p>
+</p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>boolean</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_isValid">
+        <div class="location">in <a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html#method_isValid"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a> at line 131</div>
+        <code>                    boolean
+    <strong>isValid</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Checks if an element is still valid.</p>
+        <p>
+</p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>boolean</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_hasAttribute">
+        <div class="location">in <a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html#method_hasAttribute"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a> at line 143</div>
+        <code>                    boolean
+    <strong>hasAttribute</strong>(string $name)</code>
+    </h3>
+    <div class="details">
+        <p>Checks whether element has attribute with specified name.</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td>Attribute name.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>boolean</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getAttribute">
+        <div class="location">in <a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html#method_getAttribute"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a> at line 155</div>
+        <code>                    mixed|null
+    <strong>getAttribute</strong>(string $name)</code>
+    </h3>
+    <div class="details">
+        <p>Returns specified attribute value.</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td>Attribute name.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>mixed|null</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getXpath">
+        <div class="location">in <a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html#method_getXpath"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a> at line 165</div>
+        <code>                    string
+    <strong>getXpath</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Returns XPath for handled element.</p>
+        <p>
+</p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>string</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getTagName">
+        <div class="location">in <a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html#method_getTagName"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a> at line 175</div>
+        <code>                    string
+    <strong>getTagName</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Returns current node tag name.</p>
+        <p>
+</p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>string</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_setContainer">
+        <div class="location">in <a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html#method_setContainer"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a> at line 187</div>
+        <code>                    <a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a>
+    <strong>setContainer</strong>(<a href="../../../../QATools/QATools/PageObject/ISearchContext.html"><abbr title="QATools\QATools\PageObject\ISearchContext">ISearchContext</abbr></a> $container = null)</code>
+    </h3>
+    <div class="details">
+        <p>Sets container, where element is located.</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><a href="../../../../QATools/QATools/PageObject/ISearchContext.html"><abbr title="QATools\QATools\PageObject\ISearchContext">ISearchContext</abbr></a></td>
+                <td>$container</td>
+                <td>Element container.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td><a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getContainer">
+        <div class="location">in <a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html#method_getContainer"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a> at line 199</div>
+        <code>                    <a href="../../../../QATools/QATools/PageObject/ISearchContext.html"><abbr title="QATools\QATools\PageObject\ISearchContext">ISearchContext</abbr></a>
+    <strong>getContainer</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Returns container, where element is located.</p>
+        <p>
+</p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td><a href="../../../../QATools/QATools/PageObject/ISearchContext.html"><abbr title="QATools\QATools\PageObject\ISearchContext">ISearchContext</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getSelectorsHandler">
+        <div class="location">in <a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html#method_getSelectorsHandler"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a> at line 209</div>
+        <code>            protected        <abbr title="Behat\Mink\Selector\SelectorsHandler">SelectorsHandler</abbr>
+    <strong>getSelectorsHandler</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Returns selectors handler.</p>
+        <p>
+</p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td><abbr title="Behat\Mink\Selector\SelectorsHandler">SelectorsHandler</abbr></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_isSeleniumDriver">
+        <div class="location">in <a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html#method_isSeleniumDriver"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a> at line 219</div>
+        <code>            protected        boolean
+    <strong>isSeleniumDriver</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Checks, that Selenium driver is used.</p>
+        <p>
+</p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>boolean</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method___toString">
+        <div class="location">in <a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html#method___toString"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a> at line 229</div>
+        <code>                    string
+    <strong>__toString</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Returns string representation of element.</p>
+        <p>
+</p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>string</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_shouldReceive">
+        <div class="location">in <a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html#method_shouldReceive"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a> at line 28</div>
+        <code>                    <abbr title="Mockery\Expectation">Expectation</abbr>
+    <strong>shouldReceive</strong>(<abbr title="string ">string </abbr> $name)</code>
+    </h3>
+    <div class="details">
+        <p>
+</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><abbr title="string ">string </abbr></td>
+                <td>$name</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td><abbr title="Mockery\Expectation">Expectation</abbr></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_isMultiple">
+        <div class="location">at line 29</div>
+        <code>                    boolean
+    <strong>isMultiple</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Indicates whether this select element support selecting multiple options at the same time.</p>
+        <p>
+</p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>boolean</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getOptions">
+        <div class="location">at line 39</div>
+        <code>                    <a href="../../../../QATools/QATools/HtmlElements/Element/SelectOption.html"><abbr title="QATools\QATools\HtmlElements\Element\SelectOption">SelectOption</abbr></a>[]
+    <strong>getOptions</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Returns all options belonging to this select tag.</p>
+        <p>
+</p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td><a href="../../../../QATools/QATools/HtmlElements/Element/SelectOption.html"><abbr title="QATools\QATools\HtmlElements\Element\SelectOption">SelectOption</abbr></a>[]</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getOptionsByValue">
+        <div class="location">at line 51</div>
+        <code>                    <a href="../../../../QATools/QATools/HtmlElements/Element/SelectOption.html"><abbr title="QATools\QATools\HtmlElements\Element\SelectOption">SelectOption</abbr></a>[]
+    <strong>getOptionsByValue</strong>(mixed $value)</code>
+    </h3>
+    <div class="details">
+        <p>Returns all options having given value.</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>mixed</td>
+                <td>$value</td>
+                <td>Value of option to selected.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td><a href="../../../../QATools/QATools/HtmlElements/Element/SelectOption.html"><abbr title="QATools\QATools\HtmlElements\Element\SelectOption">SelectOption</abbr></a>[]</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getOptionsByText">
+        <div class="location">at line 67</div>
+        <code>                    <a href="../../../../QATools/QATools/HtmlElements/Element/SelectOption.html"><abbr title="QATools\QATools\HtmlElements\Element\SelectOption">SelectOption</abbr></a>[]
+    <strong>getOptionsByText</strong>(string $text, boolean $exact_match = true)</code>
+    </h3>
+    <div class="details">
+        <p>Returns all options that display text matching the argument.</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$text</td>
+                <td>Text of the option to be selected.</td>
+            </tr>
+                    <tr>
+                <td>boolean</td>
+                <td>$exact_match</td>
+                <td>Search for exact text.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td><a href="../../../../QATools/QATools/HtmlElements/Element/SelectOption.html"><abbr title="QATools\QATools\HtmlElements\Element\SelectOption">SelectOption</abbr></a>[]</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getSelectedOptions">
+        <div class="location">at line 86</div>
+        <code>                    <a href="../../../../QATools/QATools/HtmlElements/Element/SelectOption.html"><abbr title="QATools\QATools\HtmlElements\Element\SelectOption">SelectOption</abbr></a>[]
+    <strong>getSelectedOptions</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Returns all selected options belonging to this select tag.</p>
+        <p>
+</p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td><a href="../../../../QATools/QATools/HtmlElements/Element/SelectOption.html"><abbr title="QATools\QATools\HtmlElements\Element\SelectOption">SelectOption</abbr></a>[]</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getFirstSelectedOption">
+        <div class="location">at line 105</div>
+        <code>                    <a href="../../../../QATools/QATools/HtmlElements/Element/SelectOption.html"><abbr title="QATools\QATools\HtmlElements\Element\SelectOption">SelectOption</abbr></a>
+    <strong>getFirstSelectedOption</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>The first selected option in this select tag (or the currently selected option in a normal select).</p>
+        <p>
+</p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td><a href="../../../../QATools/QATools/HtmlElements/Element/SelectOption.html"><abbr title="QATools\QATools\HtmlElements\Element\SelectOption">SelectOption</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table>
+                    <tr>
+                <td><abbr title="SelectException">SelectException</abbr></td>
+                <td>When no options were selected.</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+                <h3 id="method_selectByText">
+        <div class="location">at line 125</div>
+        <code>                    <a href="../../../../QATools/QATools/HtmlElements/Element/Select.html"><abbr title="QATools\QATools\HtmlElements\Element\Select">Select</abbr></a>
+    <strong>selectByText</strong>(string $text, boolean $exact_match = true)</code>
+    </h3>
+    <div class="details">
+        <p>Select all options that display text matching the argument.</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$text</td>
+                <td>The visible text to match against.</td>
+            </tr>
+                    <tr>
+                <td>boolean</td>
+                <td>$exact_match</td>
+                <td>Search for exact text.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td><a href="../../../../QATools/QATools/HtmlElements/Element/Select.html"><abbr title="QATools\QATools\HtmlElements\Element\Select">Select</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table>
+                    <tr>
+                <td><abbr title="SelectException">SelectException</abbr></td>
+                <td>No options were found by given text.</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+                <h3 id="method_deselectByText">
+        <div class="location">at line 144</div>
+        <code>                    <a href="../../../../QATools/QATools/HtmlElements/Element/Select.html"><abbr title="QATools\QATools\HtmlElements\Element\Select">Select</abbr></a>
+    <strong>deselectByText</strong>(string $text, boolean $exact_match = true)</code>
+    </h3>
+    <div class="details">
+        <p>Deselect all options that display text matching the argument.</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$text</td>
+                <td>The visible text to match against.</td>
+            </tr>
+                    <tr>
+                <td>boolean</td>
+                <td>$exact_match</td>
+                <td>Search for exact text.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td><a href="../../../../QATools/QATools/HtmlElements/Element/Select.html"><abbr title="QATools\QATools\HtmlElements\Element\Select">Select</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_selectByValue">
+        <div class="location">at line 161</div>
+        <code>                    <a href="../../../../QATools/QATools/HtmlElements/Element/Select.html"><abbr title="QATools\QATools\HtmlElements\Element\Select">Select</abbr></a>
+    <strong>selectByValue</strong>(mixed $value)</code>
+    </h3>
+    <div class="details">
+        <p>Select all options that have a value matching the argument.</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>mixed</td>
+                <td>$value</td>
+                <td>The value to match against.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td><a href="../../../../QATools/QATools/HtmlElements/Element/Select.html"><abbr title="QATools\QATools\HtmlElements\Element\Select">Select</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table>
+                    <tr>
+                <td><abbr title="SelectException">SelectException</abbr></td>
+                <td>When option with given value can't be found.</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+                <h3 id="method_deselectByValue">
+        <div class="location">at line 179</div>
+        <code>                    <a href="../../../../QATools/QATools/HtmlElements/Element/Select.html"><abbr title="QATools\QATools\HtmlElements\Element\Select">Select</abbr></a>
+    <strong>deselectByValue</strong>(mixed $value)</code>
+    </h3>
+    <div class="details">
+        <p>Deselect all options that have a value matching the argument.</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>mixed</td>
+                <td>$value</td>
+                <td>Value of an option be be deselected.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td><a href="../../../../QATools/QATools/HtmlElements/Element/Select.html"><abbr title="QATools\QATools\HtmlElements\Element\Select">Select</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_selectAll">
+        <div class="location">at line 193</div>
+        <code>                    <a href="../../../../QATools/QATools/HtmlElements/Element/Select.html"><abbr title="QATools\QATools\HtmlElements\Element\Select">Select</abbr></a>
+    <strong>selectAll</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Selects all options.</p>
+        <p>
+</p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td><a href="../../../../QATools/QATools/HtmlElements/Element/Select.html"><abbr title="QATools\QATools\HtmlElements\Element\Select">Select</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_setSelected">
+        <div class="location">at line 207</div>
+        <code>                    <a href="../../../../QATools/QATools/HtmlElements/Element/Select.html"><abbr title="QATools\QATools\HtmlElements\Element\Select">Select</abbr></a>
+    <strong>setSelected</strong>(array $values)</code>
+    </h3>
+    <div class="details">
+        <p>Replaces current selection with given one.</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>array</td>
+                <td>$values</td>
+                <td>Values of options to select.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td><a href="../../../../QATools/QATools/HtmlElements/Element/Select.html"><abbr title="QATools\QATools\HtmlElements\Element\Select">Select</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_deselectAll">
+        <div class="location">at line 228</div>
+        <code>                    <a href="../../../../QATools/QATools/HtmlElements/Element/Select.html"><abbr title="QATools\QATools\HtmlElements\Element\Select">Select</abbr></a>
+    <strong>deselectAll</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Deselects all options.</p>
+        <p>
+</p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td><a href="../../../../QATools/QATools/HtmlElements/Element/Select.html"><abbr title="QATools\QATools\HtmlElements\Element\Select">Select</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_setValue">
+        <div class="location">at line 246</div>
+        <code>                    <a href="../../../../QATools/QATools/HtmlElements/Element/Select.html"><abbr title="QATools\QATools\HtmlElements\Element\Select">Select</abbr></a>
+    <strong>setValue</strong>(mixed $value)</code>
+    </h3>
+    <div class="details">
+        <p>Sets value to the element.</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>mixed</td>
+                <td>$value</td>
+                <td>New value.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td><a href="../../../../QATools/QATools/HtmlElements/Element/Select.html"><abbr title="QATools\QATools\HtmlElements\Element\Select">Select</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_selectOptions">
+        <div class="location">at line 263</div>
+        <code>            protected        <a href="../../../../QATools/QATools/HtmlElements/Element/Select.html"><abbr title="QATools\QATools\HtmlElements\Element\Select">Select</abbr></a>
+    <strong>selectOptions</strong>(array $options, boolean $first_only = false)</code>
+    </h3>
+    <div class="details">
+        <p>Select given options.</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>array</td>
+                <td>$options</td>
+                <td>Options to be selected.</td>
+            </tr>
+                    <tr>
+                <td>boolean</td>
+                <td>$first_only</td>
+                <td>Select only first option.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td><a href="../../../../QATools/QATools/HtmlElements/Element/Select.html"><abbr title="QATools\QATools\HtmlElements\Element\Select">Select</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_wrapOptions">
+        <div class="location">at line 283</div>
+        <code>            protected        <a href="../../../../QATools/QATools/HtmlElements/Element/SelectOption.html"><abbr title="QATools\QATools\HtmlElements\Element\SelectOption">SelectOption</abbr></a>[]
+    <strong>wrapOptions</strong>(array $nodes)</code>
+    </h3>
+    <div class="details">
+        <p>Wraps each of NodeElement in array with a SelectOption class.</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>array</td>
+                <td>$nodes</td>
+                <td>Nodes.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td><a href="../../../../QATools/QATools/HtmlElements/Element/SelectOption.html"><abbr title="QATools\QATools\HtmlElements\Element\SelectOption">SelectOption</abbr></a>[]</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_assertMultiSelect">
+        <div class="location">at line 302</div>
+        <code>            protected        void
+    <strong>assertMultiSelect</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Throws an exception when it's not a multiselect.</p>
+        <p>
+</p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>void</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table>
+                    <tr>
+                <td><abbr title="SelectException">SelectException</abbr></td>
+                <td>If the SELECT does not support multiple selections.</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+    
+            </div>
+            <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/" target="_top">Sami, the API Documentation Generator</a>.
+    </div>
+    </body>
+</html>
