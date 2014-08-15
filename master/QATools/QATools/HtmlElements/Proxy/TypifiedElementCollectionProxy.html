@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="robots" content="index, follow, all" />
-        <title>QATools\QATools\HtmlElements\Proxy\TypifiedElementProxy | QA-Tools API</title>
+        <title>QATools\QATools\HtmlElements\Proxy\TypifiedElementCollectionProxy | QA-Tools API</title>
                     <link rel="stylesheet" type="text/css" href="../../../../stylesheet.css">
                             </head>
         <body id="class">
@@ -20,15 +20,14 @@
         <div id="title">QA-Tools API</div>
 
             <div class="type">Class</div>
-    <h1><a href="../../../../QATools/QATools/HtmlElements/Proxy.html">QATools\QATools\HtmlElements\Proxy</a>\TypifiedElementProxy</h1>
+    <h1><a href="../../../../QATools/QATools/HtmlElements/Proxy.html">QATools\QATools\HtmlElements\Proxy</a>\TypifiedElementCollectionProxy</h1>
     </div>
         <div class="content">
                 <p>    class
-    <strong>TypifiedElementProxy</strong>        extends <a href="../../../../QATools/QATools/PageObject/Proxy/AbstractProxy.html"><abbr title="QATools\QATools\PageObject\Proxy\AbstractProxy">AbstractProxy</abbr></a>        implements
-        <a href="../../../../QATools/QATools/HtmlElements/Element/ITypifiedElement.html"><abbr title="QATools\QATools\HtmlElements\Element\ITypifiedElement">ITypifiedElement</abbr></a></p>
+    <strong>TypifiedElementCollectionProxy</strong>        extends <a href="../../../../QATools/QATools/HtmlElements/Proxy/TypifiedElementProxy.html"><abbr title="QATools\QATools\HtmlElements\Proxy\TypifiedElementProxy">TypifiedElementProxy</abbr></a></p>
 
             <div class="description">
-            <p>Class for lazy-proxy creation to ensure, that TypifiedElements are
+            <p>Class for lazy-proxy creation to ensure, that TypifiedElementCollection are
 really accessed only at moment, when user needs them.</p>
             <p>
 </p>
@@ -101,7 +100,7 @@ really accessed only at moment, when user needs them.</p>
                 </td>
                 <td>$_name</td>
                 <td class="last">Name of the element.</td>
-                <td></td>
+                <td><small>from&nbsp;<a href="../../../../QATools/QATools/HtmlElements/Proxy/TypifiedElementProxy.html#property__name"><abbr title="QATools\QATools\HtmlElements\Proxy\TypifiedElementProxy">TypifiedElementProxy</abbr></a></small></td>
             </tr>
             </table>
 
@@ -117,7 +116,7 @@ really accessed only at moment, when user needs them.</p>
                     <a href="#method___construct">__construct</a>(<a href="../../../../QATools/QATools/PageObject/ElementLocator/IElementLocator.html"><abbr title="QATools\QATools\PageObject\ElementLocator\IElementLocator">IElementLocator</abbr></a> $locator, <a href="../../../../QATools/QATools/PageObject/IPageFactory.html"><abbr title="QATools\QATools\PageObject\IPageFactory">IPageFactory</abbr></a> $page_factory, string $name)
                     <p>Initializes proxy for AbstractTypifiedElement.</p>
                 </td>
-                <td></td>
+                <td><small>from&nbsp;<a href="../../../../QATools/QATools/HtmlElements/Proxy/TypifiedElementProxy.html#method___construct"><abbr title="QATools\QATools\HtmlElements\Proxy\TypifiedElementProxy">TypifiedElementProxy</abbr></a></small></td>
             </tr>
                     <tr>
                 <td class="type">
@@ -137,7 +136,7 @@ really accessed only at moment, when user needs them.</p>
                     <a href="#method_offsetSet">offsetSet</a>(mixed $index, mixed $newval)
                     <p>Offset to set.</p>
                 </td>
-                <td><small>from&nbsp;<a href="../../../../QATools/QATools/PageObject/Proxy/AbstractProxy.html#method_offsetSet"><abbr title="QATools\QATools\PageObject\Proxy\AbstractProxy">AbstractProxy</abbr></a></small></td>
+                <td></td>
             </tr>
                     <tr>
                 <td class="type">
@@ -178,7 +177,7 @@ really accessed only at moment, when user needs them.</p>
                     <p>
 </p>
                 </td>
-                <td><small>from&nbsp;<a href="../../../../QATools/QATools/PageObject/Proxy/AbstractProxy.html#method_shouldReceive"><abbr title="QATools\QATools\PageObject\Proxy\AbstractProxy">AbstractProxy</abbr></a></small></td>
+                <td></td>
             </tr>
                     <tr>
                 <td class="type">
@@ -246,9 +245,9 @@ really accessed only at moment, when user needs them.</p>
                 </td>
                 <td class="last">
                     <a href="#method_injectContainer">injectContainer</a>()
-                    <p>Sets proxy's container to each element.</p>
+                    <p>Sets proxy's container to the collection.</p>
                 </td>
-                <td><small>from&nbsp;<a href="../../../../QATools/QATools/PageObject/Proxy/AbstractProxy.html#method_injectContainer"><abbr title="QATools\QATools\PageObject\Proxy\AbstractProxy">AbstractProxy</abbr></a></small></td>
+                <td></td>
             </tr>
                     <tr>
                 <td class="type">
@@ -256,9 +255,9 @@ really accessed only at moment, when user needs them.</p>
                 </td>
                 <td class="last">
                     <a href="#method_offsetExists">offsetExists</a>(mixed $index)
-                    <p>Whether a offset exists.</p>
+                    <p>Whether an offset exists.</p>
                 </td>
-                <td><small>from&nbsp;<a href="../../../../QATools/QATools/PageObject/Proxy/AbstractProxy.html#method_offsetExists"><abbr title="QATools\QATools\PageObject\Proxy\AbstractProxy">AbstractProxy</abbr></a></small></td>
+                <td></td>
             </tr>
                     <tr>
                 <td class="type">
@@ -268,7 +267,7 @@ really accessed only at moment, when user needs them.</p>
                     <a href="#method_offsetUnset">offsetUnset</a>(mixed $index)
                     <p>Offset to unset.</p>
                 </td>
-                <td><small>from&nbsp;<a href="../../../../QATools/QATools/PageObject/Proxy/AbstractProxy.html#method_offsetUnset"><abbr title="QATools\QATools\PageObject\Proxy\AbstractProxy">AbstractProxy</abbr></a></small></td>
+                <td></td>
             </tr>
                     <tr>
                 <td class="type">
@@ -278,7 +277,7 @@ really accessed only at moment, when user needs them.</p>
                     <a href="#method_offsetGet">offsetGet</a>(mixed $index)
                     <p>Offset to retrieve.</p>
                 </td>
-                <td><small>from&nbsp;<a href="../../../../QATools/QATools/PageObject/Proxy/AbstractProxy.html#method_offsetGet"><abbr title="QATools\QATools\PageObject\Proxy\AbstractProxy">AbstractProxy</abbr></a></small></td>
+                <td></td>
             </tr>
                     <tr>
                 <td class="type">
@@ -288,7 +287,7 @@ really accessed only at moment, when user needs them.</p>
                     <a href="#method_count">count</a>()
                     <p>Count elements of an object.</p>
                 </td>
-                <td><small>from&nbsp;<a href="../../../../QATools/QATools/PageObject/Proxy/AbstractProxy.html#method_count"><abbr title="QATools\QATools\PageObject\Proxy\AbstractProxy">AbstractProxy</abbr></a></small></td>
+                <td></td>
             </tr>
                     <tr>
                 <td class="type">
@@ -298,7 +297,7 @@ really accessed only at moment, when user needs them.</p>
                     <a href="#method_getIterator">getIterator</a>()
                     <p>Returns the array iterator.</p>
                 </td>
-                <td><small>from&nbsp;<a href="../../../../QATools/QATools/PageObject/Proxy/AbstractProxy.html#method_getIterator"><abbr title="QATools\QATools\PageObject\Proxy\AbstractProxy">AbstractProxy</abbr></a></small></td>
+                <td></td>
             </tr>
                     <tr>
                 <td class="type">
@@ -312,13 +311,13 @@ really accessed only at moment, when user needs them.</p>
             </tr>
                     <tr>
                 <td class="type">
-                    mixed
+                    <a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElementCollection.html"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElementCollection">AbstractTypifiedElementCollection</abbr></a>
                 </td>
                 <td class="last">
                     <a href="#method_getObject">getObject</a>()
                     <p>Returns class instance, that was placed inside a proxy.</p>
                 </td>
-                <td><small>from&nbsp;<a href="../../../../QATools/QATools/PageObject/Proxy/AbstractProxy.html#method_getObject"><abbr title="QATools\QATools\PageObject\Proxy\AbstractProxy">AbstractProxy</abbr></a></small></td>
+                <td></td>
             </tr>
                     <tr>
                 <td class="type">
@@ -328,7 +327,7 @@ really accessed only at moment, when user needs them.</p>
                     <a href="#method_getName">getName</a>()
                     <p>Returns name of the entity.</p>
                 </td>
-                <td></td>
+                <td><small>from&nbsp;<a href="../../../../QATools/QATools/HtmlElements/Proxy/TypifiedElementProxy.html#method_getName"><abbr title="QATools\QATools\HtmlElements\Proxy\TypifiedElementProxy">TypifiedElementProxy</abbr></a></small></td>
             </tr>
                     <tr>
                 <td class="type">
@@ -338,7 +337,7 @@ really accessed only at moment, when user needs them.</p>
                     <a href="#method_setName">setName</a>(string $name)
                     <p>Sets a name of an element.</p>
                 </td>
-                <td></td>
+                <td><small>from&nbsp;<a href="../../../../QATools/QATools/HtmlElements/Proxy/TypifiedElementProxy.html#method_setName"><abbr title="QATools\QATools\HtmlElements\Proxy\TypifiedElementProxy">TypifiedElementProxy</abbr></a></small></td>
             </tr>
             </table>
 
@@ -346,7 +345,7 @@ really accessed only at moment, when user needs them.</p>
         <h2>Details</h2>
 
                         <h3 id="method___construct">
-        <div class="location">at line 42</div>
+        <div class="location">in <a href="../../../../QATools/QATools/HtmlElements/Proxy/TypifiedElementProxy.html#method___construct"><abbr title="QATools\QATools\HtmlElements\Proxy\TypifiedElementProxy">TypifiedElementProxy</abbr></a> at line 42</div>
         <code>                    
     <strong>__construct</strong>(<a href="../../../../QATools/QATools/PageObject/ElementLocator/IElementLocator.html"><abbr title="QATools\QATools\PageObject\ElementLocator\IElementLocator">IElementLocator</abbr></a> $locator, <a href="../../../../QATools/QATools/PageObject/IPageFactory.html"><abbr title="QATools\QATools\PageObject\IPageFactory">IPageFactory</abbr></a> $page_factory, string $name)</code>
     </h3>
@@ -418,7 +417,7 @@ really accessed only at moment, when user needs them.</p>
     </div>
 
                 <h3 id="method_offsetSet">
-        <div class="location">in <a href="../../../../QATools/QATools/PageObject/Proxy/AbstractProxy.html#method_offsetSet"><abbr title="QATools\QATools\PageObject\Proxy\AbstractProxy">AbstractProxy</abbr></a> at line 207</div>
+        <div class="location">at line 38</div>
         <code>                    void
     <strong>offsetSet</strong>(mixed $index, mixed $newval)</code>
     </h3>
@@ -604,7 +603,7 @@ really accessed only at moment, when user needs them.</p>
     </div>
 
                 <h3 id="method_shouldReceive">
-        <div class="location">in <a href="../../../../QATools/QATools/PageObject/Proxy/AbstractProxy.html#method_shouldReceive"><abbr title="QATools\QATools\PageObject\Proxy\AbstractProxy">AbstractProxy</abbr></a> at line 30</div>
+        <div class="location">at line 26</div>
         <code>                    <abbr title="Mockery\Expectation">Expectation</abbr>
     <strong>shouldReceive</strong>(<abbr title="string ">string </abbr> $name)</code>
     </h3>
@@ -860,12 +859,12 @@ really accessed only at moment, when user needs them.</p>
     </div>
 
                 <h3 id="method_injectContainer">
-        <div class="location">in <a href="../../../../QATools/QATools/PageObject/Proxy/AbstractProxy.html#method_injectContainer"><abbr title="QATools\QATools\PageObject\Proxy\AbstractProxy">AbstractProxy</abbr></a> at line 184</div>
+        <div class="location">at line 104</div>
         <code>            protected        void
     <strong>injectContainer</strong>()</code>
     </h3>
     <div class="details">
-        <p>Sets proxy's container to each element.</p>
+        <p>Sets proxy's container to the collection.</p>
         <p>
 </p>
         <div class="tags">
@@ -886,12 +885,12 @@ really accessed only at moment, when user needs them.</p>
     </div>
 
                 <h3 id="method_offsetExists">
-        <div class="location">in <a href="../../../../QATools/QATools/PageObject/Proxy/AbstractProxy.html#method_offsetExists"><abbr title="QATools\QATools\PageObject\Proxy\AbstractProxy">AbstractProxy</abbr></a> at line 221</div>
+        <div class="location">at line 50</div>
         <code>                    boolean
     <strong>offsetExists</strong>(mixed $index)</code>
     </h3>
     <div class="details">
-        <p>Whether a offset exists.</p>
+        <p>Whether an offset exists.</p>
         <p>
 </p>
         <div class="tags">
@@ -922,7 +921,7 @@ really accessed only at moment, when user needs them.</p>
     </div>
 
                 <h3 id="method_offsetUnset">
-        <div class="location">in <a href="../../../../QATools/QATools/PageObject/Proxy/AbstractProxy.html#method_offsetUnset"><abbr title="QATools\QATools\PageObject\Proxy\AbstractProxy">AbstractProxy</abbr></a> at line 235</div>
+        <div class="location">at line 62</div>
         <code>                    void
     <strong>offsetUnset</strong>(mixed $index)</code>
     </h3>
@@ -958,7 +957,7 @@ really accessed only at moment, when user needs them.</p>
     </div>
 
                 <h3 id="method_offsetGet">
-        <div class="location">in <a href="../../../../QATools/QATools/PageObject/Proxy/AbstractProxy.html#method_offsetGet"><abbr title="QATools\QATools\PageObject\Proxy\AbstractProxy">AbstractProxy</abbr></a> at line 249</div>
+        <div class="location">at line 74</div>
         <code>                    mixed|null
     <strong>offsetGet</strong>(mixed $index)</code>
     </h3>
@@ -994,7 +993,7 @@ really accessed only at moment, when user needs them.</p>
     </div>
 
                 <h3 id="method_count">
-        <div class="location">in <a href="../../../../QATools/QATools/PageObject/Proxy/AbstractProxy.html#method_count"><abbr title="QATools\QATools\PageObject\Proxy\AbstractProxy">AbstractProxy</abbr></a> at line 261</div>
+        <div class="location">at line 84</div>
         <code>                    integer
     <strong>count</strong>()</code>
     </h3>
@@ -1020,7 +1019,7 @@ really accessed only at moment, when user needs them.</p>
     </div>
 
                 <h3 id="method_getIterator">
-        <div class="location">in <a href="../../../../QATools/QATools/PageObject/Proxy/AbstractProxy.html#method_getIterator"><abbr title="QATools\QATools\PageObject\Proxy\AbstractProxy">AbstractProxy</abbr></a> at line 273</div>
+        <div class="location">at line 94</div>
         <code>                    <a href="http://php.net/ArrayIterator"><abbr title="ArrayIterator">ArrayIterator</abbr></a>
     <strong>getIterator</strong>()</code>
     </h3>
@@ -1046,7 +1045,7 @@ really accessed only at moment, when user needs them.</p>
     </div>
 
                 <h3 id="method_locateObject">
-        <div class="location">at line 56</div>
+        <div class="location">at line 114</div>
         <code>            protected        void
     <strong>locateObject</strong>()</code>
     </h3>
@@ -1072,8 +1071,8 @@ really accessed only at moment, when user needs them.</p>
     </div>
 
                 <h3 id="method_getObject">
-        <div class="location">in <a href="../../../../QATools/QATools/PageObject/Proxy/AbstractProxy.html#method_getObject"><abbr title="QATools\QATools\PageObject\Proxy\AbstractProxy">AbstractProxy</abbr></a> at line 292</div>
-        <code>                    mixed
+        <div class="location">at line 145</div>
+        <code>                    <a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElementCollection.html"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElementCollection">AbstractTypifiedElementCollection</abbr></a>
     <strong>getObject</strong>()</code>
     </h3>
     <div class="details">
@@ -1086,7 +1085,7 @@ really accessed only at moment, when user needs them.</p>
 
                     <table>
         <tr>
-            <td>mixed</td>
+            <td><a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElementCollection.html"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElementCollection">AbstractTypifiedElementCollection</abbr></a></td>
             <td>
 </td>
         </tr>
@@ -1098,7 +1097,7 @@ really accessed only at moment, when user needs them.</p>
     </div>
 
                 <h3 id="method_getName">
-        <div class="location">at line 83</div>
+        <div class="location">in <a href="../../../../QATools/QATools/HtmlElements/Proxy/TypifiedElementProxy.html#method_getName"><abbr title="QATools\QATools\HtmlElements\Proxy\TypifiedElementProxy">TypifiedElementProxy</abbr></a> at line 83</div>
         <code>                    string
     <strong>getName</strong>()</code>
     </h3>
@@ -1124,7 +1123,7 @@ really accessed only at moment, when user needs them.</p>
     </div>
 
                 <h3 id="method_setName">
-        <div class="location">at line 97</div>
+        <div class="location">in <a href="../../../../QATools/QATools/HtmlElements/Proxy/TypifiedElementProxy.html#method_setName"><abbr title="QATools\QATools\HtmlElements\Proxy\TypifiedElementProxy">TypifiedElementProxy</abbr></a> at line 97</div>
         <code>                    <a href="../../../../QATools/QATools/HtmlElements/Proxy/TypifiedElementProxy.html"><abbr title="QATools\QATools\HtmlElements\Proxy\TypifiedElementProxy">TypifiedElementProxy</abbr></a>
     <strong>setName</strong>(string $name)</code>
     </h3>

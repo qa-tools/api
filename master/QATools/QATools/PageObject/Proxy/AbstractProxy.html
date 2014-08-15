@@ -125,10 +125,10 @@
                     void
                 </td>
                 <td class="last">
-                    <a href="#method_offsetSet">offsetSet</a>(integer $offset, mixed $value)
+                    <a href="#method_offsetSet">offsetSet</a>(mixed $index, mixed $newval)
                     <p>Offset to set.</p>
                 </td>
-                <td><small>from&nbsp;<a href="../../../../QATools/QATools/PageObject/Element/AbstractElementCollection.html#method_offsetSet"><abbr title="QATools\QATools\PageObject\Element\AbstractElementCollection">AbstractElementCollection</abbr></a></small></td>
+                <td></td>
             </tr>
                     <tr>
                 <td class="type">
@@ -233,11 +233,21 @@
             </tr>
                     <tr>
                 <td class="type">
+                    void
+                </td>
+                <td class="last">
+                    <a href="#method_injectContainer">injectContainer</a>()
+                    <p>Sets proxy's container to each element.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
                     boolean
                 </td>
                 <td class="last">
-                    <a href="#method_isElementCollection">isElementCollection</a>()
-                    <p>Determines if a class to proxy in fact is an element collection.</p>
+                    <a href="#method_offsetExists">offsetExists</a>(mixed $index)
+                    <p>Whether a offset exists.</p>
                 </td>
                 <td></td>
             </tr>
@@ -246,8 +256,58 @@
                     void
                 </td>
                 <td class="last">
-                    <a href="#method_injectContainer">injectContainer</a>()
-                    <p>Sets proxy's container to each element.</p>
+                    <a href="#method_offsetUnset">offsetUnset</a>(mixed $index)
+                    <p>Offset to unset.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    mixed|null
+                </td>
+                <td class="last">
+                    <a href="#method_offsetGet">offsetGet</a>(mixed $index)
+                    <p>Offset to retrieve.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    integer
+                </td>
+                <td class="last">
+                    <a href="#method_count">count</a>()
+                    <p>Count elements of an object.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    <a href="http://php.net/ArrayIterator"><abbr title="ArrayIterator">ArrayIterator</abbr></a>
+                </td>
+                <td class="last">
+                    <a href="#method_getIterator">getIterator</a>()
+                    <p>Returns the array iterator.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    mixed
+                </td>
+                <td class="last">
+                    <a href="#method_locateObject">locateObject</a>()
+                    <p>Locates object inside proxy.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    mixed
+                </td>
+                <td class="last">
+                    <a href="#method_getObject">getObject</a>()
+                    <p>Returns class instance, that was placed inside a proxy.</p>
                 </td>
                 <td></td>
             </tr>
@@ -324,9 +384,9 @@
     </div>
 
                 <h3 id="method_offsetSet">
-        <div class="location">in <a href="../../../../QATools/QATools/PageObject/Element/AbstractElementCollection.html#method_offsetSet"><abbr title="QATools\QATools\PageObject\Element\AbstractElementCollection">AbstractElementCollection</abbr></a> at line 81</div>
+        <div class="location">at line 207</div>
         <code>                    void
-    <strong>offsetSet</strong>(integer $offset, mixed $value)</code>
+    <strong>offsetSet</strong>(mixed $index, mixed $newval)</code>
     </h3>
     <div class="details">
         <p>Offset to set.</p>
@@ -337,13 +397,13 @@
 
                     <table>
                     <tr>
-                <td>integer</td>
-                <td>$offset</td>
+                <td>mixed</td>
+                <td>$index</td>
                 <td>The offset to assign the value to.</td>
             </tr>
                     <tr>
                 <td>mixed</td>
-                <td>$value</td>
+                <td>$newval</td>
                 <td>The value to set.</td>
             </tr>
             </table>
@@ -765,16 +825,52 @@
                     </div>
     </div>
 
-                <h3 id="method_isElementCollection">
+                <h3 id="method_injectContainer">
         <div class="location">at line 184</div>
-        <code>            protected        boolean
-    <strong>isElementCollection</strong>()</code>
+        <code>            protected        void
+    <strong>injectContainer</strong>()</code>
     </h3>
     <div class="details">
-        <p>Determines if a class to proxy in fact is an element collection.</p>
+        <p>Sets proxy's container to each element.</p>
         <p>
 </p>
         <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>void</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_offsetExists">
+        <div class="location">at line 221</div>
+        <code>                    boolean
+    <strong>offsetExists</strong>(mixed $index)</code>
+    </h3>
+    <div class="details">
+        <p>Whether a offset exists.</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>mixed</td>
+                <td>$index</td>
+                <td>An offset to check for.</td>
+            </tr>
+            </table>
+
             
                             <h4>Return Value</h4>
 
@@ -791,13 +887,85 @@
                     </div>
     </div>
 
-                <h3 id="method_injectContainer">
-        <div class="location">at line 194</div>
-        <code>            protected        void
-    <strong>injectContainer</strong>()</code>
+                <h3 id="method_offsetUnset">
+        <div class="location">at line 235</div>
+        <code>                    void
+    <strong>offsetUnset</strong>(mixed $index)</code>
     </h3>
     <div class="details">
-        <p>Sets proxy's container to each element.</p>
+        <p>Offset to unset.</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>mixed</td>
+                <td>$index</td>
+                <td>The offset to unset.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>void</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_offsetGet">
+        <div class="location">at line 249</div>
+        <code>                    mixed|null
+    <strong>offsetGet</strong>(mixed $index)</code>
+    </h3>
+    <div class="details">
+        <p>Offset to retrieve.</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>mixed</td>
+                <td>$index</td>
+                <td>The offset to retrieve.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>mixed|null</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_count">
+        <div class="location">at line 261</div>
+        <code>                    integer
+    <strong>count</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Count elements of an object.</p>
         <p>
 </p>
         <div class="tags">
@@ -806,7 +974,85 @@
 
                     <table>
         <tr>
-            <td>void</td>
+            <td>integer</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getIterator">
+        <div class="location">at line 273</div>
+        <code>                    <a href="http://php.net/ArrayIterator"><abbr title="ArrayIterator">ArrayIterator</abbr></a>
+    <strong>getIterator</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Returns the array iterator.</p>
+        <p>
+</p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td><a href="http://php.net/ArrayIterator"><abbr title="ArrayIterator">ArrayIterator</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_locateObject">
+        <div class="location">at line 285</div>
+        <code>    abstract        protected        mixed
+    <strong>locateObject</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Locates object inside proxy.</p>
+        <p>
+</p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>mixed</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getObject">
+        <div class="location">at line 292</div>
+        <code>                    mixed
+    <strong>getObject</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Returns class instance, that was placed inside a proxy.</p>
+        <p>
+</p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>mixed</td>
             <td>
 </td>
         </tr>
