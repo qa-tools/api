@@ -9,6 +9,7 @@ ini_set('xdebug.scream', 0);
 
 $dir = __DIR__ . '/../qa-tools/library';
 $versions = GitVersionCollection::create($dir)
+    ->addFromTags('v1.0.*')
     ->add('master', 'master branch')
 ;
 
@@ -22,6 +23,7 @@ $sami = new Sami($iterator, array(
 	'theme'                => 'enhanced',
 	'title'                => 'QA-Tools API',
 	'build_dir'            => __DIR__.'/%version%',
+	'cache_dir'            => __DIR__.'/cache/%version%',
 	'default_opened_level' => 3,
 	'versions' => $versions,
 ));
