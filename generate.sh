@@ -1,3 +1,3 @@
 #!/bin/env sh
-rm -Rf cache master v1.0.0
+rm -Rf cache master develop
 vendor/bin/sami.php update sami_config.php

@@ -9,8 +9,8 @@ ini_set('xdebug.scream', 0);
 
 $dir = __DIR__ . '/../qa-tools/library';
 $versions = GitVersionCollection::create($dir)
-    ->addFromTags('v1.0.*')
     ->add('master', 'master branch')
+    ->add('develop', 'develop branch')
 ;
 
 $iterator = Finder::create()
