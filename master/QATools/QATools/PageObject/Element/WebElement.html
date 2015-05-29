@@ -1,43 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="robots" content="index, follow, all" />
-        <title>QATools\QATools\PageObject\Element\WebElement | QA-Tools API</title>
-                    <link rel="stylesheet" type="text/css" href="../../../../stylesheet.css">
-                            </head>
-        <body id="class">
-            <div class="header">
-        <ul>
-            <li><a href="../../../../classes.html">Classes</a></li>
-                            <li><a href="../../../../namespaces.html">Namespaces</a></li>
-                        <li><a href="../../../../interfaces.html">Interfaces</a></li>
-            <li><a href="../../../../traits.html">Traits</a></li>
-            <li><a href="../../../../doc-index.html">Index</a></li>
-            
-        </ul>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>QATools\QATools\PageObject\Element\WebElement | QA-Tools API</title>
 
-        <div id="title">QA-Tools API</div>
+            <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/sami.css">
+        <script src="../../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../../js/bootstrap.min.js"></script>
+        <script src="../../../../js/typeahead.min.js"></script>
+        <script src="../../../../sami.js"></script>
+    
+    
+    </head>
 
-            <div class="type">Class</div>
-    <h1><a href="../../../../QATools/QATools/PageObject/Element.html">QATools\QATools\PageObject\Element</a>\WebElement</h1>
+    <body id="class" data-name="class:QATools_QATools_PageObject_Element_WebElement" data-root-path="../../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                    <form action="#" method="GET">
+                <select id="version-switcher" name="version">
+                                            <option value="../../../../../master/index.html" selected>master branch</option>
+                                            <option value="../../../../../develop/index.html">develop branch</option>
+                                    </select>
+            </form>
+                <form id="search-form" action="../../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
     </div>
-        <div class="content">
-                <p>    class
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../../index.html">QA-Tools API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../../traits.html">Traits</a></li>
+                    <li><a href="../../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                                                            <li><a href="../../../../QATools.html">QATools</a></li>
+                                        <li><a href="../../../../QATools/QATools.html">QATools</a></li>
+                                        <li><a href="../../../../QATools/QATools/PageObject.html">PageObject</a></li>
+                                        <li><a href="../../../../QATools/QATools/PageObject/Element.html">Element</a></li>
+    
+                <li>WebElement</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>WebElement</h1>
+    </div>
+
+    <p>    class
     <strong>WebElement</strong>        extends <abbr title="Behat\Mink\Element\NodeElement">NodeElement</abbr>        implements
         <a href="../../../../QATools/QATools/PageObject/Element/IWebElement.html"><abbr title="QATools\QATools\PageObject\Element\IWebElement">IWebElement</abbr></a>, <a href="../../../../QATools/QATools/PageObject/Element/INodeElementAware.html"><abbr title="QATools\QATools\PageObject\Element\INodeElementAware">INodeElementAware</abbr></a></p>
 
             <div class="description">
-            <p>Regular element on a page, that is initialized using Selenium-style selector.</p>
-            <p>
-</p>
-        </div>
+            <p>Regular element on a page, that is initialized using Selenium-style selector.</p>                    </div>
     
     
     
             <h2>Properties</h2>
 
-            <table>
+            <table class="table table-condensed">
                     <tr>
                 <td class="type" id="property_seleniumSelector">
                                         protected                                        array
@@ -51,83 +105,79 @@
     
             <h2>Methods</h2>
 
-            <table>
-                    <tr>
-                <td class="type">
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
                     
-                </td>
-                <td class="last">
-                    <a href="#method___construct">__construct</a>(array $selenium_selector, <abbr title="Behat\Mink\Session">Session</abbr> $session)
-                    <p>Initializes web element.</p>
-                </td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type">
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(array $selenium_selector, <abbr title="QATools\QATools\PageObject\Element\Behat\Mink\Session">Session</abbr> $session)
+                                            <p>Initializes web element.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
                     static&nbsp;<a href="../../../../QATools/QATools/PageObject/Element/WebElement.html"><abbr title="QATools\QATools\PageObject\Element\WebElement">WebElement</abbr></a>
-                </td>
-                <td class="last">
-                    <a href="#method_fromNodeElement">fromNodeElement</a>(<abbr title="Behat\Mink\Element\NodeElement">NodeElement</abbr> $node_element, <a href="../../../../QATools/QATools/PageObject/IPageFactory.html"><abbr title="QATools\QATools\PageObject\IPageFactory">IPageFactory</abbr></a> $page_factory = null)
-                    <p>Creates Element instance based on existing NodeElement instance.</p>
-                </td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type">
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_fromNodeElement">fromNodeElement</a>(<abbr title="QATools\QATools\PageObject\Element\Behat\Mink\Element\NodeElement">NodeElement</abbr> $node_element, <abbr title="QATools\QATools\PageObject\Element\QATools\QATools\PageObject\IPageFactory">IPageFactory</abbr> $page_factory = null)
+                                            <p>Creates Element instance based on existing NodeElement instance.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
                     string
-                </td>
-                <td class="last">
-                    <a href="#method_seleniumSelectorToXpath">seleniumSelectorToXpath</a>(<abbr title="Behat\Mink\Session">Session</abbr> $session)
-                    <p>Returns 'xpath' selector, used to locate this WebElement.</p>
-                </td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type">
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_seleniumSelectorToXpath">seleniumSelectorToXpath</a>(<abbr title="QATools\QATools\PageObject\Element\Behat\Mink\Session">Session</abbr> $session)
+                                            <p>Returns 'xpath' selector, used to locate this WebElement.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
                     string
-                </td>
-                <td class="last">
+                </div>
+                <div class="col-md-8 type">
                     <a href="#method___toString">__toString</a>()
-                    <p>Returns string representation of element.</p>
-                </td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type">
+                                            <p>Returns string representation of element.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
                     <abbr title="Mockery\Expectation">Expectation</abbr>
-                </td>
-                <td class="last">
+                </div>
+                <div class="col-md-8 type">
                     <a href="#method_shouldReceive">shouldReceive</a>(<abbr title="string ">string </abbr> $name)
-                    <p>
-</p>
-                </td>
-                <td></td>
-            </tr>
-            </table>
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
 
 
         <h2>Details</h2>
 
-                        <h3 id="method___construct">
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
         <div class="location">at line 40</div>
         <code>                    
-    <strong>__construct</strong>(array $selenium_selector, <abbr title="Behat\Mink\Session">Session</abbr> $session)</code>
+    <strong>__construct</strong>(array $selenium_selector, <abbr title="QATools\QATools\PageObject\Element\Behat\Mink\Session">Session</abbr> $session)</code>
     </h3>
     <div class="details">
-        <p>Initializes web element.</p>
-        <p>
-</p>
-        <div class="tags">
+                    <div class="method-description">
+                                    <p>Initializes web element.</p>                                </div>
+                <div class="tags">
                             <h4>Parameters</h4>
 
-                    <table>
+                    <table class="table table-condensed">
                     <tr>
                 <td>array</td>
                 <td>$selenium_selector</td>
                 <td>Element selector.</td>
             </tr>
                     <tr>
-                <td><abbr title="Behat\Mink\Session">Session</abbr></td>
+                <td><abbr title="QATools\QATools\PageObject\Element\Behat\Mink\Session">Session</abbr></td>
                 <td>$session</td>
                 <td>Session.</td>
             </tr>
@@ -139,26 +189,27 @@
                     </div>
     </div>
 
-                <h3 id="method_fromNodeElement">
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_fromNodeElement">
         <div class="location">at line 55</div>
         <code>        static            <a href="../../../../QATools/QATools/PageObject/Element/WebElement.html"><abbr title="QATools\QATools\PageObject\Element\WebElement">WebElement</abbr></a>
-    <strong>fromNodeElement</strong>(<abbr title="Behat\Mink\Element\NodeElement">NodeElement</abbr> $node_element, <a href="../../../../QATools/QATools/PageObject/IPageFactory.html"><abbr title="QATools\QATools\PageObject\IPageFactory">IPageFactory</abbr></a> $page_factory = null)</code>
+    <strong>fromNodeElement</strong>(<abbr title="QATools\QATools\PageObject\Element\Behat\Mink\Element\NodeElement">NodeElement</abbr> $node_element, <abbr title="QATools\QATools\PageObject\Element\QATools\QATools\PageObject\IPageFactory">IPageFactory</abbr> $page_factory = null)</code>
     </h3>
     <div class="details">
-        <p>Creates Element instance based on existing NodeElement instance.</p>
-        <p>
-</p>
-        <div class="tags">
+                    <div class="method-description">
+                                    <p>Creates Element instance based on existing NodeElement instance.</p>                                </div>
+                <div class="tags">
                             <h4>Parameters</h4>
 
-                    <table>
+                    <table class="table table-condensed">
                     <tr>
-                <td><abbr title="Behat\Mink\Element\NodeElement">NodeElement</abbr></td>
+                <td><abbr title="QATools\QATools\PageObject\Element\Behat\Mink\Element\NodeElement">NodeElement</abbr></td>
                 <td>$node_element</td>
                 <td>Node element.</td>
             </tr>
                     <tr>
-                <td><a href="../../../../QATools/QATools/PageObject/IPageFactory.html"><abbr title="QATools\QATools\PageObject\IPageFactory">IPageFactory</abbr></a></td>
+                <td><abbr title="QATools\QATools\PageObject\Element\QATools\QATools\PageObject\IPageFactory">IPageFactory</abbr></td>
                 <td>$page_factory</td>
                 <td>Page factory.</td>
             </tr>
@@ -167,7 +218,7 @@
             
                             <h4>Return Value</h4>
 
-                    <table>
+                    <table class="table table-condensed">
         <tr>
             <td><a href="../../../../QATools/QATools/PageObject/Element/WebElement.html"><abbr title="QATools\QATools\PageObject\Element\WebElement">WebElement</abbr></a></td>
             <td>
@@ -180,21 +231,22 @@
                     </div>
     </div>
 
-                <h3 id="method_seleniumSelectorToXpath">
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_seleniumSelectorToXpath">
         <div class="location">at line 69</div>
         <code>            protected        string
-    <strong>seleniumSelectorToXpath</strong>(<abbr title="Behat\Mink\Session">Session</abbr> $session)</code>
+    <strong>seleniumSelectorToXpath</strong>(<abbr title="QATools\QATools\PageObject\Element\Behat\Mink\Session">Session</abbr> $session)</code>
     </h3>
     <div class="details">
-        <p>Returns 'xpath' selector, used to locate this WebElement.</p>
-        <p>
-</p>
-        <div class="tags">
+                    <div class="method-description">
+                                    <p>Returns 'xpath' selector, used to locate this WebElement.</p>                                </div>
+                <div class="tags">
                             <h4>Parameters</h4>
 
-                    <table>
+                    <table class="table table-condensed">
                     <tr>
-                <td><abbr title="Behat\Mink\Session">Session</abbr></td>
+                <td><abbr title="QATools\QATools\PageObject\Element\Behat\Mink\Session">Session</abbr></td>
                 <td>$session</td>
                 <td>Session.</td>
             </tr>
@@ -203,7 +255,7 @@
             
                             <h4>Return Value</h4>
 
-                    <table>
+                    <table class="table table-condensed">
         <tr>
             <td>string</td>
             <td>
@@ -216,20 +268,21 @@
                     </div>
     </div>
 
-                <h3 id="method___toString">
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___toString">
         <div class="location">at line 79</div>
         <code>                    string
     <strong>__toString</strong>()</code>
     </h3>
     <div class="details">
-        <p>Returns string representation of element.</p>
-        <p>
-</p>
-        <div class="tags">
+                    <div class="method-description">
+                                    <p>Returns string representation of element.</p>                                </div>
+                <div class="tags">
             
                             <h4>Return Value</h4>
 
-                    <table>
+                    <table class="table table-condensed">
         <tr>
             <td>string</td>
             <td>
@@ -242,20 +295,18 @@
                     </div>
     </div>
 
-                <h3 id="method_shouldReceive">
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_shouldReceive">
         <div class="location">at line 24</div>
         <code>                    <abbr title="Mockery\Expectation">Expectation</abbr>
     <strong>shouldReceive</strong>(<abbr title="string ">string </abbr> $name)</code>
     </h3>
     <div class="details">
-        <p>
-</p>
-        <p>
-</p>
-        <div class="tags">
+                <div class="tags">
                             <h4>Parameters</h4>
 
-                    <table>
+                    <table class="table table-condensed">
                     <tr>
                 <td><abbr title="string ">string </abbr></td>
                 <td>$name</td>
@@ -267,7 +318,7 @@
             
                             <h4>Return Value</h4>
 
-                    <table>
+                    <table class="table table-condensed">
         <tr>
             <td><abbr title="Mockery\Expectation">Expectation</abbr></td>
             <td>
@@ -280,10 +331,17 @@
                     </div>
     </div>
 
+            </div>
+            </div>
+
     
             </div>
-            <div id="footer">
-        Generated by <a href="http://sami.sensiolabs.org/" target="_top">Sami, the API Documentation Generator</a>.
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
     </div>
     </body>
+
 </html>

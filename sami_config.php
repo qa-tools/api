@@ -2,6 +2,7 @@
 
 use Sami\Parser\Filter\TrueFilter;
 use Sami\Sami;
+//use Sami\RemoteRepository\GitHubRemoteRepository;
 use Sami\Version\GitVersionCollection;
 use Symfony\Component\Finder\Finder;
 
@@ -20,12 +21,12 @@ $iterator = Finder::create()
 ;
 
 $sami = new Sami($iterator, array(
-	'theme'                => 'enhanced',
-	'title'                => 'QA-Tools API',
-	'build_dir'            => __DIR__.'/%version%',
-	'cache_dir'            => __DIR__.'/cache/%version%',
-	'default_opened_level' => 3,
-	'versions' => $versions,
+    'title'                => 'QA-Tools API',
+    'build_dir'            => __DIR__.'/%version%',
+    'cache_dir'            => __DIR__.'/cache/%version%',
+//    'remote_repository'    => new GitHubRemoteRepository('qa-tools/qa-tools', dirname($dir)),
+    'default_opened_level' => 3,
+    'versions' => $versions,
 ));
 
 // document all methods and properties

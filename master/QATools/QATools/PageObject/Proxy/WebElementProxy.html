@@ -1,43 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="robots" content="index, follow, all" />
-        <title>QATools\QATools\PageObject\Proxy\WebElementProxy | QA-Tools API</title>
-                    <link rel="stylesheet" type="text/css" href="../../../../stylesheet.css">
-                            </head>
-        <body id="class">
-            <div class="header">
-        <ul>
-            <li><a href="../../../../classes.html">Classes</a></li>
-                            <li><a href="../../../../namespaces.html">Namespaces</a></li>
-                        <li><a href="../../../../interfaces.html">Interfaces</a></li>
-            <li><a href="../../../../traits.html">Traits</a></li>
-            <li><a href="../../../../doc-index.html">Index</a></li>
-            
-        </ul>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>QATools\QATools\PageObject\Proxy\WebElementProxy | QA-Tools API</title>
 
-        <div id="title">QA-Tools API</div>
+            <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/sami.css">
+        <script src="../../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../../js/bootstrap.min.js"></script>
+        <script src="../../../../js/typeahead.min.js"></script>
+        <script src="../../../../sami.js"></script>
+    
+    
+    </head>
 
-            <div class="type">Class</div>
-    <h1><a href="../../../../QATools/QATools/PageObject/Proxy.html">QATools\QATools\PageObject\Proxy</a>\WebElementProxy</h1>
+    <body id="class" data-name="class:QATools_QATools_PageObject_Proxy_WebElementProxy" data-root-path="../../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                    <form action="#" method="GET">
+                <select id="version-switcher" name="version">
+                                            <option value="../../../../../master/index.html" selected>master branch</option>
+                                            <option value="../../../../../develop/index.html">develop branch</option>
+                                    </select>
+            </form>
+                <form id="search-form" action="../../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
     </div>
-        <div class="content">
-                <p>    class
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../../index.html">QA-Tools API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../../traits.html">Traits</a></li>
+                    <li><a href="../../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                                                            <li><a href="../../../../QATools.html">QATools</a></li>
+                                        <li><a href="../../../../QATools/QATools.html">QATools</a></li>
+                                        <li><a href="../../../../QATools/QATools/PageObject.html">PageObject</a></li>
+                                        <li><a href="../../../../QATools/QATools/PageObject/Proxy.html">Proxy</a></li>
+    
+                <li>WebElementProxy</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>WebElementProxy</h1>
+    </div>
+
+    <p>    class
     <strong>WebElementProxy</strong>        extends <a href="../../../../QATools/QATools/PageObject/Proxy/AbstractProxy.html"><abbr title="QATools\QATools\PageObject\Proxy\AbstractProxy">AbstractProxy</abbr></a>        implements
         <a href="../../../../QATools/QATools/PageObject/Element/IWebElement.html"><abbr title="QATools\QATools\PageObject\Element\IWebElement">IWebElement</abbr></a></p>
 
             <div class="description">
-            <p>Class for lazy-proxy creation to ensure, that WebElements are really accessed only at moment, when user needs them.</p>
-            <p>
-</p>
-        </div>
+            <p>Class for lazy-proxy creation to ensure, that WebElements are really accessed only at moment, when user needs them.</p>                    </div>
     
     
     
             <h2>Properties</h2>
 
-            <table>
+            <table class="table table-condensed">
                     <tr>
                 <td class="type" id="property_elementClass">
                                         protected                                        string
@@ -91,213 +145,196 @@
     
             <h2>Methods</h2>
 
-            <table>
-                    <tr>
-                <td class="type">
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
                     
-                </td>
-                <td class="last">
-                    <a href="#method___construct">__construct</a>(<a href="../../../../QATools/QATools/PageObject/ElementLocator/IElementLocator.html"><abbr title="QATools\QATools\PageObject\ElementLocator\IElementLocator">IElementLocator</abbr></a> $locator, <a href="../../../../QATools/QATools/PageObject/IPageFactory.html"><abbr title="QATools\QATools\PageObject\IPageFactory">IPageFactory</abbr></a> $page_factory = null)
-                    <p>Initializes proxy for WebElement.</p>
-                </td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type">
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(<abbr title="QATools\QATools\PageObject\Proxy\QATools\QATools\PageObject\ElementLocator\IElementLocator">IElementLocator</abbr> $locator, <abbr title="QATools\QATools\PageObject\Proxy\QATools\QATools\PageObject\IPageFactory">IPageFactory</abbr> $page_factory = null)
+                                            <p>Initializes proxy for WebElement.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
                     boolean
-                </td>
-                <td class="last">
+                </div>
+                <div class="col-md-8 type">
                     <a href="#method_acceptElement">acceptElement</a>(mixed $element)
-                    <p>Determines if an element can be added to a collection.</p>
-                </td>
-                <td><small>from&nbsp;<a href="../../../../QATools/QATools/PageObject/Element/AbstractElementCollection.html#method_acceptElement"><abbr title="QATools\QATools\PageObject\Element\AbstractElementCollection">AbstractElementCollection</abbr></a></small></td>
-            </tr>
-                    <tr>
-                <td class="type">
+                                            <p>Determines if an element can be added to a collection.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../QATools/QATools/PageObject/Element/AbstractElementCollection.html#method_acceptElement"><abbr title="QATools\QATools\PageObject\Element\AbstractElementCollection">AbstractElementCollection</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
                     void
-                </td>
-                <td class="last">
+                </div>
+                <div class="col-md-8 type">
                     <a href="#method_offsetSet">offsetSet</a>(mixed $index, mixed $newval)
-                    <p>Offset to set.</p>
-                </td>
-                <td><small>from&nbsp;<a href="../../../../QATools/QATools/PageObject/Proxy/AbstractProxy.html#method_offsetSet"><abbr title="QATools\QATools\PageObject\Proxy\AbstractProxy">AbstractProxy</abbr></a></small></td>
-            </tr>
-                    <tr>
-                <td class="type">
+                                            <p>Offset to set.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../QATools/QATools/PageObject/Proxy/AbstractProxy.html#method_offsetSet"><abbr title="QATools\QATools\PageObject\Proxy\AbstractProxy">AbstractProxy</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
                     static&nbsp;<a href="../../../../QATools/QATools/PageObject/Element/AbstractElementCollection.html"><abbr title="QATools\QATools\PageObject\Element\AbstractElementCollection">AbstractElementCollection</abbr></a>
-                </td>
-                <td class="last">
-                    <a href="#method_fromNodeElements">fromNodeElements</a>(array $node_elements, string $element_class = null, <a href="../../../../QATools/QATools/PageObject/IPageFactory.html"><abbr title="QATools\QATools\PageObject\IPageFactory">IPageFactory</abbr></a> $page_factory = null)
-                    <p>Creates new collection by wrapping given array of Node elements.</p>
-                </td>
-                <td><small>from&nbsp;<a href="../../../../QATools/QATools/PageObject/Element/AbstractElementCollection.html#method_fromNodeElements"><abbr title="QATools\QATools\PageObject\Element\AbstractElementCollection">AbstractElementCollection</abbr></a></small></td>
-            </tr>
-                    <tr>
-                <td class="type">
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_fromNodeElements">fromNodeElements</a>(array $node_elements, string $element_class = null, <abbr title="QATools\QATools\PageObject\Element\QATools\QATools\PageObject\IPageFactory">IPageFactory</abbr> $page_factory = null)
+                                            <p>Creates new collection by wrapping given array of Node elements.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../QATools/QATools/PageObject/Element/AbstractElementCollection.html#method_fromNodeElements"><abbr title="QATools\QATools\PageObject\Element\AbstractElementCollection">AbstractElementCollection</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
                     boolean
-                </td>
-                <td class="last">
+                </div>
+                <div class="col-md-8 type">
                     <a href="#method_isNodeElementAware">isNodeElementAware</a>(string $class_name)
-                    <p>Determines if class is NodeElement aware.</p>
-                </td>
-                <td><small>from&nbsp;<a href="../../../../QATools/QATools/PageObject/Element/AbstractElementCollection.html#method_isNodeElementAware"><abbr title="QATools\QATools\PageObject\Element\AbstractElementCollection">AbstractElementCollection</abbr></a></small></td>
-            </tr>
-                    <tr>
-                <td class="type">
+                                            <p>Determines if class is NodeElement aware.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../QATools/QATools/PageObject/Element/AbstractElementCollection.html#method_isNodeElementAware"><abbr title="QATools\QATools\PageObject\Element\AbstractElementCollection">AbstractElementCollection</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
                     boolean
-                </td>
-                <td class="last">
+                </div>
+                <div class="col-md-8 type">
                     <a href="#method_assertElement">assertElement</a>(mixed $element)
-                    <p>Checks that element's class is allowed in collection.</p>
-                </td>
-                <td><small>from&nbsp;<a href="../../../../QATools/QATools/PageObject/Element/AbstractElementCollection.html#method_assertElement"><abbr title="QATools\QATools\PageObject\Element\AbstractElementCollection">AbstractElementCollection</abbr></a></small></td>
-            </tr>
-                    <tr>
-                <td class="type">
+                                            <p>Checks that element's class is allowed in collection.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../QATools/QATools/PageObject/Element/AbstractElementCollection.html#method_assertElement"><abbr title="QATools\QATools\PageObject\Element\AbstractElementCollection">AbstractElementCollection</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
                     <abbr title="Mockery\Expectation">Expectation</abbr>
-                </td>
-                <td class="last">
+                </div>
+                <div class="col-md-8 type">
                     <a href="#method_shouldReceive">shouldReceive</a>(<abbr title="string ">string </abbr> $name)
-                    <p>
-</p>
-                </td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type">
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
                     <a href="../../../../QATools/QATools/PageObject/Proxy/AbstractProxy.html"><abbr title="QATools\QATools\PageObject\Proxy\AbstractProxy">AbstractProxy</abbr></a>
-                </td>
-                <td class="last">
+                </div>
+                <div class="col-md-8 type">
                     <a href="#method_setClassName">setClassName</a>(string $class_name)
-                    <p>Sets class name, used inside the proxy.</p>
-                </td>
-                <td><small>from&nbsp;<a href="../../../../QATools/QATools/PageObject/Proxy/AbstractProxy.html#method_setClassName"><abbr title="QATools\QATools\PageObject\Proxy\AbstractProxy">AbstractProxy</abbr></a></small></td>
-            </tr>
-                    <tr>
-                <td class="type">
+                                            <p>Sets class name, used inside the proxy.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../QATools/QATools/PageObject/Proxy/AbstractProxy.html#method_setClassName"><abbr title="QATools\QATools\PageObject\Proxy\AbstractProxy">AbstractProxy</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
                     mixed
-                </td>
-                <td class="last">
+                </div>
+                <div class="col-md-8 type">
                     <a href="#method___call">__call</a>(string $method, array $arguments)
-                    <p>Proxies all methods to sub-object.</p>
-                </td>
-                <td><small>from&nbsp;<a href="../../../../QATools/QATools/PageObject/Proxy/AbstractProxy.html#method___call"><abbr title="QATools\QATools\PageObject\Proxy\AbstractProxy">AbstractProxy</abbr></a></small></td>
-            </tr>
-                    <tr>
-                <td class="type">
+                                            <p>Proxies all methods to sub-object.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../QATools/QATools/PageObject/Proxy/AbstractProxy.html#method___call"><abbr title="QATools\QATools\PageObject\Proxy\AbstractProxy">AbstractProxy</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
                     <abbr title="Behat\Mink\Element\NodeElement">NodeElement</abbr>
-                </td>
-                <td class="last">
+                </div>
+                <div class="col-md-8 type">
                     <a href="#method_locateElement">locateElement</a>()
-                    <p>Locates element using the locator.</p>
-                </td>
-                <td><small>from&nbsp;<a href="../../../../QATools/QATools/PageObject/Proxy/AbstractProxy.html#method_locateElement"><abbr title="QATools\QATools\PageObject\Proxy\AbstractProxy">AbstractProxy</abbr></a></small></td>
-            </tr>
-                    <tr>
-                <td class="type">
+                                            <p>Locates element using the locator.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../QATools/QATools/PageObject/Proxy/AbstractProxy.html#method_locateElement"><abbr title="QATools\QATools\PageObject\Proxy\AbstractProxy">AbstractProxy</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
                     <abbr title="Behat\Mink\Element\NodeElement">NodeElement</abbr>[]
-                </td>
-                <td class="last">
+                </div>
+                <div class="col-md-8 type">
                     <a href="#method_locateElements">locateElements</a>()
-                    <p>Locates elements using the locator.</p>
-                </td>
-                <td><small>from&nbsp;<a href="../../../../QATools/QATools/PageObject/Proxy/AbstractProxy.html#method_locateElements"><abbr title="QATools\QATools\PageObject\Proxy\AbstractProxy">AbstractProxy</abbr></a></small></td>
-            </tr>
-                    <tr>
-                <td class="type">
+                                            <p>Locates elements using the locator.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../QATools/QATools/PageObject/Proxy/AbstractProxy.html#method_locateElements"><abbr title="QATools\QATools\PageObject\Proxy\AbstractProxy">AbstractProxy</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
                     boolean
-                </td>
-                <td class="last">
+                </div>
+                <div class="col-md-8 type">
                     <a href="#method_offsetExists">offsetExists</a>(mixed $index)
-                    <p>Whether a offset exists.</p>
-                </td>
-                <td><small>from&nbsp;<a href="../../../../QATools/QATools/PageObject/Proxy/AbstractProxy.html#method_offsetExists"><abbr title="QATools\QATools\PageObject\Proxy\AbstractProxy">AbstractProxy</abbr></a></small></td>
-            </tr>
-                    <tr>
-                <td class="type">
+                                            <p>Whether a offset exists.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../QATools/QATools/PageObject/Proxy/AbstractProxy.html#method_offsetExists"><abbr title="QATools\QATools\PageObject\Proxy\AbstractProxy">AbstractProxy</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
                     void
-                </td>
-                <td class="last">
+                </div>
+                <div class="col-md-8 type">
                     <a href="#method_offsetUnset">offsetUnset</a>(mixed $index)
-                    <p>Offset to unset.</p>
-                </td>
-                <td><small>from&nbsp;<a href="../../../../QATools/QATools/PageObject/Proxy/AbstractProxy.html#method_offsetUnset"><abbr title="QATools\QATools\PageObject\Proxy\AbstractProxy">AbstractProxy</abbr></a></small></td>
-            </tr>
-                    <tr>
-                <td class="type">
+                                            <p>Offset to unset.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../QATools/QATools/PageObject/Proxy/AbstractProxy.html#method_offsetUnset"><abbr title="QATools\QATools\PageObject\Proxy\AbstractProxy">AbstractProxy</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
                     mixed|null
-                </td>
-                <td class="last">
+                </div>
+                <div class="col-md-8 type">
                     <a href="#method_offsetGet">offsetGet</a>(mixed $index)
-                    <p>Offset to retrieve.</p>
-                </td>
-                <td><small>from&nbsp;<a href="../../../../QATools/QATools/PageObject/Proxy/AbstractProxy.html#method_offsetGet"><abbr title="QATools\QATools\PageObject\Proxy\AbstractProxy">AbstractProxy</abbr></a></small></td>
-            </tr>
-                    <tr>
-                <td class="type">
+                                            <p>Offset to retrieve.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../QATools/QATools/PageObject/Proxy/AbstractProxy.html#method_offsetGet"><abbr title="QATools\QATools\PageObject\Proxy\AbstractProxy">AbstractProxy</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
                     integer
-                </td>
-                <td class="last">
+                </div>
+                <div class="col-md-8 type">
                     <a href="#method_count">count</a>()
-                    <p>Count elements of an object.</p>
-                </td>
-                <td><small>from&nbsp;<a href="../../../../QATools/QATools/PageObject/Proxy/AbstractProxy.html#method_count"><abbr title="QATools\QATools\PageObject\Proxy\AbstractProxy">AbstractProxy</abbr></a></small></td>
-            </tr>
-                    <tr>
-                <td class="type">
-                    <a href="http://php.net/ArrayIterator"><abbr title="ArrayIterator">ArrayIterator</abbr></a>
-                </td>
-                <td class="last">
+                                            <p>Count elements of an object.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../QATools/QATools/PageObject/Proxy/AbstractProxy.html#method_count"><abbr title="QATools\QATools\PageObject\Proxy\AbstractProxy">AbstractProxy</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a target="_blank" href="http://php.net/ArrayIterator"><abbr title="ArrayIterator">ArrayIterator</abbr></a>
+                </div>
+                <div class="col-md-8 type">
                     <a href="#method_getIterator">getIterator</a>()
-                    <p>Returns the array iterator.</p>
-                </td>
-                <td><small>from&nbsp;<a href="../../../../QATools/QATools/PageObject/Proxy/AbstractProxy.html#method_getIterator"><abbr title="QATools\QATools\PageObject\Proxy\AbstractProxy">AbstractProxy</abbr></a></small></td>
-            </tr>
-                    <tr>
-                <td class="type">
+                                            <p>Returns the array iterator.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../QATools/QATools/PageObject/Proxy/AbstractProxy.html#method_getIterator"><abbr title="QATools\QATools\PageObject\Proxy\AbstractProxy">AbstractProxy</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
                     void
-                </td>
-                <td class="last">
+                </div>
+                <div class="col-md-8 type">
                     <a href="#method_locateObject">locateObject</a>()
-                    <p>Locates object inside proxy.</p>
-                </td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type">
+                                            <p>Locates object inside proxy.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
                     mixed
-                </td>
-                <td class="last">
+                </div>
+                <div class="col-md-8 type">
                     <a href="#method_getObject">getObject</a>()
-                    <p>Returns class instance, that was placed inside a proxy.</p>
-                </td>
-                <td><small>from&nbsp;<a href="../../../../QATools/QATools/PageObject/Proxy/AbstractProxy.html#method_getObject"><abbr title="QATools\QATools\PageObject\Proxy\AbstractProxy">AbstractProxy</abbr></a></small></td>
-            </tr>
-            </table>
+                                            <p>Returns class instance, that was placed inside a proxy.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../QATools/QATools/PageObject/Proxy/AbstractProxy.html#method_getObject"><abbr title="QATools\QATools\PageObject\Proxy\AbstractProxy">AbstractProxy</abbr></a></small></div>
+            </div>
+            </div>
 
 
         <h2>Details</h2>
 
-                        <h3 id="method___construct">
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
         <div class="location">at line 34</div>
         <code>                    
-    <strong>__construct</strong>(<a href="../../../../QATools/QATools/PageObject/ElementLocator/IElementLocator.html"><abbr title="QATools\QATools\PageObject\ElementLocator\IElementLocator">IElementLocator</abbr></a> $locator, <a href="../../../../QATools/QATools/PageObject/IPageFactory.html"><abbr title="QATools\QATools\PageObject\IPageFactory">IPageFactory</abbr></a> $page_factory = null)</code>
+    <strong>__construct</strong>(<abbr title="QATools\QATools\PageObject\Proxy\QATools\QATools\PageObject\ElementLocator\IElementLocator">IElementLocator</abbr> $locator, <abbr title="QATools\QATools\PageObject\Proxy\QATools\QATools\PageObject\IPageFactory">IPageFactory</abbr> $page_factory = null)</code>
     </h3>
     <div class="details">
-        <p>Initializes proxy for WebElement.</p>
-        <p>
-</p>
-        <div class="tags">
+                    <div class="method-description">
+                                    <p>Initializes proxy for WebElement.</p>                                </div>
+                <div class="tags">
                             <h4>Parameters</h4>
 
-                    <table>
+                    <table class="table table-condensed">
                     <tr>
-                <td><a href="../../../../QATools/QATools/PageObject/ElementLocator/IElementLocator.html"><abbr title="QATools\QATools\PageObject\ElementLocator\IElementLocator">IElementLocator</abbr></a></td>
+                <td><abbr title="QATools\QATools\PageObject\Proxy\QATools\QATools\PageObject\ElementLocator\IElementLocator">IElementLocator</abbr></td>
                 <td>$locator</td>
                 <td>Element selector.</td>
             </tr>
                     <tr>
-                <td><a href="../../../../QATools/QATools/PageObject/IPageFactory.html"><abbr title="QATools\QATools\PageObject\IPageFactory">IPageFactory</abbr></a></td>
+                <td><abbr title="QATools\QATools\PageObject\Proxy\QATools\QATools\PageObject\IPageFactory">IPageFactory</abbr></td>
                 <td>$page_factory</td>
                 <td>Page factory.</td>
             </tr>
@@ -309,19 +346,20 @@
                     </div>
     </div>
 
-                <h3 id="method_acceptElement">
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_acceptElement">
         <div class="location">in <a href="../../../../QATools/QATools/PageObject/Element/AbstractElementCollection.html#method_acceptElement"><abbr title="QATools\QATools\PageObject\Element\AbstractElementCollection">AbstractElementCollection</abbr></a> at line 67</div>
         <code>            protected        boolean
     <strong>acceptElement</strong>(mixed $element)</code>
     </h3>
     <div class="details">
-        <p>Determines if an element can be added to a collection.</p>
-        <p>
-</p>
-        <div class="tags">
+                    <div class="method-description">
+                                    <p>Determines if an element can be added to a collection.</p>                                </div>
+                <div class="tags">
                             <h4>Parameters</h4>
 
-                    <table>
+                    <table class="table table-condensed">
                     <tr>
                 <td>mixed</td>
                 <td>$element</td>
@@ -332,7 +370,7 @@
             
                             <h4>Return Value</h4>
 
-                    <table>
+                    <table class="table table-condensed">
         <tr>
             <td>boolean</td>
             <td>
@@ -345,19 +383,20 @@
                     </div>
     </div>
 
-                <h3 id="method_offsetSet">
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_offsetSet">
         <div class="location">in <a href="../../../../QATools/QATools/PageObject/Proxy/AbstractProxy.html#method_offsetSet"><abbr title="QATools\QATools\PageObject\Proxy\AbstractProxy">AbstractProxy</abbr></a> at line 155</div>
         <code>                    void
     <strong>offsetSet</strong>(mixed $index, mixed $newval)</code>
     </h3>
     <div class="details">
-        <p>Offset to set.</p>
-        <p>
-</p>
-        <div class="tags">
+                    <div class="method-description">
+                                    <p>Offset to set.</p>                                </div>
+                <div class="tags">
                             <h4>Parameters</h4>
 
-                    <table>
+                    <table class="table table-condensed">
                     <tr>
                 <td>mixed</td>
                 <td>$index</td>
@@ -373,7 +412,7 @@
             
                             <h4>Return Value</h4>
 
-                    <table>
+                    <table class="table table-condensed">
         <tr>
             <td>void</td>
             <td>
@@ -384,9 +423,9 @@
             
                             <h4>Exceptions</h4>
 
-                    <table>
+                    <table class="table table-condensed">
                     <tr>
-                <td><a href="http://php.net/InvalidArgumentException"><abbr title="InvalidArgumentException">InvalidArgumentException</abbr></a></td>
+                <td><a target="_blank" href="http://php.net/InvalidArgumentException"><abbr title="InvalidArgumentException">InvalidArgumentException</abbr></a></td>
                 <td>When invalid element given.</td>
             </tr>
             </table>
@@ -395,19 +434,20 @@
                     </div>
     </div>
 
-                <h3 id="method_fromNodeElements">
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_fromNodeElements">
         <div class="location">in <a href="../../../../QATools/QATools/PageObject/Element/AbstractElementCollection.html#method_fromNodeElements"><abbr title="QATools\QATools\PageObject\Element\AbstractElementCollection">AbstractElementCollection</abbr></a> at line 100</div>
         <code>        static            <a href="../../../../QATools/QATools/PageObject/Element/AbstractElementCollection.html"><abbr title="QATools\QATools\PageObject\Element\AbstractElementCollection">AbstractElementCollection</abbr></a>
-    <strong>fromNodeElements</strong>(array $node_elements, string $element_class = null, <a href="../../../../QATools/QATools/PageObject/IPageFactory.html"><abbr title="QATools\QATools\PageObject\IPageFactory">IPageFactory</abbr></a> $page_factory = null)</code>
+    <strong>fromNodeElements</strong>(array $node_elements, string $element_class = null, <abbr title="QATools\QATools\PageObject\Element\QATools\QATools\PageObject\IPageFactory">IPageFactory</abbr> $page_factory = null)</code>
     </h3>
     <div class="details">
-        <p>Creates new collection by wrapping given array of Node elements.</p>
-        <p>
-</p>
-        <div class="tags">
+                    <div class="method-description">
+                                    <p>Creates new collection by wrapping given array of Node elements.</p>                                </div>
+                <div class="tags">
                             <h4>Parameters</h4>
 
-                    <table>
+                    <table class="table table-condensed">
                     <tr>
                 <td>array</td>
                 <td>$node_elements</td>
@@ -419,7 +459,7 @@
                 <td>Class name to wrap Node elements with.</td>
             </tr>
                     <tr>
-                <td><a href="../../../../QATools/QATools/PageObject/IPageFactory.html"><abbr title="QATools\QATools\PageObject\IPageFactory">IPageFactory</abbr></a></td>
+                <td><abbr title="QATools\QATools\PageObject\Element\QATools\QATools\PageObject\IPageFactory">IPageFactory</abbr></td>
                 <td>$page_factory</td>
                 <td>Page factory (optional) to use during wrapping.</td>
             </tr>
@@ -428,7 +468,7 @@
             
                             <h4>Return Value</h4>
 
-                    <table>
+                    <table class="table table-condensed">
         <tr>
             <td><a href="../../../../QATools/QATools/PageObject/Element/AbstractElementCollection.html"><abbr title="QATools\QATools\PageObject\Element\AbstractElementCollection">AbstractElementCollection</abbr></a></td>
             <td>
@@ -439,7 +479,7 @@
             
                             <h4>Exceptions</h4>
 
-                    <table>
+                    <table class="table table-condensed">
                     <tr>
                 <td><a href="../../../../QATools/QATools/PageObject/Exception/ElementCollectionException.html"><abbr title="QATools\QATools\PageObject\Exception\ElementCollectionException">ElementCollectionException</abbr></a></td>
                 <td>When element class used doesn't allow adding NodeElements inside.</td>
@@ -450,19 +490,20 @@
                     </div>
     </div>
 
-                <h3 id="method_isNodeElementAware">
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isNodeElementAware">
         <div class="location">in <a href="../../../../QATools/QATools/PageObject/Element/AbstractElementCollection.html#method_isNodeElementAware"><abbr title="QATools\QATools\PageObject\Element\AbstractElementCollection">AbstractElementCollection</abbr></a> at line 129</div>
         <code>            protected        boolean
     <strong>isNodeElementAware</strong>(string $class_name)</code>
     </h3>
     <div class="details">
-        <p>Determines if class is NodeElement aware.</p>
-        <p>
-</p>
-        <div class="tags">
+                    <div class="method-description">
+                                    <p>Determines if class is NodeElement aware.</p>                                </div>
+                <div class="tags">
                             <h4>Parameters</h4>
 
-                    <table>
+                    <table class="table table-condensed">
                     <tr>
                 <td>string</td>
                 <td>$class_name</td>
@@ -473,7 +514,7 @@
             
                             <h4>Return Value</h4>
 
-                    <table>
+                    <table class="table table-condensed">
         <tr>
             <td>boolean</td>
             <td>
@@ -486,19 +527,20 @@
                     </div>
     </div>
 
-                <h3 id="method_assertElement">
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_assertElement">
         <div class="location">in <a href="../../../../QATools/QATools/PageObject/Element/AbstractElementCollection.html#method_assertElement"><abbr title="QATools\QATools\PageObject\Element\AbstractElementCollection">AbstractElementCollection</abbr></a> at line 148</div>
         <code>            protected        boolean
     <strong>assertElement</strong>(mixed $element)</code>
     </h3>
     <div class="details">
-        <p>Checks that element's class is allowed in collection.</p>
-        <p>
-</p>
-        <div class="tags">
+                    <div class="method-description">
+                                    <p>Checks that element's class is allowed in collection.</p>                                </div>
+                <div class="tags">
                             <h4>Parameters</h4>
 
-                    <table>
+                    <table class="table table-condensed">
                     <tr>
                 <td>mixed</td>
                 <td>$element</td>
@@ -509,7 +551,7 @@
             
                             <h4>Return Value</h4>
 
-                    <table>
+                    <table class="table table-condensed">
         <tr>
             <td>boolean</td>
             <td>
@@ -520,7 +562,7 @@
             
                             <h4>Exceptions</h4>
 
-                    <table>
+                    <table class="table table-condensed">
                     <tr>
                 <td><a href="../../../../QATools/QATools/PageObject/Exception/ElementCollectionException.html"><abbr title="QATools\QATools\PageObject\Exception\ElementCollectionException">ElementCollectionException</abbr></a></td>
                 <td>When class of given element doesn't match one, that collection accepts.</td>
@@ -531,20 +573,18 @@
                     </div>
     </div>
 
-                <h3 id="method_shouldReceive">
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_shouldReceive">
         <div class="location">at line 25</div>
         <code>                    <abbr title="Mockery\Expectation">Expectation</abbr>
     <strong>shouldReceive</strong>(<abbr title="string ">string </abbr> $name)</code>
     </h3>
     <div class="details">
-        <p>
-</p>
-        <p>
-</p>
-        <div class="tags">
+                <div class="tags">
                             <h4>Parameters</h4>
 
-                    <table>
+                    <table class="table table-condensed">
                     <tr>
                 <td><abbr title="string ">string </abbr></td>
                 <td>$name</td>
@@ -556,7 +596,7 @@
             
                             <h4>Return Value</h4>
 
-                    <table>
+                    <table class="table table-condensed">
         <tr>
             <td><abbr title="Mockery\Expectation">Expectation</abbr></td>
             <td>
@@ -569,19 +609,20 @@
                     </div>
     </div>
 
-                <h3 id="method_setClassName">
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setClassName">
         <div class="location">in <a href="../../../../QATools/QATools/PageObject/Proxy/AbstractProxy.html#method_setClassName"><abbr title="QATools\QATools\PageObject\Proxy\AbstractProxy">AbstractProxy</abbr></a> at line 87</div>
         <code>                    <a href="../../../../QATools/QATools/PageObject/Proxy/AbstractProxy.html"><abbr title="QATools\QATools\PageObject\Proxy\AbstractProxy">AbstractProxy</abbr></a>
     <strong>setClassName</strong>(string $class_name)</code>
     </h3>
     <div class="details">
-        <p>Sets class name, used inside the proxy.</p>
-        <p>
-</p>
-        <div class="tags">
+                    <div class="method-description">
+                                    <p>Sets class name, used inside the proxy.</p>                                </div>
+                <div class="tags">
                             <h4>Parameters</h4>
 
-                    <table>
+                    <table class="table table-condensed">
                     <tr>
                 <td>string</td>
                 <td>$class_name</td>
@@ -592,7 +633,7 @@
             
                             <h4>Return Value</h4>
 
-                    <table>
+                    <table class="table table-condensed">
         <tr>
             <td><a href="../../../../QATools/QATools/PageObject/Proxy/AbstractProxy.html"><abbr title="QATools\QATools\PageObject\Proxy\AbstractProxy">AbstractProxy</abbr></a></td>
             <td>
@@ -605,19 +646,20 @@
                     </div>
     </div>
 
-                <h3 id="method___call">
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___call">
         <div class="location">in <a href="../../../../QATools/QATools/PageObject/Proxy/AbstractProxy.html#method___call"><abbr title="QATools\QATools\PageObject\Proxy\AbstractProxy">AbstractProxy</abbr></a> at line 103</div>
         <code>                    mixed
     <strong>__call</strong>(string $method, array $arguments)</code>
     </h3>
     <div class="details">
-        <p>Proxies all methods to sub-object.</p>
-        <p>
-</p>
-        <div class="tags">
+                    <div class="method-description">
+                                    <p>Proxies all methods to sub-object.</p>                                </div>
+                <div class="tags">
                             <h4>Parameters</h4>
 
-                    <table>
+                    <table class="table table-condensed">
                     <tr>
                 <td>string</td>
                 <td>$method</td>
@@ -633,7 +675,7 @@
             
                             <h4>Return Value</h4>
 
-                    <table>
+                    <table class="table table-condensed">
         <tr>
             <td>mixed</td>
             <td>
@@ -644,7 +686,7 @@
             
                             <h4>Exceptions</h4>
 
-                    <table>
+                    <table class="table table-condensed">
                     <tr>
                 <td><a href="../../../../QATools/QATools/PageObject/Exception/ElementException.html"><abbr title="QATools\QATools\PageObject\Exception\ElementException">ElementException</abbr></a></td>
                 <td>When sub-object doesn't have a specified method.</td>
@@ -655,20 +697,21 @@
                     </div>
     </div>
 
-                <h3 id="method_locateElement">
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_locateElement">
         <div class="location">in <a href="../../../../QATools/QATools/PageObject/Proxy/AbstractProxy.html#method_locateElement"><abbr title="QATools\QATools\PageObject\Proxy\AbstractProxy">AbstractProxy</abbr></a> at line 122</div>
         <code>            protected        <abbr title="Behat\Mink\Element\NodeElement">NodeElement</abbr>
     <strong>locateElement</strong>()</code>
     </h3>
     <div class="details">
-        <p>Locates element using the locator.</p>
-        <p>
-</p>
-        <div class="tags">
+                    <div class="method-description">
+                                    <p>Locates element using the locator.</p>                                </div>
+                <div class="tags">
             
                             <h4>Return Value</h4>
 
-                    <table>
+                    <table class="table table-condensed">
         <tr>
             <td><abbr title="Behat\Mink\Element\NodeElement">NodeElement</abbr></td>
             <td>
@@ -679,7 +722,7 @@
             
                             <h4>Exceptions</h4>
 
-                    <table>
+                    <table class="table table-condensed">
                     <tr>
                 <td><a href="../../../../QATools/QATools/PageObject/Exception/ElementNotFoundException.html"><abbr title="QATools\QATools\PageObject\Exception\ElementNotFoundException">ElementNotFoundException</abbr></a></td>
                 <td>When element wasn't found on the page.</td>
@@ -690,20 +733,21 @@
                     </div>
     </div>
 
-                <h3 id="method_locateElements">
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_locateElements">
         <div class="location">in <a href="../../../../QATools/QATools/PageObject/Proxy/AbstractProxy.html#method_locateElements"><abbr title="QATools\QATools\PageObject\Proxy\AbstractProxy">AbstractProxy</abbr></a> at line 135</div>
         <code>            protected        <abbr title="Behat\Mink\Element\NodeElement">NodeElement</abbr>[]
     <strong>locateElements</strong>()</code>
     </h3>
     <div class="details">
-        <p>Locates elements using the locator.</p>
-        <p>
-</p>
-        <div class="tags">
+                    <div class="method-description">
+                                    <p>Locates elements using the locator.</p>                                </div>
+                <div class="tags">
             
                             <h4>Return Value</h4>
 
-                    <table>
+                    <table class="table table-condensed">
         <tr>
             <td><abbr title="Behat\Mink\Element\NodeElement">NodeElement</abbr>[]</td>
             <td>
@@ -714,7 +758,7 @@
             
                             <h4>Exceptions</h4>
 
-                    <table>
+                    <table class="table table-condensed">
                     <tr>
                 <td><a href="../../../../QATools/QATools/PageObject/Exception/ElementNotFoundException.html"><abbr title="QATools\QATools\PageObject\Exception\ElementNotFoundException">ElementNotFoundException</abbr></a></td>
                 <td>When element wasn't found on the page.</td>
@@ -725,19 +769,20 @@
                     </div>
     </div>
 
-                <h3 id="method_offsetExists">
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_offsetExists">
         <div class="location">in <a href="../../../../QATools/QATools/PageObject/Proxy/AbstractProxy.html#method_offsetExists"><abbr title="QATools\QATools\PageObject\Proxy\AbstractProxy">AbstractProxy</abbr></a> at line 169</div>
         <code>                    boolean
     <strong>offsetExists</strong>(mixed $index)</code>
     </h3>
     <div class="details">
-        <p>Whether a offset exists.</p>
-        <p>
-</p>
-        <div class="tags">
+                    <div class="method-description">
+                                    <p>Whether a offset exists.</p>                                </div>
+                <div class="tags">
                             <h4>Parameters</h4>
 
-                    <table>
+                    <table class="table table-condensed">
                     <tr>
                 <td>mixed</td>
                 <td>$index</td>
@@ -748,7 +793,7 @@
             
                             <h4>Return Value</h4>
 
-                    <table>
+                    <table class="table table-condensed">
         <tr>
             <td>boolean</td>
             <td>
@@ -761,19 +806,20 @@
                     </div>
     </div>
 
-                <h3 id="method_offsetUnset">
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_offsetUnset">
         <div class="location">in <a href="../../../../QATools/QATools/PageObject/Proxy/AbstractProxy.html#method_offsetUnset"><abbr title="QATools\QATools\PageObject\Proxy\AbstractProxy">AbstractProxy</abbr></a> at line 183</div>
         <code>                    void
     <strong>offsetUnset</strong>(mixed $index)</code>
     </h3>
     <div class="details">
-        <p>Offset to unset.</p>
-        <p>
-</p>
-        <div class="tags">
+                    <div class="method-description">
+                                    <p>Offset to unset.</p>                                </div>
+                <div class="tags">
                             <h4>Parameters</h4>
 
-                    <table>
+                    <table class="table table-condensed">
                     <tr>
                 <td>mixed</td>
                 <td>$index</td>
@@ -784,7 +830,7 @@
             
                             <h4>Return Value</h4>
 
-                    <table>
+                    <table class="table table-condensed">
         <tr>
             <td>void</td>
             <td>
@@ -797,19 +843,20 @@
                     </div>
     </div>
 
-                <h3 id="method_offsetGet">
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_offsetGet">
         <div class="location">in <a href="../../../../QATools/QATools/PageObject/Proxy/AbstractProxy.html#method_offsetGet"><abbr title="QATools\QATools\PageObject\Proxy\AbstractProxy">AbstractProxy</abbr></a> at line 197</div>
         <code>                    mixed|null
     <strong>offsetGet</strong>(mixed $index)</code>
     </h3>
     <div class="details">
-        <p>Offset to retrieve.</p>
-        <p>
-</p>
-        <div class="tags">
+                    <div class="method-description">
+                                    <p>Offset to retrieve.</p>                                </div>
+                <div class="tags">
                             <h4>Parameters</h4>
 
-                    <table>
+                    <table class="table table-condensed">
                     <tr>
                 <td>mixed</td>
                 <td>$index</td>
@@ -820,7 +867,7 @@
             
                             <h4>Return Value</h4>
 
-                    <table>
+                    <table class="table table-condensed">
         <tr>
             <td>mixed|null</td>
             <td>
@@ -833,20 +880,21 @@
                     </div>
     </div>
 
-                <h3 id="method_count">
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_count">
         <div class="location">in <a href="../../../../QATools/QATools/PageObject/Proxy/AbstractProxy.html#method_count"><abbr title="QATools\QATools\PageObject\Proxy\AbstractProxy">AbstractProxy</abbr></a> at line 209</div>
         <code>                    integer
     <strong>count</strong>()</code>
     </h3>
     <div class="details">
-        <p>Count elements of an object.</p>
-        <p>
-</p>
-        <div class="tags">
+                    <div class="method-description">
+                                    <p>Count elements of an object.</p>                                </div>
+                <div class="tags">
             
                             <h4>Return Value</h4>
 
-                    <table>
+                    <table class="table table-condensed">
         <tr>
             <td>integer</td>
             <td>
@@ -859,22 +907,23 @@
                     </div>
     </div>
 
-                <h3 id="method_getIterator">
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getIterator">
         <div class="location">in <a href="../../../../QATools/QATools/PageObject/Proxy/AbstractProxy.html#method_getIterator"><abbr title="QATools\QATools\PageObject\Proxy\AbstractProxy">AbstractProxy</abbr></a> at line 221</div>
-        <code>                    <a href="http://php.net/ArrayIterator"><abbr title="ArrayIterator">ArrayIterator</abbr></a>
+        <code>                    <a target="_blank" href="http://php.net/ArrayIterator"><abbr title="ArrayIterator">ArrayIterator</abbr></a>
     <strong>getIterator</strong>()</code>
     </h3>
     <div class="details">
-        <p>Returns the array iterator.</p>
-        <p>
-</p>
-        <div class="tags">
+                    <div class="method-description">
+                                    <p>Returns the array iterator.</p>                                </div>
+                <div class="tags">
             
                             <h4>Return Value</h4>
 
-                    <table>
+                    <table class="table table-condensed">
         <tr>
-            <td><a href="http://php.net/ArrayIterator"><abbr title="ArrayIterator">ArrayIterator</abbr></a></td>
+            <td><a target="_blank" href="http://php.net/ArrayIterator"><abbr title="ArrayIterator">ArrayIterator</abbr></a></td>
             <td>
 </td>
         </tr>
@@ -885,20 +934,21 @@
                     </div>
     </div>
 
-                <h3 id="method_locateObject">
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_locateObject">
         <div class="location">at line 47</div>
         <code>            protected        void
     <strong>locateObject</strong>()</code>
     </h3>
     <div class="details">
-        <p>Locates object inside proxy.</p>
-        <p>
-</p>
-        <div class="tags">
+                    <div class="method-description">
+                                    <p>Locates object inside proxy.</p>                                </div>
+                <div class="tags">
             
                             <h4>Return Value</h4>
 
-                    <table>
+                    <table class="table table-condensed">
         <tr>
             <td>void</td>
             <td>
@@ -911,20 +961,21 @@
                     </div>
     </div>
 
-                <h3 id="method_getObject">
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getObject">
         <div class="location">in <a href="../../../../QATools/QATools/PageObject/Proxy/AbstractProxy.html#method_getObject"><abbr title="QATools\QATools\PageObject\Proxy\AbstractProxy">AbstractProxy</abbr></a> at line 240</div>
         <code>                    mixed
     <strong>getObject</strong>()</code>
     </h3>
     <div class="details">
-        <p>Returns class instance, that was placed inside a proxy.</p>
-        <p>
-</p>
-        <div class="tags">
+                    <div class="method-description">
+                                    <p>Returns class instance, that was placed inside a proxy.</p>                                </div>
+                <div class="tags">
             
                             <h4>Return Value</h4>
 
-                    <table>
+                    <table class="table table-condensed">
         <tr>
             <td>mixed</td>
             <td>
@@ -937,10 +988,17 @@
                     </div>
     </div>
 
+            </div>
+            </div>
+
     
             </div>
-            <div id="footer">
-        Generated by <a href="http://sami.sensiolabs.org/" target="_top">Sami, the API Documentation Generator</a>.
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
     </div>
     </body>
+
 </html>

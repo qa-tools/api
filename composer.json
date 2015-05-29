@@ -7,6 +7,6 @@
         }
     ],
     "require-dev": {
-		"sami/sami": "dev-master#faac3961cc46eb7534230635e37f5c340a9f719b"
+		"sami/sami": "~3.0@dev"
     }
 }

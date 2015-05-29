@@ -1,41 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="robots" content="index, follow, all" />
-        <title>QATools\QATools\HtmlElements\Element\Form | QA-Tools API</title>
-                    <link rel="stylesheet" type="text/css" href="../../../../stylesheet.css">
-                            </head>
-        <body id="class">
-            <div class="header">
-        <ul>
-            <li><a href="../../../../classes.html">Classes</a></li>
-                            <li><a href="../../../../namespaces.html">Namespaces</a></li>
-                        <li><a href="../../../../interfaces.html">Interfaces</a></li>
-            <li><a href="../../../../traits.html">Traits</a></li>
-            <li><a href="../../../../doc-index.html">Index</a></li>
-            
-        </ul>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>QATools\QATools\HtmlElements\Element\Form | QA-Tools API</title>
 
-        <div id="title">QA-Tools API</div>
+            <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/sami.css">
+        <script src="../../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../../js/bootstrap.min.js"></script>
+        <script src="../../../../js/typeahead.min.js"></script>
+        <script src="../../../../sami.js"></script>
+    
+    
+    </head>
 
-            <div class="type">Class</div>
-    <h1><a href="../../../../QATools/QATools/HtmlElements/Element.html">QATools\QATools\HtmlElements\Element</a>\Form</h1>
+    <body id="class" data-name="class:QATools_QATools_HtmlElements_Element_Form" data-root-path="../../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                    <form action="#" method="GET">
+                <select id="version-switcher" name="version">
+                                            <option value="../../../../../master/index.html">master branch</option>
+                                            <option value="../../../../../develop/index.html" selected>develop branch</option>
+                                    </select>
+            </form>
+                <form id="search-form" action="../../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
     </div>
-        <div class="content">
-                <p>    class
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../../index.html">QA-Tools API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../../traits.html">Traits</a></li>
+                    <li><a href="../../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                                                            <li><a href="../../../../QATools.html">QATools</a></li>
+                                        <li><a href="../../../../QATools/QATools.html">QATools</a></li>
+                                        <li><a href="../../../../QATools/QATools/HtmlElements.html">HtmlElements</a></li>
+                                        <li><a href="../../../../QATools/QATools/HtmlElements/Element.html">Element</a></li>
+    
+                <li>Form</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>Form</h1>
+    </div>
+
+    <p>    class
     <strong>Form</strong>        extends <a href="../../../../QATools/QATools/HtmlElements/Element/AbstractElementContainer.html"><abbr title="QATools\QATools\HtmlElements\Element\AbstractElementContainer">AbstractElementContainer</abbr></a></p>
 
             <div class="description">
-            <p>Form element.</p>
-            <p>
-</p>
-        </div>
+            <p>Form element.</p>                    </div>
     
     
             <h2>Constants</h2>
 
-            <table>
+            <table class="table table-condensed">
+                    <tr>
+                <td>CRITERION_TAG</td>
+                <td class="last">
+                    <p><em>
+</em></p>
+                    <p>
+</p>
+                </td>
+            </tr>
+                    <tr>
+                <td>CRITERION_ATTRS</td>
+                <td class="last">
+                    <p><em>
+</em></p>
+                    <p>
+</p>
+                </td>
+            </tr>
                     <tr>
                 <td>TEXT_INPUT</td>
                 <td class="last">
@@ -86,7 +158,7 @@
     
             <h2>Properties</h2>
 
-            <table>
+            <table class="table table-condensed">
                     <tr>
                 <td class="type" id="property__name">
                                                             private                    string
@@ -104,6 +176,14 @@
                 <td><small>from&nbsp;<a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html#property__wrappedElement"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a></small></td>
             </tr>
                     <tr>
+                <td class="type" id="property_acceptanceCriteria">
+                                        protected                                        array
+                </td>
+                <td>$acceptanceCriteria</td>
+                <td class="last">List of acceptance criteria.</td>
+                <td><small>from&nbsp;<a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html#property_acceptanceCriteria"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a></small></td>
+            </tr>
+                    <tr>
                 <td class="type" id="property__pageFactory">
                                                             private                    <a href="../../../../QATools/QATools/PageObject/IPageFactory.html"><abbr title="QATools\QATools\PageObject\IPageFactory">IPageFactory</abbr></a>
                 </td>
@@ -116,293 +196,304 @@
     
             <h2>Methods</h2>
 
-            <table>
-                    <tr>
-                <td class="type">
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
                     
-                </td>
-                <td class="last">
-                    <a href="#method___construct">__construct</a>(<a href="../../../../QATools/QATools/PageObject/Element/WebElement.html"><abbr title="QATools\QATools\PageObject\Element\WebElement">WebElement</abbr></a> $wrapped_element, <a href="../../../../QATools/QATools/PageObject/IPageFactory.html"><abbr title="QATools\QATools\PageObject\IPageFactory">IPageFactory</abbr></a> $page_factory)
-                    <p>Specifies wrapped WebElement.</p>
-                </td>
-                <td><small>from&nbsp;<a href="../../../../QATools/QATools/HtmlElements/Element/AbstractElementContainer.html#method___construct"><abbr title="QATools\QATools\HtmlElements\Element\AbstractElementContainer">AbstractElementContainer</abbr></a></small></td>
-            </tr>
-                    <tr>
-                <td class="type">
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(<abbr title="QATools\QATools\HtmlElements\Element\QATools\QATools\PageObject\Element\WebElement">WebElement</abbr> $wrapped_element, <abbr title="QATools\QATools\HtmlElements\Element\QATools\QATools\PageObject\IPageFactory">IPageFactory</abbr> $page_factory)
+                                            <p>Specifies wrapped WebElement.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../QATools/QATools/HtmlElements/Element/AbstractElementContainer.html#method___construct"><abbr title="QATools\QATools\HtmlElements\Element\AbstractElementContainer">AbstractElementContainer</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
                     static&nbsp;<a href="../../../../QATools/QATools/HtmlElements/Element/AbstractElementContainer.html"><abbr title="QATools\QATools\HtmlElements\Element\AbstractElementContainer">AbstractElementContainer</abbr></a>
-                </td>
-                <td class="last">
-                    <a href="#method_fromNodeElement">fromNodeElement</a>(<abbr title="Behat\Mink\Element\NodeElement">NodeElement</abbr> $node_element, <a href="../../../../QATools/QATools/PageObject/IPageFactory.html"><abbr title="QATools\QATools\PageObject\IPageFactory">IPageFactory</abbr></a> $page_factory = null)
-                    <p>Creates Element instance based on existing NodeElement instance.</p>
-                </td>
-                <td><small>from&nbsp;<a href="../../../../QATools/QATools/HtmlElements/Element/AbstractElementContainer.html#method_fromNodeElement"><abbr title="QATools\QATools\HtmlElements\Element\AbstractElementContainer">AbstractElementContainer</abbr></a></small></td>
-            </tr>
-                    <tr>
-                <td class="type">
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_fromNodeElement">fromNodeElement</a>(<abbr title="QATools\QATools\HtmlElements\Element\Behat\Mink\Element\NodeElement">NodeElement</abbr> $node_element, <abbr title="QATools\QATools\HtmlElements\Element\QATools\QATools\PageObject\IPageFactory">IPageFactory</abbr> $page_factory = null)
+                                            <p>Creates Element instance based on existing NodeElement instance.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../QATools/QATools/HtmlElements/Element/AbstractElementContainer.html#method_fromNodeElement"><abbr title="QATools\QATools\HtmlElements\Element\AbstractElementContainer">AbstractElementContainer</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_assertWrappedElement">assertWrappedElement</a>()
+                                            <p>Checks that wrapped element meets the acceptance criteria.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html#method_assertWrappedElement"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isTagNameMatching">isTagNameMatching</a>(array $criterion)
+                                            <p>Checks if the tag name(s) of the criterion are matching.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html#method_isTagNameMatching"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isAttributeMatching">isAttributeMatching</a>(array $criterion)
+                                            <p>Checks if the attributes of the criterion are matching.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html#method_isAttributeMatching"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isValueMatchingCriterionDefinition">isValueMatchingCriterionDefinition</a>(string $value, string $criterion)
+                                            <p>Checks if passed value matching the defined criterion.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html#method_isValueMatchingCriterionDefinition"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
                     <a href="../../../../QATools/QATools/PageObject/Element/WebElement.html"><abbr title="QATools\QATools\PageObject\Element\WebElement">WebElement</abbr></a>
-                </td>
-                <td class="last">
+                </div>
+                <div class="col-md-8 type">
                     <a href="#method_getWrappedElement">getWrappedElement</a>()
-                    <p>Returns wrapped element.</p>
-                </td>
-                <td><small>from&nbsp;<a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html#method_getWrappedElement"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a></small></td>
-            </tr>
-                    <tr>
-                <td class="type">
+                                            <p>Returns wrapped element.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html#method_getWrappedElement"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
                     <a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a>
-                </td>
-                <td class="last">
+                </div>
+                <div class="col-md-8 type">
                     <a href="#method_setName">setName</a>(string $name)
-                    <p>Sets a name of an element.</p>
-                </td>
-                <td><small>from&nbsp;<a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html#method_setName"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a></small></td>
-            </tr>
-                    <tr>
-                <td class="type">
+                                            <p>Sets a name of an element.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html#method_setName"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
                     string
-                </td>
-                <td class="last">
+                </div>
+                <div class="col-md-8 type">
                     <a href="#method_getName">getName</a>()
-                    <p>Returns name of the entity.</p>
-                </td>
-                <td><small>from&nbsp;<a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html#method_getName"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a></small></td>
-            </tr>
-                    <tr>
-                <td class="type">
+                                            <p>Returns name of the entity.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html#method_getName"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
                     <abbr title="Behat\Mink\Session">Session</abbr>
-                </td>
-                <td class="last">
+                </div>
+                <div class="col-md-8 type">
                     <a href="#method_getSession">getSession</a>()
-                    <p>Returns wrapped element session.</p>
-                </td>
-                <td><small>from&nbsp;<a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html#method_getSession"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a></small></td>
-            </tr>
-                    <tr>
-                <td class="type">
+                                            <p>Returns wrapped element session.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html#method_getSession"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
                     boolean
-                </td>
-                <td class="last">
+                </div>
+                <div class="col-md-8 type">
                     <a href="#method_isVisible">isVisible</a>()
-                    <p>Checks whether current node is visible on page.</p>
-                </td>
-                <td><small>from&nbsp;<a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html#method_isVisible"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a></small></td>
-            </tr>
-                    <tr>
-                <td class="type">
+                                            <p>Checks whether current node is visible on page.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html#method_isVisible"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
                     boolean
-                </td>
-                <td class="last">
+                </div>
+                <div class="col-md-8 type">
                     <a href="#method_isValid">isValid</a>()
-                    <p>Checks if an element is still valid.</p>
-                </td>
-                <td><small>from&nbsp;<a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html#method_isValid"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a></small></td>
-            </tr>
-                    <tr>
-                <td class="type">
+                                            <p>Checks if an element is still valid.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html#method_isValid"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
                     boolean
-                </td>
-                <td class="last">
+                </div>
+                <div class="col-md-8 type">
                     <a href="#method_hasAttribute">hasAttribute</a>(string $name)
-                    <p>Checks whether element has attribute with specified name.</p>
-                </td>
-                <td><small>from&nbsp;<a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html#method_hasAttribute"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a></small></td>
-            </tr>
-                    <tr>
-                <td class="type">
+                                            <p>Checks whether element has attribute with specified name.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html#method_hasAttribute"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
                     mixed|null
-                </td>
-                <td class="last">
+                </div>
+                <div class="col-md-8 type">
                     <a href="#method_getAttribute">getAttribute</a>(string $name)
-                    <p>Returns specified attribute value.</p>
-                </td>
-                <td><small>from&nbsp;<a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html#method_getAttribute"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a></small></td>
-            </tr>
-                    <tr>
-                <td class="type">
+                                            <p>Returns specified attribute value.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html#method_getAttribute"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
                     string
-                </td>
-                <td class="last">
+                </div>
+                <div class="col-md-8 type">
                     <a href="#method_getXpath">getXpath</a>()
-                    <p>Returns XPath for handled element.</p>
-                </td>
-                <td><small>from&nbsp;<a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html#method_getXpath"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a></small></td>
-            </tr>
-                    <tr>
-                <td class="type">
+                                            <p>Returns XPath for handled element.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html#method_getXpath"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
                     string
-                </td>
-                <td class="last">
+                </div>
+                <div class="col-md-8 type">
                     <a href="#method_getTagName">getTagName</a>()
-                    <p>Returns current node tag name.</p>
-                </td>
-                <td><small>from&nbsp;<a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html#method_getTagName"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a></small></td>
-            </tr>
-                    <tr>
-                <td class="type">
+                                            <p>Returns current node tag name.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html#method_getTagName"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
                     <abbr title="Behat\Mink\Selector\SelectorsHandler">SelectorsHandler</abbr>
-                </td>
-                <td class="last">
+                </div>
+                <div class="col-md-8 type">
                     <a href="#method_getSelectorsHandler">getSelectorsHandler</a>()
-                    <p>Returns selectors handler.</p>
-                </td>
-                <td><small>from&nbsp;<a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html#method_getSelectorsHandler"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a></small></td>
-            </tr>
-                    <tr>
-                <td class="type">
+                                            <p>Returns selectors handler.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html#method_getSelectorsHandler"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
                     boolean
-                </td>
-                <td class="last">
+                </div>
+                <div class="col-md-8 type">
                     <a href="#method_isSeleniumDriver">isSeleniumDriver</a>()
-                    <p>Checks, that Selenium driver is used.</p>
-                </td>
-                <td><small>from&nbsp;<a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html#method_isSeleniumDriver"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a></small></td>
-            </tr>
-                    <tr>
-                <td class="type">
+                                            <p>Checks, that Selenium driver is used.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html#method_isSeleniumDriver"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
                     string
-                </td>
-                <td class="last">
+                </div>
+                <div class="col-md-8 type">
                     <a href="#method___toString">__toString</a>()
-                    <p>Returns string representation of element.</p>
-                </td>
-                <td><small>from&nbsp;<a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html#method___toString"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a></small></td>
-            </tr>
-                    <tr>
-                <td class="type">
+                                            <p>Returns string representation of element.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html#method___toString"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
                     <abbr title="Mockery\Expectation">Expectation</abbr>
-                </td>
-                <td class="last">
+                </div>
+                <div class="col-md-8 type">
                     <a href="#method_shouldReceive">shouldReceive</a>(<abbr title="string ">string </abbr> $name)
-                    <p>
-</p>
-                </td>
-                <td><small>from&nbsp;<a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html#method_shouldReceive"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a></small></td>
-            </tr>
-                    <tr>
-                <td class="type">
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html#method_shouldReceive"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
                     <a href="../../../../QATools/QATools/PageObject/IPageFactory.html"><abbr title="QATools\QATools\PageObject\IPageFactory">IPageFactory</abbr></a>
-                </td>
-                <td class="last">
+                </div>
+                <div class="col-md-8 type">
                     <a href="#method_getPageFactory">getPageFactory</a>()
-                    <p>Returns page factory, used during object creation.</p>
-                </td>
-                <td><small>from&nbsp;<a href="../../../../QATools/QATools/HtmlElements/Element/AbstractElementContainer.html#method_getPageFactory"><abbr title="QATools\QATools\HtmlElements\Element\AbstractElementContainer">AbstractElementContainer</abbr></a></small></td>
-            </tr>
-                    <tr>
-                <td class="type">
+                                            <p>Returns page factory, used during object creation.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../QATools/QATools/HtmlElements/Element/AbstractElementContainer.html#method_getPageFactory"><abbr title="QATools\QATools\HtmlElements\Element\AbstractElementContainer">AbstractElementContainer</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
                     <abbr title="Behat\Mink\Element\NodeElement">NodeElement</abbr>[]
-                </td>
-                <td class="last">
+                </div>
+                <div class="col-md-8 type">
                     <a href="#method_findAll">findAll</a>(string $selector, string|array $locator)
-                    <p>Finds all elements with specified selector.</p>
-                </td>
-                <td><small>from&nbsp;<a href="../../../../QATools/QATools/HtmlElements/Element/AbstractElementContainer.html#method_findAll"><abbr title="QATools\QATools\HtmlElements\Element\AbstractElementContainer">AbstractElementContainer</abbr></a></small></td>
-            </tr>
-                    <tr>
-                <td class="type">
+                                            <p>Finds all elements with specified selector.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../QATools/QATools/HtmlElements/Element/AbstractElementContainer.html#method_findAll"><abbr title="QATools\QATools\HtmlElements\Element\AbstractElementContainer">AbstractElementContainer</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
                     <abbr title="Behat\Mink\Element\NodeElement">NodeElement</abbr>|null
-                </td>
-                <td class="last">
+                </div>
+                <div class="col-md-8 type">
                     <a href="#method_find">find</a>(string $selector, string|array $locator)
-                    <p>Finds first element with specified selector.</p>
-                </td>
-                <td><small>from&nbsp;<a href="../../../../QATools/QATools/HtmlElements/Element/AbstractElementContainer.html#method_find"><abbr title="QATools\QATools\HtmlElements\Element\AbstractElementContainer">AbstractElementContainer</abbr></a></small></td>
-            </tr>
-                    <tr>
-                <td class="type">
+                                            <p>Finds first element with specified selector.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../QATools/QATools/HtmlElements/Element/AbstractElementContainer.html#method_find"><abbr title="QATools\QATools\HtmlElements\Element\AbstractElementContainer">AbstractElementContainer</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
                     mixed
-                </td>
-                <td class="last">
+                </div>
+                <div class="col-md-8 type">
                     <a href="#method_waitFor">waitFor</a>(integer $timeout, callable $callback)
-                    <p>Waits for an element(-s) to appear and returns it.</p>
-                </td>
-                <td><small>from&nbsp;<a href="../../../../QATools/QATools/HtmlElements/Element/AbstractElementContainer.html#method_waitFor"><abbr title="QATools\QATools\HtmlElements\Element\AbstractElementContainer">AbstractElementContainer</abbr></a></small></td>
-            </tr>
-                    <tr>
-                <td class="type">
+                                            <p>Waits for an element(-s) to appear and returns it.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../QATools/QATools/HtmlElements/Element/AbstractElementContainer.html#method_waitFor"><abbr title="QATools\QATools\HtmlElements\Element\AbstractElementContainer">AbstractElementContainer</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
                     <a href="../../../../QATools/QATools/HtmlElements/Element/Form.html"><abbr title="QATools\QATools\HtmlElements\Element\Form">Form</abbr></a>
-                </td>
-                <td class="last">
+                </div>
+                <div class="col-md-8 type">
                     <a href="#method_fill">fill</a>(array $form_data)
-                    <p>Fills the form with given data.</p>
-                </td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type">
+                                            <p>Fills the form with given data.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
                     <abbr title="Behat\Mink\Element\NodeElement">NodeElement</abbr>[]
-                </td>
-                <td class="last">
+                </div>
+                <div class="col-md-8 type">
                     <a href="#method_getNodeElements">getNodeElements</a>(string $field_name)
-                    <p>Finds NodeElements by a given field name.</p>
-                </td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type">
+                                            <p>Finds NodeElements by a given field name.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
                     string
-                </td>
-                <td class="last">
+                </div>
+                <div class="col-md-8 type">
                     <a href="#method__autoEscapeForXpath">_autoEscapeForXpath</a>(string $string)
-                    <p>Determines if Mink does automatic selector escaping.</p>
-                </td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type">
+                                            <p>Determines if Mink does automatic selector escaping.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
                     <a href="../../../../QATools/QATools/HtmlElements/Element/ITypifiedElement.html"><abbr title="QATools\QATools\HtmlElements\Element\ITypifiedElement">ITypifiedElement</abbr></a>
-                </td>
-                <td class="last">
+                </div>
+                <div class="col-md-8 type">
                     <a href="#method_typify">typify</a>(array $node_elements)
-                    <p>Create AbstractTypifiedElement from a given NodeElements.</p>
-                </td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type">
+                                            <p>Create AbstractTypifiedElement from a given NodeElements.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
                     <a href="../../../../QATools/QATools/HtmlElements/Element/Form.html"><abbr title="QATools\QATools\HtmlElements\Element\Form">Form</abbr></a>
-                </td>
-                <td class="last">
-                    <a href="#method_setValue">setValue</a>(<a href="../../../../QATools/QATools/HtmlElements/Element/ITypifiedElement.html"><abbr title="QATools\QATools\HtmlElements\Element\ITypifiedElement">ITypifiedElement</abbr></a> $typified_element, mixed $value)
-                    <p>Sets value to the form element.</p>
-                </td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type">
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setValue">setValue</a>(<abbr title="QATools\QATools\HtmlElements\Element\QATools\QATools\HtmlElements\Element\ITypifiedElement">ITypifiedElement</abbr> $typified_element, mixed $value)
+                                            <p>Sets value to the form element.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
                     <a href="../../../../QATools/QATools/HtmlElements/Element/Form.html"><abbr title="QATools\QATools\HtmlElements\Element\Form">Form</abbr></a>
-                </td>
-                <td class="last">
+                </div>
+                <div class="col-md-8 type">
                     <a href="#method_submit">submit</a>()
-                    <p>Submits a form.</p>
-                </td>
-                <td></td>
-            </tr>
-            </table>
+                                            <p>Submits a form.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
 
 
         <h2>Details</h2>
 
-                        <h3 id="method___construct">
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
         <div class="location">in <a href="../../../../QATools/QATools/HtmlElements/Element/AbstractElementContainer.html#method___construct"><abbr title="QATools\QATools\HtmlElements\Element\AbstractElementContainer">AbstractElementContainer</abbr></a> at line 41</div>
         <code>                    
-    <strong>__construct</strong>(<a href="../../../../QATools/QATools/PageObject/Element/WebElement.html"><abbr title="QATools\QATools\PageObject\Element\WebElement">WebElement</abbr></a> $wrapped_element, <a href="../../../../QATools/QATools/PageObject/IPageFactory.html"><abbr title="QATools\QATools\PageObject\IPageFactory">IPageFactory</abbr></a> $page_factory)</code>
+    <strong>__construct</strong>(<abbr title="QATools\QATools\HtmlElements\Element\QATools\QATools\PageObject\Element\WebElement">WebElement</abbr> $wrapped_element, <abbr title="QATools\QATools\HtmlElements\Element\QATools\QATools\PageObject\IPageFactory">IPageFactory</abbr> $page_factory)</code>
     </h3>
     <div class="details">
-        <p>Specifies wrapped WebElement.</p>
-        <p>
-</p>
-        <div class="tags">
+                    <div class="method-description">
+                                    <p>Specifies wrapped WebElement.</p>                                </div>
+                <div class="tags">
                             <h4>Parameters</h4>
 
-                    <table>
+                    <table class="table table-condensed">
                     <tr>
-                <td><a href="../../../../QATools/QATools/PageObject/Element/WebElement.html"><abbr title="QATools\QATools\PageObject\Element\WebElement">WebElement</abbr></a></td>
+                <td><abbr title="QATools\QATools\HtmlElements\Element\QATools\QATools\PageObject\Element\WebElement">WebElement</abbr></td>
                 <td>$wrapped_element</td>
                 <td>Element to be wrapped.</td>
             </tr>
                     <tr>
-                <td><a href="../../../../QATools/QATools/PageObject/IPageFactory.html"><abbr title="QATools\QATools\PageObject\IPageFactory">IPageFactory</abbr></a></td>
+                <td><abbr title="QATools\QATools\HtmlElements\Element\QATools\QATools\PageObject\IPageFactory">IPageFactory</abbr></td>
                 <td>$page_factory</td>
                 <td>Page factory.</td>
             </tr>
@@ -414,26 +505,27 @@
                     </div>
     </div>
 
-                <h3 id="method_fromNodeElement">
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_fromNodeElement">
         <div class="location">in <a href="../../../../QATools/QATools/HtmlElements/Element/AbstractElementContainer.html#method_fromNodeElement"><abbr title="QATools\QATools\HtmlElements\Element\AbstractElementContainer">AbstractElementContainer</abbr></a> at line 69</div>
         <code>        static            <a href="../../../../QATools/QATools/HtmlElements/Element/AbstractElementContainer.html"><abbr title="QATools\QATools\HtmlElements\Element\AbstractElementContainer">AbstractElementContainer</abbr></a>
-    <strong>fromNodeElement</strong>(<abbr title="Behat\Mink\Element\NodeElement">NodeElement</abbr> $node_element, <a href="../../../../QATools/QATools/PageObject/IPageFactory.html"><abbr title="QATools\QATools\PageObject\IPageFactory">IPageFactory</abbr></a> $page_factory = null)</code>
+    <strong>fromNodeElement</strong>(<abbr title="QATools\QATools\HtmlElements\Element\Behat\Mink\Element\NodeElement">NodeElement</abbr> $node_element, <abbr title="QATools\QATools\HtmlElements\Element\QATools\QATools\PageObject\IPageFactory">IPageFactory</abbr> $page_factory = null)</code>
     </h3>
     <div class="details">
-        <p>Creates Element instance based on existing NodeElement instance.</p>
-        <p>
-</p>
-        <div class="tags">
+                    <div class="method-description">
+                                    <p>Creates Element instance based on existing NodeElement instance.</p>                                </div>
+                <div class="tags">
                             <h4>Parameters</h4>
 
-                    <table>
+                    <table class="table table-condensed">
                     <tr>
-                <td><abbr title="Behat\Mink\Element\NodeElement">NodeElement</abbr></td>
+                <td><abbr title="QATools\QATools\HtmlElements\Element\Behat\Mink\Element\NodeElement">NodeElement</abbr></td>
                 <td>$node_element</td>
                 <td>Node element.</td>
             </tr>
                     <tr>
-                <td><a href="../../../../QATools/QATools/PageObject/IPageFactory.html"><abbr title="QATools\QATools\PageObject\IPageFactory">IPageFactory</abbr></a></td>
+                <td><abbr title="QATools\QATools\HtmlElements\Element\QATools\QATools\PageObject\IPageFactory">IPageFactory</abbr></td>
                 <td>$page_factory</td>
                 <td>Page factory.</td>
             </tr>
@@ -442,7 +534,7 @@
             
                             <h4>Return Value</h4>
 
-                    <table>
+                    <table class="table table-condensed">
         <tr>
             <td><a href="../../../../QATools/QATools/HtmlElements/Element/AbstractElementContainer.html"><abbr title="QATools\QATools\HtmlElements\Element\AbstractElementContainer">AbstractElementContainer</abbr></a></td>
             <td>
@@ -451,12 +543,39 @@
     </table>
 
             
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_assertWrappedElement">
+        <div class="location">in <a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html#method_assertWrappedElement"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a> at line 88</div>
+        <code>            protected        void
+    <strong>assertWrappedElement</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Checks that wrapped element meets the acceptance criteria.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
                             <h4>Exceptions</h4>
 
-                    <table>
+                    <table class="table table-condensed">
                     <tr>
                 <td><a href="../../../../QATools/QATools/HtmlElements/Exception/TypifiedElementException.html"><abbr title="QATools\QATools\HtmlElements\Exception\TypifiedElementException">TypifiedElementException</abbr></a></td>
-                <td>When page factory is missing.</td>
+                <td>When no criteria matches.</td>
             </tr>
             </table>
 
@@ -464,20 +583,137 @@
                     </div>
     </div>
 
-                <h3 id="method_getWrappedElement">
-        <div class="location">in <a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html#method_getWrappedElement"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a> at line 74</div>
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isTagNameMatching">
+        <div class="location">in <a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html#method_isTagNameMatching"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a> at line 119</div>
+        <code>            protected        boolean
+    <strong>isTagNameMatching</strong>(array $criterion)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Checks if the tag name(s) of the criterion are matching.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$criterion</td>
+                <td>The criterion.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isAttributeMatching">
+        <div class="location">in <a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html#method_isAttributeMatching"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a> at line 135</div>
+        <code>            protected        boolean
+    <strong>isAttributeMatching</strong>(array $criterion)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Checks if the attributes of the criterion are matching.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$criterion</td>
+                <td>The criterion.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isValueMatchingCriterionDefinition">
+        <div class="location">in <a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html#method_isValueMatchingCriterionDefinition"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a> at line 158</div>
+        <code>            protected        boolean
+    <strong>isValueMatchingCriterionDefinition</strong>(string $value, string $criterion)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Checks if passed value matching the defined criterion.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$value</td>
+                <td>Value to match.</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$criterion</td>
+                <td>The criterion.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getWrappedElement">
+        <div class="location">in <a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html#method_getWrappedElement"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a> at line 168</div>
         <code>                    <a href="../../../../QATools/QATools/PageObject/Element/WebElement.html"><abbr title="QATools\QATools\PageObject\Element\WebElement">WebElement</abbr></a>
     <strong>getWrappedElement</strong>()</code>
     </h3>
     <div class="details">
-        <p>Returns wrapped element.</p>
-        <p>
-</p>
-        <div class="tags">
+                    <div class="method-description">
+                                    <p>Returns wrapped element.</p>                                </div>
+                <div class="tags">
             
                             <h4>Return Value</h4>
 
-                    <table>
+                    <table class="table table-condensed">
         <tr>
             <td><a href="../../../../QATools/QATools/PageObject/Element/WebElement.html"><abbr title="QATools\QATools\PageObject\Element\WebElement">WebElement</abbr></a></td>
             <td>
@@ -490,18 +726,20 @@
                     </div>
     </div>
 
-                <h3 id="method_setName">
-        <div class="location">in <a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html#method_setName"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a> at line 88</div>
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setName">
+        <div class="location">in <a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html#method_setName"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a> at line 182</div>
         <code>                    <a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a>
     <strong>setName</strong>(string $name)</code>
     </h3>
     <div class="details">
-        <p>Sets a name of an element.</p>
-        <p>This method is used by initialization mechanism and is not intended to be used directly.</p>
-        <div class="tags">
+                    <div class="method-description">
+                                    <p>Sets a name of an element.</p>                    <p>This method is used by initialization mechanism and is not intended to be used directly.</p>            </div>
+                <div class="tags">
                             <h4>Parameters</h4>
 
-                    <table>
+                    <table class="table table-condensed">
                     <tr>
                 <td>string</td>
                 <td>$name</td>
@@ -512,7 +750,7 @@
             
                             <h4>Return Value</h4>
 
-                    <table>
+                    <table class="table table-condensed">
         <tr>
             <td><a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a></td>
             <td>
@@ -525,20 +763,21 @@
                     </div>
     </div>
 
-                <h3 id="method_getName">
-        <div class="location">in <a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html#method_getName"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a> at line 100</div>
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getName">
+        <div class="location">in <a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html#method_getName"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a> at line 194</div>
         <code>                    string
     <strong>getName</strong>()</code>
     </h3>
     <div class="details">
-        <p>Returns name of the entity.</p>
-        <p>
-</p>
-        <div class="tags">
+                    <div class="method-description">
+                                    <p>Returns name of the entity.</p>                                </div>
+                <div class="tags">
             
                             <h4>Return Value</h4>
 
-                    <table>
+                    <table class="table table-condensed">
         <tr>
             <td>string</td>
             <td>
@@ -551,20 +790,21 @@
                     </div>
     </div>
 
-                <h3 id="method_getSession">
-        <div class="location">in <a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html#method_getSession"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a> at line 110</div>
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getSession">
+        <div class="location">in <a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html#method_getSession"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a> at line 204</div>
         <code>                    <abbr title="Behat\Mink\Session">Session</abbr>
     <strong>getSession</strong>()</code>
     </h3>
     <div class="details">
-        <p>Returns wrapped element session.</p>
-        <p>
-</p>
-        <div class="tags">
+                    <div class="method-description">
+                                    <p>Returns wrapped element session.</p>                                </div>
+                <div class="tags">
             
                             <h4>Return Value</h4>
 
-                    <table>
+                    <table class="table table-condensed">
         <tr>
             <td><abbr title="Behat\Mink\Session">Session</abbr></td>
             <td>
@@ -577,20 +817,21 @@
                     </div>
     </div>
 
-                <h3 id="method_isVisible">
-        <div class="location">in <a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html#method_isVisible"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a> at line 120</div>
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isVisible">
+        <div class="location">in <a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html#method_isVisible"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a> at line 214</div>
         <code>                    boolean
     <strong>isVisible</strong>()</code>
     </h3>
     <div class="details">
-        <p>Checks whether current node is visible on page.</p>
-        <p>
-</p>
-        <div class="tags">
+                    <div class="method-description">
+                                    <p>Checks whether current node is visible on page.</p>                                </div>
+                <div class="tags">
             
                             <h4>Return Value</h4>
 
-                    <table>
+                    <table class="table table-condensed">
         <tr>
             <td>boolean</td>
             <td>
@@ -603,20 +844,21 @@
                     </div>
     </div>
 
-                <h3 id="method_isValid">
-        <div class="location">in <a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html#method_isValid"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a> at line 130</div>
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isValid">
+        <div class="location">in <a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html#method_isValid"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a> at line 224</div>
         <code>                    boolean
     <strong>isValid</strong>()</code>
     </h3>
     <div class="details">
-        <p>Checks if an element is still valid.</p>
-        <p>
-</p>
-        <div class="tags">
+                    <div class="method-description">
+                                    <p>Checks if an element is still valid.</p>                                </div>
+                <div class="tags">
             
                             <h4>Return Value</h4>
 
-                    <table>
+                    <table class="table table-condensed">
         <tr>
             <td>boolean</td>
             <td>
@@ -629,19 +871,20 @@
                     </div>
     </div>
 
-                <h3 id="method_hasAttribute">
-        <div class="location">in <a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html#method_hasAttribute"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a> at line 142</div>
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasAttribute">
+        <div class="location">in <a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html#method_hasAttribute"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a> at line 236</div>
         <code>                    boolean
     <strong>hasAttribute</strong>(string $name)</code>
     </h3>
     <div class="details">
-        <p>Checks whether element has attribute with specified name.</p>
-        <p>
-</p>
-        <div class="tags">
+                    <div class="method-description">
+                                    <p>Checks whether element has attribute with specified name.</p>                                </div>
+                <div class="tags">
                             <h4>Parameters</h4>
 
-                    <table>
+                    <table class="table table-condensed">
                     <tr>
                 <td>string</td>
                 <td>$name</td>
@@ -652,7 +895,7 @@
             
                             <h4>Return Value</h4>
 
-                    <table>
+                    <table class="table table-condensed">
         <tr>
             <td>boolean</td>
             <td>
@@ -665,19 +908,20 @@
                     </div>
     </div>
 
-                <h3 id="method_getAttribute">
-        <div class="location">in <a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html#method_getAttribute"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a> at line 154</div>
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getAttribute">
+        <div class="location">in <a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html#method_getAttribute"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a> at line 248</div>
         <code>                    mixed|null
     <strong>getAttribute</strong>(string $name)</code>
     </h3>
     <div class="details">
-        <p>Returns specified attribute value.</p>
-        <p>
-</p>
-        <div class="tags">
+                    <div class="method-description">
+                                    <p>Returns specified attribute value.</p>                                </div>
+                <div class="tags">
                             <h4>Parameters</h4>
 
-                    <table>
+                    <table class="table table-condensed">
                     <tr>
                 <td>string</td>
                 <td>$name</td>
@@ -688,7 +932,7 @@
             
                             <h4>Return Value</h4>
 
-                    <table>
+                    <table class="table table-condensed">
         <tr>
             <td>mixed|null</td>
             <td>
@@ -701,20 +945,21 @@
                     </div>
     </div>
 
-                <h3 id="method_getXpath">
-        <div class="location">in <a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html#method_getXpath"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a> at line 164</div>
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getXpath">
+        <div class="location">in <a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html#method_getXpath"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a> at line 258</div>
         <code>                    string
     <strong>getXpath</strong>()</code>
     </h3>
     <div class="details">
-        <p>Returns XPath for handled element.</p>
-        <p>
-</p>
-        <div class="tags">
+                    <div class="method-description">
+                                    <p>Returns XPath for handled element.</p>                                </div>
+                <div class="tags">
             
                             <h4>Return Value</h4>
 
-                    <table>
+                    <table class="table table-condensed">
         <tr>
             <td>string</td>
             <td>
@@ -727,20 +972,21 @@
                     </div>
     </div>
 
-                <h3 id="method_getTagName">
-        <div class="location">in <a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html#method_getTagName"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a> at line 174</div>
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getTagName">
+        <div class="location">in <a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html#method_getTagName"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a> at line 268</div>
         <code>                    string
     <strong>getTagName</strong>()</code>
     </h3>
     <div class="details">
-        <p>Returns current node tag name.</p>
-        <p>
-</p>
-        <div class="tags">
+                    <div class="method-description">
+                                    <p>Returns current node tag name.</p>                                </div>
+                <div class="tags">
             
                             <h4>Return Value</h4>
 
-                    <table>
+                    <table class="table table-condensed">
         <tr>
             <td>string</td>
             <td>
@@ -753,20 +999,21 @@
                     </div>
     </div>
 
-                <h3 id="method_getSelectorsHandler">
-        <div class="location">in <a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html#method_getSelectorsHandler"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a> at line 184</div>
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getSelectorsHandler">
+        <div class="location">in <a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html#method_getSelectorsHandler"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a> at line 278</div>
         <code>            protected        <abbr title="Behat\Mink\Selector\SelectorsHandler">SelectorsHandler</abbr>
     <strong>getSelectorsHandler</strong>()</code>
     </h3>
     <div class="details">
-        <p>Returns selectors handler.</p>
-        <p>
-</p>
-        <div class="tags">
+                    <div class="method-description">
+                                    <p>Returns selectors handler.</p>                                </div>
+                <div class="tags">
             
                             <h4>Return Value</h4>
 
-                    <table>
+                    <table class="table table-condensed">
         <tr>
             <td><abbr title="Behat\Mink\Selector\SelectorsHandler">SelectorsHandler</abbr></td>
             <td>
@@ -779,20 +1026,21 @@
                     </div>
     </div>
 
-                <h3 id="method_isSeleniumDriver">
-        <div class="location">in <a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html#method_isSeleniumDriver"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a> at line 194</div>
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isSeleniumDriver">
+        <div class="location">in <a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html#method_isSeleniumDriver"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a> at line 288</div>
         <code>            protected        boolean
     <strong>isSeleniumDriver</strong>()</code>
     </h3>
     <div class="details">
-        <p>Checks, that Selenium driver is used.</p>
-        <p>
-</p>
-        <div class="tags">
+                    <div class="method-description">
+                                    <p>Checks, that Selenium driver is used.</p>                                </div>
+                <div class="tags">
             
                             <h4>Return Value</h4>
 
-                    <table>
+                    <table class="table table-condensed">
         <tr>
             <td>boolean</td>
             <td>
@@ -805,20 +1053,21 @@
                     </div>
     </div>
 
-                <h3 id="method___toString">
-        <div class="location">in <a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html#method___toString"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a> at line 204</div>
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___toString">
+        <div class="location">in <a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html#method___toString"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a> at line 298</div>
         <code>                    string
     <strong>__toString</strong>()</code>
     </h3>
     <div class="details">
-        <p>Returns string representation of element.</p>
-        <p>
-</p>
-        <div class="tags">
+                    <div class="method-description">
+                                    <p>Returns string representation of element.</p>                                </div>
+                <div class="tags">
             
                             <h4>Return Value</h4>
 
-                    <table>
+                    <table class="table table-condensed">
         <tr>
             <td>string</td>
             <td>
@@ -831,20 +1080,18 @@
                     </div>
     </div>
 
-                <h3 id="method_shouldReceive">
-        <div class="location">in <a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html#method_shouldReceive"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a> at line 27</div>
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_shouldReceive">
+        <div class="location">in <a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html#method_shouldReceive"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a> at line 28</div>
         <code>                    <abbr title="Mockery\Expectation">Expectation</abbr>
     <strong>shouldReceive</strong>(<abbr title="string ">string </abbr> $name)</code>
     </h3>
     <div class="details">
-        <p>
-</p>
-        <p>
-</p>
-        <div class="tags">
+                <div class="tags">
                             <h4>Parameters</h4>
 
-                    <table>
+                    <table class="table table-condensed">
                     <tr>
                 <td><abbr title="string ">string </abbr></td>
                 <td>$name</td>
@@ -856,7 +1103,7 @@
             
                             <h4>Return Value</h4>
 
-                    <table>
+                    <table class="table table-condensed">
         <tr>
             <td><abbr title="Mockery\Expectation">Expectation</abbr></td>
             <td>
@@ -869,20 +1116,21 @@
                     </div>
     </div>
 
-                <h3 id="method_getPageFactory">
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getPageFactory">
         <div class="location">in <a href="../../../../QATools/QATools/HtmlElements/Element/AbstractElementContainer.html#method_getPageFactory"><abbr title="QATools\QATools\HtmlElements\Element\AbstractElementContainer">AbstractElementContainer</abbr></a> at line 55</div>
         <code>            protected        <a href="../../../../QATools/QATools/PageObject/IPageFactory.html"><abbr title="QATools\QATools\PageObject\IPageFactory">IPageFactory</abbr></a>
     <strong>getPageFactory</strong>()</code>
     </h3>
     <div class="details">
-        <p>Returns page factory, used during object creation.</p>
-        <p>
-</p>
-        <div class="tags">
+                    <div class="method-description">
+                                    <p>Returns page factory, used during object creation.</p>                                </div>
+                <div class="tags">
             
                             <h4>Return Value</h4>
 
-                    <table>
+                    <table class="table table-condensed">
         <tr>
             <td><a href="../../../../QATools/QATools/PageObject/IPageFactory.html"><abbr title="QATools\QATools\PageObject\IPageFactory">IPageFactory</abbr></a></td>
             <td>
@@ -895,19 +1143,20 @@
                     </div>
     </div>
 
-                <h3 id="method_findAll">
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_findAll">
         <div class="location">in <a href="../../../../QATools/QATools/HtmlElements/Element/AbstractElementContainer.html#method_findAll"><abbr title="QATools\QATools\HtmlElements\Element\AbstractElementContainer">AbstractElementContainer</abbr></a> at line 91</div>
         <code>                    <abbr title="Behat\Mink\Element\NodeElement">NodeElement</abbr>[]
     <strong>findAll</strong>(string $selector, string|array $locator)</code>
     </h3>
     <div class="details">
-        <p>Finds all elements with specified selector.</p>
-        <p>
-</p>
-        <div class="tags">
+                    <div class="method-description">
+                                    <p>Finds all elements with specified selector.</p>                                </div>
+                <div class="tags">
                             <h4>Parameters</h4>
 
-                    <table>
+                    <table class="table table-condensed">
                     <tr>
                 <td>string</td>
                 <td>$selector</td>
@@ -923,7 +1172,7 @@
             
                             <h4>Return Value</h4>
 
-                    <table>
+                    <table class="table table-condensed">
         <tr>
             <td><abbr title="Behat\Mink\Element\NodeElement">NodeElement</abbr>[]</td>
             <td>
@@ -936,19 +1185,20 @@
                     </div>
     </div>
 
-                <h3 id="method_find">
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_find">
         <div class="location">in <a href="../../../../QATools/QATools/HtmlElements/Element/AbstractElementContainer.html#method_find"><abbr title="QATools\QATools\HtmlElements\Element\AbstractElementContainer">AbstractElementContainer</abbr></a> at line 104</div>
         <code>                    <abbr title="Behat\Mink\Element\NodeElement">NodeElement</abbr>|null
     <strong>find</strong>(string $selector, string|array $locator)</code>
     </h3>
     <div class="details">
-        <p>Finds first element with specified selector.</p>
-        <p>
-</p>
-        <div class="tags">
+                    <div class="method-description">
+                                    <p>Finds first element with specified selector.</p>                                </div>
+                <div class="tags">
                             <h4>Parameters</h4>
 
-                    <table>
+                    <table class="table table-condensed">
                     <tr>
                 <td>string</td>
                 <td>$selector</td>
@@ -964,7 +1214,7 @@
             
                             <h4>Return Value</h4>
 
-                    <table>
+                    <table class="table table-condensed">
         <tr>
             <td><abbr title="Behat\Mink\Element\NodeElement">NodeElement</abbr>|null</td>
             <td>
@@ -977,19 +1227,20 @@
                     </div>
     </div>
 
-                <h3 id="method_waitFor">
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_waitFor">
         <div class="location">in <a href="../../../../QATools/QATools/HtmlElements/Element/AbstractElementContainer.html#method_waitFor"><abbr title="QATools\QATools\HtmlElements\Element\AbstractElementContainer">AbstractElementContainer</abbr></a> at line 119</div>
         <code>                    mixed
     <strong>waitFor</strong>(integer $timeout, callable $callback)</code>
     </h3>
     <div class="details">
-        <p>Waits for an element(-s) to appear and returns it.</p>
-        <p>
-</p>
-        <div class="tags">
+                    <div class="method-description">
+                                    <p>Waits for an element(-s) to appear and returns it.</p>                                </div>
+                <div class="tags">
                             <h4>Parameters</h4>
 
-                    <table>
+                    <table class="table table-condensed">
                     <tr>
                 <td>integer</td>
                 <td>$timeout</td>
@@ -1006,7 +1257,7 @@
             
                             <h4>Return Value</h4>
 
-                    <table>
+                    <table class="table table-condensed">
         <tr>
             <td>mixed</td>
             <td>
@@ -1017,9 +1268,9 @@
             
                             <h4>Exceptions</h4>
 
-                    <table>
+                    <table class="table table-condensed">
                     <tr>
-                <td><a href="http://php.net/InvalidArgumentException"><abbr title="InvalidArgumentException">InvalidArgumentException</abbr></a></td>
+                <td><a target="_blank" href="http://php.net/InvalidArgumentException"><abbr title="InvalidArgumentException">InvalidArgumentException</abbr></a></td>
                 <td>When invalid callback given.</td>
             </tr>
             </table>
@@ -1028,19 +1279,20 @@
                     </div>
     </div>
 
-                <h3 id="method_fill">
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_fill">
         <div class="location">at line 41</div>
         <code>                    <a href="../../../../QATools/QATools/HtmlElements/Element/Form.html"><abbr title="QATools\QATools\HtmlElements\Element\Form">Form</abbr></a>
     <strong>fill</strong>(array $form_data)</code>
     </h3>
     <div class="details">
-        <p>Fills the form with given data.</p>
-        <p>
-</p>
-        <div class="tags">
+                    <div class="method-description">
+                                    <p>Fills the form with given data.</p>                                </div>
+                <div class="tags">
                             <h4>Parameters</h4>
 
-                    <table>
+                    <table class="table table-condensed">
                     <tr>
                 <td>array</td>
                 <td>$form_data</td>
@@ -1051,7 +1303,7 @@
             
                             <h4>Return Value</h4>
 
-                    <table>
+                    <table class="table table-condensed">
         <tr>
             <td><a href="../../../../QATools/QATools/HtmlElements/Element/Form.html"><abbr title="QATools\QATools\HtmlElements\Element\Form">Form</abbr></a></td>
             <td>
@@ -1064,19 +1316,20 @@
                     </div>
     </div>
 
-                <h3 id="method_getNodeElements">
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getNodeElements">
         <div class="location">at line 60</div>
         <code>                    <abbr title="Behat\Mink\Element\NodeElement">NodeElement</abbr>[]
     <strong>getNodeElements</strong>(string $field_name)</code>
     </h3>
     <div class="details">
-        <p>Finds NodeElements by a given field name.</p>
-        <p>
-</p>
-        <div class="tags">
+                    <div class="method-description">
+                                    <p>Finds NodeElements by a given field name.</p>                                </div>
+                <div class="tags">
                             <h4>Parameters</h4>
 
-                    <table>
+                    <table class="table table-condensed">
                     <tr>
                 <td>string</td>
                 <td>$field_name</td>
@@ -1087,7 +1340,7 @@
             
                             <h4>Return Value</h4>
 
-                    <table>
+                    <table class="table table-condensed">
         <tr>
             <td><abbr title="Behat\Mink\Element\NodeElement">NodeElement</abbr>[]</td>
             <td>
@@ -1098,7 +1351,7 @@
             
                             <h4>Exceptions</h4>
 
-                    <table>
+                    <table class="table table-condensed">
                     <tr>
                 <td><a href="../../../../QATools/QATools/HtmlElements/Exception/FormException.html"><abbr title="QATools\QATools\HtmlElements\Exception\FormException">FormException</abbr></a></td>
                 <td>When element for a field name not found.</td>
@@ -1109,19 +1362,20 @@
                     </div>
     </div>
 
-                <h3 id="method__autoEscapeForXpath">
+            </div>
+                    <div class="method-item">
+                    <h3 id="method__autoEscapeForXpath">
         <div class="location">at line 81</div>
         <code>                private    string
     <strong>_autoEscapeForXpath</strong>(string $string)</code>
     </h3>
     <div class="details">
-        <p>Determines if Mink does automatic selector escaping.</p>
-        <p>
-</p>
-        <div class="tags">
+                    <div class="method-description">
+                                    <p>Determines if Mink does automatic selector escaping.</p>                                </div>
+                <div class="tags">
                             <h4>Parameters</h4>
 
-                    <table>
+                    <table class="table table-condensed">
                     <tr>
                 <td>string</td>
                 <td>$string</td>
@@ -1132,7 +1386,7 @@
             
                             <h4>Return Value</h4>
 
-                    <table>
+                    <table class="table table-condensed">
         <tr>
             <td>string</td>
             <td>
@@ -1145,19 +1399,20 @@
                     </div>
     </div>
 
-                <h3 id="method_typify">
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_typify">
         <div class="location">at line 101</div>
         <code>                    <a href="../../../../QATools/QATools/HtmlElements/Element/ITypifiedElement.html"><abbr title="QATools\QATools\HtmlElements\Element\ITypifiedElement">ITypifiedElement</abbr></a>
     <strong>typify</strong>(array $node_elements)</code>
     </h3>
     <div class="details">
-        <p>Create AbstractTypifiedElement from a given NodeElements.</p>
-        <p>
-</p>
-        <div class="tags">
+                    <div class="method-description">
+                                    <p>Create AbstractTypifiedElement from a given NodeElements.</p>                                </div>
+                <div class="tags">
                             <h4>Parameters</h4>
 
-                    <table>
+                    <table class="table table-condensed">
                     <tr>
                 <td>array</td>
                 <td>$node_elements</td>
@@ -1168,7 +1423,7 @@
             
                             <h4>Return Value</h4>
 
-                    <table>
+                    <table class="table table-condensed">
         <tr>
             <td><a href="../../../../QATools/QATools/HtmlElements/Element/ITypifiedElement.html"><abbr title="QATools\QATools\HtmlElements\Element\ITypifiedElement">ITypifiedElement</abbr></a></td>
             <td>
@@ -1179,7 +1434,7 @@
             
                             <h4>Exceptions</h4>
 
-                    <table>
+                    <table class="table table-condensed">
                     <tr>
                 <td><a href="../../../../QATools/QATools/HtmlElements/Exception/FormException.html"><abbr title="QATools\QATools\HtmlElements\Exception\FormException">FormException</abbr></a></td>
                 <td>When unable to create typified element.</td>
@@ -1190,21 +1445,22 @@
                     </div>
     </div>
 
-                <h3 id="method_setValue">
-        <div class="location">at line 145</div>
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setValue">
+        <div class="location">at line 148</div>
         <code>                    <a href="../../../../QATools/QATools/HtmlElements/Element/Form.html"><abbr title="QATools\QATools\HtmlElements\Element\Form">Form</abbr></a>
-    <strong>setValue</strong>(<a href="../../../../QATools/QATools/HtmlElements/Element/ITypifiedElement.html"><abbr title="QATools\QATools\HtmlElements\Element\ITypifiedElement">ITypifiedElement</abbr></a> $typified_element, mixed $value)</code>
+    <strong>setValue</strong>(<abbr title="QATools\QATools\HtmlElements\Element\QATools\QATools\HtmlElements\Element\ITypifiedElement">ITypifiedElement</abbr> $typified_element, mixed $value)</code>
     </h3>
     <div class="details">
-        <p>Sets value to the form element.</p>
-        <p>
-</p>
-        <div class="tags">
+                    <div class="method-description">
+                                    <p>Sets value to the form element.</p>                                </div>
+                <div class="tags">
                             <h4>Parameters</h4>
 
-                    <table>
+                    <table class="table table-condensed">
                     <tr>
-                <td><a href="../../../../QATools/QATools/HtmlElements/Element/ITypifiedElement.html"><abbr title="QATools\QATools\HtmlElements\Element\ITypifiedElement">ITypifiedElement</abbr></a></td>
+                <td><abbr title="QATools\QATools\HtmlElements\Element\QATools\QATools\HtmlElements\Element\ITypifiedElement">ITypifiedElement</abbr></td>
                 <td>$typified_element</td>
                 <td>Element, to set a value for.</td>
             </tr>
@@ -1218,7 +1474,7 @@
             
                             <h4>Return Value</h4>
 
-                    <table>
+                    <table class="table table-condensed">
         <tr>
             <td><a href="../../../../QATools/QATools/HtmlElements/Element/Form.html"><abbr title="QATools\QATools\HtmlElements\Element\Form">Form</abbr></a></td>
             <td>
@@ -1229,7 +1485,7 @@
             
                             <h4>Exceptions</h4>
 
-                    <table>
+                    <table class="table table-condensed">
                     <tr>
                 <td><a href="../../../../QATools/QATools/HtmlElements/Exception/FormException.html"><abbr title="QATools\QATools\HtmlElements\Exception\FormException">FormException</abbr></a></td>
                 <td>When element doesn't support value changing.</td>
@@ -1240,20 +1496,21 @@
                     </div>
     </div>
 
-                <h3 id="method_submit">
-        <div class="location">at line 164</div>
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_submit">
+        <div class="location">at line 167</div>
         <code>                    <a href="../../../../QATools/QATools/HtmlElements/Element/Form.html"><abbr title="QATools\QATools\HtmlElements\Element\Form">Form</abbr></a>
     <strong>submit</strong>()</code>
     </h3>
     <div class="details">
-        <p>Submits a form.</p>
-        <p>
-</p>
-        <div class="tags">
+                    <div class="method-description">
+                                    <p>Submits a form.</p>                                </div>
+                <div class="tags">
             
                             <h4>Return Value</h4>
 
-                    <table>
+                    <table class="table table-condensed">
         <tr>
             <td><a href="../../../../QATools/QATools/HtmlElements/Element/Form.html"><abbr title="QATools\QATools\HtmlElements\Element\Form">Form</abbr></a></td>
             <td>
@@ -1266,10 +1523,17 @@
                     </div>
     </div>
 
+            </div>
+            </div>
+
     
             </div>
-            <div id="footer">
-        Generated by <a href="http://sami.sensiolabs.org/" target="_top">Sami, the API Documentation Generator</a>.
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
     </div>
     </body>
+
 </html>
