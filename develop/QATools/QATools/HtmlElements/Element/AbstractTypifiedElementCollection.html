@@ -12,8 +12,11 @@
         <script src="../../../../js/bootstrap.min.js"></script>
         <script src="../../../../js/typeahead.min.js"></script>
         <script src="../../../../sami.js"></script>
-    
-    
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+
+
     </head>
 
     <body id="class" data-name="class:QATools_QATools_HtmlElements_Element_AbstractTypifiedElementCollection" data-root-path="../../../../">
@@ -70,12 +73,12 @@
                                         <li><a href="../../../../QATools/QATools.html">QATools</a></li>
                                         <li><a href="../../../../QATools/QATools/HtmlElements.html">HtmlElements</a></li>
                                         <li><a href="../../../../QATools/QATools/HtmlElements/Element.html">Element</a></li>
-    
+
                 <li>AbstractTypifiedElementCollection</li>
             </ol>
         </div>
                 <div id="page-content">
-                
+
     <div class="page-header">
         <h1>AbstractTypifiedElementCollection</h1>
     </div>
@@ -87,23 +90,26 @@
 
             <div class="description">
             <p>Represents a list of typified elements.</p>                    </div>
-    
-    
-    
+
+
+
             <h2>Properties</h2>
 
             <table class="table table-condensed">
                     <tr>
                 <td class="type" id="property_elementClass">
-                                        protected                                        string
+                                        protected
+    string
                 </td>
                 <td>$elementClass</td>
                 <td class="last">Element class, that is allowed in the collection.</td>
-                <td><small>from&nbsp;<a href="../../../../QATools/QATools/PageObject/Element/AbstractElementCollection.html#property_elementClass"><abbr title="QATools\QATools\PageObject\Element\AbstractElementCollection">AbstractElementCollection</abbr></a></small></td>
+                <td><small>from&nbsp;
+    <a href="../../../../QATools/QATools/PageObject/Element/AbstractElementCollection.html#property_elementClass"><abbr title="QATools\QATools\PageObject\Element\AbstractElementCollection">AbstractElementCollection</abbr></a></small></td>
             </tr>
                     <tr>
                 <td class="type" id="property__name">
-                                                            private                    string
+                                                            private
+    string
                 </td>
                 <td>$_name</td>
                 <td class="last">Name of the element.</td>
@@ -111,86 +117,111 @@
             </tr>
             </table>
 
-    
+
             <h2>Methods</h2>
 
             <div class="container-fluid underlined">
                     <div class="row">
                 <div class="col-md-2 type">
-                    
+
+
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method___construct">__construct</a>(array $elements = array())
+                    <a href="#method___construct">__construct</a>(
+    array $elements = array())
                                             <p>Initializes collection with a list of elements.</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    boolean
+
+    boolean
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_acceptElement">acceptElement</a>(mixed $element)
+                    <a href="#method_acceptElement">acceptElement</a>(
+    mixed $element)
                                             <p>Determines if an element can be added to a collection.</p>                </div>
-                <div class="col-md-2"><small>from&nbsp;<a href="../../../../QATools/QATools/PageObject/Element/AbstractElementCollection.html#method_acceptElement"><abbr title="QATools\QATools\PageObject\Element\AbstractElementCollection">AbstractElementCollection</abbr></a></small></div>
+                <div class="col-md-2"><small>from&nbsp;
+    <a href="../../../../QATools/QATools/PageObject/Element/AbstractElementCollection.html#method_acceptElement"><abbr title="QATools\QATools\PageObject\Element\AbstractElementCollection">AbstractElementCollection</abbr></a></small></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    void
+
+    void
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_offsetSet">offsetSet</a>(mixed $index, mixed $newval)
+                    <a href="#method_offsetSet">offsetSet</a>(
+    mixed $index,
+    mixed $newval)
                                             <p>Offset to set.</p>                </div>
-                <div class="col-md-2"><small>from&nbsp;<a href="../../../../QATools/QATools/PageObject/Element/AbstractElementCollection.html#method_offsetSet"><abbr title="QATools\QATools\PageObject\Element\AbstractElementCollection">AbstractElementCollection</abbr></a></small></div>
+                <div class="col-md-2"><small>from&nbsp;
+    <a href="../../../../QATools/QATools/PageObject/Element/AbstractElementCollection.html#method_offsetSet"><abbr title="QATools\QATools\PageObject\Element\AbstractElementCollection">AbstractElementCollection</abbr></a></small></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    static&nbsp;<a href="../../../../QATools/QATools/PageObject/Element/AbstractElementCollection.html"><abbr title="QATools\QATools\PageObject\Element\AbstractElementCollection">AbstractElementCollection</abbr></a>
+                    static&nbsp;
+    <a href="../../../../QATools/QATools/PageObject/Element/AbstractElementCollection.html"><abbr title="QATools\QATools\PageObject\Element\AbstractElementCollection">AbstractElementCollection</abbr></a>
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_fromNodeElements">fromNodeElements</a>(array $node_elements, string $element_class = null, <abbr title="QATools\QATools\PageObject\Element\QATools\QATools\PageObject\IPageFactory">IPageFactory</abbr> $page_factory = null)
+                    <a href="#method_fromNodeElements">fromNodeElements</a>(
+    array $node_elements,
+    string $element_class = null,
+    <abbr title="QATools\QATools\PageObject\Element\QATools\QATools\PageObject\IPageFactory">IPageFactory</abbr> $page_factory = null)
                                             <p>Creates new collection by wrapping given array of Node elements.</p>                </div>
-                <div class="col-md-2"><small>from&nbsp;<a href="../../../../QATools/QATools/PageObject/Element/AbstractElementCollection.html#method_fromNodeElements"><abbr title="QATools\QATools\PageObject\Element\AbstractElementCollection">AbstractElementCollection</abbr></a></small></div>
+                <div class="col-md-2"><small>from&nbsp;
+    <a href="../../../../QATools/QATools/PageObject/Element/AbstractElementCollection.html#method_fromNodeElements"><abbr title="QATools\QATools\PageObject\Element\AbstractElementCollection">AbstractElementCollection</abbr></a></small></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    boolean
+
+    boolean
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_isNodeElementAware">isNodeElementAware</a>(string $class_name)
+                    <a href="#method_isNodeElementAware">isNodeElementAware</a>(
+    string $class_name)
                                             <p>Determines if class is NodeElement aware.</p>                </div>
-                <div class="col-md-2"><small>from&nbsp;<a href="../../../../QATools/QATools/PageObject/Element/AbstractElementCollection.html#method_isNodeElementAware"><abbr title="QATools\QATools\PageObject\Element\AbstractElementCollection">AbstractElementCollection</abbr></a></small></div>
+                <div class="col-md-2"><small>from&nbsp;
+    <a href="../../../../QATools/QATools/PageObject/Element/AbstractElementCollection.html#method_isNodeElementAware"><abbr title="QATools\QATools\PageObject\Element\AbstractElementCollection">AbstractElementCollection</abbr></a></small></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    boolean
+
+    boolean
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_assertElement">assertElement</a>(mixed $element)
+                    <a href="#method_assertElement">assertElement</a>(
+    mixed $element)
                                             <p>Checks that element's class is allowed in collection.</p>                </div>
-                <div class="col-md-2"><small>from&nbsp;<a href="../../../../QATools/QATools/PageObject/Element/AbstractElementCollection.html#method_assertElement"><abbr title="QATools\QATools\PageObject\Element\AbstractElementCollection">AbstractElementCollection</abbr></a></small></div>
+                <div class="col-md-2"><small>from&nbsp;
+    <a href="../../../../QATools/QATools/PageObject/Element/AbstractElementCollection.html#method_assertElement"><abbr title="QATools\QATools\PageObject\Element\AbstractElementCollection">AbstractElementCollection</abbr></a></small></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    <abbr title="Mockery\Expectation">Expectation</abbr>
+
+    <abbr title="Mockery\Expectation">Expectation</abbr>
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_shouldReceive">shouldReceive</a>(<abbr title="string ">string </abbr> $name)
+                    <a href="#method_shouldReceive">shouldReceive</a>(
+    <abbr title="string ">string </abbr> $name)
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    <a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElementCollection.html"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElementCollection">AbstractTypifiedElementCollection</abbr></a>
+
+    <a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElementCollection.html"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElementCollection">AbstractTypifiedElementCollection</abbr></a>
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_setName">setName</a>(string $name)
+                    <a href="#method_setName">setName</a>(
+    string $name)
                                             <p>Sets a name of an element.</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    string
+
+    string
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_getName">getName</a>()
@@ -206,8 +237,10 @@
                     <div class="method-item">
                     <h3 id="method___construct">
         <div class="location">at line 36</div>
-        <code>                    
-    <strong>__construct</strong>(array $elements = array())</code>
+        <code>
+
+    <strong>__construct</strong>(
+    array $elements = array())</code>
     </h3>
     <div class="details">
                     <div class="method-description">
@@ -217,24 +250,28 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td>array</td>
+                <td>
+    array</td>
                 <td>$elements</td>
                 <td>Elements.</td>
             </tr>
             </table>
 
-            
-            
-            
+
+
+
                     </div>
     </div>
 
             </div>
                     <div class="method-item">
                     <h3 id="method_acceptElement">
-        <div class="location">in <a href="../../../../QATools/QATools/PageObject/Element/AbstractElementCollection.html#method_acceptElement"><abbr title="QATools\QATools\PageObject\Element\AbstractElementCollection">AbstractElementCollection</abbr></a> at line 67</div>
-        <code>            protected        boolean
-    <strong>acceptElement</strong>(mixed $element)</code>
+        <div class="location">in
+    <a href="../../../../QATools/QATools/PageObject/Element/AbstractElementCollection.html#method_acceptElement"><abbr title="QATools\QATools\PageObject\Element\AbstractElementCollection">AbstractElementCollection</abbr></a> at line 67</div>
+        <code>            protected
+    boolean
+    <strong>acceptElement</strong>(
+    mixed $element)</code>
     </h3>
     <div class="details">
                     <div class="method-description">
@@ -244,34 +281,40 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td>mixed</td>
+                <td>
+    mixed</td>
                 <td>$element</td>
                 <td>Element.</td>
             </tr>
             </table>
 
-            
+
                             <h4>Return Value</h4>
 
                     <table class="table table-condensed">
         <tr>
-            <td>boolean</td>
+            <td>
+    boolean</td>
             <td>
 </td>
         </tr>
     </table>
 
-            
-            
+
+
                     </div>
     </div>
 
             </div>
                     <div class="method-item">
                     <h3 id="method_offsetSet">
-        <div class="location">in <a href="../../../../QATools/QATools/PageObject/Element/AbstractElementCollection.html#method_offsetSet"><abbr title="QATools\QATools\PageObject\Element\AbstractElementCollection">AbstractElementCollection</abbr></a> at line 81</div>
-        <code>                    void
-    <strong>offsetSet</strong>(mixed $index, mixed $newval)</code>
+        <div class="location">in
+    <a href="../../../../QATools/QATools/PageObject/Element/AbstractElementCollection.html#method_offsetSet"><abbr title="QATools\QATools\PageObject\Element\AbstractElementCollection">AbstractElementCollection</abbr></a> at line 81</div>
+        <code>
+    void
+    <strong>offsetSet</strong>(
+    mixed $index,
+    mixed $newval)</code>
     </h3>
     <div class="details">
                     <div class="method-description">
@@ -281,29 +324,32 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td>mixed</td>
+                <td>
+    mixed</td>
                 <td>$index</td>
                 <td>The offset to assign the value to.</td>
             </tr>
                     <tr>
-                <td>mixed</td>
+                <td>
+    mixed</td>
                 <td>$newval</td>
                 <td>The value to set.</td>
             </tr>
             </table>
 
-            
+
                             <h4>Return Value</h4>
 
                     <table class="table table-condensed">
         <tr>
-            <td>void</td>
+            <td>
+    void</td>
             <td>
 </td>
         </tr>
     </table>
 
-            
+
                             <h4>Exceptions</h4>
 
                     <table class="table table-condensed">
@@ -313,16 +359,21 @@
             </tr>
             </table>
 
-            
+
                     </div>
     </div>
 
             </div>
                     <div class="method-item">
                     <h3 id="method_fromNodeElements">
-        <div class="location">in <a href="../../../../QATools/QATools/PageObject/Element/AbstractElementCollection.html#method_fromNodeElements"><abbr title="QATools\QATools\PageObject\Element\AbstractElementCollection">AbstractElementCollection</abbr></a> at line 100</div>
-        <code>        static            <a href="../../../../QATools/QATools/PageObject/Element/AbstractElementCollection.html"><abbr title="QATools\QATools\PageObject\Element\AbstractElementCollection">AbstractElementCollection</abbr></a>
-    <strong>fromNodeElements</strong>(array $node_elements, string $element_class = null, <abbr title="QATools\QATools\PageObject\Element\QATools\QATools\PageObject\IPageFactory">IPageFactory</abbr> $page_factory = null)</code>
+        <div class="location">in
+    <a href="../../../../QATools/QATools/PageObject/Element/AbstractElementCollection.html#method_fromNodeElements"><abbr title="QATools\QATools\PageObject\Element\AbstractElementCollection">AbstractElementCollection</abbr></a> at line 100</div>
+        <code>        static
+    <a href="../../../../QATools/QATools/PageObject/Element/AbstractElementCollection.html"><abbr title="QATools\QATools\PageObject\Element\AbstractElementCollection">AbstractElementCollection</abbr></a>
+    <strong>fromNodeElements</strong>(
+    array $node_elements,
+    string $element_class = null,
+    <abbr title="QATools\QATools\PageObject\Element\QATools\QATools\PageObject\IPageFactory">IPageFactory</abbr> $page_factory = null)</code>
     </h3>
     <div class="details">
                     <div class="method-description">
@@ -332,34 +383,38 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td>array</td>
+                <td>
+    array</td>
                 <td>$node_elements</td>
                 <td>Node elements to wrap.</td>
             </tr>
                     <tr>
-                <td>string</td>
+                <td>
+    string</td>
                 <td>$element_class</td>
                 <td>Class name to wrap Node elements with.</td>
             </tr>
                     <tr>
-                <td><abbr title="QATools\QATools\PageObject\Element\QATools\QATools\PageObject\IPageFactory">IPageFactory</abbr></td>
+                <td>
+    <abbr title="QATools\QATools\PageObject\Element\QATools\QATools\PageObject\IPageFactory">IPageFactory</abbr></td>
                 <td>$page_factory</td>
                 <td>Page factory (optional) to use during wrapping.</td>
             </tr>
             </table>
 
-            
+
                             <h4>Return Value</h4>
 
                     <table class="table table-condensed">
         <tr>
-            <td><a href="../../../../QATools/QATools/PageObject/Element/AbstractElementCollection.html"><abbr title="QATools\QATools\PageObject\Element\AbstractElementCollection">AbstractElementCollection</abbr></a></td>
+            <td>
+    <a href="../../../../QATools/QATools/PageObject/Element/AbstractElementCollection.html"><abbr title="QATools\QATools\PageObject\Element\AbstractElementCollection">AbstractElementCollection</abbr></a></td>
             <td>
 </td>
         </tr>
     </table>
 
-            
+
                             <h4>Exceptions</h4>
 
                     <table class="table table-condensed">
@@ -369,16 +424,19 @@
             </tr>
             </table>
 
-            
+
                     </div>
     </div>
 
             </div>
                     <div class="method-item">
                     <h3 id="method_isNodeElementAware">
-        <div class="location">in <a href="../../../../QATools/QATools/PageObject/Element/AbstractElementCollection.html#method_isNodeElementAware"><abbr title="QATools\QATools\PageObject\Element\AbstractElementCollection">AbstractElementCollection</abbr></a> at line 129</div>
-        <code>            protected        boolean
-    <strong>isNodeElementAware</strong>(string $class_name)</code>
+        <div class="location">in
+    <a href="../../../../QATools/QATools/PageObject/Element/AbstractElementCollection.html#method_isNodeElementAware"><abbr title="QATools\QATools\PageObject\Element\AbstractElementCollection">AbstractElementCollection</abbr></a> at line 129</div>
+        <code>            protected
+    boolean
+    <strong>isNodeElementAware</strong>(
+    string $class_name)</code>
     </h3>
     <div class="details">
                     <div class="method-description">
@@ -388,34 +446,39 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td>string</td>
+                <td>
+    string</td>
                 <td>$class_name</td>
                 <td>Class name.</td>
             </tr>
             </table>
 
-            
+
                             <h4>Return Value</h4>
 
                     <table class="table table-condensed">
         <tr>
-            <td>boolean</td>
+            <td>
+    boolean</td>
             <td>
 </td>
         </tr>
     </table>
 
-            
-            
+
+
                     </div>
     </div>
 
             </div>
                     <div class="method-item">
                     <h3 id="method_assertElement">
-        <div class="location">in <a href="../../../../QATools/QATools/PageObject/Element/AbstractElementCollection.html#method_assertElement"><abbr title="QATools\QATools\PageObject\Element\AbstractElementCollection">AbstractElementCollection</abbr></a> at line 148</div>
-        <code>            protected        boolean
-    <strong>assertElement</strong>(mixed $element)</code>
+        <div class="location">in
+    <a href="../../../../QATools/QATools/PageObject/Element/AbstractElementCollection.html#method_assertElement"><abbr title="QATools\QATools\PageObject\Element\AbstractElementCollection">AbstractElementCollection</abbr></a> at line 148</div>
+        <code>            protected
+    boolean
+    <strong>assertElement</strong>(
+    mixed $element)</code>
     </h3>
     <div class="details">
                     <div class="method-description">
@@ -425,24 +488,26 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td>mixed</td>
+                <td>
+    mixed</td>
                 <td>$element</td>
                 <td>Element.</td>
             </tr>
             </table>
 
-            
+
                             <h4>Return Value</h4>
 
                     <table class="table table-condensed">
         <tr>
-            <td>boolean</td>
+            <td>
+    boolean</td>
             <td>
 </td>
         </tr>
     </table>
 
-            
+
                             <h4>Exceptions</h4>
 
                     <table class="table table-condensed">
@@ -452,7 +517,7 @@
             </tr>
             </table>
 
-            
+
                     </div>
     </div>
 
@@ -460,8 +525,10 @@
                     <div class="method-item">
                     <h3 id="method_shouldReceive">
         <div class="location">at line 21</div>
-        <code>                    <abbr title="Mockery\Expectation">Expectation</abbr>
-    <strong>shouldReceive</strong>(<abbr title="string ">string </abbr> $name)</code>
+        <code>
+    <abbr title="Mockery\Expectation">Expectation</abbr>
+    <strong>shouldReceive</strong>(
+    <abbr title="string ">string </abbr> $name)</code>
     </h3>
     <div class="details">
                 <div class="tags">
@@ -469,26 +536,28 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td><abbr title="string ">string </abbr></td>
+                <td>
+    <abbr title="string ">string </abbr></td>
                 <td>$name</td>
                 <td>
 </td>
             </tr>
             </table>
 
-            
+
                             <h4>Return Value</h4>
 
                     <table class="table table-condensed">
         <tr>
-            <td><abbr title="Mockery\Expectation">Expectation</abbr></td>
+            <td>
+    <abbr title="Mockery\Expectation">Expectation</abbr></td>
             <td>
 </td>
         </tr>
     </table>
 
-            
-            
+
+
                     </div>
     </div>
 
@@ -496,8 +565,10 @@
                     <div class="method-item">
                     <h3 id="method_setName">
         <div class="location">at line 54</div>
-        <code>                    <a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElementCollection.html"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElementCollection">AbstractTypifiedElementCollection</abbr></a>
-    <strong>setName</strong>(string $name)</code>
+        <code>
+    <a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElementCollection.html"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElementCollection">AbstractTypifiedElementCollection</abbr></a>
+    <strong>setName</strong>(
+    string $name)</code>
     </h3>
     <div class="details">
                     <div class="method-description">
@@ -507,25 +578,27 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td>string</td>
+                <td>
+    string</td>
                 <td>$name</td>
                 <td>Name to set.</td>
             </tr>
             </table>
 
-            
+
                             <h4>Return Value</h4>
 
                     <table class="table table-condensed">
         <tr>
-            <td><a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElementCollection.html"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElementCollection">AbstractTypifiedElementCollection</abbr></a></td>
+            <td>
+    <a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElementCollection.html"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElementCollection">AbstractTypifiedElementCollection</abbr></a></td>
             <td>
 </td>
         </tr>
     </table>
 
-            
-            
+
+
                     </div>
     </div>
 
@@ -533,33 +606,35 @@
                     <div class="method-item">
                     <h3 id="method_getName">
         <div class="location">at line 66</div>
-        <code>                    string
+        <code>
+    string
     <strong>getName</strong>()</code>
     </h3>
     <div class="details">
                     <div class="method-description">
                                     <p>Returns name of the entity.</p>                                </div>
                 <div class="tags">
-            
+
                             <h4>Return Value</h4>
 
                     <table class="table table-condensed">
         <tr>
-            <td>string</td>
+            <td>
+    string</td>
             <td>
 </td>
         </tr>
     </table>
 
-            
-            
+
+
                     </div>
     </div>
 
             </div>
             </div>
 
-    
+
             </div>
                 <div id="footer">
         Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.

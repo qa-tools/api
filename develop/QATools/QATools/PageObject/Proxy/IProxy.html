@@ -12,8 +12,11 @@
         <script src="../../../../js/bootstrap.min.js"></script>
         <script src="../../../../js/typeahead.min.js"></script>
         <script src="../../../../sami.js"></script>
-    
-    
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+
+
     </head>
 
     <body id="class" data-name="class:QATools_QATools_PageObject_Proxy_IProxy" data-root-path="../../../../">
@@ -70,12 +73,12 @@
                                         <li><a href="../../../../QATools/QATools.html">QATools</a></li>
                                         <li><a href="../../../../QATools/QATools/PageObject.html">PageObject</a></li>
                                         <li><a href="../../../../QATools/QATools/PageObject/Proxy.html">Proxy</a></li>
-    
+
                 <li>IProxy</li>
             </ol>
         </div>
                 <div id="page-content">
-                
+
     <div class="page-header">
         <h1>IProxy</h1>
     </div>
@@ -86,25 +89,28 @@
 
             <div class="description">
             <p>All page factories must implement this interface.</p>                    </div>
-    
-    
-    
-    
+
+
+
+
             <h2>Methods</h2>
 
             <div class="container-fluid underlined">
                     <div class="row">
                 <div class="col-md-2 type">
-                    <a href="../../../../QATools/QATools/PageObject/Proxy/IProxy.html"><abbr title="QATools\QATools\PageObject\Proxy\IProxy">IProxy</abbr></a>
+
+    <a href="../../../../QATools/QATools/PageObject/Proxy/IProxy.html"><abbr title="QATools\QATools\PageObject\Proxy\IProxy">IProxy</abbr></a>
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_setClassName">setClassName</a>(string $class_name)
+                    <a href="#method_setClassName">setClassName</a>(
+    string $class_name)
                                             <p>Sets class name, used inside the proxy.</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    mixed
+
+    mixed
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_getObject">getObject</a>()
@@ -113,19 +119,24 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    mixed
+
+    mixed
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method___call">__call</a>(string $method, array $arguments)
+                    <a href="#method___call">__call</a>(
+    string $method,
+    array $arguments)
                                             <p>Proxies all methods to sub-object.</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    <abbr title="Mockery\Expectation">Expectation</abbr>
+
+    <abbr title="Mockery\Expectation">Expectation</abbr>
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_shouldReceive">shouldReceive</a>(<abbr title="string ">string </abbr> $name)
+                    <a href="#method_shouldReceive">shouldReceive</a>(
+    <abbr title="string ">string </abbr> $name)
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
@@ -139,8 +150,10 @@
                     <div class="method-item">
                     <h3 id="method_setClassName">
         <div class="location">at line 32</div>
-        <code>                    <a href="../../../../QATools/QATools/PageObject/Proxy/IProxy.html"><abbr title="QATools\QATools\PageObject\Proxy\IProxy">IProxy</abbr></a>
-    <strong>setClassName</strong>(string $class_name)</code>
+        <code>
+    <a href="../../../../QATools/QATools/PageObject/Proxy/IProxy.html"><abbr title="QATools\QATools\PageObject\Proxy\IProxy">IProxy</abbr></a>
+    <strong>setClassName</strong>(
+    string $class_name)</code>
     </h3>
     <div class="details">
                     <div class="method-description">
@@ -150,25 +163,27 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td>string</td>
+                <td>
+    string</td>
                 <td>$class_name</td>
                 <td>Class name to proxy.</td>
             </tr>
             </table>
 
-            
+
                             <h4>Return Value</h4>
 
                     <table class="table table-condensed">
         <tr>
-            <td><a href="../../../../QATools/QATools/PageObject/Proxy/IProxy.html"><abbr title="QATools\QATools\PageObject\Proxy\IProxy">IProxy</abbr></a></td>
+            <td>
+    <a href="../../../../QATools/QATools/PageObject/Proxy/IProxy.html"><abbr title="QATools\QATools\PageObject\Proxy\IProxy">IProxy</abbr></a></td>
             <td>
 </td>
         </tr>
     </table>
 
-            
-            
+
+
                     </div>
     </div>
 
@@ -176,25 +191,27 @@
                     <div class="method-item">
                     <h3 id="method_getObject">
         <div class="location">at line 40</div>
-        <code>                    mixed
+        <code>
+    mixed
     <strong>getObject</strong>()</code>
     </h3>
     <div class="details">
                     <div class="method-description">
                                     <p>Returns class instance, that was placed inside a proxy.</p>                                </div>
                 <div class="tags">
-            
+
                             <h4>Return Value</h4>
 
                     <table class="table table-condensed">
         <tr>
-            <td>mixed</td>
+            <td>
+    mixed</td>
             <td>
 </td>
         </tr>
     </table>
 
-            
+
                             <h4>Exceptions</h4>
 
                     <table class="table table-condensed">
@@ -204,7 +221,7 @@
             </tr>
             </table>
 
-            
+
                     </div>
     </div>
 
@@ -212,8 +229,11 @@
                     <div class="method-item">
                     <h3 id="method___call">
         <div class="location">at line 51</div>
-        <code>                    mixed
-    <strong>__call</strong>(string $method, array $arguments)</code>
+        <code>
+    mixed
+    <strong>__call</strong>(
+    string $method,
+    array $arguments)</code>
     </h3>
     <div class="details">
                     <div class="method-description">
@@ -223,29 +243,32 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td>string</td>
+                <td>
+    string</td>
                 <td>$method</td>
                 <td>Method to proxy.</td>
             </tr>
                     <tr>
-                <td>array</td>
+                <td>
+    array</td>
                 <td>$arguments</td>
                 <td>Method arguments.</td>
             </tr>
             </table>
 
-            
+
                             <h4>Return Value</h4>
 
                     <table class="table table-condensed">
         <tr>
-            <td>mixed</td>
+            <td>
+    mixed</td>
             <td>
 </td>
         </tr>
     </table>
 
-            
+
                             <h4>Exceptions</h4>
 
                     <table class="table table-condensed">
@@ -255,7 +278,7 @@
             </tr>
             </table>
 
-            
+
                     </div>
     </div>
 
@@ -263,8 +286,10 @@
                     <div class="method-item">
                     <h3 id="method_shouldReceive">
         <div class="location">at line 22</div>
-        <code>                    <abbr title="Mockery\Expectation">Expectation</abbr>
-    <strong>shouldReceive</strong>(<abbr title="string ">string </abbr> $name)</code>
+        <code>
+    <abbr title="Mockery\Expectation">Expectation</abbr>
+    <strong>shouldReceive</strong>(
+    <abbr title="string ">string </abbr> $name)</code>
     </h3>
     <div class="details">
                 <div class="tags">
@@ -272,33 +297,35 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td><abbr title="string ">string </abbr></td>
+                <td>
+    <abbr title="string ">string </abbr></td>
                 <td>$name</td>
                 <td>
 </td>
             </tr>
             </table>
 
-            
+
                             <h4>Return Value</h4>
 
                     <table class="table table-condensed">
         <tr>
-            <td><abbr title="Mockery\Expectation">Expectation</abbr></td>
+            <td>
+    <abbr title="Mockery\Expectation">Expectation</abbr></td>
             <td>
 </td>
         </tr>
     </table>
 
-            
-            
+
+
                     </div>
     </div>
 
             </div>
             </div>
 
-    
+
             </div>
                 <div id="footer">
         Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.

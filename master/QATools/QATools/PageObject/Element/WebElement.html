@@ -12,6 +12,9 @@
         <script src="../../../../js/bootstrap.min.js"></script>
         <script src="../../../../js/typeahead.min.js"></script>
         <script src="../../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
     
     
     </head>
@@ -95,7 +98,8 @@
             <table class="table table-condensed">
                     <tr>
                 <td class="type" id="property_seleniumSelector">
-                                        protected                                        array
+                                        protected                                        
+    array
                 </td>
                 <td>$seleniumSelector</td>
                 <td class="last">Selenium selector, used to locate an element at construction time.</td>
@@ -110,33 +114,42 @@
                     <div class="row">
                 <div class="col-md-2 type">
                     
+    
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method___construct">__construct</a>(array $selenium_selector, <abbr title="QATools\QATools\PageObject\Element\Behat\Mink\Session">Session</abbr> $session)
+                    <a href="#method___construct">__construct</a>(
+    array $selenium_selector, 
+    <abbr title="QATools\QATools\PageObject\Element\Behat\Mink\Session">Session</abbr> $session)
                                             <p>Initializes web element.</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    static&nbsp;<a href="../../../../QATools/QATools/PageObject/Element/WebElement.html"><abbr title="QATools\QATools\PageObject\Element\WebElement">WebElement</abbr></a>
+                    static&nbsp;
+    <a href="../../../../QATools/QATools/PageObject/Element/WebElement.html"><abbr title="QATools\QATools\PageObject\Element\WebElement">WebElement</abbr></a>
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_fromNodeElement">fromNodeElement</a>(<abbr title="QATools\QATools\PageObject\Element\Behat\Mink\Element\NodeElement">NodeElement</abbr> $node_element, <abbr title="QATools\QATools\PageObject\Element\QATools\QATools\PageObject\IPageFactory">IPageFactory</abbr> $page_factory = null)
+                    <a href="#method_fromNodeElement">fromNodeElement</a>(
+    <abbr title="QATools\QATools\PageObject\Element\Behat\Mink\Element\NodeElement">NodeElement</abbr> $node_element, 
+    <abbr title="QATools\QATools\PageObject\Element\QATools\QATools\PageObject\IPageFactory">IPageFactory</abbr> $page_factory = null)
                                             <p>Creates Element instance based on existing NodeElement instance.</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    string
+                    
+    string
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_seleniumSelectorToXpath">seleniumSelectorToXpath</a>(<abbr title="QATools\QATools\PageObject\Element\Behat\Mink\Session">Session</abbr> $session)
+                    <a href="#method_seleniumSelectorToXpath">seleniumSelectorToXpath</a>(
+    <abbr title="QATools\QATools\PageObject\Element\Behat\Mink\Session">Session</abbr> $session)
                                             <p>Returns 'xpath' selector, used to locate this WebElement.</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    string
+                    
+    string
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method___toString">__toString</a>()
@@ -145,10 +158,12 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    <abbr title="Mockery\Expectation">Expectation</abbr>
+                    
+    <abbr title="Mockery\Expectation">Expectation</abbr>
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_shouldReceive">shouldReceive</a>(<abbr title="string ">string </abbr> $name)
+                    <a href="#method_shouldReceive">shouldReceive</a>(
+    <abbr title="string ">string </abbr> $name)
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
@@ -163,7 +178,10 @@
                     <h3 id="method___construct">
         <div class="location">at line 40</div>
         <code>                    
-    <strong>__construct</strong>(array $selenium_selector, <abbr title="QATools\QATools\PageObject\Element\Behat\Mink\Session">Session</abbr> $session)</code>
+    
+    <strong>__construct</strong>(
+    array $selenium_selector, 
+    <abbr title="QATools\QATools\PageObject\Element\Behat\Mink\Session">Session</abbr> $session)</code>
     </h3>
     <div class="details">
                     <div class="method-description">
@@ -173,12 +191,14 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td>array</td>
+                <td>
+    array</td>
                 <td>$selenium_selector</td>
                 <td>Element selector.</td>
             </tr>
                     <tr>
-                <td><abbr title="QATools\QATools\PageObject\Element\Behat\Mink\Session">Session</abbr></td>
+                <td>
+    <abbr title="QATools\QATools\PageObject\Element\Behat\Mink\Session">Session</abbr></td>
                 <td>$session</td>
                 <td>Session.</td>
             </tr>
@@ -194,8 +214,11 @@
                     <div class="method-item">
                     <h3 id="method_fromNodeElement">
         <div class="location">at line 55</div>
-        <code>        static            <a href="../../../../QATools/QATools/PageObject/Element/WebElement.html"><abbr title="QATools\QATools\PageObject\Element\WebElement">WebElement</abbr></a>
-    <strong>fromNodeElement</strong>(<abbr title="QATools\QATools\PageObject\Element\Behat\Mink\Element\NodeElement">NodeElement</abbr> $node_element, <abbr title="QATools\QATools\PageObject\Element\QATools\QATools\PageObject\IPageFactory">IPageFactory</abbr> $page_factory = null)</code>
+        <code>        static            
+    <a href="../../../../QATools/QATools/PageObject/Element/WebElement.html"><abbr title="QATools\QATools\PageObject\Element\WebElement">WebElement</abbr></a>
+    <strong>fromNodeElement</strong>(
+    <abbr title="QATools\QATools\PageObject\Element\Behat\Mink\Element\NodeElement">NodeElement</abbr> $node_element, 
+    <abbr title="QATools\QATools\PageObject\Element\QATools\QATools\PageObject\IPageFactory">IPageFactory</abbr> $page_factory = null)</code>
     </h3>
     <div class="details">
                     <div class="method-description">
@@ -205,12 +228,14 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td><abbr title="QATools\QATools\PageObject\Element\Behat\Mink\Element\NodeElement">NodeElement</abbr></td>
+                <td>
+    <abbr title="QATools\QATools\PageObject\Element\Behat\Mink\Element\NodeElement">NodeElement</abbr></td>
                 <td>$node_element</td>
                 <td>Node element.</td>
             </tr>
                     <tr>
-                <td><abbr title="QATools\QATools\PageObject\Element\QATools\QATools\PageObject\IPageFactory">IPageFactory</abbr></td>
+                <td>
+    <abbr title="QATools\QATools\PageObject\Element\QATools\QATools\PageObject\IPageFactory">IPageFactory</abbr></td>
                 <td>$page_factory</td>
                 <td>Page factory.</td>
             </tr>
@@ -221,7 +246,8 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td><a href="../../../../QATools/QATools/PageObject/Element/WebElement.html"><abbr title="QATools\QATools\PageObject\Element\WebElement">WebElement</abbr></a></td>
+            <td>
+    <a href="../../../../QATools/QATools/PageObject/Element/WebElement.html"><abbr title="QATools\QATools\PageObject\Element\WebElement">WebElement</abbr></a></td>
             <td>
 </td>
         </tr>
@@ -236,8 +262,10 @@
                     <div class="method-item">
                     <h3 id="method_seleniumSelectorToXpath">
         <div class="location">at line 69</div>
-        <code>            protected        string
-    <strong>seleniumSelectorToXpath</strong>(<abbr title="QATools\QATools\PageObject\Element\Behat\Mink\Session">Session</abbr> $session)</code>
+        <code>            protected        
+    string
+    <strong>seleniumSelectorToXpath</strong>(
+    <abbr title="QATools\QATools\PageObject\Element\Behat\Mink\Session">Session</abbr> $session)</code>
     </h3>
     <div class="details">
                     <div class="method-description">
@@ -247,7 +275,8 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td><abbr title="QATools\QATools\PageObject\Element\Behat\Mink\Session">Session</abbr></td>
+                <td>
+    <abbr title="QATools\QATools\PageObject\Element\Behat\Mink\Session">Session</abbr></td>
                 <td>$session</td>
                 <td>Session.</td>
             </tr>
@@ -258,7 +287,8 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td>string</td>
+            <td>
+    string</td>
             <td>
 </td>
         </tr>
@@ -273,7 +303,8 @@
                     <div class="method-item">
                     <h3 id="method___toString">
         <div class="location">at line 79</div>
-        <code>                    string
+        <code>                    
+    string
     <strong>__toString</strong>()</code>
     </h3>
     <div class="details">
@@ -285,7 +316,8 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td>string</td>
+            <td>
+    string</td>
             <td>
 </td>
         </tr>
@@ -300,8 +332,10 @@
                     <div class="method-item">
                     <h3 id="method_shouldReceive">
         <div class="location">at line 24</div>
-        <code>                    <abbr title="Mockery\Expectation">Expectation</abbr>
-    <strong>shouldReceive</strong>(<abbr title="string ">string </abbr> $name)</code>
+        <code>                    
+    <abbr title="Mockery\Expectation">Expectation</abbr>
+    <strong>shouldReceive</strong>(
+    <abbr title="string ">string </abbr> $name)</code>
     </h3>
     <div class="details">
                 <div class="tags">
@@ -309,7 +343,8 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td><abbr title="string ">string </abbr></td>
+                <td>
+    <abbr title="string ">string </abbr></td>
                 <td>$name</td>
                 <td>
 </td>
@@ -321,7 +356,8 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td><abbr title="Mockery\Expectation">Expectation</abbr></td>
+            <td>
+    <abbr title="Mockery\Expectation">Expectation</abbr></td>
             <td>
 </td>
         </tr>

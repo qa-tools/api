@@ -12,6 +12,9 @@
         <script src="../../../../js/bootstrap.min.js"></script>
         <script src="../../../../js/typeahead.min.js"></script>
         <script src="../../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
     
     
     </head>
@@ -95,7 +98,8 @@
             <table class="table table-condensed">
                     <tr>
                 <td class="type" id="property_path">
-                                        protected                                        string
+                                        protected                                        
+    string
                 </td>
                 <td>$path</td>
                 <td class="last">Path component of the url (e.g. /path/to/page.html).</td>
@@ -103,7 +107,8 @@
             </tr>
                     <tr>
                 <td class="type" id="property_anchor">
-                                        protected                                        string
+                                        protected                                        
+    string
                 </td>
                 <td>$anchor</td>
                 <td class="last">The anchor component of the url (e.g. "shoes", if the url is "/view/category#shoes").</td>
@@ -111,7 +116,8 @@
             </tr>
                     <tr>
                 <td class="type" id="property_protocol">
-                                        protected                                        string
+                                        protected                                        
+    string
                 </td>
                 <td>$protocol</td>
                 <td class="last">The used protocol of the url.</td>
@@ -119,7 +125,8 @@
             </tr>
                     <tr>
                 <td class="type" id="property_host">
-                                        protected                                        string
+                                        protected                                        
+    string
                 </td>
                 <td>$host</td>
                 <td class="last">The host of the url.</td>
@@ -127,7 +134,8 @@
             </tr>
                     <tr>
                 <td class="type" id="property_params">
-                                        protected                                        array
+                                        protected                                        
+    array
                 </td>
                 <td>$params</td>
                 <td class="last">GET url parameters.</td>
@@ -142,24 +150,29 @@
                     <div class="row">
                 <div class="col-md-2 type">
                     
+    
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method___construct">__construct</a>(array $components)
+                    <a href="#method___construct">__construct</a>(
+    array $components)
                                             <p>Constructor for the url builder.</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    string
+                    
+    string
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_build">build</a>(array $params = array())
+                    <a href="#method_build">build</a>(
+    array $params = array())
                                             <p>Builds the final url and merges saved params with given via parameter.</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    array
+                    
+    array
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_getParams">getParams</a>()
@@ -168,7 +181,8 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    string
+                    
+    string
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_getPath">getPath</a>()
@@ -177,7 +191,8 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    string
+                    
+    string
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_getAnchor">getAnchor</a>()
@@ -186,7 +201,8 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    string
+                    
+    string
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_getHost">getHost</a>()
@@ -195,7 +211,8 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    string
+                    
+    string
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_getProtocol">getProtocol</a>()
@@ -204,10 +221,12 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    <abbr title="Mockery\Expectation">Expectation</abbr>
+                    
+    <abbr title="Mockery\Expectation">Expectation</abbr>
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_shouldReceive">shouldReceive</a>(<abbr title="string ">string </abbr> $name)
+                    <a href="#method_shouldReceive">shouldReceive</a>(
+    <abbr title="string ">string </abbr> $name)
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
@@ -222,7 +241,9 @@
                     <h3 id="method___construct">
         <div class="location">at line 66</div>
         <code>                    
-    <strong>__construct</strong>(array $components)</code>
+    
+    <strong>__construct</strong>(
+    array $components)</code>
     </h3>
     <div class="details">
                     <div class="method-description">
@@ -232,7 +253,8 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td>array</td>
+                <td>
+    array</td>
                 <td>$components</td>
                 <td>The url components.</td>
             </tr>
@@ -257,8 +279,10 @@
                     <div class="method-item">
                     <h3 id="method_build">
         <div class="location">at line 90</div>
-        <code>                    string
-    <strong>build</strong>(array $params = array())</code>
+        <code>                    
+    string
+    <strong>build</strong>(
+    array $params = array())</code>
     </h3>
     <div class="details">
                     <div class="method-description">
@@ -268,7 +292,8 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td>array</td>
+                <td>
+    array</td>
                 <td>$params</td>
                 <td>The additional GET params.</td>
             </tr>
@@ -279,7 +304,8 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td>string</td>
+            <td>
+    string</td>
             <td>
 </td>
         </tr>
@@ -294,7 +320,8 @@
                     <div class="method-item">
                     <h3 id="method_getParams">
         <div class="location">at line 111</div>
-        <code>                    array
+        <code>                    
+    array
     <strong>getParams</strong>()</code>
     </h3>
     <div class="details">
@@ -306,7 +333,8 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td>array</td>
+            <td>
+    array</td>
             <td>
 </td>
         </tr>
@@ -321,7 +349,8 @@
                     <div class="method-item">
                     <h3 id="method_getPath">
         <div class="location">at line 121</div>
-        <code>                    string
+        <code>                    
+    string
     <strong>getPath</strong>()</code>
     </h3>
     <div class="details">
@@ -333,7 +362,8 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td>string</td>
+            <td>
+    string</td>
             <td>
 </td>
         </tr>
@@ -348,7 +378,8 @@
                     <div class="method-item">
                     <h3 id="method_getAnchor">
         <div class="location">at line 131</div>
-        <code>                    string
+        <code>                    
+    string
     <strong>getAnchor</strong>()</code>
     </h3>
     <div class="details">
@@ -360,7 +391,8 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td>string</td>
+            <td>
+    string</td>
             <td>
 </td>
         </tr>
@@ -375,7 +407,8 @@
                     <div class="method-item">
                     <h3 id="method_getHost">
         <div class="location">at line 141</div>
-        <code>                    string
+        <code>                    
+    string
     <strong>getHost</strong>()</code>
     </h3>
     <div class="details">
@@ -387,7 +420,8 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td>string</td>
+            <td>
+    string</td>
             <td>
 </td>
         </tr>
@@ -402,7 +436,8 @@
                     <div class="method-item">
                     <h3 id="method_getProtocol">
         <div class="location">at line 151</div>
-        <code>                    string
+        <code>                    
+    string
     <strong>getProtocol</strong>()</code>
     </h3>
     <div class="details">
@@ -414,7 +449,8 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td>string</td>
+            <td>
+    string</td>
             <td>
 </td>
         </tr>
@@ -429,8 +465,10 @@
                     <div class="method-item">
                     <h3 id="method_shouldReceive">
         <div class="location">at line 21</div>
-        <code>                    <abbr title="Mockery\Expectation">Expectation</abbr>
-    <strong>shouldReceive</strong>(<abbr title="string ">string </abbr> $name)</code>
+        <code>                    
+    <abbr title="Mockery\Expectation">Expectation</abbr>
+    <strong>shouldReceive</strong>(
+    <abbr title="string ">string </abbr> $name)</code>
     </h3>
     <div class="details">
                 <div class="tags">
@@ -438,7 +476,8 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td><abbr title="string ">string </abbr></td>
+                <td>
+    <abbr title="string ">string </abbr></td>
                 <td>$name</td>
                 <td>
 </td>
@@ -450,7 +489,8 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td><abbr title="Mockery\Expectation">Expectation</abbr></td>
+            <td>
+    <abbr title="Mockery\Expectation">Expectation</abbr></td>
             <td>
 </td>
         </tr>
