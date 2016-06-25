@@ -25,8 +25,8 @@
                 <div id="control-panel">
                     <form action="#" method="GET">
                 <select id="version-switcher" name="version">
-                                            <option value="../../../../master/index.html" selected>master branch</option>
-                                            <option value="../../../../develop/index.html">develop branch</option>
+                                            <option value="../../../../master/index.html">master branch</option>
+                                            <option value="../../../../develop/index.html" selected>develop branch</option>
                                     </select>
             </form>
                 <form id="search-form" action="../../../search.html" method="GET">
@@ -79,12 +79,18 @@
                 <div id="page-content">
 
     <div class="page-header">
-        <h1>TypifiedPage</h1>
+        <h1>
+            TypifiedPage
+
+        </h1>
     </div>
 
     <p>    class
     <strong>TypifiedPage</strong>        extends <a href="../../../QATools/QATools/PageObject/Page.html"><abbr title="QATools\QATools\PageObject\Page">Page</abbr></a>        (<a href="https://github.com/qa-tools/qa-tools/blob/develop/library/QATools/QATools/HtmlElements/TypifiedPage.php">View source</a>)
 </p>
+
+
+
 
             <div class="description">
             <p>The base class to be used for making classes representing pages, that can contain typified elements
@@ -97,23 +103,19 @@
             <table class="table table-condensed">
                     <tr>
                 <td class="type" id="property_pageFactory">
-                                        protected
-    <a href="../../../QATools/QATools/PageObject/IPageFactory.html"><abbr title="QATools\QATools\PageObject\IPageFactory">IPageFactory</abbr></a>
+                                        protected                                        <a href="../../../QATools/QATools/PageObject/IPageFactory.html"><abbr title="QATools\QATools\PageObject\IPageFactory">IPageFactory</abbr></a>
                 </td>
                 <td>$pageFactory</td>
                 <td class="last">Page factory, used to create a Page.</td>
-                <td><small>from&nbsp;
-    <a href="../../../QATools/QATools/PageObject/Page.html#property_pageFactory"><abbr title="QATools\QATools\PageObject\Page">Page</abbr></a></small></td>
+                <td><small>from&nbsp;<a href="../../../QATools/QATools/PageObject/Page.html#property_pageFactory"><abbr title="QATools\QATools\PageObject\Page">Page</abbr></a></small></td>
             </tr>
                     <tr>
                 <td class="type" id="property_urlBuilder">
-                                        protected
-    <a href="../../../QATools/QATools/PageObject/Url/IBuilder.html"><abbr title="QATools\QATools\PageObject\Url\IBuilder">IBuilder</abbr></a>
+                                        protected                                        <a href="../../../QATools/QATools/PageObject/Url/IBuilder.html"><abbr title="QATools\QATools\PageObject\Url\IBuilder">IBuilder</abbr></a>
                 </td>
                 <td>$urlBuilder</td>
                 <td class="last">The builder which generates the url.</td>
-                <td><small>from&nbsp;
-    <a href="../../../QATools/QATools/PageObject/Page.html#property_urlBuilder"><abbr title="QATools\QATools\PageObject\Page">Page</abbr></a></small></td>
+                <td><small>from&nbsp;<a href="../../../QATools/QATools/PageObject/Page.html#property_urlBuilder"><abbr title="QATools\QATools\PageObject\Page">Page</abbr></a></small></td>
             </tr>
             </table>
 
@@ -124,63 +126,53 @@
                     <div class="row">
                 <div class="col-md-2 type">
 
-
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method___construct">__construct</a>(
-    <abbr title="QATools\QATools\PageObject\QATools\QATools\PageObject\IPageFactory">IPageFactory</abbr> $page_factory)
+                    <a href="#method___construct">__construct</a>(<a href="../../../QATools/QATools/PageObject/IPageFactory.html"><abbr title="QATools\QATools\PageObject\IPageFactory">IPageFactory</abbr></a> $page_factory)
+
                                             <p>Initialize the page.</p>                </div>
-                <div class="col-md-2"><small>from&nbsp;
-    <a href="../../../QATools/QATools/PageObject/Page.html#method___construct"><abbr title="QATools\QATools\PageObject\Page">Page</abbr></a></small></div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../QATools/QATools/PageObject/Page.html#method___construct"><abbr title="QATools\QATools\PageObject\Page">Page</abbr></a></small></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-
-    string
+                    string
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_getAbsoluteUrl">getAbsoluteUrl</a>(
-    array $params = array())
+                    <a href="#method_getAbsoluteUrl">getAbsoluteUrl</a>(array $params = array())
+
                                             <p>Returns full url to the page with a possibility to alter it real time.</p>                </div>
-                <div class="col-md-2"><small>from&nbsp;
-    <a href="../../../QATools/QATools/PageObject/Page.html#method_getAbsoluteUrl"><abbr title="QATools\QATools\PageObject\Page">Page</abbr></a></small></div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../QATools/QATools/PageObject/Page.html#method_getAbsoluteUrl"><abbr title="QATools\QATools\PageObject\Page">Page</abbr></a></small></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-
-    <a href="../../../QATools/QATools/PageObject/Page.html"><abbr title="QATools\QATools\PageObject\Page">Page</abbr></a>
+                    <a href="../../../QATools/QATools/PageObject/Page.html"><abbr title="QATools\QATools\PageObject\Page">Page</abbr></a>
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_open">open</a>(
-    array $params = array())
+                    <a href="#method_open">open</a>(array $params = array())
+
                                             <p>Opens this page in browser.</p>                </div>
-                <div class="col-md-2"><small>from&nbsp;
-    <a href="../../../QATools/QATools/PageObject/Page.html#method_open"><abbr title="QATools\QATools\PageObject\Page">Page</abbr></a></small></div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../QATools/QATools/PageObject/Page.html#method_open"><abbr title="QATools\QATools\PageObject\Page">Page</abbr></a></small></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-
-    <a href="../../../QATools/QATools/PageObject/Page.html"><abbr title="QATools\QATools\PageObject\Page">Page</abbr></a>
+                    <a href="../../../QATools/QATools/PageObject/Page.html"><abbr title="QATools\QATools\PageObject\Page">Page</abbr></a>
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_setUrlBuilder">setUrlBuilder</a>(
-    <abbr title="QATools\QATools\PageObject\QATools\QATools\PageObject\Url\IBuilder">IBuilder</abbr> $url_builder)
+                    <a href="#method_setUrlBuilder">setUrlBuilder</a>(<a href="../../../QATools/QATools/PageObject/Url/IBuilder.html"><abbr title="QATools\QATools\PageObject\Url\IBuilder">IBuilder</abbr></a> $url_builder)
+
                                             <p>Sets the url builder.</p>                </div>
-                <div class="col-md-2"><small>from&nbsp;
-    <a href="../../../QATools/QATools/PageObject/Page.html#method_setUrlBuilder"><abbr title="QATools\QATools\PageObject\Page">Page</abbr></a></small></div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../QATools/QATools/PageObject/Page.html#method_setUrlBuilder"><abbr title="QATools\QATools\PageObject\Page">Page</abbr></a></small></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-
-    <abbr title="Mockery\Expectation">Expectation</abbr>
+                    <abbr title="Mockery\Expectation">Expectation</abbr>
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_shouldReceive">shouldReceive</a>(
-    <abbr title="string ">string </abbr> $name)
+                    <a href="#method_shouldReceive">shouldReceive</a>(string  $name)
+
                                             <p class="no-description">No description</p>
                                     </div>
-                <div class="col-md-2"><small>from&nbsp;
-    <a href="../../../QATools/QATools/PageObject/Page.html#method_shouldReceive"><abbr title="QATools\QATools\PageObject\Page">Page</abbr></a></small></div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../QATools/QATools/PageObject/Page.html#method_shouldReceive"><abbr title="QATools\QATools\PageObject\Page">Page</abbr></a></small></div>
             </div>
             </div>
 
@@ -190,14 +182,15 @@
             <div id="method-details">
                     <div class="method-item">
                     <h3 id="method___construct">
-        <div class="location">in
-    <a href="../../../QATools/QATools/PageObject/Page.html#method___construct"><abbr title="QATools\QATools\PageObject\Page">Page</abbr></a> at line 45</div>
+        <div class="location">in <a href="../../../QATools/QATools/PageObject/Page.html#method___construct"><abbr title="QATools\QATools\PageObject\Page">Page</abbr></a> at         <a href="https://github.com/qa-tools/qa-tools/blob/develop/library/QATools/QATools/PageObject/Page.php#L45">line 45</a></div>
         <code>
-
-    <strong>__construct</strong>(
-    <abbr title="QATools\QATools\PageObject\QATools\QATools\PageObject\IPageFactory">IPageFactory</abbr> $page_factory)</code>
+    <strong>__construct</strong>(<a href="../../../QATools/QATools/PageObject/IPageFactory.html"><abbr title="QATools\QATools\PageObject\IPageFactory">IPageFactory</abbr></a> $page_factory)
+        </code>
     </h3>
     <div class="details">
+
+
+
                     <div class="method-description">
                                     <p>Initialize the page.</p>                                </div>
                 <div class="tags">
@@ -205,8 +198,7 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td>
-    <abbr title="QATools\QATools\PageObject\QATools\QATools\PageObject\IPageFactory">IPageFactory</abbr></td>
+                <td><a href="../../../QATools/QATools/PageObject/IPageFactory.html"><abbr title="QATools\QATools\PageObject\IPageFactory">IPageFactory</abbr></a></td>
                 <td>$page_factory</td>
                 <td>Page factory.</td>
             </tr>
@@ -221,14 +213,15 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getAbsoluteUrl">
-        <div class="location">in
-    <a href="../../../QATools/QATools/PageObject/Page.html#method_getAbsoluteUrl"><abbr title="QATools\QATools\PageObject\Page">Page</abbr></a> at line 62</div>
-        <code>
-    string
-    <strong>getAbsoluteUrl</strong>(
-    array $params = array())</code>
+        <div class="location">in <a href="../../../QATools/QATools/PageObject/Page.html#method_getAbsoluteUrl"><abbr title="QATools\QATools\PageObject\Page">Page</abbr></a> at         <a href="https://github.com/qa-tools/qa-tools/blob/develop/library/QATools/QATools/PageObject/Page.php#L62">line 62</a></div>
+        <code>                    string
+    <strong>getAbsoluteUrl</strong>(array $params = array())
+        </code>
     </h3>
     <div class="details">
+
+
+
                     <div class="method-description">
                                     <p>Returns full url to the page with a possibility to alter it real time.</p>                                </div>
                 <div class="tags">
@@ -236,8 +229,7 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td>
-    array</td>
+                <td>array</td>
                 <td>$params</td>
                 <td>Page parameters.</td>
             </tr>
@@ -248,10 +240,8 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td>
-    string</td>
-            <td>
-</td>
+            <td>string</td>
+            <td></td>
         </tr>
     </table>
 
@@ -272,14 +262,15 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_open">
-        <div class="location">in
-    <a href="../../../QATools/QATools/PageObject/Page.html#method_open"><abbr title="QATools\QATools\PageObject\Page">Page</abbr></a> at line 82</div>
-        <code>
-    <a href="../../../QATools/QATools/PageObject/Page.html"><abbr title="QATools\QATools\PageObject\Page">Page</abbr></a>
-    <strong>open</strong>(
-    array $params = array())</code>
+        <div class="location">in <a href="../../../QATools/QATools/PageObject/Page.html#method_open"><abbr title="QATools\QATools\PageObject\Page">Page</abbr></a> at         <a href="https://github.com/qa-tools/qa-tools/blob/develop/library/QATools/QATools/PageObject/Page.php#L82">line 82</a></div>
+        <code>                    <a href="../../../QATools/QATools/PageObject/Page.html"><abbr title="QATools\QATools\PageObject\Page">Page</abbr></a>
+    <strong>open</strong>(array $params = array())
+        </code>
     </h3>
     <div class="details">
+
+
+
                     <div class="method-description">
                                     <p>Opens this page in browser.</p>                                </div>
                 <div class="tags">
@@ -287,8 +278,7 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td>
-    array</td>
+                <td>array</td>
                 <td>$params</td>
                 <td>Page parameters.</td>
             </tr>
@@ -299,10 +289,8 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td>
-    <a href="../../../QATools/QATools/PageObject/Page.html"><abbr title="QATools\QATools\PageObject\Page">Page</abbr></a></td>
-            <td>
-</td>
+            <td><a href="../../../QATools/QATools/PageObject/Page.html"><abbr title="QATools\QATools\PageObject\Page">Page</abbr></a></td>
+            <td></td>
         </tr>
     </table>
 
@@ -323,14 +311,15 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_setUrlBuilder">
-        <div class="location">in
-    <a href="../../../QATools/QATools/PageObject/Page.html#method_setUrlBuilder"><abbr title="QATools\QATools\PageObject\Page">Page</abbr></a> at line 102</div>
-        <code>
-    <a href="../../../QATools/QATools/PageObject/Page.html"><abbr title="QATools\QATools\PageObject\Page">Page</abbr></a>
-    <strong>setUrlBuilder</strong>(
-    <abbr title="QATools\QATools\PageObject\QATools\QATools\PageObject\Url\IBuilder">IBuilder</abbr> $url_builder)</code>
+        <div class="location">in <a href="../../../QATools/QATools/PageObject/Page.html#method_setUrlBuilder"><abbr title="QATools\QATools\PageObject\Page">Page</abbr></a> at         <a href="https://github.com/qa-tools/qa-tools/blob/develop/library/QATools/QATools/PageObject/Page.php#L102">line 102</a></div>
+        <code>                    <a href="../../../QATools/QATools/PageObject/Page.html"><abbr title="QATools\QATools\PageObject\Page">Page</abbr></a>
+    <strong>setUrlBuilder</strong>(<a href="../../../QATools/QATools/PageObject/Url/IBuilder.html"><abbr title="QATools\QATools\PageObject\Url\IBuilder">IBuilder</abbr></a> $url_builder)
+        </code>
     </h3>
     <div class="details">
+
+
+
                     <div class="method-description">
                                     <p>Sets the url builder.</p>                                </div>
                 <div class="tags">
@@ -338,8 +327,7 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td>
-    <abbr title="QATools\QATools\PageObject\QATools\QATools\PageObject\Url\IBuilder">IBuilder</abbr></td>
+                <td><a href="../../../QATools/QATools/PageObject/Url/IBuilder.html"><abbr title="QATools\QATools\PageObject\Url\IBuilder">IBuilder</abbr></a></td>
                 <td>$url_builder</td>
                 <td>Url builder.</td>
             </tr>
@@ -350,10 +338,8 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td>
-    <a href="../../../QATools/QATools/PageObject/Page.html"><abbr title="QATools\QATools\PageObject\Page">Page</abbr></a></td>
-            <td>
-</td>
+            <td><a href="../../../QATools/QATools/PageObject/Page.html"><abbr title="QATools\QATools\PageObject\Page">Page</abbr></a></td>
+            <td></td>
         </tr>
     </table>
 
@@ -365,24 +351,23 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_shouldReceive">
-        <div class="location">in
-    <a href="../../../QATools/QATools/PageObject/Page.html#method_shouldReceive"><abbr title="QATools\QATools\PageObject\Page">Page</abbr></a> at line 23</div>
-        <code>
-    <abbr title="Mockery\Expectation">Expectation</abbr>
-    <strong>shouldReceive</strong>(
-    <abbr title="string ">string </abbr> $name)</code>
+        <div class="location">in <a href="../../../QATools/QATools/PageObject/Page.html#method_shouldReceive"><abbr title="QATools\QATools\PageObject\Page">Page</abbr></a> at         <a href="https://github.com/qa-tools/qa-tools/blob/develop/library/QATools/QATools/PageObject/Page.php#L23">line 23</a></div>
+        <code>                    <abbr title="Mockery\Expectation">Expectation</abbr>
+    <strong>shouldReceive</strong>(string  $name)
+        </code>
     </h3>
     <div class="details">
+
+
+
                 <div class="tags">
                             <h4>Parameters</h4>
 
                     <table class="table table-condensed">
                     <tr>
-                <td>
-    <abbr title="string ">string </abbr></td>
+                <td>string </td>
                 <td>$name</td>
-                <td>
-</td>
+                <td></td>
             </tr>
             </table>
 
@@ -391,10 +376,8 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td>
-    <abbr title="Mockery\Expectation">Expectation</abbr></td>
-            <td>
-</td>
+            <td><abbr title="Mockery\Expectation">Expectation</abbr></td>
+            <td></td>
         </tr>
     </table>
 

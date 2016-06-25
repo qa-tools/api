@@ -79,13 +79,19 @@
                 <div id="page-content">
                 
     <div class="page-header">
-        <h1>PageFactory</h1>
+        <h1>
+            PageFactory
+                
+        </h1>
     </div>
 
     <p>    class
     <strong>PageFactory</strong>        implements
         <a href="../../../QATools/QATools/PageObject/IPageFactory.html"><abbr title="QATools\QATools\PageObject\IPageFactory">IPageFactory</abbr></a>        (<a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/PageObject/PageFactory.php">View source</a>)
 </p>
+
+        
+    
 
             <div class="description">
             <p>Factory class to make using Page Objects simpler and easier.</p>                    </div>
@@ -97,8 +103,7 @@
             <table class="table table-condensed">
                     <tr>
                 <td class="type" id="property__session">
-                                                            private                    
-    <abbr title="Behat\Mink\Session">Session</abbr>
+                                                            private                    <abbr title="Behat\Mink\Session">Session</abbr>
                 </td>
                 <td>$_session</td>
                 <td class="last">Instance of Mink session.</td>
@@ -106,8 +111,7 @@
             </tr>
                     <tr>
                 <td class="type" id="property_annotationManager">
-                                        protected                                        
-    <abbr title="mindplay\annotations\AnnotationManager">AnnotationManager</abbr>
+                                        protected                                        <abbr title="mindplay\annotations\AnnotationManager">AnnotationManager</abbr>
                 </td>
                 <td>$annotationManager</td>
                 <td class="last">Annotation manager.</td>
@@ -115,8 +119,7 @@
             </tr>
                     <tr>
                 <td class="type" id="property_annotationRegistry">
-                                        protected                                        
-    array
+                                        protected                                        array
                 </td>
                 <td>$annotationRegistry</td>
                 <td class="last">Supported annotation class map.</td>
@@ -124,8 +127,7 @@
             </tr>
                     <tr>
                 <td class="type" id="property_urlFactory">
-                                        protected                                        
-    <a href="../../../QATools/QATools/PageObject/Url/IUrlFactory.html"><abbr title="QATools\QATools\PageObject\Url\IUrlFactory">IUrlFactory</abbr></a>
+                                        protected                                        <a href="../../../QATools/QATools/PageObject/Url/IUrlFactory.html"><abbr title="QATools\QATools\PageObject\Url\IUrlFactory">IUrlFactory</abbr></a>
                 </td>
                 <td>$urlFactory</td>
                 <td class="last">The url builder factory.</td>
@@ -133,17 +135,23 @@
             </tr>
                     <tr>
                 <td class="type" id="property_urlNormalizer">
-                                        protected                                        
-    <a href="../../../QATools/QATools/PageObject/Url/Normalizer.html"><abbr title="QATools\QATools\PageObject\Url\Normalizer">Normalizer</abbr></a>
+                                        protected                                        <a href="../../../QATools/QATools/PageObject/Url/Normalizer.html"><abbr title="QATools\QATools\PageObject\Url\Normalizer">Normalizer</abbr></a>
                 </td>
                 <td>$urlNormalizer</td>
                 <td class="last">The url normalizer.</td>
                 <td></td>
             </tr>
                     <tr>
+                <td class="type" id="property_pageLocator">
+                                        protected                                        <a href="../../../QATools/QATools/PageObject/PageLocator/IPageLocator.html"><abbr title="QATools\QATools\PageObject\PageLocator\IPageLocator">IPageLocator</abbr></a>
+                </td>
+                <td>$pageLocator</td>
+                <td class="last">The page locator.</td>
+                <td></td>
+            </tr>
+                    <tr>
                 <td class="type" id="property_config">
-                                        protected                                        
-    <a href="../../../QATools/QATools/PageObject/Config/IConfig.html"><abbr title="QATools\QATools\PageObject\Config\IConfig">IConfig</abbr></a>
+                                        protected                                        <a href="../../../QATools/QATools/PageObject/Config/IConfig.html"><abbr title="QATools\QATools\PageObject\Config\IConfig">IConfig</abbr></a>
                 </td>
                 <td>$config</td>
                 <td class="last">The current config.</td>
@@ -158,176 +166,170 @@
                     <div class="row">
                 <div class="col-md-2 type">
                     
-    
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method___construct">__construct</a>(
-    <abbr title="QATools\QATools\PageObject\Behat\Mink\Session">Session</abbr> $session, 
-    <abbr title="QATools\QATools\PageObject\QATools\QATools\PageObject\Config\IConfig">IConfig</abbr> $config = null)
+                    <a href="#method___construct">__construct</a>(<abbr title="Behat\Mink\Session">Session</abbr> $session, <a href="../../../QATools/QATools/PageObject/Config/IConfig.html"><abbr title="QATools\QATools\PageObject\Config\IConfig">IConfig</abbr></a> $config = null)
+        
                                             <p>Creates PageFactory instance.</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    
-    <a href="../../../QATools/QATools/PageObject/PageFactory.html"><abbr title="QATools\QATools\PageObject\PageFactory">PageFactory</abbr></a>
+                    <a href="../../../QATools/QATools/PageObject/PageFactory.html"><abbr title="QATools\QATools\PageObject\PageFactory">PageFactory</abbr></a>
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_attachSeleniumSelector">attachSeleniumSelector</a>(
-    <abbr title="QATools\QATools\PageObject\Behat\Mink\Session">Session</abbr> $session)
-                                            <p>Attaches Selenium selector, that is later used during annotation processing.</p>                </div>
-                <div class="col-md-2"></div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    
-    <a href="../../../QATools/QATools/PageObject/PageFactory.html"><abbr title="QATools\QATools\PageObject\PageFactory">PageFactory</abbr></a>
-                </div>
-                <div class="col-md-8 type">
-                    <a href="#method_setAnnotationManager">setAnnotationManager</a>(
-    <abbr title="QATools\QATools\PageObject\mindplay\annotations\AnnotationManager">AnnotationManager</abbr> $manager)
+                    <a href="#method_setAnnotationManager">setAnnotationManager</a>(<abbr title="mindplay\annotations\AnnotationManager">AnnotationManager</abbr> $manager)
+        
                                             <p>Sets annotation manager.</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    
-    <abbr title="mindplay\annotations\AnnotationManager">AnnotationManager</abbr>
+                    <abbr title="mindplay\annotations\AnnotationManager">AnnotationManager</abbr>
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_getAnnotationManager">getAnnotationManager</a>()
+        
                                             <p>Returns annotation manager.</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    
-    <a href="../../../QATools/QATools/PageObject/Url/IUrlFactory.html"><abbr title="QATools\QATools\PageObject\Url\IUrlFactory">IUrlFactory</abbr></a>
+                    <a href="../../../QATools/QATools/PageObject/Url/IUrlFactory.html"><abbr title="QATools\QATools\PageObject\Url\IUrlFactory">IUrlFactory</abbr></a>
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_setUrlFactory">setUrlFactory</a>(
-    <abbr title="QATools\QATools\PageObject\QATools\QATools\PageObject\Url\IUrlFactory">IUrlFactory</abbr> $url_builder_factory)
+                    <a href="#method_setUrlFactory">setUrlFactory</a>(<a href="../../../QATools/QATools/PageObject/Url/IUrlFactory.html"><abbr title="QATools\QATools\PageObject\Url\IUrlFactory">IUrlFactory</abbr></a> $url_builder_factory)
+        
                                             <p>Sets the url builder factory.</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    
-    <a href="../../../QATools/QATools/PageObject/Url/IUrlFactory.html"><abbr title="QATools\QATools\PageObject\Url\IUrlFactory">IUrlFactory</abbr></a>
+                    <a href="../../../QATools/QATools/PageObject/Url/IUrlFactory.html"><abbr title="QATools\QATools\PageObject\Url\IUrlFactory">IUrlFactory</abbr></a>
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_getUrlFactory">getUrlFactory</a>()
+        
                                             <p>Returns current url builder factory.</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    
-    <a href="../../../QATools/QATools/PageObject/PageFactory.html"><abbr title="QATools\QATools\PageObject\PageFactory">PageFactory</abbr></a>
+                    <a href="../../../QATools/QATools/PageObject/PageFactory.html"><abbr title="QATools\QATools\PageObject\PageFactory">PageFactory</abbr></a>
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_setUrlNormalizer">setUrlNormalizer</a>(
-    <abbr title="QATools\QATools\PageObject\QATools\QATools\PageObject\Url\Normalizer">Normalizer</abbr> $normalizer)
+                    <a href="#method_setUrlNormalizer">setUrlNormalizer</a>(<a href="../../../QATools/QATools/PageObject/Url/Normalizer.html"><abbr title="QATools\QATools\PageObject\Url\Normalizer">Normalizer</abbr></a> $normalizer)
+        
                                             <p>Sets the url normalizer.</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    
-    <a href="../../../QATools/QATools/PageObject/PropertyDecorator/IPropertyDecorator.html"><abbr title="QATools\QATools\PageObject\PropertyDecorator\IPropertyDecorator">IPropertyDecorator</abbr></a>
+                    <a href="../../../QATools/QATools/PageObject/PageFactory.html"><abbr title="QATools\QATools\PageObject\PageFactory">PageFactory</abbr></a>
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_createDecorator">createDecorator</a>(
-    <abbr title="QATools\QATools\PageObject\QATools\QATools\PageObject\ISearchContext">ISearchContext</abbr> $search_context)
+                    <a href="#method_setPageLocator">setPageLocator</a>(<a href="../../../QATools/QATools/PageObject/PageLocator/IPageLocator.html"><abbr title="QATools\QATools\PageObject\PageLocator\IPageLocator">IPageLocator</abbr></a> $page_locator)
+        
+                                            <p>Sets the page locator.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../QATools/QATools/PageObject/PropertyDecorator/IPropertyDecorator.html"><abbr title="QATools\QATools\PageObject\PropertyDecorator\IPropertyDecorator">IPropertyDecorator</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_createDecorator">createDecorator</a>(<a href="../../../QATools/QATools/PageObject/ISearchContext.html"><abbr title="QATools\QATools\PageObject\ISearchContext">ISearchContext</abbr></a> $search_context)
+        
                                             <p>Creates default decorator.</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    
-    <abbr title="Behat\Mink\Session">Session</abbr>
+                    <a href="../../../QATools/QATools/PageObject/PageFactory.html"><abbr title="QATools\QATools\PageObject\PageFactory">PageFactory</abbr></a>
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_getSession">getSession</a>()
-                                            <p>Returns element session.</p>                </div>
+                    <a href="#method_setSession">setSession</a>(<abbr title="Behat\Mink\Session">Session</abbr> $session)
+        
+                                            <p>Sets session.</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    
-    <a href="../../../QATools/QATools/PageObject/PageFactory.html"><abbr title="QATools\QATools\PageObject\PageFactory">PageFactory</abbr></a>
+                    <abbr title="Behat\Mink\Session">Session</abbr>
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_initPage">initPage</a>(
-    <abbr title="QATools\QATools\PageObject\QATools\QATools\PageObject\Page">Page</abbr> $page)
+                    <a href="#method_getSession">getSession</a>()
+        
+                                            <p>Returns session.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../QATools/QATools/PageObject/IPageFactory.html"><abbr title="QATools\QATools\PageObject\IPageFactory">IPageFactory</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_initPage">initPage</a>(<a href="../../../QATools/QATools/PageObject/Page.html"><abbr title="QATools\QATools\PageObject\Page">Page</abbr></a> $page)
+        
                                             <p>Initializes the page.</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    
-    <a href="../../../QATools/QATools/PageObject/PageFactory.html"><abbr title="QATools\QATools\PageObject\PageFactory">PageFactory</abbr></a>
+                    <a href="../../../QATools/QATools/PageObject/IPageFactory.html"><abbr title="QATools\QATools\PageObject\IPageFactory">IPageFactory</abbr></a>
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_initElementContainer">initElementContainer</a>(
-    <abbr title="QATools\QATools\PageObject\QATools\QATools\PageObject\Element\IElementContainer">IElementContainer</abbr> $element_container)
+                    <a href="#method_initElementContainer">initElementContainer</a>(<a href="../../../QATools/QATools/PageObject/Element/IElementContainer.html"><abbr title="QATools\QATools\PageObject\Element\IElementContainer">IElementContainer</abbr></a> $element_container)
+        
                                             <p>Initializes AbstractElementContainer.</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    
-    <a href="../../../QATools/QATools/PageObject/PageFactory.html"><abbr title="QATools\QATools\PageObject\PageFactory">PageFactory</abbr></a>
+                    <a href="../../../QATools/QATools/PageObject/IPageFactory.html"><abbr title="QATools\QATools\PageObject\IPageFactory">IPageFactory</abbr></a>
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_initElements">initElements</a>(
-    <abbr title="QATools\QATools\PageObject\QATools\QATools\PageObject\ISearchContext">ISearchContext</abbr> $search_context, 
-    <abbr title="QATools\QATools\PageObject\QATools\QATools\PageObject\PropertyDecorator\IPropertyDecorator">IPropertyDecorator</abbr> $property_decorator)
+                    <a href="#method_initElements">initElements</a>(<a href="../../../QATools/QATools/PageObject/ISearchContext.html"><abbr title="QATools\QATools\PageObject\ISearchContext">ISearchContext</abbr></a> $search_context, <a href="../../../QATools/QATools/PageObject/PropertyDecorator/IPropertyDecorator.html"><abbr title="QATools\QATools\PageObject\PropertyDecorator\IPropertyDecorator">IPropertyDecorator</abbr></a> $property_decorator)
+        
                                             <p>Initializes elements in given search context.</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    
-    <a href="../../../QATools/QATools/PageObject/PageFactory.html"><abbr title="QATools\QATools\PageObject\PageFactory">PageFactory</abbr></a>
+                    <a href="../../../QATools/QATools/PageObject/PageFactory.html"><abbr title="QATools\QATools\PageObject\PageFactory">PageFactory</abbr></a>
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_proxyFields">proxyFields</a>(
-    <abbr title="QATools\QATools\PageObject\QATools\QATools\PageObject\ISearchContext">ISearchContext</abbr> $search_context, 
-    <abbr title="QATools\QATools\PageObject\QATools\QATools\PageObject\PropertyDecorator\IPropertyDecorator">IPropertyDecorator</abbr> $property_decorator)
+                    <a href="#method_proxyFields">proxyFields</a>(<a href="../../../QATools/QATools/PageObject/ISearchContext.html"><abbr title="QATools\QATools\PageObject\ISearchContext">ISearchContext</abbr></a> $search_context, <a href="../../../QATools/QATools/PageObject/PropertyDecorator/IPropertyDecorator.html"><abbr title="QATools\QATools\PageObject\PropertyDecorator\IPropertyDecorator">IPropertyDecorator</abbr></a> $property_decorator)
+        
                                             <p>Initializes fields within given search context.</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    
-    <a href="../../../QATools/QATools/PageObject/Property.html"><abbr title="QATools\QATools\PageObject\Property">Property</abbr></a>[]
+                    <a href="../../../QATools/QATools/PageObject/Property.html"><abbr title="QATools\QATools\PageObject\Property">Property</abbr></a>[]
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_getProperties">getProperties</a>(
-    <abbr title="QATools\QATools\PageObject\QATools\QATools\PageObject\ISearchContext">ISearchContext</abbr> $search_context)
+                    <a href="#method_getProperties">getProperties</a>(<a href="../../../QATools/QATools/PageObject/ISearchContext.html"><abbr title="QATools\QATools\PageObject\ISearchContext">ISearchContext</abbr></a> $search_context)
+        
                                             <p>Returns class properties, that can potentially become proxies.</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    
-    <a href="../../../QATools/QATools/PageObject/Page.html"><abbr title="QATools\QATools\PageObject\Page">Page</abbr></a>
+                    <a href="../../../QATools/QATools/PageObject/Page.html"><abbr title="QATools\QATools\PageObject\Page">Page</abbr></a>
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_getPage">getPage</a>(
-    string $class_name)
+                    <a href="#method_getPage">getPage</a>(string $class_name)
+        
                                             <p>Creates page by given class name.</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    
-    <abbr title="Mockery\Expectation">Expectation</abbr>
+                    <abbr title="Mockery\Expectation">Expectation</abbr>
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_shouldReceive">shouldReceive</a>(
-    <abbr title="string ">string </abbr> $name)
+                    <a href="#method_shouldReceive">shouldReceive</a>(string  $name)
+        
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
@@ -340,14 +342,15 @@
             <div id="method-details">
                     <div class="method-item">
                     <h3 id="method___construct">
-        <div class="location">at line 89</div>
+        <div class="location">at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/PageObject/PageFactory.php#L98">line 98</a></div>
         <code>                    
-    
-    <strong>__construct</strong>(
-    <abbr title="QATools\QATools\PageObject\Behat\Mink\Session">Session</abbr> $session, 
-    <abbr title="QATools\QATools\PageObject\QATools\QATools\PageObject\Config\IConfig">IConfig</abbr> $config = null)</code>
+    <strong>__construct</strong>(<abbr title="Behat\Mink\Session">Session</abbr> $session, <a href="../../../QATools/QATools/PageObject/Config/IConfig.html"><abbr title="QATools\QATools\PageObject\Config\IConfig">IConfig</abbr></a> $config = null)
+        </code>
     </h3>
     <div class="details">
+            
+    
+
                     <div class="method-description">
                                     <p>Creates PageFactory instance.</p>                                </div>
                 <div class="tags">
@@ -355,14 +358,12 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td>
-    <abbr title="QATools\QATools\PageObject\Behat\Mink\Session">Session</abbr></td>
+                <td><abbr title="Behat\Mink\Session">Session</abbr></td>
                 <td>$session</td>
                 <td>Mink session.</td>
             </tr>
                     <tr>
-                <td>
-    <abbr title="QATools\QATools\PageObject\QATools\QATools\PageObject\Config\IConfig">IConfig</abbr></td>
+                <td><a href="../../../QATools/QATools/PageObject/Config/IConfig.html"><abbr title="QATools\QATools\PageObject\Config\IConfig">IConfig</abbr></a></td>
                 <td>$config</td>
                 <td>Page factory configuration.</td>
             </tr>
@@ -376,55 +377,16 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_attachSeleniumSelector">
-        <div class="location">at line 108</div>
-        <code>            protected        
-    <a href="../../../QATools/QATools/PageObject/PageFactory.html"><abbr title="QATools\QATools\PageObject\PageFactory">PageFactory</abbr></a>
-    <strong>attachSeleniumSelector</strong>(
-    <abbr title="QATools\QATools\PageObject\Behat\Mink\Session">Session</abbr> $session)</code>
-    </h3>
-    <div class="details">
-                    <div class="method-description">
-                                    <p>Attaches Selenium selector, that is later used during annotation processing.</p>                                </div>
-                <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td>
-    <abbr title="QATools\QATools\PageObject\Behat\Mink\Session">Session</abbr></td>
-                <td>$session</td>
-                <td>Mink session.</td>
-            </tr>
-            </table>
-
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>
-    <a href="../../../QATools/QATools/PageObject/PageFactory.html"><abbr title="QATools\QATools\PageObject\PageFactory">PageFactory</abbr></a></td>
-            <td>
-</td>
-        </tr>
-    </table>
-
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
                     <h3 id="method_setAnnotationManager">
-        <div class="location">at line 126</div>
-        <code>                    
-    <a href="../../../QATools/QATools/PageObject/PageFactory.html"><abbr title="QATools\QATools\PageObject\PageFactory">PageFactory</abbr></a>
-    <strong>setAnnotationManager</strong>(
-    <abbr title="QATools\QATools\PageObject\mindplay\annotations\AnnotationManager">AnnotationManager</abbr> $manager)</code>
+        <div class="location">at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/PageObject/PageFactory.php#L118">line 118</a></div>
+        <code>                    <a href="../../../QATools/QATools/PageObject/PageFactory.html"><abbr title="QATools\QATools\PageObject\PageFactory">PageFactory</abbr></a>
+    <strong>setAnnotationManager</strong>(<abbr title="mindplay\annotations\AnnotationManager">AnnotationManager</abbr> $manager)
+        </code>
     </h3>
     <div class="details">
+            
+    
+
                     <div class="method-description">
                                     <p>Sets annotation manager.</p>                                </div>
                 <div class="tags">
@@ -432,8 +394,7 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td>
-    <abbr title="QATools\QATools\PageObject\mindplay\annotations\AnnotationManager">AnnotationManager</abbr></td>
+                <td><abbr title="mindplay\annotations\AnnotationManager">AnnotationManager</abbr></td>
                 <td>$manager</td>
                 <td>Annotation manager.</td>
             </tr>
@@ -444,10 +405,8 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td>
-    <a href="../../../QATools/QATools/PageObject/PageFactory.html"><abbr title="QATools\QATools\PageObject\PageFactory">PageFactory</abbr></a></td>
-            <td>
-</td>
+            <td><a href="../../../QATools/QATools/PageObject/PageFactory.html"><abbr title="QATools\QATools\PageObject\PageFactory">PageFactory</abbr></a></td>
+            <td></td>
         </tr>
     </table>
 
@@ -459,12 +418,15 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getAnnotationManager">
-        <div class="location">at line 142</div>
-        <code>                    
-    <abbr title="mindplay\annotations\AnnotationManager">AnnotationManager</abbr>
-    <strong>getAnnotationManager</strong>()</code>
+        <div class="location">at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/PageObject/PageFactory.php#L134">line 134</a></div>
+        <code>                    <abbr title="mindplay\annotations\AnnotationManager">AnnotationManager</abbr>
+    <strong>getAnnotationManager</strong>()
+        </code>
     </h3>
     <div class="details">
+            
+    
+
                     <div class="method-description">
                                     <p>Returns annotation manager.</p>                                </div>
                 <div class="tags">
@@ -473,10 +435,8 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td>
-    <abbr title="mindplay\annotations\AnnotationManager">AnnotationManager</abbr></td>
-            <td>
-</td>
+            <td><abbr title="mindplay\annotations\AnnotationManager">AnnotationManager</abbr></td>
+            <td></td>
         </tr>
     </table>
 
@@ -488,13 +448,15 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_setUrlFactory">
-        <div class="location">at line 154</div>
-        <code>                    
-    <a href="../../../QATools/QATools/PageObject/Url/IUrlFactory.html"><abbr title="QATools\QATools\PageObject\Url\IUrlFactory">IUrlFactory</abbr></a>
-    <strong>setUrlFactory</strong>(
-    <abbr title="QATools\QATools\PageObject\QATools\QATools\PageObject\Url\IUrlFactory">IUrlFactory</abbr> $url_builder_factory)</code>
+        <div class="location">at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/PageObject/PageFactory.php#L146">line 146</a></div>
+        <code>                    <a href="../../../QATools/QATools/PageObject/Url/IUrlFactory.html"><abbr title="QATools\QATools\PageObject\Url\IUrlFactory">IUrlFactory</abbr></a>
+    <strong>setUrlFactory</strong>(<a href="../../../QATools/QATools/PageObject/Url/IUrlFactory.html"><abbr title="QATools\QATools\PageObject\Url\IUrlFactory">IUrlFactory</abbr></a> $url_builder_factory)
+        </code>
     </h3>
     <div class="details">
+            
+    
+
                     <div class="method-description">
                                     <p>Sets the url builder factory.</p>                                </div>
                 <div class="tags">
@@ -502,8 +464,7 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td>
-    <abbr title="QATools\QATools\PageObject\QATools\QATools\PageObject\Url\IUrlFactory">IUrlFactory</abbr></td>
+                <td><a href="../../../QATools/QATools/PageObject/Url/IUrlFactory.html"><abbr title="QATools\QATools\PageObject\Url\IUrlFactory">IUrlFactory</abbr></a></td>
                 <td>$url_builder_factory</td>
                 <td>Url builder factory.</td>
             </tr>
@@ -514,10 +475,8 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td>
-    <a href="../../../QATools/QATools/PageObject/Url/IUrlFactory.html"><abbr title="QATools\QATools\PageObject\Url\IUrlFactory">IUrlFactory</abbr></a></td>
-            <td>
-</td>
+            <td><a href="../../../QATools/QATools/PageObject/Url/IUrlFactory.html"><abbr title="QATools\QATools\PageObject\Url\IUrlFactory">IUrlFactory</abbr></a></td>
+            <td></td>
         </tr>
     </table>
 
@@ -529,12 +488,15 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getUrlFactory">
-        <div class="location">at line 166</div>
-        <code>                    
-    <a href="../../../QATools/QATools/PageObject/Url/IUrlFactory.html"><abbr title="QATools\QATools\PageObject\Url\IUrlFactory">IUrlFactory</abbr></a>
-    <strong>getUrlFactory</strong>()</code>
+        <div class="location">at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/PageObject/PageFactory.php#L158">line 158</a></div>
+        <code>                    <a href="../../../QATools/QATools/PageObject/Url/IUrlFactory.html"><abbr title="QATools\QATools\PageObject\Url\IUrlFactory">IUrlFactory</abbr></a>
+    <strong>getUrlFactory</strong>()
+        </code>
     </h3>
     <div class="details">
+            
+    
+
                     <div class="method-description">
                                     <p>Returns current url builder factory.</p>                                </div>
                 <div class="tags">
@@ -543,10 +505,8 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td>
-    <a href="../../../QATools/QATools/PageObject/Url/IUrlFactory.html"><abbr title="QATools\QATools\PageObject\Url\IUrlFactory">IUrlFactory</abbr></a></td>
-            <td>
-</td>
+            <td><a href="../../../QATools/QATools/PageObject/Url/IUrlFactory.html"><abbr title="QATools\QATools\PageObject\Url\IUrlFactory">IUrlFactory</abbr></a></td>
+            <td></td>
         </tr>
     </table>
 
@@ -558,13 +518,15 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_setUrlNormalizer">
-        <div class="location">at line 178</div>
-        <code>                    
-    <a href="../../../QATools/QATools/PageObject/PageFactory.html"><abbr title="QATools\QATools\PageObject\PageFactory">PageFactory</abbr></a>
-    <strong>setUrlNormalizer</strong>(
-    <abbr title="QATools\QATools\PageObject\QATools\QATools\PageObject\Url\Normalizer">Normalizer</abbr> $normalizer)</code>
+        <div class="location">at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/PageObject/PageFactory.php#L170">line 170</a></div>
+        <code>                    <a href="../../../QATools/QATools/PageObject/PageFactory.html"><abbr title="QATools\QATools\PageObject\PageFactory">PageFactory</abbr></a>
+    <strong>setUrlNormalizer</strong>(<a href="../../../QATools/QATools/PageObject/Url/Normalizer.html"><abbr title="QATools\QATools\PageObject\Url\Normalizer">Normalizer</abbr></a> $normalizer)
+        </code>
     </h3>
     <div class="details">
+            
+    
+
                     <div class="method-description">
                                     <p>Sets the url normalizer.</p>                                </div>
                 <div class="tags">
@@ -572,8 +534,7 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td>
-    <abbr title="QATools\QATools\PageObject\QATools\QATools\PageObject\Url\Normalizer">Normalizer</abbr></td>
+                <td><a href="../../../QATools/QATools/PageObject/Url/Normalizer.html"><abbr title="QATools\QATools\PageObject\Url\Normalizer">Normalizer</abbr></a></td>
                 <td>$normalizer</td>
                 <td>The normalizer.</td>
             </tr>
@@ -584,10 +545,48 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td>
-    <a href="../../../QATools/QATools/PageObject/PageFactory.html"><abbr title="QATools\QATools\PageObject\PageFactory">PageFactory</abbr></a></td>
-            <td>
-</td>
+            <td><a href="../../../QATools/QATools/PageObject/PageFactory.html"><abbr title="QATools\QATools\PageObject\PageFactory">PageFactory</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setPageLocator">
+        <div class="location">at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/PageObject/PageFactory.php#L184">line 184</a></div>
+        <code>                    <a href="../../../QATools/QATools/PageObject/PageFactory.html"><abbr title="QATools\QATools\PageObject\PageFactory">PageFactory</abbr></a>
+    <strong>setPageLocator</strong>(<a href="../../../QATools/QATools/PageObject/PageLocator/IPageLocator.html"><abbr title="QATools\QATools\PageObject\PageLocator\IPageLocator">IPageLocator</abbr></a> $page_locator)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the page locator.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../QATools/QATools/PageObject/PageLocator/IPageLocator.html"><abbr title="QATools\QATools\PageObject\PageLocator\IPageLocator">IPageLocator</abbr></a></td>
+                <td>$page_locator</td>
+                <td>The page locator.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../QATools/QATools/PageObject/PageFactory.html"><abbr title="QATools\QATools\PageObject\PageFactory">PageFactory</abbr></a></td>
+            <td></td>
         </tr>
     </table>
 
@@ -599,13 +598,15 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_createDecorator">
-        <div class="location">at line 192</div>
-        <code>                    
-    <a href="../../../QATools/QATools/PageObject/PropertyDecorator/IPropertyDecorator.html"><abbr title="QATools\QATools\PageObject\PropertyDecorator\IPropertyDecorator">IPropertyDecorator</abbr></a>
-    <strong>createDecorator</strong>(
-    <abbr title="QATools\QATools\PageObject\QATools\QATools\PageObject\ISearchContext">ISearchContext</abbr> $search_context)</code>
+        <div class="location">at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/PageObject/PageFactory.php#L198">line 198</a></div>
+        <code>                    <a href="../../../QATools/QATools/PageObject/PropertyDecorator/IPropertyDecorator.html"><abbr title="QATools\QATools\PageObject\PropertyDecorator\IPropertyDecorator">IPropertyDecorator</abbr></a>
+    <strong>createDecorator</strong>(<a href="../../../QATools/QATools/PageObject/ISearchContext.html"><abbr title="QATools\QATools\PageObject\ISearchContext">ISearchContext</abbr></a> $search_context)
+        </code>
     </h3>
     <div class="details">
+            
+    
+
                     <div class="method-description">
                                     <p>Creates default decorator.</p>                                </div>
                 <div class="tags">
@@ -613,8 +614,7 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td>
-    <abbr title="QATools\QATools\PageObject\QATools\QATools\PageObject\ISearchContext">ISearchContext</abbr></td>
+                <td><a href="../../../QATools/QATools/PageObject/ISearchContext.html"><abbr title="QATools\QATools\PageObject\ISearchContext">ISearchContext</abbr></a></td>
                 <td>$search_context</td>
                 <td>Search context.</td>
             </tr>
@@ -625,10 +625,48 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td>
-    <a href="../../../QATools/QATools/PageObject/PropertyDecorator/IPropertyDecorator.html"><abbr title="QATools\QATools\PageObject\PropertyDecorator\IPropertyDecorator">IPropertyDecorator</abbr></a></td>
-            <td>
-</td>
+            <td><a href="../../../QATools/QATools/PageObject/PropertyDecorator/IPropertyDecorator.html"><abbr title="QATools\QATools\PageObject\PropertyDecorator\IPropertyDecorator">IPropertyDecorator</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setSession">
+        <div class="location">at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/PageObject/PageFactory.php#L212">line 212</a></div>
+        <code>                    <a href="../../../QATools/QATools/PageObject/PageFactory.html"><abbr title="QATools\QATools\PageObject\PageFactory">PageFactory</abbr></a>
+    <strong>setSession</strong>(<abbr title="Behat\Mink\Session">Session</abbr> $session)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets session.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Behat\Mink\Session">Session</abbr></td>
+                <td>$session</td>
+                <td>Session.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../QATools/QATools/PageObject/PageFactory.html"><abbr title="QATools\QATools\PageObject\PageFactory">PageFactory</abbr></a></td>
+            <td></td>
         </tr>
     </table>
 
@@ -640,24 +678,25 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getSession">
-        <div class="location">at line 204</div>
-        <code>                    
-    <abbr title="Behat\Mink\Session">Session</abbr>
-    <strong>getSession</strong>()</code>
+        <div class="location">at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/PageObject/PageFactory.php#L230">line 230</a></div>
+        <code>                    <abbr title="Behat\Mink\Session">Session</abbr>
+    <strong>getSession</strong>()
+        </code>
     </h3>
     <div class="details">
+            
+    
+
                     <div class="method-description">
-                                    <p>Returns element session.</p>                                </div>
+                                    <p>Returns session.</p>                                </div>
                 <div class="tags">
             
                             <h4>Return Value</h4>
 
                     <table class="table table-condensed">
         <tr>
-            <td>
-    <abbr title="Behat\Mink\Session">Session</abbr></td>
-            <td>
-</td>
+            <td><abbr title="Behat\Mink\Session">Session</abbr></td>
+            <td></td>
         </tr>
     </table>
 
@@ -669,13 +708,15 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_initPage">
-        <div class="location">at line 216</div>
-        <code>                    
-    <a href="../../../QATools/QATools/PageObject/PageFactory.html"><abbr title="QATools\QATools\PageObject\PageFactory">PageFactory</abbr></a>
-    <strong>initPage</strong>(
-    <abbr title="QATools\QATools\PageObject\QATools\QATools\PageObject\Page">Page</abbr> $page)</code>
+        <div class="location">at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/PageObject/PageFactory.php#L242">line 242</a></div>
+        <code>                    <a href="../../../QATools/QATools/PageObject/IPageFactory.html"><abbr title="QATools\QATools\PageObject\IPageFactory">IPageFactory</abbr></a>
+    <strong>initPage</strong>(<a href="../../../QATools/QATools/PageObject/Page.html"><abbr title="QATools\QATools\PageObject\Page">Page</abbr></a> $page)
+        </code>
     </h3>
     <div class="details">
+            
+    
+
                     <div class="method-description">
                                     <p>Initializes the page.</p>                                </div>
                 <div class="tags">
@@ -683,8 +724,7 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td>
-    <abbr title="QATools\QATools\PageObject\QATools\QATools\PageObject\Page">Page</abbr></td>
+                <td><a href="../../../QATools/QATools/PageObject/Page.html"><abbr title="QATools\QATools\PageObject\Page">Page</abbr></a></td>
                 <td>$page</td>
                 <td>Page to initialize.</td>
             </tr>
@@ -695,10 +735,8 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td>
-    <a href="../../../QATools/QATools/PageObject/PageFactory.html"><abbr title="QATools\QATools\PageObject\PageFactory">PageFactory</abbr></a></td>
-            <td>
-</td>
+            <td><a href="../../../QATools/QATools/PageObject/IPageFactory.html"><abbr title="QATools\QATools\PageObject\IPageFactory">IPageFactory</abbr></a></td>
+            <td></td>
         </tr>
     </table>
 
@@ -710,13 +748,15 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_initElementContainer">
-        <div class="location">at line 241</div>
-        <code>                    
-    <a href="../../../QATools/QATools/PageObject/PageFactory.html"><abbr title="QATools\QATools\PageObject\PageFactory">PageFactory</abbr></a>
-    <strong>initElementContainer</strong>(
-    <abbr title="QATools\QATools\PageObject\QATools\QATools\PageObject\Element\IElementContainer">IElementContainer</abbr> $element_container)</code>
+        <div class="location">at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/PageObject/PageFactory.php#L267">line 267</a></div>
+        <code>                    <a href="../../../QATools/QATools/PageObject/IPageFactory.html"><abbr title="QATools\QATools\PageObject\IPageFactory">IPageFactory</abbr></a>
+    <strong>initElementContainer</strong>(<a href="../../../QATools/QATools/PageObject/Element/IElementContainer.html"><abbr title="QATools\QATools\PageObject\Element\IElementContainer">IElementContainer</abbr></a> $element_container)
+        </code>
     </h3>
     <div class="details">
+            
+    
+
                     <div class="method-description">
                                     <p>Initializes AbstractElementContainer.</p>                                </div>
                 <div class="tags">
@@ -724,8 +764,7 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td>
-    <abbr title="QATools\QATools\PageObject\QATools\QATools\PageObject\Element\IElementContainer">IElementContainer</abbr></td>
+                <td><a href="../../../QATools/QATools/PageObject/Element/IElementContainer.html"><abbr title="QATools\QATools\PageObject\Element\IElementContainer">IElementContainer</abbr></a></td>
                 <td>$element_container</td>
                 <td>AbstractElementContainer to be initialized.</td>
             </tr>
@@ -736,10 +775,8 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td>
-    <a href="../../../QATools/QATools/PageObject/PageFactory.html"><abbr title="QATools\QATools\PageObject\PageFactory">PageFactory</abbr></a></td>
-            <td>
-</td>
+            <td><a href="../../../QATools/QATools/PageObject/IPageFactory.html"><abbr title="QATools\QATools\PageObject\IPageFactory">IPageFactory</abbr></a></td>
+            <td></td>
         </tr>
     </table>
 
@@ -751,14 +788,15 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_initElements">
-        <div class="location">at line 254</div>
-        <code>                    
-    <a href="../../../QATools/QATools/PageObject/PageFactory.html"><abbr title="QATools\QATools\PageObject\PageFactory">PageFactory</abbr></a>
-    <strong>initElements</strong>(
-    <abbr title="QATools\QATools\PageObject\QATools\QATools\PageObject\ISearchContext">ISearchContext</abbr> $search_context, 
-    <abbr title="QATools\QATools\PageObject\QATools\QATools\PageObject\PropertyDecorator\IPropertyDecorator">IPropertyDecorator</abbr> $property_decorator)</code>
+        <div class="location">at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/PageObject/PageFactory.php#L280">line 280</a></div>
+        <code>                    <a href="../../../QATools/QATools/PageObject/IPageFactory.html"><abbr title="QATools\QATools\PageObject\IPageFactory">IPageFactory</abbr></a>
+    <strong>initElements</strong>(<a href="../../../QATools/QATools/PageObject/ISearchContext.html"><abbr title="QATools\QATools\PageObject\ISearchContext">ISearchContext</abbr></a> $search_context, <a href="../../../QATools/QATools/PageObject/PropertyDecorator/IPropertyDecorator.html"><abbr title="QATools\QATools\PageObject\PropertyDecorator\IPropertyDecorator">IPropertyDecorator</abbr></a> $property_decorator)
+        </code>
     </h3>
     <div class="details">
+            
+    
+
                     <div class="method-description">
                                     <p>Initializes elements in given search context.</p>                                </div>
                 <div class="tags">
@@ -766,14 +804,12 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td>
-    <abbr title="QATools\QATools\PageObject\QATools\QATools\PageObject\ISearchContext">ISearchContext</abbr></td>
+                <td><a href="../../../QATools/QATools/PageObject/ISearchContext.html"><abbr title="QATools\QATools\PageObject\ISearchContext">ISearchContext</abbr></a></td>
                 <td>$search_context</td>
                 <td>Context, to be used for element initialization.</td>
             </tr>
                     <tr>
-                <td>
-    <abbr title="QATools\QATools\PageObject\QATools\QATools\PageObject\PropertyDecorator\IPropertyDecorator">IPropertyDecorator</abbr></td>
+                <td><a href="../../../QATools/QATools/PageObject/PropertyDecorator/IPropertyDecorator.html"><abbr title="QATools\QATools\PageObject\PropertyDecorator\IPropertyDecorator">IPropertyDecorator</abbr></a></td>
                 <td>$property_decorator</td>
                 <td>Element locator factory.</td>
             </tr>
@@ -784,10 +820,8 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td>
-    <a href="../../../QATools/QATools/PageObject/PageFactory.html"><abbr title="QATools\QATools\PageObject\PageFactory">PageFactory</abbr></a></td>
-            <td>
-</td>
+            <td><a href="../../../QATools/QATools/PageObject/IPageFactory.html"><abbr title="QATools\QATools\PageObject\IPageFactory">IPageFactory</abbr></a></td>
+            <td></td>
         </tr>
     </table>
 
@@ -799,14 +833,15 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_proxyFields">
-        <div class="location">at line 267</div>
-        <code>            protected        
-    <a href="../../../QATools/QATools/PageObject/PageFactory.html"><abbr title="QATools\QATools\PageObject\PageFactory">PageFactory</abbr></a>
-    <strong>proxyFields</strong>(
-    <abbr title="QATools\QATools\PageObject\QATools\QATools\PageObject\ISearchContext">ISearchContext</abbr> $search_context, 
-    <abbr title="QATools\QATools\PageObject\QATools\QATools\PageObject\PropertyDecorator\IPropertyDecorator">IPropertyDecorator</abbr> $property_decorator)</code>
+        <div class="location">at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/PageObject/PageFactory.php#L293">line 293</a></div>
+        <code>            protected        <a href="../../../QATools/QATools/PageObject/PageFactory.html"><abbr title="QATools\QATools\PageObject\PageFactory">PageFactory</abbr></a>
+    <strong>proxyFields</strong>(<a href="../../../QATools/QATools/PageObject/ISearchContext.html"><abbr title="QATools\QATools\PageObject\ISearchContext">ISearchContext</abbr></a> $search_context, <a href="../../../QATools/QATools/PageObject/PropertyDecorator/IPropertyDecorator.html"><abbr title="QATools\QATools\PageObject\PropertyDecorator\IPropertyDecorator">IPropertyDecorator</abbr></a> $property_decorator)
+        </code>
     </h3>
     <div class="details">
+            
+    
+
                     <div class="method-description">
                                     <p>Initializes fields within given search context.</p>                                </div>
                 <div class="tags">
@@ -814,14 +849,12 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td>
-    <abbr title="QATools\QATools\PageObject\QATools\QATools\PageObject\ISearchContext">ISearchContext</abbr></td>
+                <td><a href="../../../QATools/QATools/PageObject/ISearchContext.html"><abbr title="QATools\QATools\PageObject\ISearchContext">ISearchContext</abbr></a></td>
                 <td>$search_context</td>
                 <td>Search context.</td>
             </tr>
                     <tr>
-                <td>
-    <abbr title="QATools\QATools\PageObject\QATools\QATools\PageObject\PropertyDecorator\IPropertyDecorator">IPropertyDecorator</abbr></td>
+                <td><a href="../../../QATools/QATools/PageObject/PropertyDecorator/IPropertyDecorator.html"><abbr title="QATools\QATools\PageObject\PropertyDecorator\IPropertyDecorator">IPropertyDecorator</abbr></a></td>
                 <td>$property_decorator</td>
                 <td>Property decorator.</td>
             </tr>
@@ -832,10 +865,8 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td>
-    <a href="../../../QATools/QATools/PageObject/PageFactory.html"><abbr title="QATools\QATools\PageObject\PageFactory">PageFactory</abbr></a></td>
-            <td>
-</td>
+            <td><a href="../../../QATools/QATools/PageObject/PageFactory.html"><abbr title="QATools\QATools\PageObject\PageFactory">PageFactory</abbr></a></td>
+            <td></td>
         </tr>
     </table>
 
@@ -847,13 +878,15 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getProperties">
-        <div class="location">at line 288</div>
-        <code>            protected        
-    <a href="../../../QATools/QATools/PageObject/Property.html"><abbr title="QATools\QATools\PageObject\Property">Property</abbr></a>[]
-    <strong>getProperties</strong>(
-    <abbr title="QATools\QATools\PageObject\QATools\QATools\PageObject\ISearchContext">ISearchContext</abbr> $search_context)</code>
+        <div class="location">at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/PageObject/PageFactory.php#L314">line 314</a></div>
+        <code>            protected        <a href="../../../QATools/QATools/PageObject/Property.html"><abbr title="QATools\QATools\PageObject\Property">Property</abbr></a>[]
+    <strong>getProperties</strong>(<a href="../../../QATools/QATools/PageObject/ISearchContext.html"><abbr title="QATools\QATools\PageObject\ISearchContext">ISearchContext</abbr></a> $search_context)
+        </code>
     </h3>
     <div class="details">
+            
+    
+
                     <div class="method-description">
                                     <p>Returns class properties, that can potentially become proxies.</p>                                </div>
                 <div class="tags">
@@ -861,8 +894,7 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td>
-    <abbr title="QATools\QATools\PageObject\QATools\QATools\PageObject\ISearchContext">ISearchContext</abbr></td>
+                <td><a href="../../../QATools/QATools/PageObject/ISearchContext.html"><abbr title="QATools\QATools\PageObject\ISearchContext">ISearchContext</abbr></a></td>
                 <td>$search_context</td>
                 <td>Search context.</td>
             </tr>
@@ -873,10 +905,8 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td>
-    <a href="../../../QATools/QATools/PageObject/Property.html"><abbr title="QATools\QATools\PageObject\Property">Property</abbr></a>[]</td>
-            <td>
-</td>
+            <td><a href="../../../QATools/QATools/PageObject/Property.html"><abbr title="QATools\QATools\PageObject\Property">Property</abbr></a>[]</td>
+            <td></td>
         </tr>
     </table>
 
@@ -888,13 +918,15 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getPage">
-        <div class="location">at line 307</div>
-        <code>                    
-    <a href="../../../QATools/QATools/PageObject/Page.html"><abbr title="QATools\QATools\PageObject\Page">Page</abbr></a>
-    <strong>getPage</strong>(
-    string $class_name)</code>
+        <div class="location">at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/PageObject/PageFactory.php#L333">line 333</a></div>
+        <code>                    <a href="../../../QATools/QATools/PageObject/Page.html"><abbr title="QATools\QATools\PageObject\Page">Page</abbr></a>
+    <strong>getPage</strong>(string $class_name)
+        </code>
     </h3>
     <div class="details">
+            
+    
+
                     <div class="method-description">
                                     <p>Creates page by given class name.</p>                                </div>
                 <div class="tags">
@@ -902,8 +934,7 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td>
-    string</td>
+                <td>string</td>
                 <td>$class_name</td>
                 <td>Page class name.</td>
             </tr>
@@ -914,10 +945,8 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td>
-    <a href="../../../QATools/QATools/PageObject/Page.html"><abbr title="QATools\QATools\PageObject\Page">Page</abbr></a></td>
-            <td>
-</td>
+            <td><a href="../../../QATools/QATools/PageObject/Page.html"><abbr title="QATools\QATools\PageObject\Page">Page</abbr></a></td>
+            <td></td>
         </tr>
     </table>
 
@@ -929,23 +958,23 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_shouldReceive">
-        <div class="location">at line 33</div>
-        <code>                    
-    <abbr title="Mockery\Expectation">Expectation</abbr>
-    <strong>shouldReceive</strong>(
-    <abbr title="string ">string </abbr> $name)</code>
+        <div class="location">at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/PageObject/PageFactory.php#L35">line 35</a></div>
+        <code>                    <abbr title="Mockery\Expectation">Expectation</abbr>
+    <strong>shouldReceive</strong>(string  $name)
+        </code>
     </h3>
     <div class="details">
+            
+    
+
                 <div class="tags">
                             <h4>Parameters</h4>
 
                     <table class="table table-condensed">
                     <tr>
-                <td>
-    <abbr title="string ">string </abbr></td>
+                <td>string </td>
                 <td>$name</td>
-                <td>
-</td>
+                <td></td>
             </tr>
             </table>
 
@@ -954,10 +983,8 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td>
-    <abbr title="Mockery\Expectation">Expectation</abbr></td>
-            <td>
-</td>
+            <td><abbr title="Mockery\Expectation">Expectation</abbr></td>
+            <td></td>
         </tr>
     </table>
 
