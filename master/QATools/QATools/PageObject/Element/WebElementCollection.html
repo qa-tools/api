@@ -23,12 +23,6 @@
             <div id="content">
         <div id="left-column">
                 <div id="control-panel">
-                    <form action="#" method="GET">
-                <select id="version-switcher" name="version">
-                                            <option value="../../../../../master/index.html" selected>master branch</option>
-                                            <option value="../../../../../develop/index.html">develop branch</option>
-                                    </select>
-            </form>
                 <form id="search-form" action="../../../../search.html" method="GET">
             <span class="glyphicon glyphicon-search"></span>
             <input name="search"
@@ -151,7 +145,7 @@
                     static&nbsp;<a href="../../../../QATools/QATools/PageObject/Element/AbstractElementCollection.html"><abbr title="QATools\QATools\PageObject\Element\AbstractElementCollection">AbstractElementCollection</abbr></a>
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_fromNodeElements">fromNodeElements</a>(array $node_elements, string $element_class = null, <a href="../../../../QATools/QATools/PageObject/IPageFactory.html"><abbr title="QATools\QATools\PageObject\IPageFactory">IPageFactory</abbr></a> $page_factory = null)
+                    <a href="#method_fromNodeElements">fromNodeElements</a>(array $node_elements, string $element_class = null, <a href="../../../../QATools/QATools/PageObject/IPageFactory.html"><abbr title="QATools\QATools\PageObject\IPageFactory">IPageFactory</abbr></a> $page_factory)
         
                                             <p>Creates new collection by wrapping given array of Node elements.</p>                </div>
                 <div class="col-md-2"><small>from&nbsp;<a href="../../../../QATools/QATools/PageObject/Element/AbstractElementCollection.html#method_fromNodeElements"><abbr title="QATools\QATools\PageObject\Element\AbstractElementCollection">AbstractElementCollection</abbr></a></small></div>
@@ -266,7 +260,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_offsetSet">
-        <div class="location">in <a href="../../../../QATools/QATools/PageObject/Element/AbstractElementCollection.html#method_offsetSet"><abbr title="QATools\QATools\PageObject\Element\AbstractElementCollection">AbstractElementCollection</abbr></a> at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/PageObject/Element/AbstractElementCollection.php#L81">line 81</a></div>
+        <div class="location">in <a href="../../../../QATools/QATools/PageObject/Element/AbstractElementCollection.html#method_offsetSet"><abbr title="QATools\QATools\PageObject\Element\AbstractElementCollection">AbstractElementCollection</abbr></a> at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/PageObject/Element/AbstractElementCollection.php#L80">line 80</a></div>
         <code>                    void
     <strong>offsetSet</strong>(mixed $index, mixed $newval)
         </code>
@@ -304,15 +298,6 @@
     </table>
 
             
-                            <h4>Exceptions</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td><a target="_blank" href="http://php.net/InvalidArgumentException">InvalidArgumentException</a></td>
-                <td>When invalid element given.</td>
-            </tr>
-            </table>
-
             
                     </div>
     </div>
@@ -320,9 +305,9 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_fromNodeElements">
-        <div class="location">in <a href="../../../../QATools/QATools/PageObject/Element/AbstractElementCollection.html#method_fromNodeElements"><abbr title="QATools\QATools\PageObject\Element\AbstractElementCollection">AbstractElementCollection</abbr></a> at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/PageObject/Element/AbstractElementCollection.php#L100">line 100</a></div>
+        <div class="location">in <a href="../../../../QATools/QATools/PageObject/Element/AbstractElementCollection.html#method_fromNodeElements"><abbr title="QATools\QATools\PageObject\Element\AbstractElementCollection">AbstractElementCollection</abbr></a> at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/PageObject/Element/AbstractElementCollection.php#L99">line 99</a></div>
         <code>        static            <a href="../../../../QATools/QATools/PageObject/Element/AbstractElementCollection.html"><abbr title="QATools\QATools\PageObject\Element\AbstractElementCollection">AbstractElementCollection</abbr></a>
-    <strong>fromNodeElements</strong>(array $node_elements, string $element_class = null, <a href="../../../../QATools/QATools/PageObject/IPageFactory.html"><abbr title="QATools\QATools\PageObject\IPageFactory">IPageFactory</abbr></a> $page_factory = null)
+    <strong>fromNodeElements</strong>(array $node_elements, string $element_class = null, <a href="../../../../QATools/QATools/PageObject/IPageFactory.html"><abbr title="QATools\QATools\PageObject\IPageFactory">IPageFactory</abbr></a> $page_factory)
         </code>
     </h3>
     <div class="details">
@@ -379,7 +364,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_isNodeElementAware">
-        <div class="location">in <a href="../../../../QATools/QATools/PageObject/Element/AbstractElementCollection.html#method_isNodeElementAware"><abbr title="QATools\QATools\PageObject\Element\AbstractElementCollection">AbstractElementCollection</abbr></a> at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/PageObject/Element/AbstractElementCollection.php#L132">line 132</a></div>
+        <div class="location">in <a href="../../../../QATools/QATools/PageObject/Element/AbstractElementCollection.html#method_isNodeElementAware"><abbr title="QATools\QATools\PageObject\Element\AbstractElementCollection">AbstractElementCollection</abbr></a> at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/PageObject/Element/AbstractElementCollection.php#L131">line 131</a></div>
         <code>            protected        boolean
     <strong>isNodeElementAware</strong>(string $class_name)
         </code>
@@ -419,7 +404,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_assertElement">
-        <div class="location">in <a href="../../../../QATools/QATools/PageObject/Element/AbstractElementCollection.html#method_assertElement"><abbr title="QATools\QATools\PageObject\Element\AbstractElementCollection">AbstractElementCollection</abbr></a> at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/PageObject/Element/AbstractElementCollection.php#L151">line 151</a></div>
+        <div class="location">in <a href="../../../../QATools/QATools/PageObject/Element/AbstractElementCollection.html#method_assertElement"><abbr title="QATools\QATools\PageObject\Element\AbstractElementCollection">AbstractElementCollection</abbr></a> at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/PageObject/Element/AbstractElementCollection.php#L150">line 150</a></div>
         <code>            protected        boolean
     <strong>assertElement</strong>(mixed $element)
         </code>

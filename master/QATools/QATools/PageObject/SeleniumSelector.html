@@ -23,12 +23,6 @@
             <div id="content">
         <div id="left-column">
                 <div id="control-panel">
-                    <form action="#" method="GET">
-                <select id="version-switcher" name="version">
-                                            <option value="../../../../master/index.html" selected>master branch</option>
-                                            <option value="../../../../develop/index.html">develop branch</option>
-                                    </select>
-            </form>
                 <form id="search-form" action="../../../search.html" method="GET">
             <span class="glyphicon glyphicon-search"></span>
             <input name="search"
@@ -102,11 +96,19 @@
 
             <table class="table table-condensed">
                     <tr>
-                <td class="type" id="property__handler">
-                                                            private                    <abbr title="Behat\Mink\Selector\SelectorsHandler">SelectorsHandler</abbr>
+                <td class="type" id="property__cssSelector">
+                                                            private                    <abbr title="Behat\Mink\Selector\CssSelector">CssSelector</abbr>
                 </td>
-                <td>$_handler</td>
-                <td class="last">Reference to selectors handler, where this selector was registered.</td>
+                <td>$_cssSelector</td>
+                <td class="last">Reference to CSS selector.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property__xpathEscaper">
+                                                            private                    <abbr title="Behat\Mink\Selector\Xpath\Escaper">Escaper</abbr>
+                </td>
+                <td>$_xpathEscaper</td>
+                <td class="last">The XPath escaper.</td>
                 <td></td>
             </tr>
             </table>
@@ -120,7 +122,7 @@
                     
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method___construct">__construct</a>(<abbr title="Behat\Mink\Selector\SelectorsHandler">SelectorsHandler</abbr> $selectors_handler)
+                    <a href="#method___construct">__construct</a>()
         
                                             <p>Creates instance of SeleniumSelector class.</p>                </div>
                 <div class="col-md-2"></div>
@@ -154,9 +156,9 @@
             <div id="method-details">
                     <div class="method-item">
                     <h3 id="method___construct">
-        <div class="location">at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/PageObject/SeleniumSelector.php#L40">line 40</a></div>
+        <div class="location">at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/PageObject/SeleniumSelector.php#L46">line 46</a></div>
         <code>                    
-    <strong>__construct</strong>(<abbr title="Behat\Mink\Selector\SelectorsHandler">SelectorsHandler</abbr> $selectors_handler)
+    <strong>__construct</strong>()
         </code>
     </h3>
     <div class="details">
@@ -166,16 +168,6 @@
                     <div class="method-description">
                                     <p>Creates instance of SeleniumSelector class.</p>                                </div>
                 <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td><abbr title="Behat\Mink\Selector\SelectorsHandler">SelectorsHandler</abbr></td>
-                <td>$selectors_handler</td>
-                <td>Mink selectors handler.</td>
-            </tr>
-            </table>
-
             
             
             
@@ -185,7 +177,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_translateToXPath">
-        <div class="location">at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/PageObject/SeleniumSelector.php#L53">line 53</a></div>
+        <div class="location">at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/PageObject/SeleniumSelector.php#L60">line 60</a></div>
         <code>                    string
     <strong>translateToXPath</strong>(mixed $locator)
         </code>
@@ -234,7 +226,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_shouldReceive">
-        <div class="location">at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/PageObject/SeleniumSelector.php#L25">line 25</a></div>
+        <div class="location">at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/PageObject/SeleniumSelector.php#L26">line 26</a></div>
         <code>                    <abbr title="Mockery\Expectation">Expectation</abbr>
     <strong>shouldReceive</strong>(string  $name)
         </code>

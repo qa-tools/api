@@ -23,12 +23,6 @@
             <div id="content">
         <div id="left-column">
                 <div id="control-panel">
-                    <form action="#" method="GET">
-                <select id="version-switcher" name="version">
-                                            <option value="../../../../../master/index.html" selected>master branch</option>
-                                            <option value="../../../../../develop/index.html">develop branch</option>
-                                    </select>
-            </form>
                 <form id="search-form" action="../../../../search.html" method="GET">
             <span class="glyphicon glyphicon-search"></span>
             <input name="search"
@@ -138,6 +132,14 @@
                 <td><small>from&nbsp;<a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html#property__wrappedElement"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a></small></td>
             </tr>
                     <tr>
+                <td class="type" id="property__pageFactory">
+                                                            private                    <a href="../../../../QATools/QATools/PageObject/IPageFactory.html"><abbr title="QATools\QATools\PageObject\IPageFactory">IPageFactory</abbr></a>
+                </td>
+                <td>$_pageFactory</td>
+                <td class="last">Stores instance of used page factory.</td>
+                <td><small>from&nbsp;<a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html#property__pageFactory"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a></small></td>
+            </tr>
+                    <tr>
                 <td class="type" id="property_acceptanceCriteria">
                                         protected                                        array
                 </td>
@@ -156,7 +158,7 @@
                     
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method___construct">__construct</a>(<a href="../../../../QATools/QATools/PageObject/Element/WebElement.html"><abbr title="QATools\QATools\PageObject\Element\WebElement">WebElement</abbr></a> $wrapped_element)
+                    <a href="#method___construct">__construct</a>(<a href="../../../../QATools/QATools/PageObject/Element/WebElement.html"><abbr title="QATools\QATools\PageObject\Element\WebElement">WebElement</abbr></a> $wrapped_element, <a href="../../../../QATools/QATools/PageObject/IPageFactory.html"><abbr title="QATools\QATools\PageObject\IPageFactory">IPageFactory</abbr></a> $page_factory)
         
                                             <p>Specifies wrapped WebElement.</p>                </div>
                 <div class="col-md-2"><small>from&nbsp;<a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html#method___construct"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a></small></div>
@@ -166,7 +168,7 @@
                     static&nbsp;<a href="../../../../QATools/QATools/PageObject/Element/INodeElementAware.html"><abbr title="QATools\QATools\PageObject\Element\INodeElementAware">INodeElementAware</abbr></a>
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_fromNodeElement">fromNodeElement</a>(<abbr title="Behat\Mink\Element\NodeElement">NodeElement</abbr> $node_element, <a href="../../../../QATools/QATools/PageObject/IPageFactory.html"><abbr title="QATools\QATools\PageObject\IPageFactory">IPageFactory</abbr></a> $page_factory = null)
+                    <a href="#method_fromNodeElement">fromNodeElement</a>(<abbr title="Behat\Mink\Element\NodeElement">NodeElement</abbr> $node_element, <a href="../../../../QATools/QATools/PageObject/IPageFactory.html"><abbr title="QATools\QATools\PageObject\IPageFactory">IPageFactory</abbr></a> $page_factory)
         
                                             <p>Creates Element instance based on existing NodeElement instance.</p>                </div>
                 <div class="col-md-2"><small>from&nbsp;<a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html#method_fromNodeElement"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a></small></div>
@@ -247,9 +249,19 @@
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_getSession">getSession</a>()
-        
-                                            <p>Returns wrapped element session.</p>                </div>
+        <small><sup><span class="label label-danger">deprecated</span></sup></small>
+                                            <p>Returns element session.</p>                </div>
                 <div class="col-md-2"><small>from&nbsp;<a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html#method_getSession"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../QATools/QATools/PageObject/IPageFactory.html"><abbr title="QATools\QATools\PageObject\IPageFactory">IPageFactory</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getPageFactory">getPageFactory</a>()
+        
+                                            <p>Returns page factory, used during object creation.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html#method_getPageFactory"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a></small></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
@@ -313,13 +325,13 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    <abbr title="Behat\Mink\Selector\SelectorsHandler">SelectorsHandler</abbr>
+                    <abbr title="Behat\Mink\Selector\Xpath\Escaper">Escaper</abbr>
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_getSelectorsHandler">getSelectorsHandler</a>()
+                    <a href="#method_getXpathEscaper">getXpathEscaper</a>()
         
-                                            <p>Returns selectors handler.</p>                </div>
-                <div class="col-md-2"><small>from&nbsp;<a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html#method_getSelectorsHandler"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a></small></div>
+                                            <p>Returns the XPath escaper.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html#method_getXpathEscaper"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a></small></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
@@ -440,9 +452,9 @@
             <div id="method-details">
                     <div class="method-item">
                     <h3 id="method___construct">
-        <div class="location">in <a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html#method___construct"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a> at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.php#L60">line 60</a></div>
+        <div class="location">in <a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html#method___construct"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a> at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.php#L68">line 68</a></div>
         <code>                    
-    <strong>__construct</strong>(<a href="../../../../QATools/QATools/PageObject/Element/WebElement.html"><abbr title="QATools\QATools\PageObject\Element\WebElement">WebElement</abbr></a> $wrapped_element)
+    <strong>__construct</strong>(<a href="../../../../QATools/QATools/PageObject/Element/WebElement.html"><abbr title="QATools\QATools\PageObject\Element\WebElement">WebElement</abbr></a> $wrapped_element, <a href="../../../../QATools/QATools/PageObject/IPageFactory.html"><abbr title="QATools\QATools\PageObject\IPageFactory">IPageFactory</abbr></a> $page_factory)
         </code>
     </h3>
     <div class="details">
@@ -460,6 +472,11 @@
                 <td>$wrapped_element</td>
                 <td>Element to be wrapped.</td>
             </tr>
+                    <tr>
+                <td><a href="../../../../QATools/QATools/PageObject/IPageFactory.html"><abbr title="QATools\QATools\PageObject\IPageFactory">IPageFactory</abbr></a></td>
+                <td>$page_factory</td>
+                <td>Page factory.</td>
+            </tr>
             </table>
 
             
@@ -471,9 +488,9 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_fromNodeElement">
-        <div class="location">in <a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html#method_fromNodeElement"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a> at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.php#L75">line 75</a></div>
+        <div class="location">in <a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html#method_fromNodeElement"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a> at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.php#L84">line 84</a></div>
         <code>        static            <a href="../../../../QATools/QATools/PageObject/Element/INodeElementAware.html"><abbr title="QATools\QATools\PageObject\Element\INodeElementAware">INodeElementAware</abbr></a>
-    <strong>fromNodeElement</strong>(<abbr title="Behat\Mink\Element\NodeElement">NodeElement</abbr> $node_element, <a href="../../../../QATools/QATools/PageObject/IPageFactory.html"><abbr title="QATools\QATools\PageObject\IPageFactory">IPageFactory</abbr></a> $page_factory = null)
+    <strong>fromNodeElement</strong>(<abbr title="Behat\Mink\Element\NodeElement">NodeElement</abbr> $node_element, <a href="../../../../QATools/QATools/PageObject/IPageFactory.html"><abbr title="QATools\QATools\PageObject\IPageFactory">IPageFactory</abbr></a> $page_factory)
         </code>
     </h3>
     <div class="details">
@@ -516,7 +533,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_assertWrappedElement">
-        <div class="location">in <a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html#method_assertWrappedElement"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a> at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.php#L88">line 88</a></div>
+        <div class="location">in <a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html#method_assertWrappedElement"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a> at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.php#L97">line 97</a></div>
         <code>            protected        void
     <strong>assertWrappedElement</strong>()
         </code>
@@ -555,7 +572,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_isTagNameMatching">
-        <div class="location">in <a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html#method_isTagNameMatching"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a> at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.php#L119">line 119</a></div>
+        <div class="location">in <a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html#method_isTagNameMatching"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a> at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.php#L128">line 128</a></div>
         <code>            protected        boolean
     <strong>isTagNameMatching</strong>(array $criterion)
         </code>
@@ -595,7 +612,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_isAttributeMatching">
-        <div class="location">in <a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html#method_isAttributeMatching"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a> at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.php#L135">line 135</a></div>
+        <div class="location">in <a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html#method_isAttributeMatching"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a> at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.php#L144">line 144</a></div>
         <code>            protected        boolean
     <strong>isAttributeMatching</strong>(array $criterion)
         </code>
@@ -635,7 +652,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_isValueMatchingCriterionDefinition">
-        <div class="location">in <a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html#method_isValueMatchingCriterionDefinition"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a> at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.php#L158">line 158</a></div>
+        <div class="location">in <a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html#method_isValueMatchingCriterionDefinition"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a> at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.php#L167">line 167</a></div>
         <code>            protected        boolean
     <strong>isValueMatchingCriterionDefinition</strong>(string $value, string $criterion)
         </code>
@@ -680,7 +697,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getWrappedElement">
-        <div class="location">in <a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html#method_getWrappedElement"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a> at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.php#L168">line 168</a></div>
+        <div class="location">in <a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html#method_getWrappedElement"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a> at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.php#L177">line 177</a></div>
         <code>                    <a href="../../../../QATools/QATools/PageObject/Element/WebElement.html"><abbr title="QATools\QATools\PageObject\Element\WebElement">WebElement</abbr></a>
     <strong>getWrappedElement</strong>()
         </code>
@@ -710,7 +727,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_setName">
-        <div class="location">in <a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html#method_setName"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a> at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.php#L182">line 182</a></div>
+        <div class="location">in <a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html#method_setName"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a> at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.php#L191">line 191</a></div>
         <code>                    <a href="../../../../QATools/QATools/HtmlElements/Element/ITypifiedElement.html"><abbr title="QATools\QATools\HtmlElements\Element\ITypifiedElement">ITypifiedElement</abbr></a>
     <strong>setName</strong>(string $name)
         </code>
@@ -750,7 +767,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getName">
-        <div class="location">in <a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html#method_getName"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a> at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.php#L194">line 194</a></div>
+        <div class="location">in <a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html#method_getName"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a> at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.php#L203">line 203</a></div>
         <code>                    string
     <strong>getName</strong>()
         </code>
@@ -780,17 +797,24 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getSession">
-        <div class="location">in <a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html#method_getSession"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a> at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.php#L204">line 204</a></div>
+        <div class="location">in <a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html#method_getSession"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a> at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.php#L214">line 214</a></div>
         <code>                    <abbr title="Behat\Mink\Session">Session</abbr>
     <strong>getSession</strong>()
-        </code>
+        <small><sup><span class="label label-danger">deprecated</span></sup></small></code>
     </h3>
     <div class="details">
             
+            <p>
+                <small><sup><span class="label label-danger">deprecated</span></sup></small>
+                            <tr>
+                    <td>Accessing</td>
+                    <td>the session from the element is deprecated as of 1.2 and will be impossible in 2.0.</td>
+                </tr>
+                    </p>
     
 
                     <div class="method-description">
-                                    <p>Returns wrapped element session.</p>                                </div>
+                                    <p>Returns element session.</p>                                </div>
                 <div class="tags">
             
                             <h4>Return Value</h4>
@@ -809,8 +833,38 @@
 
             </div>
                     <div class="method-item">
+                    <h3 id="method_getPageFactory">
+        <div class="location">in <a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html#method_getPageFactory"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a> at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.php#L229">line 229</a></div>
+        <code>            protected        <a href="../../../../QATools/QATools/PageObject/IPageFactory.html"><abbr title="QATools\QATools\PageObject\IPageFactory">IPageFactory</abbr></a>
+    <strong>getPageFactory</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns page factory, used during object creation.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../QATools/QATools/PageObject/IPageFactory.html"><abbr title="QATools\QATools\PageObject\IPageFactory">IPageFactory</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_isVisible">
-        <div class="location">in <a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html#method_isVisible"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a> at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.php#L214">line 214</a></div>
+        <div class="location">in <a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html#method_isVisible"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a> at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.php#L239">line 239</a></div>
         <code>                    boolean
     <strong>isVisible</strong>()
         </code>
@@ -840,7 +894,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_isValid">
-        <div class="location">in <a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html#method_isValid"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a> at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.php#L224">line 224</a></div>
+        <div class="location">in <a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html#method_isValid"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a> at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.php#L249">line 249</a></div>
         <code>                    boolean
     <strong>isValid</strong>()
         </code>
@@ -870,7 +924,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_hasAttribute">
-        <div class="location">in <a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html#method_hasAttribute"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a> at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.php#L236">line 236</a></div>
+        <div class="location">in <a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html#method_hasAttribute"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a> at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.php#L261">line 261</a></div>
         <code>                    boolean
     <strong>hasAttribute</strong>(string $name)
         </code>
@@ -910,7 +964,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getAttribute">
-        <div class="location">in <a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html#method_getAttribute"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a> at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.php#L248">line 248</a></div>
+        <div class="location">in <a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html#method_getAttribute"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a> at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.php#L273">line 273</a></div>
         <code>                    mixed|null
     <strong>getAttribute</strong>(string $name)
         </code>
@@ -950,7 +1004,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getXpath">
-        <div class="location">in <a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html#method_getXpath"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a> at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.php#L258">line 258</a></div>
+        <div class="location">in <a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html#method_getXpath"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a> at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.php#L283">line 283</a></div>
         <code>                    string
     <strong>getXpath</strong>()
         </code>
@@ -980,7 +1034,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getTagName">
-        <div class="location">in <a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html#method_getTagName"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a> at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.php#L268">line 268</a></div>
+        <div class="location">in <a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html#method_getTagName"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a> at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.php#L293">line 293</a></div>
         <code>                    string
     <strong>getTagName</strong>()
         </code>
@@ -1009,10 +1063,10 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_getSelectorsHandler">
-        <div class="location">in <a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html#method_getSelectorsHandler"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a> at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.php#L278">line 278</a></div>
-        <code>            protected        <abbr title="Behat\Mink\Selector\SelectorsHandler">SelectorsHandler</abbr>
-    <strong>getSelectorsHandler</strong>()
+                    <h3 id="method_getXpathEscaper">
+        <div class="location">in <a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html#method_getXpathEscaper"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a> at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.php#L303">line 303</a></div>
+        <code>                    <abbr title="Behat\Mink\Selector\Xpath\Escaper">Escaper</abbr>
+    <strong>getXpathEscaper</strong>()
         </code>
     </h3>
     <div class="details">
@@ -1020,14 +1074,14 @@
     
 
                     <div class="method-description">
-                                    <p>Returns selectors handler.</p>                                </div>
+                                    <p>Returns the XPath escaper.</p>                                </div>
                 <div class="tags">
             
                             <h4>Return Value</h4>
 
                     <table class="table table-condensed">
         <tr>
-            <td><abbr title="Behat\Mink\Selector\SelectorsHandler">SelectorsHandler</abbr></td>
+            <td><abbr title="Behat\Mink\Selector\Xpath\Escaper">Escaper</abbr></td>
             <td></td>
         </tr>
     </table>
@@ -1040,7 +1094,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_isSeleniumDriver">
-        <div class="location">in <a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html#method_isSeleniumDriver"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a> at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.php#L288">line 288</a></div>
+        <div class="location">in <a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html#method_isSeleniumDriver"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a> at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.php#L313">line 313</a></div>
         <code>            protected        boolean
     <strong>isSeleniumDriver</strong>()
         </code>
@@ -1070,7 +1124,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method___toString">
-        <div class="location">in <a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html#method___toString"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a> at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.php#L298">line 298</a></div>
+        <div class="location">in <a href="../../../../QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.html#method___toString"><abbr title="QATools\QATools\HtmlElements\Element\AbstractTypifiedElement">AbstractTypifiedElement</abbr></a> at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/HtmlElements/Element/AbstractTypifiedElement.php#L323">line 323</a></div>
         <code>                    string
     <strong>__toString</strong>()
         </code>

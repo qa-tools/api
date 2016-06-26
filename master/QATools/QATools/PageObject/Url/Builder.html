@@ -23,12 +23,6 @@
             <div id="content">
         <div id="left-column">
                 <div id="control-panel">
-                    <form action="#" method="GET">
-                <select id="version-switcher" name="version">
-                                            <option value="../../../../../master/index.html" selected>master branch</option>
-                                            <option value="../../../../../develop/index.html">develop branch</option>
-                                    </select>
-            </form>
                 <form id="search-form" action="../../../../search.html" method="GET">
             <span class="glyphicon glyphicon-search"></span>
             <input name="search"
@@ -248,6 +242,16 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_unmaskUrl">unmaskUrl</a>(string $url, array $params)
+        
+                                            <p>Unmasks a URL and replaces masks with a parameter value.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
                     <abbr title="Mockery\Expectation">Expectation</abbr>
                 </div>
                 <div class="col-md-8 type">
@@ -265,7 +269,7 @@
             <div id="method-details">
                     <div class="method-item">
                     <h3 id="method___construct">
-        <div class="location">at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/PageObject/Url/Builder.php#L73">line 73</a></div>
+        <div class="location">at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/PageObject/Url/Builder.php#L74">line 74</a></div>
         <code>                    
     <strong>__construct</strong>(array $components)
         </code>
@@ -305,7 +309,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_build">
-        <div class="location">at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/PageObject/Url/Builder.php#L98">line 98</a></div>
+        <div class="location">at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/PageObject/Url/Builder.php#L99">line 99</a></div>
         <code>                    string
     <strong>build</strong>(array $params = array())
         </code>
@@ -345,7 +349,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getPortForBuild">
-        <div class="location">at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/PageObject/Url/Builder.php#L119">line 119</a></div>
+        <div class="location">at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/PageObject/Url/Builder.php#L122">line 122</a></div>
         <code>            protected        string
     <strong>getPortForBuild</strong>()
         </code>
@@ -375,7 +379,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getParams">
-        <div class="location">at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/PageObject/Url/Builder.php#L139">line 139</a></div>
+        <div class="location">at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/PageObject/Url/Builder.php#L142">line 142</a></div>
         <code>                    array
     <strong>getParams</strong>()
         </code>
@@ -405,7 +409,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getPath">
-        <div class="location">at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/PageObject/Url/Builder.php#L149">line 149</a></div>
+        <div class="location">at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/PageObject/Url/Builder.php#L152">line 152</a></div>
         <code>                    string
     <strong>getPath</strong>()
         </code>
@@ -435,7 +439,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getAnchor">
-        <div class="location">at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/PageObject/Url/Builder.php#L159">line 159</a></div>
+        <div class="location">at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/PageObject/Url/Builder.php#L162">line 162</a></div>
         <code>                    string
     <strong>getAnchor</strong>()
         </code>
@@ -465,7 +469,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getHost">
-        <div class="location">at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/PageObject/Url/Builder.php#L169">line 169</a></div>
+        <div class="location">at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/PageObject/Url/Builder.php#L172">line 172</a></div>
         <code>                    string
     <strong>getHost</strong>()
         </code>
@@ -495,7 +499,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getProtocol">
-        <div class="location">at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/PageObject/Url/Builder.php#L179">line 179</a></div>
+        <div class="location">at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/PageObject/Url/Builder.php#L182">line 182</a></div>
         <code>                    string
     <strong>getProtocol</strong>()
         </code>
@@ -525,7 +529,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getPort">
-        <div class="location">at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/PageObject/Url/Builder.php#L189">line 189</a></div>
+        <div class="location">at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/PageObject/Url/Builder.php#L192">line 192</a></div>
         <code>                    integer
     <strong>getPort</strong>()
         </code>
@@ -554,8 +558,62 @@
 
             </div>
                     <div class="method-item">
+                    <h3 id="method_unmaskUrl">
+        <div class="location">at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/PageObject/Url/Builder.php#L206">line 206</a></div>
+        <code>            protected        array
+    <strong>unmaskUrl</strong>(string $url, array $params)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Unmasks a URL and replaces masks with a parameter value.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$url</td>
+                <td>URL to be unmasked.</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$params</td>
+                <td>Params holding values for masks.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td>Returns an array of 0 => unmasked url and 1 => parameters.</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../QATools/QATools/PageObject/Exception/MissingParametersException.html"><abbr title="QATools\QATools\PageObject\Exception\MissingParametersException">MissingParametersException</abbr></a></td>
+                <td>Thrown if a mask was found in $url which does not exist in $params.</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_shouldReceive">
-        <div class="location">at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/PageObject/Url/Builder.php#L21">line 21</a></div>
+        <div class="location">at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/PageObject/Url/Builder.php#L22">line 22</a></div>
         <code>                    <abbr title="Mockery\Expectation">Expectation</abbr>
     <strong>shouldReceive</strong>(string  $name)
         </code>

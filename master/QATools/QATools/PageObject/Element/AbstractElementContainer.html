@@ -23,12 +23,6 @@
             <div id="content">
         <div id="left-column">
                 <div id="control-panel">
-                    <form action="#" method="GET">
-                <select id="version-switcher" name="version">
-                                            <option value="../../../../../master/index.html" selected>master branch</option>
-                                            <option value="../../../../../develop/index.html">develop branch</option>
-                                    </select>
-            </form>
                 <form id="search-form" action="../../../../search.html" method="GET">
             <span class="glyphicon glyphicon-search"></span>
             <input name="search"
@@ -103,12 +97,12 @@
 
             <table class="table table-condensed">
                     <tr>
-                <td class="type" id="property_seleniumSelector">
-                                        protected                                        array
+                <td class="type" id="property__wrappedElement">
+                                                            private                    <abbr title="Behat\Mink\Element\NodeElement">NodeElement</abbr>
                 </td>
-                <td>$seleniumSelector</td>
-                <td class="last">Selenium selector, used to locate an element at construction time.</td>
-                <td><small>from&nbsp;<a href="../../../../QATools/QATools/PageObject/Element/WebElement.html#property_seleniumSelector"><abbr title="QATools\QATools\PageObject\Element\WebElement">WebElement</abbr></a></small></td>
+                <td>$_wrappedElement</td>
+                <td class="last">Wrapped element.</td>
+                <td><small>from&nbsp;<a href="../../../../QATools/QATools/PageObject/Element/WebElement.html#property__wrappedElement"><abbr title="QATools\QATools\PageObject\Element\WebElement">WebElement</abbr></a></small></td>
             </tr>
                     <tr>
                 <td class="type" id="property__pageFactory">
@@ -116,7 +110,15 @@
                 </td>
                 <td>$_pageFactory</td>
                 <td class="last">Stores instance of used page factory.</td>
-                <td></td>
+                <td><small>from&nbsp;<a href="../../../../QATools/QATools/PageObject/Element/WebElement.html#property__pageFactory"><abbr title="QATools\QATools\PageObject\Element\WebElement">WebElement</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property__xpathEscaper">
+                                                            private                    <abbr title="Behat\Mink\Selector\Xpath\Escaper">Escaper</abbr>
+                </td>
+                <td>$_xpathEscaper</td>
+                <td class="last">The XPath escaper.</td>
+                <td><small>from&nbsp;<a href="../../../../QATools/QATools/PageObject/Element/WebElement.html#property__xpathEscaper"><abbr title="QATools\QATools\PageObject\Element\WebElement">WebElement</abbr></a></small></td>
             </tr>
             </table>
 
@@ -129,7 +131,7 @@
                     
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method___construct">__construct</a>(array $selenium_selector, <a href="../../../../QATools/QATools/PageObject/IPageFactory.html"><abbr title="QATools\QATools\PageObject\IPageFactory">IPageFactory</abbr></a> $page_factory)
+                    <a href="#method___construct">__construct</a>(<abbr title="Behat\Mink\Element\NodeElement">NodeElement</abbr> $wrapped_element, <a href="../../../../QATools/QATools/PageObject/IPageFactory.html"><abbr title="QATools\QATools\PageObject\IPageFactory">IPageFactory</abbr></a> $page_factory)
         
                                             <p>Initializes html element.</p>                </div>
                 <div class="col-md-2"></div>
@@ -139,20 +141,80 @@
                     static&nbsp;<a href="../../../../QATools/QATools/PageObject/Element/INodeElementAware.html"><abbr title="QATools\QATools\PageObject\Element\INodeElementAware">INodeElementAware</abbr></a>
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_fromNodeElement">fromNodeElement</a>(<abbr title="Behat\Mink\Element\NodeElement">NodeElement</abbr> $node_element, <a href="../../../../QATools/QATools/PageObject/IPageFactory.html"><abbr title="QATools\QATools\PageObject\IPageFactory">IPageFactory</abbr></a> $page_factory = null)
+                    <a href="#method_fromNodeElement">fromNodeElement</a>(<abbr title="Behat\Mink\Element\NodeElement">NodeElement</abbr> $node_element, <a href="../../../../QATools/QATools/PageObject/IPageFactory.html"><abbr title="QATools\QATools\PageObject\IPageFactory">IPageFactory</abbr></a> $page_factory)
         
                                             <p>Creates Element instance based on existing NodeElement instance.</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    string
+                    <abbr title="Behat\Mink\Element\NodeElement">NodeElement</abbr>|null
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_seleniumSelectorToXpath">seleniumSelectorToXpath</a>(<abbr title="Behat\Mink\Session">Session</abbr> $session)
+                    <a href="#method_find">find</a>(string $selector, string|array $locator)
         
-                                            <p>Returns 'xpath' selector, used to locate this WebElement.</p>                </div>
-                <div class="col-md-2"><small>from&nbsp;<a href="../../../../QATools/QATools/PageObject/Element/WebElement.html#method_seleniumSelectorToXpath"><abbr title="QATools\QATools\PageObject\Element\WebElement">WebElement</abbr></a></small></div>
+                                            <p>Finds first element with specified selector.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../QATools/QATools/PageObject/Element/WebElement.html#method_find"><abbr title="QATools\QATools\PageObject\Element\WebElement">WebElement</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Behat\Mink\Element\NodeElement">NodeElement</abbr>[]
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_findAll">findAll</a>(string $selector, string|array $locator)
+        
+                                            <p>Finds all elements with specified selector.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../QATools/QATools/PageObject/Element/WebElement.html#method_findAll"><abbr title="QATools\QATools\PageObject\Element\WebElement">WebElement</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_waitFor">waitFor</a>(integer $timeout, callable $callback)
+        
+                                            <p>Waits for an element(-s) to appear and returns it.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../QATools/QATools/PageObject/Element/WebElement.html#method_waitFor"><abbr title="QATools\QATools\PageObject\Element\WebElement">WebElement</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___call">__call</a>(string $method, array $arguments)
+        
+                                            <p>Proxies all methods to sub-object.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../QATools/QATools/PageObject/Element/WebElement.html#method___call"><abbr title="QATools\QATools\PageObject\Element\WebElement">WebElement</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Behat\Mink\Selector\Xpath\Escaper">Escaper</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getXpathEscaper">getXpathEscaper</a>()
+        
+                                            <p>Returns the XPath escaper.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../QATools/QATools/PageObject/Element/WebElement.html#method_getXpathEscaper"><abbr title="QATools\QATools\PageObject\Element\WebElement">WebElement</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Behat\Mink\Session">Session</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getSession">getSession</a>()
+        <small><sup><span class="label label-danger">deprecated</span></sup></small>
+                                            <p>Returns element session.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../QATools/QATools/PageObject/Element/WebElement.html#method_getSession"><abbr title="QATools\QATools\PageObject\Element\WebElement">WebElement</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../QATools/QATools/PageObject/IPageFactory.html"><abbr title="QATools\QATools\PageObject\IPageFactory">IPageFactory</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getPageFactory">getPageFactory</a>()
+        
+                                            <p>Returns page factory, used during object creation.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../QATools/QATools/PageObject/Element/WebElement.html#method_getPageFactory"><abbr title="QATools\QATools\PageObject\Element\WebElement">WebElement</abbr></a></small></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
@@ -177,13 +239,503 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    <a href="../../../../QATools/QATools/PageObject/IPageFactory.html"><abbr title="QATools\QATools\PageObject\IPageFactory">IPageFactory</abbr></a>
+                    string
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_getPageFactory">getPageFactory</a>()
+                    <a href="#method_getXpath">getXpath</a>()
         
-                                            <p>Returns page factory, used during object creation.</p>                </div>
-                <div class="col-md-2"></div>
+                                            <p>Returns XPath for handled element.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../QATools/QATools/PageObject/Element/WebElement.html#method_getXpath"><abbr title="QATools\QATools\PageObject\Element\WebElement">WebElement</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    NodeElement
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getParent">getParent</a>()
+        
+                                            <p>Returns parent element to the current one.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../QATools/QATools/PageObject/Element/WebElement.html#method_getParent"><abbr title="QATools\QATools\PageObject\Element\WebElement">WebElement</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getTagName">getTagName</a>()
+        
+                                            <p>Returns current node tag name.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../QATools/QATools/PageObject/Element/WebElement.html#method_getTagName"><abbr title="QATools\QATools\PageObject\Element\WebElement">WebElement</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string|boolean|array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getValue">getValue</a>()
+        
+                                            <p>Returns the value of the form field or option element.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../QATools/QATools/PageObject/Element/WebElement.html#method_getValue"><abbr title="QATools\QATools\PageObject\Element\WebElement">WebElement</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setValue">setValue</a>($value)
+        
+                                            <p>Sets the value of the form field.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../QATools/QATools/PageObject/Element/WebElement.html#method_setValue"><abbr title="QATools\QATools\PageObject\Element\WebElement">WebElement</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hasAttribute">hasAttribute</a>($name)
+        
+                                            <p>Checks whether element has attribute with specified name.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../QATools/QATools/PageObject/Element/WebElement.html#method_hasAttribute"><abbr title="QATools\QATools\PageObject\Element\WebElement">WebElement</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getAttribute">getAttribute</a>($name)
+        
+                                            <p>Returns specified attribute value.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../QATools/QATools/PageObject/Element/WebElement.html#method_getAttribute"><abbr title="QATools\QATools\PageObject\Element\WebElement">WebElement</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hasClass">hasClass</a>($className)
+        
+                                            <p>Checks whether an element has a named CSS class.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../QATools/QATools/PageObject/Element/WebElement.html#method_hasClass"><abbr title="QATools\QATools\PageObject\Element\WebElement">WebElement</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_click">click</a>()
+        
+                                            <p>Clicks current node.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../QATools/QATools/PageObject/Element/WebElement.html#method_click"><abbr title="QATools\QATools\PageObject\Element\WebElement">WebElement</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_press">press</a>()
+        
+                                            <p>Presses current button.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../QATools/QATools/PageObject/Element/WebElement.html#method_press"><abbr title="QATools\QATools\PageObject\Element\WebElement">WebElement</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_doubleClick">doubleClick</a>()
+        
+                                            <p>Double-clicks current node.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../QATools/QATools/PageObject/Element/WebElement.html#method_doubleClick"><abbr title="QATools\QATools\PageObject\Element\WebElement">WebElement</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_rightClick">rightClick</a>()
+        
+                                            <p>Right-clicks current node.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../QATools/QATools/PageObject/Element/WebElement.html#method_rightClick"><abbr title="QATools\QATools\PageObject\Element\WebElement">WebElement</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_check">check</a>()
+        
+                                            <p>Checks current node if it's a checkbox field.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../QATools/QATools/PageObject/Element/WebElement.html#method_check"><abbr title="QATools\QATools\PageObject\Element\WebElement">WebElement</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_uncheck">uncheck</a>()
+        
+                                            <p>Unchecks current node if it's a checkbox field.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../QATools/QATools/PageObject/Element/WebElement.html#method_uncheck"><abbr title="QATools\QATools\PageObject\Element\WebElement">WebElement</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isChecked">isChecked</a>()
+        
+                                            <p>Checks whether current node is checked if it's a checkbox or radio field.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../QATools/QATools/PageObject/Element/WebElement.html#method_isChecked"><abbr title="QATools\QATools\PageObject\Element\WebElement">WebElement</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_selectOption">selectOption</a>($option, $multiple = false)
+        
+                                            <p>Selects specified option for select field or specified radio button in the group.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../QATools/QATools/PageObject/Element/WebElement.html#method_selectOption"><abbr title="QATools\QATools\PageObject\Element\WebElement">WebElement</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isSelected">isSelected</a>()
+        
+                                            <p>Checks whether current node is selected if it's a option field.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../QATools/QATools/PageObject/Element/WebElement.html#method_isSelected"><abbr title="QATools\QATools\PageObject\Element\WebElement">WebElement</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_attachFile">attachFile</a>($path)
+        
+                                            <p>Attach file to current node if it's a file input.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../QATools/QATools/PageObject/Element/WebElement.html#method_attachFile"><abbr title="QATools\QATools\PageObject\Element\WebElement">WebElement</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isVisible">isVisible</a>()
+        
+                                            <p>Checks whether current node is visible on page.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../QATools/QATools/PageObject/Element/WebElement.html#method_isVisible"><abbr title="QATools\QATools\PageObject\Element\WebElement">WebElement</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_mouseOver">mouseOver</a>()
+        
+                                            <p>Simulates a mouse over on the element.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../QATools/QATools/PageObject/Element/WebElement.html#method_mouseOver"><abbr title="QATools\QATools\PageObject\Element\WebElement">WebElement</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_dragTo">dragTo</a>(ElementInterface  $destination)
+        
+                                            <p>Drags current node onto other node.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../QATools/QATools/PageObject/Element/WebElement.html#method_dragTo"><abbr title="QATools\QATools\PageObject\Element\WebElement">WebElement</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_focus">focus</a>()
+        
+                                            <p>Brings focus to element.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../QATools/QATools/PageObject/Element/WebElement.html#method_focus"><abbr title="QATools\QATools\PageObject\Element\WebElement">WebElement</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_blur">blur</a>()
+        
+                                            <p>Removes focus from element.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../QATools/QATools/PageObject/Element/WebElement.html#method_blur"><abbr title="QATools\QATools\PageObject\Element\WebElement">WebElement</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_keyPress">keyPress</a>($char, $modifier = null)
+        
+                                            <p>Presses specific keyboard key.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../QATools/QATools/PageObject/Element/WebElement.html#method_keyPress"><abbr title="QATools\QATools\PageObject\Element\WebElement">WebElement</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_keyDown">keyDown</a>($char, $modifier = null)
+        
+                                            <p>Pressed down specific keyboard key.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../QATools/QATools/PageObject/Element/WebElement.html#method_keyDown"><abbr title="QATools\QATools\PageObject\Element\WebElement">WebElement</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_keyUp">keyUp</a>($char, $modifier = null)
+        
+                                            <p>Pressed up specific keyboard key.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../QATools/QATools/PageObject/Element/WebElement.html#method_keyUp"><abbr title="QATools\QATools\PageObject\Element\WebElement">WebElement</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_submit">submit</a>()
+        
+                                            <p>Submits the form.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../QATools/QATools/PageObject/Element/WebElement.html#method_submit"><abbr title="QATools\QATools\PageObject\Element\WebElement">WebElement</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    NodeElement|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_findById">findById</a>($id)
+        
+                                            <p>Finds element by its id.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../QATools/QATools/PageObject/Element/WebElement.html#method_findById"><abbr title="QATools\QATools\PageObject\Element\WebElement">WebElement</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hasLink">hasLink</a>($locator)
+        
+                                            <p>Checks whether element has a link with specified locator.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../QATools/QATools/PageObject/Element/WebElement.html#method_hasLink"><abbr title="QATools\QATools\PageObject\Element\WebElement">WebElement</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    NodeElement|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_findLink">findLink</a>($locator)
+        
+                                            <p>Finds link with specified locator.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../QATools/QATools/PageObject/Element/WebElement.html#method_findLink"><abbr title="QATools\QATools\PageObject\Element\WebElement">WebElement</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_clickLink">clickLink</a>($locator)
+        
+                                            <p>Clicks link with specified locator.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../QATools/QATools/PageObject/Element/WebElement.html#method_clickLink"><abbr title="QATools\QATools\PageObject\Element\WebElement">WebElement</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hasButton">hasButton</a>($locator)
+        
+                                            <p>Checks whether element has a button (input[type=submit|image|button|reset], button) with specified locator.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../QATools/QATools/PageObject/Element/WebElement.html#method_hasButton"><abbr title="QATools\QATools\PageObject\Element\WebElement">WebElement</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    NodeElement|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_findButton">findButton</a>($locator)
+        
+                                            <p>Finds button (input[type=submit|image|button|reset], button) with specified locator.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../QATools/QATools/PageObject/Element/WebElement.html#method_findButton"><abbr title="QATools\QATools\PageObject\Element\WebElement">WebElement</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_pressButton">pressButton</a>($locator)
+        
+                                            <p>Presses button (input[type=submit|image|button|reset], button) with specified locator.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../QATools/QATools/PageObject/Element/WebElement.html#method_pressButton"><abbr title="QATools\QATools\PageObject\Element\WebElement">WebElement</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hasField">hasField</a>($locator)
+        
+                                            <p>Checks whether element has a field (input, textarea, select) with specified locator.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../QATools/QATools/PageObject/Element/WebElement.html#method_hasField"><abbr title="QATools\QATools\PageObject\Element\WebElement">WebElement</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    NodeElement|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_findField">findField</a>($locator)
+        
+                                            <p>Finds field (input, textarea, select) with specified locator.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../QATools/QATools/PageObject/Element/WebElement.html#method_findField"><abbr title="QATools\QATools\PageObject\Element\WebElement">WebElement</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_fillField">fillField</a>($locator, $value)
+        
+                                            <p>Fills in field (input, textarea, select) with specified locator.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../QATools/QATools/PageObject/Element/WebElement.html#method_fillField"><abbr title="QATools\QATools\PageObject\Element\WebElement">WebElement</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hasCheckedField">hasCheckedField</a>($locator)
+        
+                                            <p>Checks whether element has a checkbox with specified locator, which is checked.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../QATools/QATools/PageObject/Element/WebElement.html#method_hasCheckedField"><abbr title="QATools\QATools\PageObject\Element\WebElement">WebElement</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hasUncheckedField">hasUncheckedField</a>($locator)
+        
+                                            <p>Checks whether element has a checkbox with specified locator, which is unchecked.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../QATools/QATools/PageObject/Element/WebElement.html#method_hasUncheckedField"><abbr title="QATools\QATools\PageObject\Element\WebElement">WebElement</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_checkField">checkField</a>($locator)
+        
+                                            <p>Checks checkbox with specified locator.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../QATools/QATools/PageObject/Element/WebElement.html#method_checkField"><abbr title="QATools\QATools\PageObject\Element\WebElement">WebElement</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_uncheckField">uncheckField</a>($locator)
+        
+                                            <p>Unchecks checkbox with specified locator.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../QATools/QATools/PageObject/Element/WebElement.html#method_uncheckField"><abbr title="QATools\QATools\PageObject\Element\WebElement">WebElement</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hasSelect">hasSelect</a>($locator)
+        
+                                            <p>Checks whether element has a select field with specified locator.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../QATools/QATools/PageObject/Element/WebElement.html#method_hasSelect"><abbr title="QATools\QATools\PageObject\Element\WebElement">WebElement</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_selectFieldOption">selectFieldOption</a>($locator, $value, $multiple = false)
+        
+                                            <p>Selects option from select field with specified locator.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../QATools/QATools/PageObject/Element/WebElement.html#method_selectFieldOption"><abbr title="QATools\QATools\PageObject\Element\WebElement">WebElement</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hasTable">hasTable</a>($locator)
+        
+                                            <p>Checks whether element has a table with specified locator.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../QATools/QATools/PageObject/Element/WebElement.html#method_hasTable"><abbr title="QATools\QATools\PageObject\Element\WebElement">WebElement</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_attachFileToField">attachFileToField</a>($locator, $path)
+        
+                                            <p>Attach file to file field with specified locator.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../QATools/QATools/PageObject/Element/WebElement.html#method_attachFileToField"><abbr title="QATools\QATools\PageObject\Element\WebElement">WebElement</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_has">has</a>($selector, $locator)
+        
+                                            <p>Checks whether element with specified selector exists inside the current element.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../QATools/QATools/PageObject/Element/WebElement.html#method_has"><abbr title="QATools\QATools\PageObject\Element\WebElement">WebElement</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isValid">isValid</a>()
+        
+                                            <p>Checks if an element still exists in the DOM.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../QATools/QATools/PageObject/Element/WebElement.html#method_isValid"><abbr title="QATools\QATools\PageObject\Element\WebElement">WebElement</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getText">getText</a>()
+        
+                                            <p>Returns element text (inside tag).</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../QATools/QATools/PageObject/Element/WebElement.html#method_getText"><abbr title="QATools\QATools\PageObject\Element\WebElement">WebElement</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getHtml">getHtml</a>()
+        
+                                            <p>Returns element inner html.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../QATools/QATools/PageObject/Element/WebElement.html#method_getHtml"><abbr title="QATools\QATools\PageObject\Element\WebElement">WebElement</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getOuterHtml">getOuterHtml</a>()
+        
+                                            <p>Returns element outer html.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../QATools/QATools/PageObject/Element/WebElement.html#method_getOuterHtml"><abbr title="QATools\QATools\PageObject\Element\WebElement">WebElement</abbr></a></small></div>
             </div>
             </div>
 
@@ -193,9 +745,9 @@
             <div id="method-details">
                     <div class="method-item">
                     <h3 id="method___construct">
-        <div class="location">at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/PageObject/Element/AbstractElementContainer.php#L40">line 40</a></div>
+        <div class="location">at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/PageObject/Element/AbstractElementContainer.php#L33">line 33</a></div>
         <code>                    
-    <strong>__construct</strong>(array $selenium_selector, <a href="../../../../QATools/QATools/PageObject/IPageFactory.html"><abbr title="QATools\QATools\PageObject\IPageFactory">IPageFactory</abbr></a> $page_factory)
+    <strong>__construct</strong>(<abbr title="Behat\Mink\Element\NodeElement">NodeElement</abbr> $wrapped_element, <a href="../../../../QATools/QATools/PageObject/IPageFactory.html"><abbr title="QATools\QATools\PageObject\IPageFactory">IPageFactory</abbr></a> $page_factory)
         </code>
     </h3>
     <div class="details">
@@ -209,9 +761,9 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td>array</td>
-                <td>$selenium_selector</td>
-                <td>Element selector.</td>
+                <td><abbr title="Behat\Mink\Element\NodeElement">NodeElement</abbr></td>
+                <td>$wrapped_element</td>
+                <td>Wrapped element.</td>
             </tr>
                     <tr>
                 <td><a href="../../../../QATools/QATools/PageObject/IPageFactory.html"><abbr title="QATools\QATools\PageObject\IPageFactory">IPageFactory</abbr></a></td>
@@ -229,9 +781,9 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_fromNodeElement">
-        <div class="location">at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/PageObject/Element/AbstractElementContainer.php#L58">line 58</a></div>
+        <div class="location">at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/PageObject/Element/AbstractElementContainer.php#L49">line 49</a></div>
         <code>        static            <a href="../../../../QATools/QATools/PageObject/Element/INodeElementAware.html"><abbr title="QATools\QATools\PageObject\Element\INodeElementAware">INodeElementAware</abbr></a>
-    <strong>fromNodeElement</strong>(<abbr title="Behat\Mink\Element\NodeElement">NodeElement</abbr> $node_element, <a href="../../../../QATools/QATools/PageObject/IPageFactory.html"><abbr title="QATools\QATools\PageObject\IPageFactory">IPageFactory</abbr></a> $page_factory = null)
+    <strong>fromNodeElement</strong>(<abbr title="Behat\Mink\Element\NodeElement">NodeElement</abbr> $node_element, <a href="../../../../QATools/QATools/PageObject/IPageFactory.html"><abbr title="QATools\QATools\PageObject\IPageFactory">IPageFactory</abbr></a> $page_factory)
         </code>
     </h3>
     <div class="details">
@@ -267,12 +819,193 @@
     </table>
 
             
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_find">
+        <div class="location">in <a href="../../../../QATools/QATools/PageObject/Element/WebElement.html#method_find"><abbr title="QATools\QATools\PageObject\Element\WebElement">WebElement</abbr></a> at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/PageObject/Element/WebElement.php#L137">line 137</a></div>
+        <code>                    <abbr title="Behat\Mink\Element\NodeElement">NodeElement</abbr>|null
+    <strong>find</strong>(string $selector, string|array $locator)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Finds first element with specified selector.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$selector</td>
+                <td>Selector engine name.</td>
+            </tr>
+                    <tr>
+                <td>string|array</td>
+                <td>$locator</td>
+                <td>Selector locator.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Behat\Mink\Element\NodeElement">NodeElement</abbr>|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_findAll">
+        <div class="location">in <a href="../../../../QATools/QATools/PageObject/Element/WebElement.html#method_findAll"><abbr title="QATools\QATools\PageObject\Element\WebElement">WebElement</abbr></a> at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/PageObject/Element/WebElement.php#L150">line 150</a></div>
+        <code>                    <abbr title="Behat\Mink\Element\NodeElement">NodeElement</abbr>[]
+    <strong>findAll</strong>(string $selector, string|array $locator)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Finds all elements with specified selector.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$selector</td>
+                <td>Selector engine name.</td>
+            </tr>
+                    <tr>
+                <td>string|array</td>
+                <td>$locator</td>
+                <td>Selector locator.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Behat\Mink\Element\NodeElement">NodeElement</abbr>[]</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_waitFor">
+        <div class="location">in <a href="../../../../QATools/QATools/PageObject/Element/WebElement.html#method_waitFor"><abbr title="QATools\QATools\PageObject\Element\WebElement">WebElement</abbr></a> at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/PageObject/Element/WebElement.php#L164">line 164</a></div>
+        <code>                    mixed
+    <strong>waitFor</strong>(integer $timeout, callable $callback)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Waits for an element(-s) to appear and returns it.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>integer</td>
+                <td>$timeout</td>
+                <td>Maximal allowed waiting time in seconds.</td>
+            </tr>
+                    <tr>
+                <td>callable</td>
+                <td>$callback</td>
+                <td>Callback, which result is both used as waiting condition and returned.
+                          Will receive reference to <code>this element</code> as first argument.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___call">
+        <div class="location">in <a href="../../../../QATools/QATools/PageObject/Element/WebElement.html#method___call"><abbr title="QATools\QATools\PageObject\Element\WebElement">WebElement</abbr></a> at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/PageObject/Element/WebElement.php#L178">line 178</a></div>
+        <code>                    mixed
+    <strong>__call</strong>(string $method, array $arguments)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Proxies all methods to sub-object.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$method</td>
+                <td>Method to proxy.</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$arguments</td>
+                <td>Method arguments.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
                             <h4>Exceptions</h4>
 
                     <table class="table table-condensed">
                     <tr>
                 <td><a href="../../../../QATools/QATools/PageObject/Exception/ElementException.html"><abbr title="QATools\QATools\PageObject\Exception\ElementException">ElementException</abbr></a></td>
-                <td>When page factory is missing.</td>
+                <td>When sub-object doesn't have a specified method.</td>
             </tr>
             </table>
 
@@ -282,10 +1015,10 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_seleniumSelectorToXpath">
-        <div class="location">in <a href="../../../../QATools/QATools/PageObject/Element/WebElement.html#method_seleniumSelectorToXpath"><abbr title="QATools\QATools\PageObject\Element\WebElement">WebElement</abbr></a> at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/PageObject/Element/WebElement.php#L69">line 69</a></div>
-        <code>            protected        string
-    <strong>seleniumSelectorToXpath</strong>(<abbr title="Behat\Mink\Session">Session</abbr> $session)
+                    <h3 id="method_getXpathEscaper">
+        <div class="location">in <a href="../../../../QATools/QATools/PageObject/Element/WebElement.html#method_getXpathEscaper"><abbr title="QATools\QATools\PageObject\Element\WebElement">WebElement</abbr></a> at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/PageObject/Element/WebElement.php#L194">line 194</a></div>
+        <code>                    <abbr title="Behat\Mink\Selector\Xpath\Escaper">Escaper</abbr>
+    <strong>getXpathEscaper</strong>()
         </code>
     </h3>
     <div class="details">
@@ -293,24 +1026,81 @@
     
 
                     <div class="method-description">
-                                    <p>Returns 'xpath' selector, used to locate this WebElement.</p>                                </div>
+                                    <p>Returns the XPath escaper.</p>                                </div>
                 <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td><abbr title="Behat\Mink\Session">Session</abbr></td>
-                <td>$session</td>
-                <td>Session.</td>
-            </tr>
-            </table>
-
             
                             <h4>Return Value</h4>
 
                     <table class="table table-condensed">
         <tr>
-            <td>string</td>
+            <td><abbr title="Behat\Mink\Selector\Xpath\Escaper">Escaper</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getSession">
+        <div class="location">in <a href="../../../../QATools/QATools/PageObject/Element/WebElement.html#method_getSession"><abbr title="QATools\QATools\PageObject\Element\WebElement">WebElement</abbr></a> at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/PageObject/Element/WebElement.php#L205">line 205</a></div>
+        <code>                    <abbr title="Behat\Mink\Session">Session</abbr>
+    <strong>getSession</strong>()
+        <small><sup><span class="label label-danger">deprecated</span></sup></small></code>
+    </h3>
+    <div class="details">
+            
+            <p>
+                <small><sup><span class="label label-danger">deprecated</span></sup></small>
+                            <tr>
+                    <td>Accessing</td>
+                    <td>the session from the element is deprecated as of 1.2 and will be impossible in 2.0.</td>
+                </tr>
+                    </p>
+    
+
+                    <div class="method-description">
+                                    <p>Returns element session.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Behat\Mink\Session">Session</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getPageFactory">
+        <div class="location">in <a href="../../../../QATools/QATools/PageObject/Element/WebElement.html#method_getPageFactory"><abbr title="QATools\QATools\PageObject\Element\WebElement">WebElement</abbr></a> at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/PageObject/Element/WebElement.php#L220">line 220</a></div>
+        <code>            protected        <a href="../../../../QATools/QATools/PageObject/IPageFactory.html"><abbr title="QATools\QATools\PageObject\IPageFactory">IPageFactory</abbr></a>
+    <strong>getPageFactory</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns page factory, used during object creation.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../QATools/QATools/PageObject/IPageFactory.html"><abbr title="QATools\QATools\PageObject\IPageFactory">IPageFactory</abbr></a></td>
             <td></td>
         </tr>
     </table>
@@ -323,7 +1113,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method___toString">
-        <div class="location">in <a href="../../../../QATools/QATools/PageObject/Element/WebElement.html#method___toString"><abbr title="QATools\QATools\PageObject\Element\WebElement">WebElement</abbr></a> at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/PageObject/Element/WebElement.php#L79">line 79</a></div>
+        <div class="location">in <a href="../../../../QATools/QATools/PageObject/Element/WebElement.html#method___toString"><abbr title="QATools\QATools\PageObject\Element\WebElement">WebElement</abbr></a> at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/PageObject/Element/WebElement.php#L230">line 230</a></div>
         <code>                    string
     <strong>__toString</strong>()
         </code>
@@ -353,7 +1143,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_shouldReceive">
-        <div class="location">in <a href="../../../../QATools/QATools/PageObject/Element/WebElement.html#method_shouldReceive"><abbr title="QATools\QATools\PageObject\Element\WebElement">WebElement</abbr></a> at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/PageObject/Element/WebElement.php#L24">line 24</a></div>
+        <div class="location">in <a href="../../../../QATools/QATools/PageObject/Element/WebElement.html#method_shouldReceive"><abbr title="QATools\QATools\PageObject\Element\WebElement">WebElement</abbr></a> at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/PageObject/Element/WebElement.php#L79">line 79</a></div>
         <code>                    <abbr title="Mockery\Expectation">Expectation</abbr>
     <strong>shouldReceive</strong>(string  $name)
         </code>
@@ -390,10 +1180,10 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_getPageFactory">
-        <div class="location">at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/PageObject/Element/AbstractElementContainer.php#L77">line 77</a></div>
-        <code>            protected        <a href="../../../../QATools/QATools/PageObject/IPageFactory.html"><abbr title="QATools\QATools\PageObject\IPageFactory">IPageFactory</abbr></a>
-    <strong>getPageFactory</strong>()
+                    <h3 id="method_getXpath">
+        <div class="location">in <a href="../../../../QATools/QATools/PageObject/Element/WebElement.html#method_getXpath"><abbr title="QATools\QATools\PageObject\Element\WebElement">WebElement</abbr></a> at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/PageObject/Element/WebElement.php#L79">line 79</a></div>
+        <code>                    string
+    <strong>getXpath</strong>()
         </code>
     </h3>
     <div class="details">
@@ -401,14 +1191,1819 @@
     
 
                     <div class="method-description">
-                                    <p>Returns page factory, used during object creation.</p>                                </div>
+                                    <p>Returns XPath for handled element.</p>                                </div>
                 <div class="tags">
             
                             <h4>Return Value</h4>
 
                     <table class="table table-condensed">
         <tr>
-            <td><a href="../../../../QATools/QATools/PageObject/IPageFactory.html"><abbr title="QATools\QATools\PageObject\IPageFactory">IPageFactory</abbr></a></td>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getParent">
+        <div class="location">in <a href="../../../../QATools/QATools/PageObject/Element/WebElement.html#method_getParent"><abbr title="QATools\QATools\PageObject\Element\WebElement">WebElement</abbr></a> at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/PageObject/Element/WebElement.php#L79">line 79</a></div>
+        <code>                    NodeElement
+    <strong>getParent</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns parent element to the current one.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>NodeElement</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getTagName">
+        <div class="location">in <a href="../../../../QATools/QATools/PageObject/Element/WebElement.html#method_getTagName"><abbr title="QATools\QATools\PageObject\Element\WebElement">WebElement</abbr></a> at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/PageObject/Element/WebElement.php#L79">line 79</a></div>
+        <code>                    string
+    <strong>getTagName</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns current node tag name.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getValue">
+        <div class="location">in <a href="../../../../QATools/QATools/PageObject/Element/WebElement.html#method_getValue"><abbr title="QATools\QATools\PageObject\Element\WebElement">WebElement</abbr></a> at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/PageObject/Element/WebElement.php#L79">line 79</a></div>
+        <code>                    string|boolean|array
+    <strong>getValue</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the value of the form field or option element.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string|boolean|array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setValue">
+        <div class="location">in <a href="../../../../QATools/QATools/PageObject/Element/WebElement.html#method_setValue"><abbr title="QATools\QATools\PageObject\Element\WebElement">WebElement</abbr></a> at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/PageObject/Element/WebElement.php#L79">line 79</a></div>
+        <code>                    void
+    <strong>setValue</strong>($value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the value of the form field.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasAttribute">
+        <div class="location">in <a href="../../../../QATools/QATools/PageObject/Element/WebElement.html#method_hasAttribute"><abbr title="QATools\QATools\PageObject\Element\WebElement">WebElement</abbr></a> at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/PageObject/Element/WebElement.php#L79">line 79</a></div>
+        <code>                    boolean
+    <strong>hasAttribute</strong>($name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Checks whether element has attribute with specified name.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getAttribute">
+        <div class="location">in <a href="../../../../QATools/QATools/PageObject/Element/WebElement.html#method_getAttribute"><abbr title="QATools\QATools\PageObject\Element\WebElement">WebElement</abbr></a> at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/PageObject/Element/WebElement.php#L79">line 79</a></div>
+        <code>                    string|null
+    <strong>getAttribute</strong>($name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns specified attribute value.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasClass">
+        <div class="location">in <a href="../../../../QATools/QATools/PageObject/Element/WebElement.html#method_hasClass"><abbr title="QATools\QATools\PageObject\Element\WebElement">WebElement</abbr></a> at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/PageObject/Element/WebElement.php#L79">line 79</a></div>
+        <code>                    boolean
+    <strong>hasClass</strong>($className)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Checks whether an element has a named CSS class.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$className</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_click">
+        <div class="location">in <a href="../../../../QATools/QATools/PageObject/Element/WebElement.html#method_click"><abbr title="QATools\QATools\PageObject\Element\WebElement">WebElement</abbr></a> at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/PageObject/Element/WebElement.php#L79">line 79</a></div>
+        <code>                    void
+    <strong>click</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Clicks current node.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_press">
+        <div class="location">in <a href="../../../../QATools/QATools/PageObject/Element/WebElement.html#method_press"><abbr title="QATools\QATools\PageObject\Element\WebElement">WebElement</abbr></a> at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/PageObject/Element/WebElement.php#L79">line 79</a></div>
+        <code>                    void
+    <strong>press</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Presses current button.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_doubleClick">
+        <div class="location">in <a href="../../../../QATools/QATools/PageObject/Element/WebElement.html#method_doubleClick"><abbr title="QATools\QATools\PageObject\Element\WebElement">WebElement</abbr></a> at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/PageObject/Element/WebElement.php#L79">line 79</a></div>
+        <code>                    void
+    <strong>doubleClick</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Double-clicks current node.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_rightClick">
+        <div class="location">in <a href="../../../../QATools/QATools/PageObject/Element/WebElement.html#method_rightClick"><abbr title="QATools\QATools\PageObject\Element\WebElement">WebElement</abbr></a> at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/PageObject/Element/WebElement.php#L79">line 79</a></div>
+        <code>                    void
+    <strong>rightClick</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Right-clicks current node.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_check">
+        <div class="location">in <a href="../../../../QATools/QATools/PageObject/Element/WebElement.html#method_check"><abbr title="QATools\QATools\PageObject\Element\WebElement">WebElement</abbr></a> at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/PageObject/Element/WebElement.php#L79">line 79</a></div>
+        <code>                    void
+    <strong>check</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Checks current node if it's a checkbox field.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_uncheck">
+        <div class="location">in <a href="../../../../QATools/QATools/PageObject/Element/WebElement.html#method_uncheck"><abbr title="QATools\QATools\PageObject\Element\WebElement">WebElement</abbr></a> at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/PageObject/Element/WebElement.php#L79">line 79</a></div>
+        <code>                    void
+    <strong>uncheck</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Unchecks current node if it's a checkbox field.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isChecked">
+        <div class="location">in <a href="../../../../QATools/QATools/PageObject/Element/WebElement.html#method_isChecked"><abbr title="QATools\QATools\PageObject\Element\WebElement">WebElement</abbr></a> at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/PageObject/Element/WebElement.php#L79">line 79</a></div>
+        <code>                    boolean
+    <strong>isChecked</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Checks whether current node is checked if it's a checkbox or radio field.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_selectOption">
+        <div class="location">in <a href="../../../../QATools/QATools/PageObject/Element/WebElement.html#method_selectOption"><abbr title="QATools\QATools\PageObject\Element\WebElement">WebElement</abbr></a> at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/PageObject/Element/WebElement.php#L79">line 79</a></div>
+        <code>                    void
+    <strong>selectOption</strong>($option, $multiple = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Selects specified option for select field or specified radio button in the group.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$option</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$multiple</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isSelected">
+        <div class="location">in <a href="../../../../QATools/QATools/PageObject/Element/WebElement.html#method_isSelected"><abbr title="QATools\QATools\PageObject\Element\WebElement">WebElement</abbr></a> at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/PageObject/Element/WebElement.php#L79">line 79</a></div>
+        <code>                    boolean
+    <strong>isSelected</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Checks whether current node is selected if it's a option field.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_attachFile">
+        <div class="location">in <a href="../../../../QATools/QATools/PageObject/Element/WebElement.html#method_attachFile"><abbr title="QATools\QATools\PageObject\Element\WebElement">WebElement</abbr></a> at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/PageObject/Element/WebElement.php#L79">line 79</a></div>
+        <code>                    void
+    <strong>attachFile</strong>($path)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Attach file to current node if it's a file input.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$path</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isVisible">
+        <div class="location">in <a href="../../../../QATools/QATools/PageObject/Element/WebElement.html#method_isVisible"><abbr title="QATools\QATools\PageObject\Element\WebElement">WebElement</abbr></a> at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/PageObject/Element/WebElement.php#L79">line 79</a></div>
+        <code>                    boolean
+    <strong>isVisible</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Checks whether current node is visible on page.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_mouseOver">
+        <div class="location">in <a href="../../../../QATools/QATools/PageObject/Element/WebElement.html#method_mouseOver"><abbr title="QATools\QATools\PageObject\Element\WebElement">WebElement</abbr></a> at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/PageObject/Element/WebElement.php#L79">line 79</a></div>
+        <code>                    void
+    <strong>mouseOver</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Simulates a mouse over on the element.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_dragTo">
+        <div class="location">in <a href="../../../../QATools/QATools/PageObject/Element/WebElement.html#method_dragTo"><abbr title="QATools\QATools\PageObject\Element\WebElement">WebElement</abbr></a> at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/PageObject/Element/WebElement.php#L79">line 79</a></div>
+        <code>                    void
+    <strong>dragTo</strong>(ElementInterface  $destination)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Drags current node onto other node.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>ElementInterface </td>
+                <td>$destination</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_focus">
+        <div class="location">in <a href="../../../../QATools/QATools/PageObject/Element/WebElement.html#method_focus"><abbr title="QATools\QATools\PageObject\Element\WebElement">WebElement</abbr></a> at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/PageObject/Element/WebElement.php#L79">line 79</a></div>
+        <code>                    void
+    <strong>focus</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Brings focus to element.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_blur">
+        <div class="location">in <a href="../../../../QATools/QATools/PageObject/Element/WebElement.html#method_blur"><abbr title="QATools\QATools\PageObject\Element\WebElement">WebElement</abbr></a> at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/PageObject/Element/WebElement.php#L79">line 79</a></div>
+        <code>                    void
+    <strong>blur</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Removes focus from element.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_keyPress">
+        <div class="location">in <a href="../../../../QATools/QATools/PageObject/Element/WebElement.html#method_keyPress"><abbr title="QATools\QATools\PageObject\Element\WebElement">WebElement</abbr></a> at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/PageObject/Element/WebElement.php#L79">line 79</a></div>
+        <code>                    void
+    <strong>keyPress</strong>($char, $modifier = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Presses specific keyboard key.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$char</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$modifier</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_keyDown">
+        <div class="location">in <a href="../../../../QATools/QATools/PageObject/Element/WebElement.html#method_keyDown"><abbr title="QATools\QATools\PageObject\Element\WebElement">WebElement</abbr></a> at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/PageObject/Element/WebElement.php#L79">line 79</a></div>
+        <code>                    void
+    <strong>keyDown</strong>($char, $modifier = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Pressed down specific keyboard key.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$char</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$modifier</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_keyUp">
+        <div class="location">in <a href="../../../../QATools/QATools/PageObject/Element/WebElement.html#method_keyUp"><abbr title="QATools\QATools\PageObject\Element\WebElement">WebElement</abbr></a> at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/PageObject/Element/WebElement.php#L79">line 79</a></div>
+        <code>                    void
+    <strong>keyUp</strong>($char, $modifier = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Pressed up specific keyboard key.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$char</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$modifier</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_submit">
+        <div class="location">in <a href="../../../../QATools/QATools/PageObject/Element/WebElement.html#method_submit"><abbr title="QATools\QATools\PageObject\Element\WebElement">WebElement</abbr></a> at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/PageObject/Element/WebElement.php#L79">line 79</a></div>
+        <code>                    void
+    <strong>submit</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Submits the form.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_findById">
+        <div class="location">in <a href="../../../../QATools/QATools/PageObject/Element/WebElement.html#method_findById"><abbr title="QATools\QATools\PageObject\Element\WebElement">WebElement</abbr></a> at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/PageObject/Element/WebElement.php#L79">line 79</a></div>
+        <code>                    NodeElement|null
+    <strong>findById</strong>($id)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Finds element by its id.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$id</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>NodeElement|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasLink">
+        <div class="location">in <a href="../../../../QATools/QATools/PageObject/Element/WebElement.html#method_hasLink"><abbr title="QATools\QATools\PageObject\Element\WebElement">WebElement</abbr></a> at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/PageObject/Element/WebElement.php#L79">line 79</a></div>
+        <code>                    boolean
+    <strong>hasLink</strong>($locator)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Checks whether element has a link with specified locator.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$locator</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_findLink">
+        <div class="location">in <a href="../../../../QATools/QATools/PageObject/Element/WebElement.html#method_findLink"><abbr title="QATools\QATools\PageObject\Element\WebElement">WebElement</abbr></a> at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/PageObject/Element/WebElement.php#L79">line 79</a></div>
+        <code>                    NodeElement|null
+    <strong>findLink</strong>($locator)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Finds link with specified locator.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$locator</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>NodeElement|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_clickLink">
+        <div class="location">in <a href="../../../../QATools/QATools/PageObject/Element/WebElement.html#method_clickLink"><abbr title="QATools\QATools\PageObject\Element\WebElement">WebElement</abbr></a> at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/PageObject/Element/WebElement.php#L79">line 79</a></div>
+        <code>                    void
+    <strong>clickLink</strong>($locator)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Clicks link with specified locator.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$locator</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasButton">
+        <div class="location">in <a href="../../../../QATools/QATools/PageObject/Element/WebElement.html#method_hasButton"><abbr title="QATools\QATools\PageObject\Element\WebElement">WebElement</abbr></a> at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/PageObject/Element/WebElement.php#L79">line 79</a></div>
+        <code>                    boolean
+    <strong>hasButton</strong>($locator)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Checks whether element has a button (input[type=submit|image|button|reset], button) with specified locator.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$locator</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_findButton">
+        <div class="location">in <a href="../../../../QATools/QATools/PageObject/Element/WebElement.html#method_findButton"><abbr title="QATools\QATools\PageObject\Element\WebElement">WebElement</abbr></a> at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/PageObject/Element/WebElement.php#L79">line 79</a></div>
+        <code>                    NodeElement|null
+    <strong>findButton</strong>($locator)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Finds button (input[type=submit|image|button|reset], button) with specified locator.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$locator</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>NodeElement|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_pressButton">
+        <div class="location">in <a href="../../../../QATools/QATools/PageObject/Element/WebElement.html#method_pressButton"><abbr title="QATools\QATools\PageObject\Element\WebElement">WebElement</abbr></a> at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/PageObject/Element/WebElement.php#L79">line 79</a></div>
+        <code>                    void
+    <strong>pressButton</strong>($locator)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Presses button (input[type=submit|image|button|reset], button) with specified locator.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$locator</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasField">
+        <div class="location">in <a href="../../../../QATools/QATools/PageObject/Element/WebElement.html#method_hasField"><abbr title="QATools\QATools\PageObject\Element\WebElement">WebElement</abbr></a> at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/PageObject/Element/WebElement.php#L79">line 79</a></div>
+        <code>                    boolean
+    <strong>hasField</strong>($locator)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Checks whether element has a field (input, textarea, select) with specified locator.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$locator</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_findField">
+        <div class="location">in <a href="../../../../QATools/QATools/PageObject/Element/WebElement.html#method_findField"><abbr title="QATools\QATools\PageObject\Element\WebElement">WebElement</abbr></a> at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/PageObject/Element/WebElement.php#L79">line 79</a></div>
+        <code>                    NodeElement|null
+    <strong>findField</strong>($locator)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Finds field (input, textarea, select) with specified locator.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$locator</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>NodeElement|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_fillField">
+        <div class="location">in <a href="../../../../QATools/QATools/PageObject/Element/WebElement.html#method_fillField"><abbr title="QATools\QATools\PageObject\Element\WebElement">WebElement</abbr></a> at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/PageObject/Element/WebElement.php#L79">line 79</a></div>
+        <code>                    void
+    <strong>fillField</strong>($locator, $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Fills in field (input, textarea, select) with specified locator.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$locator</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasCheckedField">
+        <div class="location">in <a href="../../../../QATools/QATools/PageObject/Element/WebElement.html#method_hasCheckedField"><abbr title="QATools\QATools\PageObject\Element\WebElement">WebElement</abbr></a> at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/PageObject/Element/WebElement.php#L79">line 79</a></div>
+        <code>                    boolean
+    <strong>hasCheckedField</strong>($locator)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Checks whether element has a checkbox with specified locator, which is checked.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$locator</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasUncheckedField">
+        <div class="location">in <a href="../../../../QATools/QATools/PageObject/Element/WebElement.html#method_hasUncheckedField"><abbr title="QATools\QATools\PageObject\Element\WebElement">WebElement</abbr></a> at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/PageObject/Element/WebElement.php#L79">line 79</a></div>
+        <code>                    boolean
+    <strong>hasUncheckedField</strong>($locator)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Checks whether element has a checkbox with specified locator, which is unchecked.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$locator</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_checkField">
+        <div class="location">in <a href="../../../../QATools/QATools/PageObject/Element/WebElement.html#method_checkField"><abbr title="QATools\QATools\PageObject\Element\WebElement">WebElement</abbr></a> at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/PageObject/Element/WebElement.php#L79">line 79</a></div>
+        <code>                    void
+    <strong>checkField</strong>($locator)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Checks checkbox with specified locator.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$locator</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_uncheckField">
+        <div class="location">in <a href="../../../../QATools/QATools/PageObject/Element/WebElement.html#method_uncheckField"><abbr title="QATools\QATools\PageObject\Element\WebElement">WebElement</abbr></a> at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/PageObject/Element/WebElement.php#L79">line 79</a></div>
+        <code>                    void
+    <strong>uncheckField</strong>($locator)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Unchecks checkbox with specified locator.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$locator</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasSelect">
+        <div class="location">in <a href="../../../../QATools/QATools/PageObject/Element/WebElement.html#method_hasSelect"><abbr title="QATools\QATools\PageObject\Element\WebElement">WebElement</abbr></a> at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/PageObject/Element/WebElement.php#L79">line 79</a></div>
+        <code>                    boolean
+    <strong>hasSelect</strong>($locator)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Checks whether element has a select field with specified locator.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$locator</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_selectFieldOption">
+        <div class="location">in <a href="../../../../QATools/QATools/PageObject/Element/WebElement.html#method_selectFieldOption"><abbr title="QATools\QATools\PageObject\Element\WebElement">WebElement</abbr></a> at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/PageObject/Element/WebElement.php#L79">line 79</a></div>
+        <code>                    void
+    <strong>selectFieldOption</strong>($locator, $value, $multiple = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Selects option from select field with specified locator.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$locator</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$multiple</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasTable">
+        <div class="location">in <a href="../../../../QATools/QATools/PageObject/Element/WebElement.html#method_hasTable"><abbr title="QATools\QATools\PageObject\Element\WebElement">WebElement</abbr></a> at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/PageObject/Element/WebElement.php#L79">line 79</a></div>
+        <code>                    boolean
+    <strong>hasTable</strong>($locator)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Checks whether element has a table with specified locator.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$locator</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_attachFileToField">
+        <div class="location">in <a href="../../../../QATools/QATools/PageObject/Element/WebElement.html#method_attachFileToField"><abbr title="QATools\QATools\PageObject\Element\WebElement">WebElement</abbr></a> at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/PageObject/Element/WebElement.php#L79">line 79</a></div>
+        <code>                    void
+    <strong>attachFileToField</strong>($locator, $path)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Attach file to file field with specified locator.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$locator</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$path</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_has">
+        <div class="location">in <a href="../../../../QATools/QATools/PageObject/Element/WebElement.html#method_has"><abbr title="QATools\QATools\PageObject\Element\WebElement">WebElement</abbr></a> at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/PageObject/Element/WebElement.php#L79">line 79</a></div>
+        <code>                    boolean
+    <strong>has</strong>($selector, $locator)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Checks whether element with specified selector exists inside the current element.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$selector</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$locator</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isValid">
+        <div class="location">in <a href="../../../../QATools/QATools/PageObject/Element/WebElement.html#method_isValid"><abbr title="QATools\QATools\PageObject\Element\WebElement">WebElement</abbr></a> at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/PageObject/Element/WebElement.php#L79">line 79</a></div>
+        <code>                    boolean
+    <strong>isValid</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Checks if an element still exists in the DOM.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getText">
+        <div class="location">in <a href="../../../../QATools/QATools/PageObject/Element/WebElement.html#method_getText"><abbr title="QATools\QATools\PageObject\Element\WebElement">WebElement</abbr></a> at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/PageObject/Element/WebElement.php#L79">line 79</a></div>
+        <code>                    string
+    <strong>getText</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns element text (inside tag).</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getHtml">
+        <div class="location">in <a href="../../../../QATools/QATools/PageObject/Element/WebElement.html#method_getHtml"><abbr title="QATools\QATools\PageObject\Element\WebElement">WebElement</abbr></a> at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/PageObject/Element/WebElement.php#L79">line 79</a></div>
+        <code>                    string
+    <strong>getHtml</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns element inner html.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getOuterHtml">
+        <div class="location">in <a href="../../../../QATools/QATools/PageObject/Element/WebElement.html#method_getOuterHtml"><abbr title="QATools\QATools\PageObject\Element\WebElement">WebElement</abbr></a> at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/PageObject/Element/WebElement.php#L79">line 79</a></div>
+        <code>                    string
+    <strong>getOuterHtml</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns element outer html.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
             <td></td>
         </tr>
     </table>

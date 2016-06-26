@@ -23,12 +23,6 @@
             <div id="content">
         <div id="left-column">
                 <div id="control-panel">
-                    <form action="#" method="GET">
-                <select id="version-switcher" name="version">
-                                            <option value="../../../../../master/index.html" selected>master branch</option>
-                                            <option value="../../../../../develop/index.html">develop branch</option>
-                                    </select>
-            </form>
                 <form id="search-form" action="../../../../search.html" method="GET">
             <span class="glyphicon glyphicon-search"></span>
             <input name="search"
@@ -148,6 +142,16 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_assertOptionName">assertOptionName</a>(string $name)
+        
+                                            <p>Checks, that option exists in config.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
                     <abbr title="Mockery\Expectation">Expectation</abbr>
                 </div>
                 <div class="col-md-8 type">
@@ -165,7 +169,7 @@
             <div id="method-details">
                     <div class="method-item">
                     <h3 id="method___construct">
-        <div class="location">at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/PageObject/Config/Config.php#L41">line 41</a></div>
+        <div class="location">at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/PageObject/Config/Config.php#L44">line 44</a></div>
         <code>                    
     <strong>__construct</strong>(array $options = array())
         </code>
@@ -189,15 +193,6 @@
 
             
             
-                            <h4>Exceptions</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td><a href="../../../../QATools/QATools/PageObject/Exception/ConfigException.html"><abbr title="QATools\QATools\PageObject\Exception\ConfigException">ConfigException</abbr></a></td>
-                <td>Throws exception on attempt to set non-existing option.</td>
-            </tr>
-            </table>
-
             
                     </div>
     </div>
@@ -205,7 +200,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_setOption">
-        <div class="location">at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/PageObject/Config/Config.php#L57">line 57</a></div>
+        <div class="location">at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/PageObject/Config/Config.php#L59">line 59</a></div>
         <code>                    <a href="../../../../QATools/QATools/PageObject/Config/IConfig.html"><abbr title="QATools\QATools\PageObject\Config\IConfig">IConfig</abbr></a>
     <strong>setOption</strong>(string $name, mixed $value)
         </code>
@@ -243,15 +238,6 @@
     </table>
 
             
-                            <h4>Exceptions</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td><a href="../../../../QATools/QATools/PageObject/Exception/ConfigException.html"><abbr title="QATools\QATools\PageObject\Exception\ConfigException">ConfigException</abbr></a></td>
-                <td>Throws exception on attempt to set non-existing option.</td>
-            </tr>
-            </table>
-
             
                     </div>
     </div>
@@ -259,7 +245,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getOption">
-        <div class="location">at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/PageObject/Config/Config.php#L79">line 79</a></div>
+        <div class="location">at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/PageObject/Config/Config.php#L75">line 75</a></div>
         <code>                    mixed
     <strong>getOption</strong>(string $name)
         </code>
@@ -287,6 +273,46 @@
                     <table class="table table-condensed">
         <tr>
             <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_assertOptionName">
+        <div class="location">at         <a href="https://github.com/qa-tools/qa-tools/blob/master/library/QATools/QATools/PageObject/Config/Config.php#L90">line 90</a></div>
+        <code>            protected        void
+    <strong>assertOptionName</strong>(string $name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Checks, that option exists in config.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td>Option name.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
             <td></td>
         </tr>
     </table>
